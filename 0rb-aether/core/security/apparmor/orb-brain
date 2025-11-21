@@ -1,0 +1,46 @@
+# AppArmor profile for 0RB Brain Orchestrator
+#include <tunables/global>
+
+profile orb-brain /opt/0rb/brain/orb-brain {
+  #include <abstractions/base>
+
+  # Capabilities
+  capability net_bind_service,
+  capability sys_resource,
+
+  # Binary execution
+  /opt/0rb/brain/orb-brain mr,
+
+  # Runtime directory
+  /run/0rb/ rw,
+  /run/0rb/** rwk,
+
+  # Socket
+  /run/0rb/brain.sock rw,
+
+  # Database (encrypted)
+  /run/0rb/brain.db rwk,
+
+  # Logging
+  /var/log/0rb/ rw,
+  /var/log/0rb/** rw,
+
+  # Config
+  /etc/0rb/ r,
+  /etc/0rb/** r,
+
+  # Deny network by default
+  deny network inet,
+  deny network inet6,
+
+  # Deny raw memory access
+  deny /dev/mem rwklx,
+  deny /dev/kmem rwklx,
+  deny /dev/port rwklx,
+
+  # Deny ptrace
+  deny ptrace,
+
+  # Signals
+  signal receive set=(term, kill, hup) peer=unconfined,
+}

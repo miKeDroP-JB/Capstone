@@ -1,0 +1,13 @@
+# Voice Authentication Dependencies
+# whisper (optional - for fallback if whisper.cpp unavailable)
+openai-whisper>=20231117
+
+# Speaker recognition
+pyannote.audio>=3.1.1
+
+# Audio processing
+soundfile>=0.12.1
+librosa>=0.10.1
+
+# Utilities
+numpy>=1.24.0
