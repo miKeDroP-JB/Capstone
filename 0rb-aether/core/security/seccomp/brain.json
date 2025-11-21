@@ -1,0 +1,84 @@
+{
+  "defaultAction": "SCMP_ACT_ERRNO",
+  "defaultErrnoRet": 1,
+  "archMap": [
+    {
+      "architecture": "SCMP_ARCH_X86_64",
+      "subArchitectures": ["SCMP_ARCH_X86", "SCMP_ARCH_X32"]
+    }
+  ],
+  "syscalls": [
+    {
+      "names": [
+        "read", "write", "close", "fstat", "lseek",
+        "mmap", "mprotect", "munmap", "brk",
+        "rt_sigaction", "rt_sigprocmask", "rt_sigreturn",
+        "ioctl", "access", "pipe", "select", "poll", "epoll_create",
+        "epoll_ctl", "epoll_wait", "epoll_pwait",
+        "dup", "dup2", "dup3",
+        "fcntl", "flock",
+        "fsync", "fdatasync",
+        "ftruncate",
+        "getdents", "getdents64",
+        "getcwd", "chdir",
+        "rename", "renameat", "renameat2",
+        "mkdir", "rmdir",
+        "link", "unlink", "unlinkat",
+        "readlink", "readlinkat",
+        "chmod", "fchmod", "fchmodat",
+        "chown", "fchown", "fchownat",
+        "umask",
+        "gettimeofday", "clock_gettime", "clock_getres",
+        "nanosleep", "clock_nanosleep",
+        "getpid", "getppid", "getuid", "geteuid", "getgid", "getegid",
+        "gettid", "set_tid_address",
+        "set_robust_list", "get_robust_list",
+        "futex",
+        "exit", "exit_group",
+        "wait4", "waitid",
+        "kill", "tgkill",
+        "sigaltstack",
+        "uname",
+        "prctl",
+        "arch_prctl",
+        "getrandom",
+        "memfd_create",
+        "copy_file_range",
+        "statx",
+        "openat", "openat2",
+        "newfstatat",
+        "pread64", "pwrite64",
+        "readv", "writev", "preadv", "pwritev",
+        "sendfile",
+        "accept4",
+        "socket",
+        "bind",
+        "listen",
+        "connect",
+        "getsockname", "getpeername",
+        "setsockopt", "getsockopt",
+        "recvfrom", "sendto", "recvmsg", "sendmsg",
+        "shutdown",
+        "clone", "clone3",
+        "fork", "vfork",
+        "execve", "execveat",
+        "madvise",
+        "sched_yield",
+        "sched_getaffinity", "sched_setaffinity"
+      ],
+      "action": "SCMP_ACT_ALLOW"
+    },
+    {
+      "names": ["socket"],
+      "action": "SCMP_ACT_ALLOW",
+      "args": [
+        {
+          "index": 0,
+          "value": 1,
+          "op": "SCMP_CMP_EQ"
+        }
+      ],
+      "comment": "Allow AF_UNIX sockets only"
+    }
+  ]
+}

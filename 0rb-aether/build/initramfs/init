@@ -1,0 +1,116 @@
+#!/bin/sh
+# 0RB_AETHER Initramfs Init Script
+# Boots into RAM-only encrypted root from LUKS2 container
+
+set -e
+
+# Mount essential filesystems
+mount -t proc proc /proc
+mount -t sysfs sysfs /sys
+mount -t devtmpfs devtmpfs /dev
+mkdir -p /dev/pts /run
+mount -t devpts devpts /dev/pts
+mount -t tmpfs tmpfs /run
+
+# Parse kernel cmdline
+LUKS_DEV=""
+TORAM=0
+for param in $(cat /proc/cmdline); do
+    case "$param" in
+        luks.device=*) LUKS_DEV="${param#luks.device=}" ;;
+        toram) TORAM=1 ;;
+        rd.luks.uuid=*) LUKS_UUID="${param#rd.luks.uuid=}" ;;
+    esac
+done
+
+# Default to first partition if not specified
+[ -z "$LUKS_DEV" ] && LUKS_DEV="/dev/sda1"
+
+echo "============================================"
+echo "       0RB_AETHER SECURE BOOT"
+echo "============================================"
+echo ""
+
+# Wait for device
+echo "[*] Waiting for device $LUKS_DEV..."
+for i in $(seq 1 30); do
+    [ -b "$LUKS_DEV" ] && break
+    sleep 1
+done
+
+if [ ! -b "$LUKS_DEV" ]; then
+    echo "[!] ERROR: Device $LUKS_DEV not found"
+    exec /bin/sh
+fi
+
+# LUKS unlock with retry
+MAPPER_NAME="cryptroot"
+MAX_ATTEMPTS=3
+ATTEMPT=0
+
+while [ $ATTEMPT -lt $MAX_ATTEMPTS ]; do
+    ATTEMPT=$((ATTEMPT + 1))
+    echo ""
+    echo "[*] Enter passphrase (attempt $ATTEMPT/$MAX_ATTEMPTS):"
+
+    if cryptsetup luksOpen "$LUKS_DEV" "$MAPPER_NAME" --tries=1; then
+        echo "[+] LUKS container unlocked successfully"
+        break
+    fi
+
+    if [ $ATTEMPT -eq $MAX_ATTEMPTS ]; then
+        echo "[!] Maximum attempts reached. Emergency shell."
+        exec /bin/sh
+    fi
+done
+
+# Mount encrypted root
+mkdir -p /mnt/root /mnt/newroot
+mount /dev/mapper/$MAPPER_NAME /mnt/root
+
+if [ $TORAM -eq 1 ]; then
+    echo "[*] Loading system into RAM (toram mode)..."
+
+    # Create tmpfs for RAM root
+    mount -t tmpfs -o size=90% tmpfs /mnt/newroot
+
+    # Copy rootfs to RAM
+    echo "[*] Copying rootfs to RAM..."
+    cp -a /mnt/root/* /mnt/newroot/ 2>/dev/null || true
+
+    # Unmount and close LUKS (no longer needed)
+    umount /mnt/root
+    cryptsetup luksClose $MAPPER_NAME
+    echo "[+] LUKS container closed - running from RAM only"
+else
+    # Overlayfs mode for persistent+tmpfs
+    mount -t tmpfs tmpfs /mnt/newroot
+    mkdir -p /mnt/newroot/upper /mnt/newroot/work /mnt/newroot/merged
+    mount -t overlay overlay -o lowerdir=/mnt/root,upperdir=/mnt/newroot/upper,workdir=/mnt/newroot/work /mnt/newroot/merged
+    # Rebind for pivot
+    umount /mnt/newroot
+    mount --bind /mnt/newroot/merged /mnt/newroot
+fi
+
+# Prepare for pivot_root
+mkdir -p /mnt/newroot/oldroot
+
+# Move virtual filesystems
+mount --move /proc /mnt/newroot/proc
+mount --move /sys /mnt/newroot/sys
+mount --move /dev /mnt/newroot/dev
+mount --move /run /mnt/newroot/run
+
+# Pivot root
+cd /mnt/newroot
+pivot_root . oldroot
+
+# Clean up old root
+umount -l /oldroot 2>/dev/null || true
+rmdir /oldroot 2>/dev/null || true
+
+echo "[+] Pivoted to RAM root"
+echo "[*] Starting 0RB_AETHER system..."
+
+# Execute init
+exec /sbin/init
