@@ -9,7 +9,7 @@ license = "MIT"
 tokio = { version = "1.34", features = ["full", "signal"] }
 serde = { version = "1.0", features = ["derive"] }
 serde_json = "1.0"
-sqlcipher = { version = "0.1", package = "rusqlite", features = ["bundled-sqlcipher"] }
+rusqlite = { version = "0.31", features = ["bundled"] }
 uuid = { version = "1.6", features = ["v4", "serde"] }
 chrono = { version = "0.4", features = ["serde"] }
 tracing = "0.1"

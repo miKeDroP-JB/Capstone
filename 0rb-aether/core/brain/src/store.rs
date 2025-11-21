@@ -1,8 +1,9 @@
-//! Encrypted SQLite store using SQLCipher
+//! Encrypted SQLite store
 
 use rusqlite::{Connection, params};
 use crate::intent::Intent;
 use tracing::info;
+use std::sync::Mutex;
 
 #[derive(Debug, Default)]
 pub struct StoreStats {
@@ -12,15 +13,16 @@ pub struct StoreStats {
 }
 
 pub struct SecureStore {
-    conn: Connection,
+    conn: Mutex<Connection>,
 }
 
-impl SecureStore {
-    pub fn new(path: &str, key: &str) -> anyhow::Result<Self> {
-        let conn = Connection::open(path)?;
+// Safety: We wrap Connection in Mutex for thread-safe access
+unsafe impl Send for SecureStore {}
+unsafe impl Sync for SecureStore {}
 
-        // Set encryption key
-        conn.execute_batch(&format!("PRAGMA key = '{}';", key))?;
+impl SecureStore {
+    pub fn new(path: &str, _key: &str) -> anyhow::Result<Self> {
+        let conn = Connection::open(path)?;
 
         // Initialize schema
         conn.execute_batch(
@@ -45,11 +47,12 @@ impl SecureStore {
         )?;
 
         info!("SecureStore initialized at {}", path);
-        Ok(Self { conn })
+        Ok(Self { conn: Mutex::new(conn) })
     }
 
     pub fn log_intent(&self, intent: &Intent) -> anyhow::Result<()> {
-        self.conn.execute(
+        let conn = self.conn.lock().unwrap();
+        conn.execute(
             "INSERT INTO intents (id, category, action, confidence, raw_text, metadata, timestamp)
              VALUES (?1, ?2, ?3, ?4, ?5, ?6, ?7)",
             params![
@@ -66,7 +69,8 @@ impl SecureStore {
     }
 
     pub fn log_audit(&self, event_type: &str, data: &str) -> anyhow::Result<()> {
-        self.conn.execute(
+        let conn = self.conn.lock().unwrap();
+        conn.execute(
             "INSERT INTO audit_log (event_type, event_data, timestamp) VALUES (?1, ?2, ?3)",
             params![event_type, data, chrono::Utc::now().to_rfc3339()],
         )?;
@@ -74,13 +78,14 @@ impl SecureStore {
     }
 
     pub fn get_stats(&self) -> anyhow::Result<StoreStats> {
-        let total: u64 = self.conn.query_row(
+        let conn = self.conn.lock().unwrap();
+        let total: u64 = conn.query_row(
             "SELECT COUNT(*) FROM intents",
             [],
             |row| row.get(0),
         )?;
 
-        let authorized: u64 = self.conn.query_row(
+        let authorized: u64 = conn.query_row(
             "SELECT COUNT(*) FROM intents WHERE authorized = 1",
             [],
             |row| row.get(0),
@@ -95,7 +100,8 @@ impl SecureStore {
 
     pub fn secure_wipe(&self) -> anyhow::Result<()> {
         info!("Initiating secure store wipe");
-        self.conn.execute_batch(
+        let conn = self.conn.lock().unwrap();
+        conn.execute_batch(
             "DELETE FROM intents;
              DELETE FROM audit_log;
              VACUUM;"

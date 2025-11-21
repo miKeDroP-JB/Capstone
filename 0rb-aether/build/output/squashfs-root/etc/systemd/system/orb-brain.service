@@ -1,0 +1,11 @@
+[Unit]
+Description=0RB Brain Orchestrator
+After=network.target
+[Service]
+Type=simple
+ExecStart=/opt/0rb/brain/orb-brain
+Restart=always
+Environment=ORB_SOCKET=/run/0rb/brain.sock
+RuntimeDirectory=0rb
+[Install]
+WantedBy=multi-user.target
