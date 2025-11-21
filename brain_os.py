@@ -497,4 +497,4 @@ if __name__ == '__main__':
     print('📝 ./audit_logs/')
     print('💰 ./costs.json')
     print('💾 ./backups/\n')
-    uvicorn.run(app, host='127.0.0.1', port=3000)
+    uvicorn.run(app, host='0.0.0.0', port=3000)
