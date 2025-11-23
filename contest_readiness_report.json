@@ -1,0 +1,73 @@
+{
+  "next_top_ai_agent": {
+    "score": 90.0,
+    "max_score": 100,
+    "criteria": [
+      {
+        "name": "Innovation - Unique AI agent approach",
+        "score": 100,
+        "weighted_score": 25.0,
+        "max_weight": 25
+      },
+      {
+        "name": "Feasibility - Working production system",
+        "score": 100,
+        "weighted_score": 25.0,
+        "max_weight": 25
+      },
+      {
+        "name": "Impact - Real revenue generation",
+        "score": 60,
+        "weighted_score": 15.0,
+        "max_weight": 25
+      },
+      {
+        "name": "Alignment - AI agents for productivity",
+        "score": 100,
+        "weighted_score": 25.0,
+        "max_weight": 25
+      }
+    ]
+  },
+  "a16z_speedrun": {
+    "score": 96.0,
+    "max_score": 100,
+    "criteria": [
+      {
+        "name": "Proven capacity to ship (0 to 1)",
+        "score": 100,
+        "weighted_score": 20.0,
+        "max_weight": 20
+      },
+      {
+        "name": "Rapid execution ability",
+        "score": 100,
+        "weighted_score": 20.0,
+        "max_weight": 20
+      },
+      {
+        "name": "Unique insights / 'earned secrets'",
+        "score": 100,
+        "weighted_score": 20.0,
+        "max_weight": 20
+      },
+      {
+        "name": "Market validation signals",
+        "score": 80,
+        "weighted_score": 16.0,
+        "max_weight": 20
+      },
+      {
+        "name": "Technical + business + GTM skills",
+        "score": 100,
+        "weighted_score": 20.0,
+        "max_weight": 20
+      }
+    ]
+  },
+  "general_readiness": {
+    "score": 60.0,
+    "max_score": 100,
+    "criteria": []
+  }
+}
