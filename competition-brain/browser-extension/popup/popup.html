@@ -1,0 +1,99 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Competition Brain</title>
+  <link rel="stylesheet" href="popup.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <span class="logo-icon">🧠</span>
+        <h1>Competition Brain</h1>
+      </div>
+      <button id="settings-btn" class="icon-btn" title="Settings">⚙️</button>
+    </header>
+
+    <!-- Settings Panel (hidden by default) -->
+    <div id="settings-panel" class="hidden">
+      <h3>Settings</h3>
+
+      <label for="api-url">Backend URL:</label>
+      <input type="text" id="api-url" placeholder="http://localhost:3001" />
+
+      <label for="default-models">Default Models (comma-separated):</label>
+      <input type="text" id="default-models" placeholder="gpt-4o-mini, claude-3-5-haiku" />
+
+      <label for="power-level">Power Level: <span id="power-value">80</span>%</label>
+      <input type="range" id="power-level" min="0" max="100" value="80" />
+
+      <label for="time-limit">Time Limit: <span id="time-value">60</span>s</label>
+      <input type="range" id="time-limit" min="5" max="300" value="60" />
+
+      <div class="button-group">
+        <button id="save-settings" class="btn btn-primary">Save</button>
+        <button id="cancel-settings" class="btn btn-secondary">Cancel</button>
+      </div>
+    </div>
+
+    <!-- Main Query Interface -->
+    <div id="query-panel">
+      <div class="input-section">
+        <textarea
+          id="query-input"
+          placeholder="Ask anything... (or right-click selected text on any page)"
+          rows="3"
+        ></textarea>
+
+        <div class="controls">
+          <select id="preset-select">
+            <option value="custom">Custom</option>
+            <option value="fast">Fast (3 models, 30s)</option>
+            <option value="balanced" selected>Balanced (70% power)</option>
+            <option value="competition">Competition (Top 5, max)</option>
+            <option value="free">Free Models Only</option>
+          </select>
+
+          <button id="query-btn" class="btn btn-primary">
+            <span id="btn-text">Query</span>
+            <span id="btn-spinner" class="spinner hidden"></span>
+          </button>
+        </div>
+      </div>
+
+      <!-- Status -->
+      <div id="status" class="hidden"></div>
+
+      <!-- Results -->
+      <div id="results" class="hidden">
+        <div class="result-header">
+          <h3>Result</h3>
+          <div class="result-actions">
+            <button id="copy-btn" class="icon-btn" title="Copy to clipboard">📋</button>
+            <button id="expand-btn" class="icon-btn" title="View in side panel">↗️</button>
+          </div>
+        </div>
+
+        <div id="result-content"></div>
+
+        <div class="result-stats">
+          <span id="stats-models"></span>
+          <span id="stats-time"></span>
+          <span id="stats-confidence"></span>
+        </div>
+      </div>
+    </div>
+
+    <!-- Footer -->
+    <footer>
+      <a href="#" id="open-sidepanel">Open Side Panel</a>
+      <span class="version">v1.0.0</span>
+    </footer>
+  </div>
+
+  <script src="popup.js"></script>
+</body>
+</html>

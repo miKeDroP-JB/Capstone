@@ -1,0 +1,89 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Competition Brain - Side Panel</title>
+  <link rel="stylesheet" href="sidepanel.css">
+</head>
+<body>
+  <div class="container">
+    <!-- Header -->
+    <header>
+      <div class="logo">
+        <span class="logo-icon">🧠</span>
+        <h1>Competition Brain</h1>
+      </div>
+    </header>
+
+    <!-- Query Input -->
+    <div class="input-section">
+      <textarea
+        id="query-input"
+        placeholder="Ask anything..."
+        rows="4"
+      ></textarea>
+
+      <div class="controls">
+        <select id="preset-select">
+          <option value="fast">Fast</option>
+          <option value="balanced" selected>Balanced</option>
+          <option value="competition">Competition</option>
+          <option value="free">Free Only</option>
+        </select>
+
+        <button id="query-btn" class="btn btn-primary">
+          <span id="btn-text">Query</span>
+          <span id="btn-spinner" class="spinner hidden"></span>
+        </button>
+      </div>
+    </div>
+
+    <!-- Status -->
+    <div id="status" class="hidden"></div>
+
+    <!-- Results -->
+    <div id="results-container">
+      <div id="no-results" class="empty-state">
+        <div class="empty-icon">💭</div>
+        <p>Enter a query to get started</p>
+      </div>
+
+      <div id="results" class="hidden">
+        <!-- Synthesized Result -->
+        <div class="result-card">
+          <div class="card-header">
+            <h3>Synthesized Response</h3>
+            <button id="copy-btn" class="icon-btn" title="Copy">📋</button>
+          </div>
+          <div id="synthesized-content" class="card-content"></div>
+        </div>
+
+        <!-- Stats -->
+        <div class="stats-grid">
+          <div class="stat-card">
+            <div class="stat-label">Models</div>
+            <div id="stat-models" class="stat-value">-</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">Time</div>
+            <div id="stat-time" class="stat-value">-</div>
+          </div>
+          <div class="stat-card">
+            <div class="stat-label">Confidence</div>
+            <div id="stat-confidence" class="stat-value">-</div>
+          </div>
+        </div>
+
+        <!-- Individual Responses -->
+        <div class="individual-responses">
+          <h3>Individual Agent Responses</h3>
+          <div id="individual-list"></div>
+        </div>
+      </div>
+    </div>
+  </div>
+
+  <script src="sidepanel.js"></script>
+</body>
+</html>
