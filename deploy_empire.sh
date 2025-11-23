@@ -112,7 +112,13 @@ nohup python3 client_dashboard_and_billing.py > logs/dashboard.log 2>&1 &
 echo $! >> .pids
 sleep 2
 
-# 4. Instant Builder (if exists)
+# 4. Swarm Coordinator
+echo "   Starting Swarm Coordinator (port 8005)..."
+nohup python3 swarm_coordinator.py > logs/swarm_coordinator.log 2>&1 &
+echo $! >> .pids
+sleep 2
+
+# 5. Instant Builder (if exists)
 if [ -f instant_builder.py ]; then
     echo "   Starting Instant Builder (port 8000)..."
     nohup python3 instant_builder.py > logs/instant_builder.log 2>&1 &
@@ -120,7 +126,7 @@ if [ -f instant_builder.py ]; then
     sleep 2
 fi
 
-# 5. HVAC Voice Agent (if Twilio configured)
+# 6. HVAC Voice Agent (if Twilio configured)
 if [ -f hvac_agent_now.py ] && [ -n "$TWILIO_ACCOUNT_SID" ]; then
     echo "   Starting HVAC Voice Agent (port 8001)..."
     nohup python3 hvac_agent_now.py --serve > logs/hvac_agent.log 2>&1 &
@@ -172,6 +178,11 @@ echo ""
 echo "   📍 Client Dashboard:"
 echo "      http://localhost:8004/dashboard/[client_id]"
 echo "      → Real-time ROI, transparent billing"
+echo ""
+echo "   📍 Swarm Coordinator:"
+echo "      http://localhost:8005"
+echo "      http://localhost:8005/api/swarm/templates/hvac-appointments?target=100"
+echo "      → Deploy 100s of agents simultaneously"
 echo ""
 if [ -f instant_builder.py ]; then
 echo "   📍 Instant Builder:"
