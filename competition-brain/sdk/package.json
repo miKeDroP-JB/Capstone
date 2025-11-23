@@ -1,0 +1,44 @@
+{
+  "name": "@orb/competition-brain-client",
+  "version": "1.0.0",
+  "description": "Official client library for Competition Brain - Multi-Agent AI Orchestration",
+  "main": "dist/index.js",
+  "types": "dist/index.d.ts",
+  "files": [
+    "dist",
+    "README.md",
+    "LICENSE"
+  ],
+  "scripts": {
+    "build": "tsc",
+    "prepare": "npm run build",
+    "test": "jest",
+    "docs": "typedoc"
+  },
+  "keywords": [
+    "ai",
+    "multi-agent",
+    "orchestration",
+    "competition",
+    "openai",
+    "claude",
+    "gemini",
+    "mistral",
+    "groq"
+  ],
+  "author": "0RB AETHER",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/miKeDroP-JB/Capstone"
+  },
+  "dependencies": {
+    "axios": "^1.6.2"
+  },
+  "devDependencies": {
+    "@types/node": "^20.10.6",
+    "typescript": "^5.3.3",
+    "jest": "^29.7.0",
+    "@types/jest": "^29.5.11"
+  }
+}
