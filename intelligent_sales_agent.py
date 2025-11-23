@@ -373,25 +373,28 @@ class IntelligentSalesAgent:
 
 Here's the deal - normally this would cost {solution['value']}, but I have a better model:
 
-I build it for FREE. You pay me nothing upfront.
+There's a small $500 retainer to get started. This covers our upfront costs - we invest $10-20k in data, research, and development for your custom solution.
 
-Then, I get 20% of what it makes you. You keep 80%.
+Here's the best part: If we don't make you money in the first 90 days, you get the $500 back. Full refund. You risk nothing.
 
-So if this helps you make an extra $10,000, you keep $8,000 and I get $2,000. If it makes you nothing, I get nothing.
+After that, I get 20% of what it makes you. You keep 80%.
 
-Fair?"""
+So if this helps you make an extra $10,000, you keep $8,000 and I get $2,000.
+
+You're only out $500 to start, fully refundable if no results. Fair?"""
 
     def _create_close(self) -> str:
         """Create closing statement"""
         return """Great! Here's what happens next:
 
-1. I build your solution (takes [build_time])
-2. You review it and we tweak it
-3. You start using it
-4. You make money
-5. We both win
+1. You pay the $500 retainer (I'll send you a Stripe payment link - takes 30 seconds)
+2. I start building your solution immediately (takes [build_time])
+3. You review it and we tweak it
+4. You start using it and making money
+5. If no results in 90 days, you get the $500 back
+6. After that, we share revenue: you keep 80%, I get 20%
 
-I can start today. Want to do this?"""
+I can send you the payment link right now and start building today. Want to do this?"""
 
     def _learn_from_call(self, call_record: Dict):
         """Learn from the call"""
