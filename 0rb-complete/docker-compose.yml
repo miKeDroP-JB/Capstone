@@ -1,0 +1,90 @@
+version: '3.8'
+
+services:
+  # 0RB Bridge - Main API (Port 8080)
+  bridge:
+    build:
+      context: ../
+      dockerfile: 0rb-complete/Dockerfile.bridge
+    ports:
+      - "8080:8080"
+    environment:
+      - ANTHROPIC_API_KEY=${ANTHROPIC_API_KEY}
+      - OPENAI_API_KEY=${OPENAI_API_KEY}
+      - GOOGLE_API_KEY=${GOOGLE_API_KEY}
+      - DATABASE_URL=${DATABASE_URL}
+      - REDIS_URL=redis://redis:6379
+    volumes:
+      - ./generated_systems:/app/generated_systems
+      - ./love_ledger.json:/app/love_ledger.json
+      - ./builds_history.json:/app/builds_history.json
+    depends_on:
+      - postgres
+      - redis
+    restart: unless-stopped
+
+  # Voice Agency (Port 8081)
+  voice:
+    build:
+      context: ../
+      dockerfile: 0rb-complete/Dockerfile.voice
+    ports:
+      - "8081:8081"
+    environment:
+      - TWILIO_ACCOUNT_SID=${TWILIO_ACCOUNT_SID}
+      - TWILIO_AUTH_TOKEN=${TWILIO_AUTH_TOKEN}
+      - TWILIO_PHONE_NUMBER=${TWILIO_PHONE_NUMBER}
+      - ELEVENLABS_API_KEY=${ELEVENLABS_API_KEY}
+      - DATABASE_URL=${DATABASE_URL}
+    volumes:
+      - ./campaigns.json:/app/campaigns.json
+      - ./calls.json:/app/calls.json
+      - ./revenue_splits.json:/app/revenue_splits.json
+    depends_on:
+      - postgres
+    restart: unless-stopped
+
+  # PostgreSQL Database
+  postgres:
+    image: postgres:15-alpine
+    environment:
+      - POSTGRES_USER=orb
+      - POSTGRES_PASSWORD=orb_secure_password_change_me
+      - POSTGRES_DB=orb_empire
+    ports:
+      - "5432:5432"
+    volumes:
+      - postgres_data:/var/lib/postgresql/data
+      - ./infrastructure/init.sql:/docker-entrypoint-initdb.d/init.sql
+    restart: unless-stopped
+
+  # Redis Cache
+  redis:
+    image: redis:7-alpine
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis_data:/data
+    restart: unless-stopped
+
+  # Nginx Reverse Proxy (Optional)
+  nginx:
+    image: nginx:alpine
+    ports:
+      - "80:80"
+      - "443:443"
+    volumes:
+      - ./infrastructure/nginx.conf:/etc/nginx/nginx.conf:ro
+      - ./infrastructure/ssl:/etc/nginx/ssl:ro
+    depends_on:
+      - bridge
+      - voice
+    restart: unless-stopped
+
+volumes:
+  postgres_data:
+  redis_data:
+
+networks:
+  default:
+    name: orb_network

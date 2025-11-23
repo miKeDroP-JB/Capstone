@@ -1,0 +1,23 @@
+FROM python:3.11-slim
+
+WORKDIR /app
+
+# Install dependencies
+RUN pip install --no-cache-dir \
+    fastapi \
+    uvicorn[standard] \
+    twilio \
+    elevenlabs \
+    psycopg2-binary
+
+# Copy source code
+COPY 0rb-complete/backend/voice/voice_agency.py /app/
+
+# Create directories
+RUN mkdir -p /app/data
+
+# Expose port
+EXPOSE 8081
+
+# Run
+CMD ["python", "voice_agency.py"]

@@ -1,0 +1,29 @@
+FROM python:3.11-slim
+
+WORKDIR /app
+
+# Install dependencies
+RUN pip install --no-cache-dir \
+    fastapi \
+    uvicorn[standard] \
+    httpx \
+    pydantic \
+    slowapi \
+    psycopg2-binary \
+    redis
+
+# Copy source code
+COPY the_instant_creator.py /app/
+COPY ai_connectors.py /app/
+COPY brain_os.py /app/
+COPY ekosystem.py /app/
+COPY 0rb-complete/backend/brain/orb_bridge.py /app/
+
+# Create directories
+RUN mkdir -p /app/generated_systems /app/audit_logs /app/backups
+
+# Expose port
+EXPOSE 8080
+
+# Run
+CMD ["python", "orb_bridge.py"]

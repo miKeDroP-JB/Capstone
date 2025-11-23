@@ -74,5 +74,24 @@
     },
     "love_score": 0.6124999999999999,
     "net_positive": false
+  },
+  {
+    "system": "Build voice calling agency system using Twilio and",
+    "timestamp": "2025-11-23T15:50:05.604342",
+    "value_created": {
+      "users_helped": 100,
+      "problems_solved": 5,
+      "time_saved_hours": 500
+    },
+    "extraction": {
+      "revenue_usd": 0,
+      "resources_cost_usd": 0
+    },
+    "regeneration": {
+      "community_share_percent": 33,
+      "open_source": true
+    },
+    "love_score": 1.0,
+    "net_positive": true
   }
 ]
