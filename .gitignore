@@ -1,1 +1,3 @@
 0rb-aether/build/output/
+generated_*/
+__pycache__/
