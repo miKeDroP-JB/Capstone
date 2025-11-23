@@ -1,0 +1,16 @@
+{
+  "customer_id": null,
+  "company_name": "Demo HVAC Company",
+  "created_date": "2025-11-23T19:15:20.372702",
+  "dashboard_url": "/demo_hvac_company/index.html",
+  "stats_url": "/demo_hvac_company/stats.html",
+  "tracking_enabled": true,
+  "traffic_sources": {
+    "social": 0,
+    "email": 0,
+    "phone": 0,
+    "organic": 0
+  },
+  "leads_captured": 0,
+  "conversions": 0
+}
