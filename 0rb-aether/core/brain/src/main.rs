@@ -6,6 +6,7 @@
 mod intent;
 mod store;
 mod api;
+mod web3;
 
 use std::path::PathBuf;
 use std::sync::Arc;
