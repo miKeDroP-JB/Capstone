@@ -1,0 +1,443 @@
+# CALL LOG - Manual Tracking Template
+# =====================================
+# Copy this template for each day or week
+# Fill in as you make calls
+
+---
+
+## DATE: [___________]
+
+### DAILY GOAL
+Calls to make today: [ ] 10  [ ] 20  [ ] 30
+Demos to book: [ ] 1  [ ] 2  [ ] 3
+
+---
+
+## CALL #1
+Company: _________________________________
+Contact: _________________________________
+Phone: ___________________________________
+Time called: _________ am/pm
+
+Outcome (check one):
+[ ] Interested - wants to learn more
+[ ] Demo booked - Date: _________ Time: _________
+[ ] Callback - Call back on: _________
+[ ] Voicemail - Left message
+[ ] Not interested
+[ ] Wrong number / No answer
+
+Notes:
+_________________________________________________
+_________________________________________________
+
+Follow-up needed: [ ] Yes  [ ] No
+If yes, when: _________________________________
+
+---
+
+## CALL #2
+Company: _________________________________
+Contact: _________________________________
+Phone: ___________________________________
+Time called: _________ am/pm
+
+Outcome (check one):
+[ ] Interested - wants to learn more
+[ ] Demo booked - Date: _________ Time: _________
+[ ] Callback - Call back on: _________
+[ ] Voicemail - Left message
+[ ] Not interested
+[ ] Wrong number / No answer
+
+Notes:
+_________________________________________________
+_________________________________________________
+
+Follow-up needed: [ ] Yes  [ ] No
+If yes, when: _________________________________
+
+---
+
+## CALL #3
+Company: _________________________________
+Contact: _________________________________
+Phone: ___________________________________
+Time called: _________ am/pm
+
+Outcome (check one):
+[ ] Interested - wants to learn more
+[ ] Demo booked - Date: _________ Time: _________
+[ ] Callback - Call back on: _________
+[ ] Voicemail - Left message
+[ ] Not interested
+[ ] Wrong number / No answer
+
+Notes:
+_________________________________________________
+_________________________________________________
+
+Follow-up needed: [ ] Yes  [ ] No
+If yes, when: _________________________________
+
+---
+
+## CALL #4
+Company: _________________________________
+Contact: _________________________________
+Phone: ___________________________________
+Time called: _________ am/pm
+
+Outcome (check one):
+[ ] Interested - wants to learn more
+[ ] Demo booked - Date: _________ Time: _________
+[ ] Callback - Call back on: _________
+[ ] Voicemail - Left message
+[ ] Not interested
+[ ] Wrong number / No answer
+
+Notes:
+_________________________________________________
+_________________________________________________
+
+Follow-up needed: [ ] Yes  [ ] No
+If yes, when: _________________________________
+
+---
+
+## CALL #5
+Company: _________________________________
+Contact: _________________________________
+Phone: ___________________________________
+Time called: _________ am/pm
+
+Outcome (check one):
+[ ] Interested - wants to learn more
+[ ] Demo booked - Date: _________ Time: _________
+[ ] Callback - Call back on: _________
+[ ] Voicemail - Left message
+[ ] Not interested
+[ ] Wrong number / No answer
+
+Notes:
+_________________________________________________
+_________________________________________________
+
+Follow-up needed: [ ] Yes  [ ] No
+If yes, when: _________________________________
+
+---
+
+## CALL #6
+Company: _________________________________
+Contact: _________________________________
+Phone: ___________________________________
+Time called: _________ am/pm
+
+Outcome (check one):
+[ ] Interested - wants to learn more
+[ ] Demo booked - Date: _________ Time: _________
+[ ] Callback - Call back on: _________
+[ ] Voicemail - Left message
+[ ] Not interested
+[ ] Wrong number / No answer
+
+Notes:
+_________________________________________________
+_________________________________________________
+
+Follow-up needed: [ ] Yes  [ ] No
+If yes, when: _________________________________
+
+---
+
+## CALL #7
+Company: _________________________________
+Contact: _________________________________
+Phone: ___________________________________
+Time called: _________ am/pm
+
+Outcome (check one):
+[ ] Interested - wants to learn more
+[ ] Demo booked - Date: _________ Time: _________
+[ ] Callback - Call back on: _________
+[ ] Voicemail - Left message
+[ ] Not interested
+[ ] Wrong number / No answer
+
+Notes:
+_________________________________________________
+_________________________________________________
+
+Follow-up needed: [ ] Yes  [ ] No
+If yes, when: _________________________________
+
+---
+
+## CALL #8
+Company: _________________________________
+Contact: _________________________________
+Phone: ___________________________________
+Time called: _________ am/pm
+
+Outcome (check one):
+[ ] Interested - wants to learn more
+[ ] Demo booked - Date: _________ Time: _________
+[ ] Callback - Call back on: _________
+[ ] Voicemail - Left message
+[ ] Not interested
+[ ] Wrong number / No answer
+
+Notes:
+_________________________________________________
+_________________________________________________
+
+Follow-up needed: [ ] Yes  [ ] No
+If yes, when: _________________________________
+
+---
+
+## CALL #9
+Company: _________________________________
+Contact: _________________________________
+Phone: ___________________________________
+Time called: _________ am/pm
+
+Outcome (check one):
+[ ] Interested - wants to learn more
+[ ] Demo booked - Date: _________ Time: _________
+[ ] Callback - Call back on: _________
+[ ] Voicemail - Left message
+[ ] Not interested
+[ ] Wrong number / No answer
+
+Notes:
+_________________________________________________
+_________________________________________________
+
+Follow-up needed: [ ] Yes  [ ] No
+If yes, when: _________________________________
+
+---
+
+## CALL #10
+Company: _________________________________
+Contact: _________________________________
+Phone: ___________________________________
+Time called: _________ am/pm
+
+Outcome (check one):
+[ ] Interested - wants to learn more
+[ ] Demo booked - Date: _________ Time: _________
+[ ] Callback - Call back on: _________
+[ ] Voicemail - Left message
+[ ] Not interested
+[ ] Wrong number / No answer
+
+Notes:
+_________________________________________________
+_________________________________________________
+
+Follow-up needed: [ ] Yes  [ ] No
+If yes, when: _________________________________
+
+---
+
+## END OF DAY SUMMARY
+
+Total calls made: _________
+Interested: _________
+Demos booked: _________
+Callbacks scheduled: _________
+Voicemails: _________
+Not interested: _________
+
+SUCCESS RATE:
+Demos booked / Total calls = __________%
+
+TOMORROW'S GOAL:
+Call [ ] same companies (follow-ups)
+Call [ ] new companies
+Make [ ] demos happen
+Close [ ] deals
+
+NOTES / LESSONS LEARNED:
+_________________________________________________
+_________________________________________________
+_________________________________________________
+_________________________________________________
+
+---
+
+## DEMO TRACKING
+
+### DEMO #1
+Company: _________________________________
+Contact: _________________________________
+Date: _____________ Time: _________
+Duration: _________ minutes
+
+How it went (1-5): [ ] 1  [ ] 2  [ ] 3  [ ] 4  [ ] 5
+
+Outcome:
+[ ] Closed - Amount: $__________
+[ ] Thinking - Follow-up date: __________
+[ ] Lost - Reason: _________________________
+
+Notes:
+_________________________________________________
+_________________________________________________
+
+Payment received: [ ] Yes  [ ] No
+If yes, amount: $__________ Date: __________
+
+---
+
+### DEMO #2
+Company: _________________________________
+Contact: _________________________________
+Date: _____________ Time: _________
+Duration: _________ minutes
+
+How it went (1-5): [ ] 1  [ ] 2  [ ] 3  [ ] 4  [ ] 5
+
+Outcome:
+[ ] Closed - Amount: $__________
+[ ] Thinking - Follow-up date: __________
+[ ] Lost - Reason: _________________________
+
+Notes:
+_________________________________________________
+_________________________________________________
+
+Payment received: [ ] Yes  [ ] No
+If yes, amount: $__________ Date: __________
+
+---
+
+### DEMO #3
+Company: _________________________________
+Contact: _________________________________
+Date: _____________ Time: _________
+Duration: _________ minutes
+
+How it went (1-5): [ ] 1  [ ] 2  [ ] 3  [ ] 4  [ ] 5
+
+Outcome:
+[ ] Closed - Amount: $__________
+[ ] Thinking - Follow-up date: __________
+[ ] Lost - Reason: _________________________
+
+Notes:
+_________________________________________________
+_________________________________________________
+
+Payment received: [ ] Yes  [ ] No
+If yes, amount: $__________ Date: __________
+
+---
+
+## WEEKLY SUMMARY
+
+Week of: __________
+
+Total calls: _________
+Total demos: _________
+Total closed: _________
+Total revenue: $__________
+
+Call to demo rate: _________%
+Demo to close rate: _________%
+Overall close rate: _________%
+
+Best performing:
+- Day: __________
+- Time: __________
+- Script/approach: _________________________
+
+Improvements needed:
+_________________________________________________
+_________________________________________________
+
+Next week goals:
+_________________________________________________
+_________________________________________________
+
+---
+
+## REVENUE TRACKING
+
+### CLOSED DEAL #1
+Company: _________________________________
+Date closed: __________
+Setup fee: $__________ (collected: Y/N)
+Expected monthly: $__________ (based on 10% of estimated jobs)
+
+Status:
+[ ] Setup complete
+[ ] System live
+[ ] First appointment booked
+[ ] First job closed
+[ ] First invoice sent
+[ ] First payment received
+
+---
+
+### CLOSED DEAL #2
+Company: _________________________________
+Date closed: __________
+Setup fee: $__________ (collected: Y/N)
+Expected monthly: $__________ (based on 10% of estimated jobs)
+
+Status:
+[ ] Setup complete
+[ ] System live
+[ ] First appointment booked
+[ ] First job closed
+[ ] First invoice sent
+[ ] First payment received
+
+---
+
+### CLOSED DEAL #3
+Company: _________________________________
+Date closed: __________
+Setup fee: $__________ (collected: Y/N)
+Expected monthly: $__________ (based on 10% of estimated jobs)
+
+Status:
+[ ] Setup complete
+[ ] System live
+[ ] First appointment booked
+[ ] First job closed
+[ ] First invoice sent
+[ ] First payment received
+
+---
+
+## FOLLOW-UP REMINDERS
+
+DATE: __________ | COMPANY: ______________ | ACTION: ______________
+DATE: __________ | COMPANY: ______________ | ACTION: ______________
+DATE: __________ | COMPANY: ______________ | ACTION: ______________
+DATE: __________ | COMPANY: ______________ | ACTION: ______________
+DATE: __________ | COMPANY: ______________ | ACTION: ______________
+
+---
+
+## NOTES / IDEAS
+
+_________________________________________________
+_________________________________________________
+_________________________________________________
+_________________________________________________
+_________________________________________________
+_________________________________________________
+
+---
+
+**TIP:** Copy this template for each day/week. Keep all logs together
+for easy reference and to track your progress over time.
+
+**GOAL:** 10 calls → 2 demos → 1 close = $200-500
+**REPEAT DAILY** 🔥

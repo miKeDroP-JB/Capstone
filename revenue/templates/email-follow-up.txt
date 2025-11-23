@@ -1,0 +1,293 @@
+# FOLLOW-UP EMAILS
+# =================
+# Use after: Demo completed, no immediate commitment
+# Goal: Stay top of mind, address concerns, close the deal
+
+---
+
+## DAY 1: Thank You + Materials (Send within 1 hour of demo)
+
+Subject: Thanks for the demo - Next steps
+
+Hey [NAME],
+
+Great talking with you today! As promised, here's everything we discussed:
+
+📄 Pricing Summary: [LINK or attach PDF]
+📋 Service Agreement: [LINK to DocuSign or attach]
+💳 Payment Link (if you're ready): [Stripe/PayPal link]
+📅 Schedule Setup Call: [Calendly link]
+
+**Remember:**
+• Zero upfront cost option available
+• 10% performance-based (only pay for results)
+• 20% automatically goes to community fund
+• Setup takes ~1 hour, live within 48 hours
+
+Let me know if you have ANY questions. Happy to jump on another quick
+call if helpful.
+
+Looking forward to working together!
+
+[YOUR NAME]
+[YOUR PHONE]
+[YOUR EMAIL]
+
+---
+
+## DAY 2: Quick Check-In
+
+Subject: Quick question
+
+[NAME],
+
+Just checking in - did you get a chance to look over the agreement?
+
+Any questions I can answer?
+
+[YOUR NAME]
+[PHONE]
+
+---
+
+## DAY 4: Address Concerns
+
+Subject: Re: AI Voice System for [COMPANY]
+
+Hey [NAME],
+
+Wanted to follow up on our demo from Tuesday.
+
+I know you mentioned you needed to [think about it / talk to your partner /
+check budget]. Have you had a chance to discuss?
+
+I'm happy to:
+• Jump on another quick call with your partner
+• Answer any technical questions
+• Walk through the numbers again
+• Adjust the pricing if needed
+
+We have setup slots available this Friday and Monday if you want to move
+forward.
+
+What questions can I answer?
+
+Thanks,
+[YOUR NAME]
+
+---
+
+## DAY 7: Final Follow-Up (Last Touch)
+
+Subject: Should I close your file?
+
+[NAME],
+
+I've reached out a few times about the AI appointment booking system.
+
+I don't want to be a pest, so this will be my last email.
+
+If you're still interested, great! Let's talk.
+
+If not, totally fine - I'll close your file.
+
+Just let me know either way?
+
+Thanks,
+[YOUR NAME]
+[PHONE]
+
+P.S. - If things change in a few months, feel free to reach out. We'll
+still be here.
+
+---
+
+## SPECIAL: "Still Thinking" Follow-Up
+
+Subject: Here's what might help...
+
+Hey [NAME],
+
+Totally understand you're still thinking it over.
+
+What helped my last 3 clients decide:
+
+**They realized:**
+1. Zero risk - if it doesn't book appointments, they pay nothing
+2. Pure upside - revenue they weren't getting before
+3. 20% goes to community (feels good to give back)
+4. Setup is fast - live in 48 hours
+
+**Their biggest concern:** "Will it sound robotic?"
+**Reality:** 90% of people can't tell it's AI until we tell them
+
+**Their question:** "What if it doesn't work?"
+**Reality:** We've booked 1,000+ appointments across 50+ clients
+
+Want me to answer any specific concerns?
+
+Or should we just try it? Worst case: you're out $200 setup fee (which we
+refund if it truly doesn't work).
+
+[YOUR NAME]
+
+---
+
+## AFTER THEY SIGN: Onboarding Email
+
+Subject: Welcome! Let's get you set up 🚀
+
+[NAME],
+
+Awesome! Welcome aboard!
+
+Here's what happens next:
+
+**Today:**
+☐ You: Sign agreement ✅
+☐ You: Pay setup fee (if applicable)
+☐ Me: Start building your custom script
+
+**This Week:**
+☐ Me: Send you draft script for approval
+☐ You: Review and approve (or request changes)
+☐ Me: Train AI voice with your branding
+☐ Me: Configure calendar integration
+☐ You & Me: Test call together
+
+**Next Week:**
+☐ System goes live
+☐ You start seeing booked appointments
+☐ I monitor first 20 calls
+☐ We adjust script if needed
+
+**Setup Call:**
+I've got us scheduled for [DAY] at [TIME]. I'll send a calendar invite.
+Bring any questions!
+
+**What I need from you:**
+1. Your calendar link (Calendly, Google Calendar, etc.)
+2. Your current pitch/script (if you have one)
+3. Your service area (zip codes you serve)
+4. Any qualifying questions (budget, timeline, etc.)
+
+Reply to this email with those 4 things and we're off to the races!
+
+Excited to help you grow [COMPANY NAME]!
+
+[YOUR NAME]
+[PHONE]
+
+---
+
+## MONTHLY CHECK-IN (After They're Live)
+
+Subject: [COMPANY NAME] - Monthly Performance Report
+
+Hey [NAME],
+
+Here's your AI Voice Agent performance for [MONTH]:
+
+**Calls Made:** [NUMBER]
+**Appointments Booked:** [NUMBER]
+**Appointments Completed:** [NUMBER]
+**Jobs Closed:** [NUMBER]
+**Total Revenue from AI:** $[AMOUNT]
+
+**Your Revenue Split:**
+• Total: $[AMOUNT]
+• Your 70%: $[AMOUNT]
+• Community 20%: $[AMOUNT]
+• Sanctuary 10%: $[AMOUNT]
+
+**Your Invoice:** $[10% of closed jobs] (attached)
+
+**Next Month Goals:**
+• Book [X] more appointments
+• Improve close rate by [Y]%
+• Test new script variations
+
+Want to jump on a quick call to discuss optimization?
+
+Keep crushing it!
+
+[YOUR NAME]
+
+---
+
+## FOLLOW-UP BEST PRACTICES
+
+**Timing:**
+- Day 1: Within 1 hour (while it's fresh)
+- Day 2: Morning (before they get busy)
+- Day 4: Mid-day (Tuesday-Thursday best)
+- Day 7: Morning (final touch)
+
+**Tone:**
+- Helpful, not pushy
+- Professional, not desperate
+- Brief, not verbose
+- Personal, not templated
+
+**Include:**
+- Clear next step
+- Easy way to respond
+- Your phone number (always)
+- Value reminder
+
+**Don't:**
+- Send more than 3-4 follow-ups
+- Sound desperate
+- Guilt-trip them
+- Discount too aggressively (devalues service)
+
+**Do:**
+- Make it easy to say yes
+- Address specific concerns
+- Provide social proof
+- Give them an out ("should I close your file?")
+
+---
+
+## RESPONSE TEMPLATES
+
+**If they say "Too expensive":**
+"I hear you. Let's do pure performance - zero setup fee, just 10% of what
+closes. If it books zero, you pay zero. Want to try that?"
+
+**If they say "Need to talk to partner":**
+"Makes total sense. Want me to jump on a 10-minute call with both of you?
+I can answer questions and you can decide together."
+
+**If they say "Call me in 3 months":**
+"You got it! I'll reach out in [MONTH]. In the meantime, if anything changes,
+my cell is [PHONE]. Talk soon!"
+
+**If they ghost after agreeing:**
+"Hey [NAME], just making sure you're still good to go? If something changed,
+no worries - just let me know!"
+
+---
+
+## SUCCESS METRICS
+
+**Good follow-up:**
+- 20-30% respond
+- 10-15% book another call
+- 5-10% sign
+
+**Great follow-up:**
+- 40-50% respond
+- 20-30% re-engage
+- 15-20% sign
+
+**Excellent follow-up:**
+- 60%+ respond
+- 40%+ move forward
+- 30%+ sign within 7 days
+
+**Your goal: 50% of demos → closed deals within 7 days**
+
+---
+
+**Pro tip:** The fortune is in the follow-up. Most deals are won between Day 2-7, not on the demo call.

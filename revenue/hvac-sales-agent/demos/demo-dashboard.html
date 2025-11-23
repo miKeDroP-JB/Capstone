@@ -1,0 +1,406 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>HVAC AI Voice Agent - Demo Dashboard</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: -apple-system, BlinkMacSystemFont, 'Segoe UI', Roboto, Oxygen, Ubuntu, Cantarell, sans-serif;
+            background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+            padding: 20px;
+            color: #333;
+        }
+
+        .dashboard {
+            max-width: 1400px;
+            margin: 0 auto;
+        }
+
+        .header {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            margin-bottom: 20px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+
+        .header h1 {
+            color: #667eea;
+            margin-bottom: 10px;
+            font-size: 32px;
+        }
+
+        .header p {
+            color: #666;
+            font-size: 16px;
+        }
+
+        .stats-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+            gap: 20px;
+            margin-bottom: 20px;
+        }
+
+        .stat-card {
+            background: white;
+            padding: 25px;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+
+        .stat-card h3 {
+            color: #999;
+            font-size: 14px;
+            text-transform: uppercase;
+            letter-spacing: 1px;
+            margin-bottom: 10px;
+        }
+
+        .stat-card .value {
+            font-size: 42px;
+            font-weight: bold;
+            color: #667eea;
+            margin-bottom: 5px;
+        }
+
+        .stat-card .subtext {
+            color: #2ecc71;
+            font-size: 14px;
+        }
+
+        .stat-card .subtext.warning {
+            color: #e74c3c;
+        }
+
+        .calls-section {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+            margin-bottom: 20px;
+        }
+
+        .calls-section h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+        }
+
+        .call-item {
+            border-bottom: 1px solid #eee;
+            padding: 15px 0;
+            display: grid;
+            grid-template-columns: 1fr 1fr 1fr 1fr 150px;
+            gap: 20px;
+            align-items: center;
+        }
+
+        .call-item:last-child {
+            border-bottom: none;
+        }
+
+        .call-name {
+            font-weight: 600;
+            color: #333;
+        }
+
+        .call-phone {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .call-time {
+            color: #999;
+            font-size: 14px;
+        }
+
+        .call-duration {
+            color: #666;
+            font-size: 14px;
+        }
+
+        .call-status {
+            padding: 8px 15px;
+            border-radius: 20px;
+            font-size: 13px;
+            font-weight: 600;
+            text-align: center;
+        }
+
+        .status-booked {
+            background: #d4edda;
+            color: #155724;
+        }
+
+        .status-not-interested {
+            background: #f8d7da;
+            color: #721c24;
+        }
+
+        .status-callback {
+            background: #fff3cd;
+            color: #856404;
+        }
+
+        .status-voicemail {
+            background: #e2e3e5;
+            color: #383d41;
+        }
+
+        .revenue-section {
+            background: white;
+            padding: 30px;
+            border-radius: 15px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.1);
+        }
+
+        .revenue-section h2 {
+            color: #667eea;
+            margin-bottom: 20px;
+        }
+
+        .revenue-breakdown {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(200px, 1fr));
+            gap: 20px;
+        }
+
+        .revenue-item {
+            padding: 20px;
+            background: #f8f9fa;
+            border-radius: 10px;
+            border-left: 4px solid #667eea;
+        }
+
+        .revenue-item h4 {
+            color: #666;
+            font-size: 14px;
+            margin-bottom: 10px;
+        }
+
+        .revenue-item .amount {
+            font-size: 28px;
+            font-weight: bold;
+            color: #333;
+        }
+
+        .revenue-item .percentage {
+            color: #999;
+            font-size: 14px;
+            margin-top: 5px;
+        }
+
+        .love-badge {
+            position: fixed;
+            top: 20px;
+            right: 20px;
+            background: white;
+            padding: 15px 25px;
+            border-radius: 50px;
+            box-shadow: 0 10px 40px rgba(0,0,0,0.2);
+            font-weight: 600;
+            color: #667eea;
+        }
+
+        .play-button {
+            background: #667eea;
+            color: white;
+            border: none;
+            padding: 8px 15px;
+            border-radius: 5px;
+            cursor: pointer;
+            font-size: 13px;
+            font-weight: 600;
+        }
+
+        .play-button:hover {
+            background: #5568d3;
+        }
+    </style>
+</head>
+<body>
+    <div class="love-badge">💝 Love Score: 88%</div>
+
+    <div class="dashboard">
+        <div class="header">
+            <h1>🔥 Cool Breeze HVAC - AI Voice Agent Dashboard</h1>
+            <p>Performance-Based AI Appointment Booking • 20% Community Share • Everybody Eats</p>
+        </div>
+
+        <div class="stats-grid">
+            <div class="stat-card">
+                <h3>Calls Made Today</h3>
+                <div class="value">28</div>
+                <div class="subtext">↑ 12% from yesterday</div>
+            </div>
+
+            <div class="stat-card">
+                <h3>Appointments Booked</h3>
+                <div class="value">9</div>
+                <div class="subtext">↑ 32% conversion rate</div>
+            </div>
+
+            <div class="stat-card">
+                <h3>This Month Revenue</h3>
+                <div class="value">$42,800</div>
+                <div class="subtext">↑ From AI-booked appointments</div>
+            </div>
+
+            <div class="stat-card">
+                <h3>Community Impact</h3>
+                <div class="value">$8,560</div>
+                <div class="subtext">↑ 20% automatically shared</div>
+            </div>
+        </div>
+
+        <div class="calls-section">
+            <h2>📞 Recent Calls (Last 24 Hours)</h2>
+
+            <div class="call-item">
+                <div>
+                    <div class="call-name">John Martinez</div>
+                    <div class="call-phone">+1 (555) 234-5678</div>
+                </div>
+                <div class="call-time">Today, 2:34 PM</div>
+                <div class="call-duration">4m 23s</div>
+                <div>
+                    <button class="play-button">▶ Play Recording</button>
+                </div>
+                <div class="call-status status-booked">✓ Booked</div>
+            </div>
+
+            <div class="call-item">
+                <div>
+                    <div class="call-name">Sarah Johnson</div>
+                    <div class="call-phone">+1 (555) 345-6789</div>
+                </div>
+                <div class="call-time">Today, 2:18 PM</div>
+                <div class="call-duration">2m 15s</div>
+                <div>
+                    <button class="play-button">▶ Play Recording</button>
+                </div>
+                <div class="call-status status-callback">→ Callback</div>
+            </div>
+
+            <div class="call-item">
+                <div>
+                    <div class="call-name">Mike Peterson</div>
+                    <div class="call-phone">+1 (555) 456-7890</div>
+                </div>
+                <div class="call-time">Today, 1:52 PM</div>
+                <div class="call-duration">3m 47s</div>
+                <div>
+                    <button class="play-button">▶ Play Recording</button>
+                </div>
+                <div class="call-status status-booked">✓ Booked</div>
+            </div>
+
+            <div class="call-item">
+                <div>
+                    <div class="call-name">Lisa Chen</div>
+                    <div class="call-phone">+1 (555) 567-8901</div>
+                </div>
+                <div class="call-time">Today, 1:34 PM</div>
+                <div class="call-duration">1m 8s</div>
+                <div>
+                    <button class="play-button">▶ Play Recording</button>
+                </div>
+                <div class="call-status status-voicemail">📧 Voicemail</div>
+            </div>
+
+            <div class="call-item">
+                <div>
+                    <div class="call-name">David Williams</div>
+                    <div class="call-phone">+1 (555) 678-9012</div>
+                </div>
+                <div class="call-time">Today, 12:45 PM</div>
+                <div class="call-duration">5m 32s</div>
+                <div>
+                    <button class="play-button">▶ Play Recording</button>
+                </div>
+                <div class="call-status status-booked">✓ Booked</div>
+            </div>
+
+            <div class="call-item">
+                <div>
+                    <div class="call-name">Emily Rodriguez</div>
+                    <div class="call-phone">+1 (555) 789-0123</div>
+                </div>
+                <div class="call-time">Today, 12:22 PM</div>
+                <div class="call-duration">2m 44s</div>
+                <div>
+                    <button class="play-button">▶ Play Recording</button>
+                </div>
+                <div class="call-status status-not-interested">✗ Not Interested</div>
+            </div>
+
+            <div class="call-item">
+                <div>
+                    <div class="call-name">Robert Taylor</div>
+                    <div class="call-phone">+1 (555) 890-1234</div>
+                </div>
+                <div class="call-time">Today, 11:58 AM</div>
+                <div class="call-duration">4m 15s</div>
+                <div>
+                    <button class="play-button">▶ Play Recording</button>
+                </div>
+                <div class="call-status status-booked">✓ Booked</div>
+            </div>
+        </div>
+
+        <div class="revenue-section">
+            <h2>💰 This Month Revenue Breakdown</h2>
+            <div class="revenue-breakdown">
+                <div class="revenue-item">
+                    <h4>Total AI Revenue</h4>
+                    <div class="amount">$42,800</div>
+                    <div class="percentage">From 18 closed jobs</div>
+                </div>
+
+                <div class="revenue-item">
+                    <h4>Your 70%</h4>
+                    <div class="amount">$29,960</div>
+                    <div class="percentage">You keep</div>
+                </div>
+
+                <div class="revenue-item">
+                    <h4>Community 20%</h4>
+                    <div class="amount">$8,560</div>
+                    <div class="percentage">Local community fund</div>
+                </div>
+
+                <div class="revenue-item">
+                    <h4>Sanctuary 10%</h4>
+                    <div class="amount">$4,280</div>
+                    <div class="percentage">System maintenance</div>
+                </div>
+            </div>
+        </div>
+    </div>
+
+    <script>
+        // Add click handlers for play buttons (demo only)
+        document.querySelectorAll('.play-button').forEach(button => {
+            button.addEventListener('click', function() {
+                alert('In the real system, this would play the call recording.\n\nFor the demo, imagine hearing a natural conversation where the AI:\n• Introduces your company\n• Asks about their HVAC needs\n• Handles objections smoothly\n• Books the appointment into your calendar\n\nMost people can\'t tell it\'s AI!');
+            });
+        });
+
+        // Simulate real-time updates (for demo)
+        setInterval(() => {
+            const callsValue = document.querySelector('.stats-grid .stat-card:first-child .value');
+            let currentCalls = parseInt(callsValue.textContent);
+            if (Math.random() > 0.7) {
+                callsValue.textContent = currentCalls + 1;
+            }
+        }, 15000); // Every 15 seconds, might add a call
+    </script>
+</body>
+</html>

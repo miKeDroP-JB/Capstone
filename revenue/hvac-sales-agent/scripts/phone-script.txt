@@ -1,0 +1,290 @@
+# HVAC SALES AGENT - PHONE SCRIPT
+# ================================
+# Performance-Based AI Sales Agent
+# Read this 3x before making calls. Then customize to your style.
+
+## OPENING (First 15 seconds - CRITICAL)
+
+"Hi, this is [YOUR NAME] calling for [THEIR NAME/OWNER].
+Is this a good time for a quick call?"
+
+[IF NO:]
+"No problem. When's a better time? I'll call back then."
+[Schedule callback, hang up]
+
+[IF YES:]
+"Perfect. This'll take 2 minutes max.
+
+I help HVAC companies book 20-30% more appointments using AI,
+with zero upfront cost. You only pay if it actually works.
+
+Sound interesting?"
+
+[WAIT FOR RESPONSE]
+
+---
+
+## IF THEY SAY "MAYBE" OR "TELL ME MORE"
+
+"Here's how it works:
+
+We've built an AI sales agent that calls your leads automatically
+and books appointments directly into your calendar.
+
+The unique part - it's 100% performance-based. You only pay us 10%
+of the ADDITIONAL profit it generates. So if we book an appointment
+that turns into a $5,000 job, you pay us $500. If we book nothing,
+you pay nothing.
+
+Most HVAC companies lose 30-40% of potential revenue from slow
+follow-up. People call, leave voicemail, and by the time you
+call back, they've hired someone else. This fixes that problem.
+
+Does that make sense?"
+
+[WAIT FOR RESPONSE]
+
+---
+
+## HANDLING "HOW DOES IT WORK?"
+
+"Great question. Here's the process:
+
+1. We integrate with your current system - takes about 15 minutes
+2. When leads come in, our AI calls them within 60 seconds
+3. It follows your script, answers questions, books appointments
+4. You get a text: 'Appointment booked for Tuesday at 2pm with John Smith'
+5. You show up, do the work, get paid
+6. We track conversions and bill you 10% monthly
+
+The AI sounds natural - I can play you a sample call if you want."
+
+[IF THEY WANT TO HEAR SAMPLE:]
+"I'll send you a link to listen. Better yet, how about a quick
+15-minute demo? I can show you the dashboard, play sample calls,
+and we can even test it with one of your real leads.
+
+I have time tomorrow morning at 10am or Thursday afternoon at 2pm.
+Which works better?"
+
+---
+
+## HANDLING "WE ALREADY HAVE SOMEONE"
+
+"That's great! Are they booking 100% of your leads? Because most
+companies are only booking 60-70%, which means 30-40% are falling
+through the cracks.
+
+Our system doesn't replace your current process - it supplements it.
+Think of it as backup. When your team is busy, the AI picks up the
+slack. You still keep your current setup.
+
+And remember - no upfront cost. If it doesn't book appointments,
+it costs you nothing. What do you have to lose?"
+
+---
+
+## HANDLING "TOO EXPENSIVE"
+
+"I totally get it. That's exactly why we do performance-based pricing.
+
+You don't pay anything upfront. Not $500, not $100, not even $1.
+
+You ONLY pay 10% AFTER we've already made you money. So if we
+generate an extra $10,000 in revenue for you, you pay us $1,000.
+But you've still netted $9,000 you wouldn't have had otherwise.
+
+It's literally impossible to lose money on this. Make sense?"
+
+---
+
+## HANDLING "I NEED TO THINK ABOUT IT"
+
+"Totally fair. Let me ask - what specifically would you need to see
+or know to feel comfortable moving forward?
+
+[LISTEN TO THEIR ANSWER]
+
+[IF IT'S SOMETHING YOU CAN ADDRESS:]
+"Okay, I can help with that. How about this - let me send you some
+information about [their concern], and I'll call you back on
+[DAY] at [TIME]. Does that work?"
+
+[IF IT'S JUST STALLING:]
+"I understand. Here's what I'd recommend: Let's do a 15-minute demo.
+No commitment, just show you how it works. If you like it, great.
+If not, no hard feelings. Fair enough?"
+
+---
+
+## HANDLING "SEND ME INFORMATION"
+
+"Absolutely. What's the best email?
+
+[GET EMAIL]
+
+Great, I'll send that over in the next hour. But real quick - since
+I have you on the phone, let me ask: if the information looks good,
+what's your typical next step? Would you want to see a demo, or...?"
+
+[GOAL: Try to book demo NOW rather than email → wait → maybe call back]
+
+---
+
+## CLOSING FOR THE DEMO
+
+"So here's what I'm thinking: Let's do a quick 15-minute demo.
+I'll show you the dashboard, play you some sample calls, and we
+can even test it with one of your actual leads if you want.
+
+I have two slots available:
+- Tomorrow (Tuesday) at 10:00am
+- Thursday at 2:00pm
+
+Which one works better for your schedule?"
+
+[USE "THIS OR THAT" - NOT "DO YOU WANT TO?"]
+
+---
+
+## CONFIRMING THE DEMO
+
+"Perfect. So I've got you down for [DAY] at [TIME].
+
+What's the best number to call you on?
+[CONFIRM NUMBER]
+
+And just in case, what's your email so I can send a calendar invite?
+[GET EMAIL]
+
+Great! You'll get a calendar invite with a Zoom link in the next
+few minutes. See you [DAY] at [TIME]!"
+
+---
+
+## IF THEY SAY "NOT INTERESTED"
+
+"No problem, I totally understand. Just out of curiosity - is it
+the timing, or is it something about the service itself?"
+
+[IF TIMING:]
+"Got it. When would be a better time to follow up? 3 months? 6 months?"
+
+[IF SERVICE:]
+"Fair enough. Is it okay if I check back in a few months just in
+case anything changes?"
+
+[IF HARD NO:]
+"I totally get it. Thanks for your time, and good luck with the
+business!"
+
+[Hang up professionally, move to next call]
+
+---
+
+## VOICEMAIL SCRIPT
+
+"Hi [NAME], this is [YOUR NAME] calling from Elite HVAC Solutions.
+
+I help HVAC companies book more appointments using AI with zero
+upfront cost - you only pay if it actually generates revenue.
+
+If you're interested in hearing how we can help you capture
+30-40% more appointments, give me a call back at [YOUR NUMBER].
+
+Again, that's [YOUR NAME] at [YOUR NUMBER]. Thanks!"
+
+[Speak clearly, not too fast, don't sound like spam]
+
+---
+
+## KEY PRINCIPLES
+
+1. **CONFIDENCE** - You're offering something valuable. Act like it.
+
+2. **BREVITY** - Keep it short. Don't ramble. Make your point and ask for demo.
+
+3. **VALUE FOCUS** - Always focus on THEIR benefit (more appointments, no risk)
+
+4. **SCARCITY** - Limited demo slots creates urgency
+
+5. **PERFORMANCE-BASED** - Hammer this home. No risk for them.
+
+6. **LISTENING** - Listen for pain points. When they mention "hard to reach people"
+   or "leads going cold" - that's your opening.
+
+---
+
+## COMMON OBJECTIONS CHEAT SHEET
+
+| Objection | Response |
+|-----------|----------|
+| "Too busy" | "Perfect! That's exactly who this helps - busy shops that miss calls." |
+| "Too expensive" | "Zero upfront. You only pay AFTER we make you money." |
+| "Have someone already" | "Great! This supplements them. When they're busy, AI picks up slack." |
+| "Need to talk to partner" | "Makes sense. How about this - do a quick demo, then discuss with partner?" |
+| "Call me back later" | "Happy to. When's a good time? Let me get that on my calendar now." |
+| "Send email" | "Will do. While I have you, if email looks good, what's next step?" |
+| "Not interested" | "No problem. Just curious - is it timing or service itself?" |
+
+---
+
+## BEFORE YOU START CALLING
+
+☐ Read this script 3 times
+☐ Print it out (reference during calls)
+☐ Practice out loud 5 times (seriously)
+☐ Have target list open
+☐ Have calendar ready (to book demos)
+☐ Have confident mindset (you're helping them!)
+☐ Phone charged, good signal
+☐ Quiet space, no distractions
+☐ Water nearby (talking is thirsty work)
+
+---
+
+## CALL TRACKING
+
+After each call, record:
+- Company name
+- Date/time
+- Contact person
+- Outcome (voicemail, not interested, demo booked, callback scheduled)
+- Notes
+- Follow-up date
+
+Use: revenue/hvac-sales-agent/calls/call_log.txt
+
+---
+
+## SUCCESS METRICS
+
+**Good day:**
+- 10 calls made
+- 2-3 connected
+- 1 demo booked
+
+**Great day:**
+- 20 calls made
+- 5-6 connected
+- 2-3 demos booked
+
+**Excellent day:**
+- 30 calls made
+- 10 connected
+- 3-5 demos booked
+
+---
+
+## REMEMBER
+
+You're not "selling" them something.
+You're helping them capture revenue they're already losing.
+No upfront cost = no risk for them.
+Performance-based = aligned incentives.
+
+If they say no, move on. Next company needs your help.
+
+**You got this! 🔥**
+
+Now go make those calls! 📞💰

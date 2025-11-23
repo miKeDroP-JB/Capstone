@@ -1,0 +1,373 @@
+# REVENUE LOG - Track Your Money
+# ================================
+# Use this to track all income from your HVAC AI Voice Agent business
+
+---
+
+## MONTH: [_________] YEAR: [_____]
+
+### MONTHLY GOALS
+Setup fees target: $__________ (e.g., $1,000)
+Monthly fees target: $__________ (e.g., $5,000)
+Total revenue target: $__________ (e.g., $6,000)
+
+---
+
+## SETUP FEES COLLECTED
+
+### CLIENT #1
+Company: _________________________________
+Date closed: __________
+Setup fee: $__________
+Payment method: [ ] Stripe  [ ] PayPal  [ ] Other: __________
+Payment received: [ ] Yes  [ ] Pending
+Date received: __________
+
+### CLIENT #2
+Company: _________________________________
+Date closed: __________
+Setup fee: $__________
+Payment method: [ ] Stripe  [ ] PayPal  [ ] Other: __________
+Payment received: [ ] Yes  [ ] Pending
+Date received: __________
+
+### CLIENT #3
+Company: _________________________________
+Date closed: __________
+Setup fee: $__________
+Payment method: [ ] Stripe  [ ] PayPal  [ ] Other: __________
+Payment received: [ ] Yes  [ ] Pending
+Date received: __________
+
+### CLIENT #4
+Company: _________________________________
+Date closed: __________
+Setup fee: $__________
+Payment method: [ ] Stripe  [ ] PayPal  [ ] Other: __________
+Payment received: [ ] Yes  [ ] Pending
+Date received: __________
+
+### CLIENT #5
+Company: _________________________________
+Date closed: __________
+Setup fee: $__________
+Payment method: [ ] Stripe  [ ] PayPal  [ ] Other: __________
+Payment received: [ ] Yes  [ ] Pending
+Date received: __________
+
+**TOTAL SETUP FEES THIS MONTH: $__________**
+
+---
+
+## MONTHLY PERFORMANCE FEES
+
+### CLIENT #1 - [COMPANY NAME]
+Service month: __________
+Calls made: __________
+Appointments booked: __________
+Jobs closed: __________
+Total job revenue: $__________
+Our 10% fee: $__________
+
+Invoice sent: [ ] Yes  [ ] No  |  Date: __________
+Invoice due: __________
+Payment received: [ ] Yes  [ ] Pending  |  Date: __________
+
+Revenue split (for transparency):
+- Total: $__________
+- Client (70%): $__________
+- Community (20%): $__________
+- Us (10%): $__________
+
+---
+
+### CLIENT #2 - [COMPANY NAME]
+Service month: __________
+Calls made: __________
+Appointments booked: __________
+Jobs closed: __________
+Total job revenue: $__________
+Our 10% fee: $__________
+
+Invoice sent: [ ] Yes  [ ] No  |  Date: __________
+Invoice due: __________
+Payment received: [ ] Yes  [ ] Pending  |  Date: __________
+
+Revenue split (for transparency):
+- Total: $__________
+- Client (70%): $__________
+- Community (20%): $__________
+- Us (10%): $__________
+
+---
+
+### CLIENT #3 - [COMPANY NAME]
+Service month: __________
+Calls made: __________
+Appointments booked: __________
+Jobs closed: __________
+Total job revenue: $__________
+Our 10% fee: $__________
+
+Invoice sent: [ ] Yes  [ ] No  |  Date: __________
+Invoice due: __________
+Payment received: [ ] Yes  [ ] Pending  |  Date: __________
+
+Revenue split (for transparency):
+- Total: $__________
+- Client (70%): $__________
+- Community (20%): $__________
+- Us (10%): $__________
+
+---
+
+### CLIENT #4 - [COMPANY NAME]
+Service month: __________
+Calls made: __________
+Appointments booked: __________
+Jobs closed: __________
+Total job revenue: $__________
+Our 10% fee: $__________
+
+Invoice sent: [ ] Yes  [ ] No  |  Date: __________
+Invoice due: __________
+Payment received: [ ] Yes  [ ] Pending  |  Date: __________
+
+Revenue split (for transparency):
+- Total: $__________
+- Client (70%): $__________
+- Community (20%): $__________
+- Us (10%): $__________
+
+---
+
+### CLIENT #5 - [COMPANY NAME]
+Service month: __________
+Calls made: __________
+Appointments booked: __________
+Jobs closed: __________
+Total job revenue: $__________
+Our 10% fee: $__________
+
+Invoice sent: [ ] Yes  [ ] No  |  Date: __________
+Invoice due: __________
+Payment received: [ ] Yes  [ ] Pending  |  Date: __________
+
+Revenue split (for transparency):
+- Total: $__________
+- Client (70%): $__________
+- Community (20%): $__________
+- Us (10%): $__________
+
+---
+
+**TOTAL MONTHLY FEES THIS MONTH: $__________**
+
+---
+
+## MONTHLY SUMMARY
+
+### REVENUE
+Setup fees collected: $__________
+Monthly fees collected: $__________
+**TOTAL REVENUE: $__________**
+
+### OUTSTANDING (Not Yet Paid)
+Setup fees pending: $__________
+Monthly invoices pending: $__________
+**TOTAL OUTSTANDING: $__________**
+
+### EXPENSES (Track for taxes)
+Software/tools: $__________ (e.g., Twilio, ElevenLabs, hosting)
+Marketing: $__________ (e.g., ads, domains)
+Professional services: $__________ (e.g., CPA, lawyer)
+Other: $__________
+**TOTAL EXPENSES: $__________**
+
+### NET PROFIT
+Total revenue: $__________
+Total expenses: $__________
+**NET PROFIT: $__________**
+
+### TAX PLANNING
+Net profit: $__________
+Estimated tax (30%): $__________
+**Amount to save for taxes: $__________**
+
+---
+
+## YEAR-TO-DATE SUMMARY
+
+Month | Setup Fees | Monthly Fees | Total Revenue | Expenses | Net Profit
+------|------------|--------------|---------------|----------|------------
+Jan   | $______    | $______      | $______       | $______  | $______
+Feb   | $______    | $______      | $______       | $______  | $______
+Mar   | $______    | $______      | $______       | $______  | $______
+Apr   | $______    | $______      | $______       | $______  | $______
+May   | $______    | $______      | $______       | $______  | $______
+Jun   | $______    | $______      | $______       | $______  | $______
+Jul   | $______    | $______      | $______       | $______  | $______
+Aug   | $______    | $______      | $______       | $______  | $______
+Sep   | $______    | $______      | $______       | $______  | $______
+Oct   | $______    | $______      | $______       | $______  | $______
+Nov   | $______    | $______      | $______       | $______  | $______
+Dec   | $______    | $______      | $______       | $______  | $______
+------|------------|--------------|---------------|----------|------------
+TOTAL | $______    | $______      | $______       | $______  | $______
+
+---
+
+## ACTIVE CLIENTS ROSTER
+
+| # | Company | Start Date | Setup Fee | Status | Monthly Avg |
+|---|---------|------------|-----------|--------|-------------|
+| 1 | _______ | __________ | $____     | Active | $____       |
+| 2 | _______ | __________ | $____     | Active | $____       |
+| 3 | _______ | __________ | $____     | Active | $____       |
+| 4 | _______ | __________ | $____     | Active | $____       |
+| 5 | _______ | __________ | $____     | Active | $____       |
+| 6 | _______ | __________ | $____     | Active | $____       |
+| 7 | _______ | __________ | $____     | Active | $____       |
+| 8 | _______ | __________ | $____     | Active | $____       |
+| 9 | _______ | __________ | $____     | Active | $____       |
+| 10| _______ | __________ | $____     | Active | $____       |
+
+**TOTAL ACTIVE CLIENTS: __________**
+**AVERAGE MONTHLY RECURRING REVENUE (MRR): $__________**
+
+---
+
+## PAYMENT SCHEDULE (UPCOMING)
+
+DATE DUE | COMPANY | AMOUNT | STATUS
+---------|---------|--------|--------
+____/__  | _______ | $____  | [ ] Sent  [ ] Paid
+____/__  | _______ | $____  | [ ] Sent  [ ] Paid
+____/__  | _______ | $____  | [ ] Sent  [ ] Paid
+____/__  | _______ | $____  | [ ] Sent  [ ] Paid
+____/__  | _______ | $____  | [ ] Sent  [ ] Paid
+
+---
+
+## GROWTH METRICS
+
+### This Month vs Last Month
+Total revenue: $_______ (last month) → $_______ (this month)
+Growth: _______% [ ] ↑ Increase  [ ] ↓ Decrease
+
+Active clients: _______ (last month) → _______ (this month)
+Growth: _______ new clients
+
+Average deal size: $_______ (last month) → $_______ (this month)
+Change: _______% [ ] ↑ Increase  [ ] ↓ Decrease
+
+### Goals Progress
+Annual revenue goal: $__________
+Current pace (annualized): $__________
+Progress: _______% of goal
+
+Client goal: __________ clients
+Current: __________ clients
+Progress: _______% of goal
+
+---
+
+## NOTES & INSIGHTS
+
+What worked this month:
+_________________________________________________
+_________________________________________________
+
+What didn't work:
+_________________________________________________
+_________________________________________________
+
+Improvements for next month:
+_________________________________________________
+_________________________________________________
+
+Biggest wins:
+_________________________________________________
+_________________________________________________
+
+Challenges faced:
+_________________________________________________
+_________________________________________________
+
+---
+
+## COMMUNITY IMPACT TRACKER
+
+Month: __________
+
+Total client revenue tracked: $__________
+Community share (20%): $__________
+
+How it was distributed:
+- Local business: $__________ → [NAME/PURPOSE]
+- Community org: $__________ → [NAME/PURPOSE]
+- Individual help: $__________ → [NAME/PURPOSE]
+
+Running total community impact (all time): $__________
+
+**Everybody Eats.** 💝
+
+---
+
+## QUICK REFERENCE
+
+**Payment processors:**
+- Stripe dashboard: https://dashboard.stripe.com
+- PayPal: https://paypal.com/invoice
+- Venmo: @__________
+- Cash App: $__________
+
+**Banking:**
+- Business account: __________
+- Tax savings account: __________
+- Emergency fund: __________
+
+**Important contacts:**
+- CPA/Accountant: __________ | __________
+- Lawyer: __________ | __________
+- Bank: __________ | __________
+
+**Tax deadlines:**
+- Q1 (April 15): $__________
+- Q2 (June 15): $__________
+- Q3 (Sept 15): $__________
+- Q4 (Jan 15): $__________
+
+---
+
+## SUCCESS MILESTONES
+
+[ ] First $100 earned
+[ ] First $1,000 earned
+[ ] First $10,000 earned
+[ ] First $100,000 earned
+
+[ ] First client closed
+[ ] 10 clients closed
+[ ] 50 clients closed
+[ ] 100 clients closed
+
+[ ] $1,000/month recurring
+[ ] $5,000/month recurring
+[ ] $10,000/month recurring
+[ ] $50,000/month recurring
+
+[ ] Replaced day job income
+[ ] 2x day job income
+[ ] 10x day job income
+
+**DATE ACHIEVED:**
+Milestone: _________________ | Date: __________
+Milestone: _________________ | Date: __________
+Milestone: _________________ | Date: __________
+
+---
+
+**Keep this updated weekly. Your future self will thank you.** 📊
+
+**Track everything. Celebrate wins. Compound growth.** 🚀

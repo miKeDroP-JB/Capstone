@@ -1,0 +1,155 @@
+# COLD EMAIL - INTRO
+# ===================
+# Use when: Initial outreach to HVAC companies
+# Goal: Get 15-minute demo call scheduled
+# Success rate: 5-10% response rate
+
+---
+
+## TEMPLATE 1: Direct Value Proposition
+
+Subject: Add 20% more appointments to [COMPANY NAME] - Zero upfront cost
+
+Hi [NAME],
+
+I help HVAC companies like [COMPANY NAME] book 20-30% more appointments
+using AI voice agents - with zero upfront cost.
+
+You only pay if it works (10% of the jobs that close from AI-booked appointments).
+
+The system:
+• Calls leads within 60 seconds
+• Books appointments into your calendar
+• Sounds completely natural (most people can't tell it's AI)
+• Runs 24/7, even when you're busy
+
+I'd love to show you a quick demo (15 minutes max).
+
+Are you available Tuesday at 10am or Thursday at 2pm for a quick call?
+
+Best,
+[YOUR NAME]
+[YOUR PHONE]
+[YOUR EMAIL]
+
+---
+
+## TEMPLATE 2: Problem-Focused
+
+Subject: Re: Your HVAC leads
+
+[NAME],
+
+Quick question - how many leads come in after hours or when you're on a job?
+
+Most HVAC companies lose 30-40% of their leads because they can't answer
+fast enough. We built an AI system that calls leads within 60 seconds and
+books appointments automatically.
+
+Zero upfront cost. You only pay 10% of the jobs that close.
+
+Want to see how it works? 15-minute demo, Tuesday or Thursday?
+
+[YOUR NAME]
+[PHONE]
+
+---
+
+## TEMPLATE 3: Social Proof
+
+Subject: How [COMPETITOR] books 25% more appointments
+
+Hi [NAME],
+
+[COMPETITOR NAME] started using our AI voice system 3 weeks ago.
+
+Results so far:
+• 47 appointments booked
+• 22 converted to jobs
+• ~$65,000 in additional revenue
+• Zero hours of their time
+
+The system calls leads automatically, books appointments into their calendar,
+and they only pay 10% of what closes.
+
+Would this help [COMPANY NAME]?
+
+If yes, let's do a quick 15-minute demo - Tuesday 10am or Thursday 2pm?
+
+Thanks,
+[YOUR NAME]
+[CONTACT INFO]
+
+---
+
+## BEST PRACTICES
+
+**Subject Lines That Work:**
+- "Add 20% more appointments to [COMPANY]"
+- "Quick question about your HVAC leads"
+- "How [COMPETITOR] books 25% more"
+- "Re: Your after-hours calls"
+
+**First Sentence Rules:**
+- Lead with value, not who you are
+- Ask a question they'll say "yes" to
+- Reference their specific problem
+- Keep it under 15 words
+
+**Body Copy:**
+- 3-5 sentences max
+- One clear benefit
+- Social proof if possible
+- Zero risk statement
+- Clear call to action
+
+**Call to Action:**
+- Always give 2 specific time options
+- Never "let me know when you're free"
+- Make it easy to say yes
+- Include your phone number
+
+**Send Timing:**
+- Best: Tuesday-Thursday, 8-10am
+- Good: Monday 10am-12pm
+- Avoid: Friday PM, weekends, before 7am, after 6pm
+
+**Follow-Up Cadence:**
+If no response:
+- Day 3: Send Template 2 (different angle)
+- Day 7: Send Template 3 (social proof)
+- Day 14: Final follow-up: "Should I close your file or...?"
+
+**Don't chase forever. 3 touches is enough.**
+
+---
+
+## PERSONALIZATION CHECKLIST
+
+Before sending, customize:
+☐ Company name
+☐ Contact first name
+☐ Reference their website/service area
+☐ Mention a competitor (if possible)
+☐ Your contact info
+☐ Specific appointment times
+
+---
+
+## RESPONSE HANDLING
+
+**If they reply "Tell me more":**
+→ "Love to! Can we do a quick 15-min call? I'll show you exactly how it works. Tuesday 10am or Thursday 2pm?"
+
+**If they reply "Send me info":**
+→ "I'd rather show you - it's way cooler to see it in action. 15 minutes, Tuesday or Thursday?"
+
+**If they reply "What's the cost?":**
+→ "Zero upfront. You only pay 10% of jobs that close from AI appointments. If it books zero jobs, you pay zero. Fair?"
+
+**If they reply "Not interested":**
+→ "No worries! If anything changes, here's my number: [PHONE]"
+
+---
+
+**Pro tip:** Personalized emails get 3x response rate. Spend 2 minutes researching each company before sending.

@@ -1,0 +1,400 @@
+# HVAC SALES AGENT - DEMO SCRIPT
+# ================================
+# Turn demos into closed deals
+# Time: 15-20 minutes max
+
+## PRE-DEMO CHECKLIST (5 minutes before)
+
+☐ Demo environment ready (local or Railway)
+☐ Sample calls recorded/ready to play
+☐ Dashboard open and working
+☐ Their company info researched
+☐ Pricing sheet ready
+☐ Contract/agreement ready to send
+☐ Payment link ready (Stripe/PayPal)
+☐ Calendar open (to schedule start date)
+
+---
+
+## DEMO FLOW (15-20 minutes)
+
+### PART 1: INTRO & AGENDA (2 minutes)
+
+"Hey [NAME], thanks for jumping on! Can you hear me okay?
+
+[CONFIRM AUDIO/VIDEO]
+
+Perfect. So we've got about 15-20 minutes. Here's what I'll show you:
+
+1. Quick overview of how the system works
+2. Sample AI call (you'll hear how natural it sounds)
+3. The dashboard (where you track everything)
+4. Pricing breakdown
+5. Q&A and next steps
+
+Sound good?
+
+[WAIT FOR YES]
+
+Great! Before we dive in, tell me quick - what made you interested
+in taking this call? What's the biggest challenge you're facing
+with lead follow-up right now?"
+
+[LISTEN CAREFULLY - Their answer is your demo focus]
+
+---
+
+### PART 2: HOW IT WORKS (3 minutes)
+
+"Okay, so here's how the whole system works:
+
+[SHARE SCREEN - Show simple diagram or flowchart]
+
+1. **Lead comes in** - Could be from Google, Facebook, Yelp, wherever
+2. **AI gets notified** - Within 60 seconds, our system sees the lead
+3. **AI makes the call** - Calls the prospect using a natural voice
+4. **Conversation happens** - AI follows your script, answers questions
+5. **Appointment booked** - If interested, books directly into your calendar
+6. **You get notified** - Text message: 'Appointment booked with John Smith Tuesday 2pm'
+7. **You show up** - Do the work, close the deal, get paid
+8. **We track it** - System tracks which appointments came from AI
+9. **Monthly billing** - You pay 10% of converted jobs
+
+The beauty is - you're not replacing your current process. This runs
+alongside it. When you're busy, the AI handles the overflow. When
+you're slow, it's filling your calendar.
+
+Make sense so far?
+
+[ANSWER QUESTIONS]
+
+---
+
+### PART 3: SAMPLE CALL (5 minutes)
+
+"Okay, now the fun part. Let me play you a sample call so you can
+hear how natural the AI sounds.
+
+[PLAY SAMPLE CALL - 1-2 minutes]
+
+[After playing:]
+
+What did you think? Sound natural?
+
+[WAIT FOR RESPONSE]
+
+Right? Most people can't tell it's AI until we tell them.
+
+Now, that was our default script. But here's the thing - we customize
+it for you. Your greeting, your pitch, your qualifying questions,
+even your personality.
+
+Some clients want it super professional. Others want it more casual.
+Whatever matches your brand, we match it.
+
+How would you want yours to sound?"
+
+[DISCUSS THEIR PREFERENCES]
+
+---
+
+### PART 4: THE DASHBOARD (4 minutes)
+
+"Alright, let me show you the dashboard. This is what you'll see
+every day.
+
+[SHARE SCREEN - Show dashboard]
+
+Up here [POINT] - You've got your key metrics:
+- Calls made today
+- Appointments booked
+- Conversion rate
+- Revenue generated
+
+Down here [POINT] - You've got individual call details:
+- Who was called
+- What time
+- Call duration
+- Outcome (booked, not interested, callback, voicemail)
+- You can even listen to recordings if you want
+
+And over here [POINT] - Revenue tracking:
+- Total revenue from AI-booked appointments
+- Your 70% share
+- Our 10% (transparent, no hidden fees)
+- 20% that goes to community fund (more on that in a sec)
+
+Everything is real-time. You can check it from your phone, your
+computer, wherever.
+
+Any questions on the dashboard?"
+
+[ANSWER QUESTIONS]
+
+---
+
+### PART 5: PRICING BREAKDOWN (3 minutes)
+
+"Okay, let's talk numbers. Because this is where we're different
+from everyone else.
+
+[SHARE SCREEN - Show pricing sheet]
+
+**Setup:**
+- One-time setup: $200 (or $0 if you prefer pure performance)
+- Gets you configured, script written, voice trained
+- Takes about 1 hour, done remotely
+
+**Monthly:**
+- You pay 10% of ONLY the jobs that came from AI-booked appointments
+- We track everything automatically
+- Monthly invoice, net-30 terms
+
+**Example Month:**
+- AI books 20 appointments
+- 10 convert to jobs (50% close rate - typical)
+- Average job: $3,000
+- Total revenue from AI: $30,000
+- Your profit: $30,000 - costs - $3,000 (10% to us) = ~$24,000 net
+- You pay us: $3,000
+
+**But here's the key:**
+That $30,000 in revenue? You WEREN'T getting it before. It's pure
+incremental revenue. Leads that were falling through the cracks.
+
+And if we book zero appointments that convert? You pay zero.
+
+Does that math make sense?
+
+[ANSWER QUESTIONS]"
+
+---
+
+### PART 6: EVERYBODY EATS (1 minute)
+
+"One more thing I want to mention - the 20% community fund.
+
+Part of our model is 'Everybody Eats.' So out of our 10%, we actually
+put 20% into a community fund that supports local businesses and
+causes.
+
+It's not coming out of your pocket - it comes out of ours. But I
+wanted you to know that when you work with us, you're not just
+helping your business - you're helping your community too.
+
+That resonate with you?"
+
+[BRIEF DISCUSSION]
+
+---
+
+### PART 7: CLOSING (2-3 minutes)
+
+"Alright, so that's the system. Pretty straightforward, right?
+
+Let me ask you - seeing everything, do you think this would help
+your business?"
+
+[WAIT FOR RESPONSE]
+
+[IF YES OR POSITIVE:]
+
+"Awesome. So here's what I'm thinking:
+
+We can get you set up this week. I'd need about an hour of your time
+to go through your script, get your branding right, test everything.
+
+Then we can turn it live on [DAY]. You'd start seeing booked
+appointments within 48 hours.
+
+For the setup fee, I can send you a Stripe invoice for $200, or if
+you want, we can waive that and just do pure performance - your choice.
+
+And then monthly billing starts next month, based on actual conversions.
+
+How does that sound?"
+
+[IF THEY AGREE:]
+
+"Perfect! Let me send you the agreement real quick. It's one page,
+super simple. Just spells out the terms we discussed.
+
+[Send contract via DocuSign or email]
+
+Can you take a look at that now while we're on the call?"
+
+[WAIT FOR THEM TO REVIEW]
+
+"Any questions on the agreement?
+
+[ANSWER QUESTIONS]
+
+Great! If you're good with it, go ahead and sign at the bottom.
+
+[WAIT FOR SIGNATURE]
+
+Perfect! Welcome aboard! You're going to love this.
+
+Let me send you a calendar invite for our setup call - how's
+[DAY] at [TIME]?"
+
+---
+
+## HANDLING OBJECTIONS DURING DEMO
+
+### "I need to think about it"
+
+"Totally fair. Let me ask - what specifically are you unsure about?
+Is it the pricing, the technology, the time commitment, or...?"
+
+[IDENTIFY SPECIFIC CONCERN, ADDRESS IT]
+
+"How about this - let's schedule a follow-up for [2-3 DAYS]. That
+gives you time to think, and if you have any questions between now
+and then, just shoot me an email. Fair?"
+
+### "I need to talk to my partner/wife/business partner"
+
+"Makes total sense. Big decision, you should discuss it.
+
+Here's what might help: I can send you a quick one-pager that
+summarizes everything we discussed. You can share that with [PARTNER],
+and then how about the three of us jump on a quick call [DAY]?
+
+Or if it's easier, you chat with them first and let me know when
+you're ready. What works better?"
+
+### "How do I know it will work?"
+
+"Great question. Honest answer - I can't guarantee results because
+I don't control your close rate or your pricing.
+
+What I CAN tell you is:
+1. The AI will book appointments - that part works 100%
+2. We've seen 10-30% increase in booked appointments across our clients
+3. Your worst case is you pay $200 setup and it doesn't work - we refund it
+4. Your best case is you're booking 20-30% more jobs
+
+The only way to know for YOUR business is to try it. That's why we
+do performance-based pricing - removes the risk.
+
+Want to give it a shot?"
+
+### "That's too expensive"
+
+"I hear you. Let's break it down differently:
+
+If the AI books just ONE extra job per month that you wouldn't have
+gotten otherwise, how much is that worth?
+
+[THEY SAY $2,000-5,000]
+
+Right. And you'd be paying us 10% of that, so $200-500.
+
+But you're netting $1,800-4,500 you wouldn't have had.
+
+And that's if it books ONE job. Most clients see 5-15 additional
+jobs per month.
+
+So the question isn't 'is it expensive' - the question is 'is it
+profitable?' And the math clearly says yes.
+
+Make sense?"
+
+---
+
+## AFTER DEMO - IMMEDIATE FOLLOW-UP
+
+Within 1 hour of demo, send:
+
+✅ **Thank you email**
+✅ **Demo recording link** (if recorded)
+✅ **Pricing one-pager** (PDF)
+✅ **Agreement** (DocuSign or PDF)
+✅ **Payment link** (Stripe or PayPal)
+✅ **Calendar link** for setup call
+
+Subject: "Thanks for the demo - Next steps"
+
+Body:
+"Hey [NAME],
+
+Great talking with you today! As promised, here's everything we discussed:
+
+📄 Pricing Summary: [LINK]
+📋 Service Agreement: [LINK]
+💳 Payment (if you're ready): [LINK]
+📅 Schedule Setup Call: [LINK]
+
+Remember: 10% performance-based, no risk, you only pay for results.
+
+Let me know if you have ANY questions. Happy to jump on another quick
+call if helpful.
+
+Looking forward to working together!
+
+[YOUR NAME]
+[YOUR PHONE]"
+
+---
+
+## FOLLOW-UP CADENCE
+
+**Day 1:** Demo happens
+**Day 2:** Check-in email "Just checking if you had any questions?"
+**Day 4:** Call them "Hey, following up on the demo..."
+**Day 7:** Final follow-up "Still interested or should I check back later?"
+
+**Don't chase forever. 3 follow-ups is enough.**
+
+---
+
+## SUCCESS METRICS
+
+**Good demo:**
+- Prospect engaged and asking questions
+- Shows interest in pricing
+- Says "let me think about it" (not hard no)
+
+**Great demo:**
+- Prospect excited
+- Asks about start date
+- Says "I need to talk to [partner]" (positive)
+
+**Excellent demo:**
+- Signs agreement on the call
+- Pays setup fee immediately
+- Schedules setup call
+
+**Close rate goal: 50-70% of demos should close within 7 days**
+
+---
+
+## DEMO CHECKLIST
+
+Before you start:
+☐ System is working
+☐ Sample calls ready
+☐ Dashboard looks good
+☐ Pricing sheet ready
+☐ Agreement ready
+☐ Payment link ready
+
+During demo:
+☐ Ask about their challenges first
+☐ Show, don't tell (screen share)
+☐ Play sample call
+☐ Explain pricing clearly
+☐ Handle objections
+☐ Close for next step
+
+After demo:
+☐ Send follow-up email within 1 hour
+☐ Send all materials
+☐ Schedule follow-up (2-3 days out)
+☐ Log demo notes
+☐ Set reminder to follow up
+
+---
+
+**You got this! Close that deal! 💰🔥**
