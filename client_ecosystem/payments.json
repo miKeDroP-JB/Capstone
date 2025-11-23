@@ -1,0 +1,14 @@
+[
+  {
+    "payment_id": "pay_client_1_20251123184035_202511",
+    "client_id": "client_1_20251123184035",
+    "company_name": "Climate Control Services",
+    "payment_date": "2025-11-23T18:41:12.830093",
+    "period": "2025-11",
+    "total_revenue": 47564,
+    "their_share": 38051.200000000004,
+    "our_share": 9512.8,
+    "payment_method": "check",
+    "status": "processed"
+  }
+]

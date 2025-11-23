@@ -1,0 +1,4430 @@
+{
+  "client_1_20251123184035": {
+    "id": "client_1_20251123184035",
+    "company_name": "Climate Control Services",
+    "industry": "hvac",
+    "onboarded_date": "2025-11-23T18:40:35.300735",
+    "status": "active",
+    "deal_info": {
+      "company": "Climate Control Services",
+      "industry": "hvac",
+      "split": "20%",
+      "solution": "marketing_automation",
+      "deal_value": "$3,000-5,000"
+    },
+    "revenue_share": "20%",
+    "package_type": "marketing_automation",
+    "accounts": {
+      "buffer": {
+        "platform": "buffer",
+        "status": "active",
+        "credentials": "buffer_climate_control_services",
+        "connected_platforms": [
+          "facebook",
+          "instagram",
+          "twitter",
+          "linkedin"
+        ],
+        "setup_date": "2025-11-23T18:40:35.300785"
+      },
+      "mailchimp": {
+        "platform": "mailchimp",
+        "status": "active",
+        "credentials": "mailchimp_climate_control_services",
+        "list_name": "Climate Control Services Customer List",
+        "setup_date": "2025-11-23T18:40:35.300810"
+      },
+      "google_business": {
+        "platform": "google_my_business",
+        "status": "active",
+        "business_name": "Climate Control Services",
+        "setup_date": "2025-11-23T18:40:35.300824"
+      },
+      "analytics": {
+        "platform": "google_analytics",
+        "status": "active",
+        "tracking_id": "GA-76425504",
+        "setup_date": "2025-11-23T18:40:35.300858"
+      }
+    },
+    "content_schedule": {
+      "social_media": [
+        {
+          "day": 1,
+          "scheduled_date": "2025-11-24T18:40:36.301500",
+          "content": "Day 1 social post for Climate Control Services",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 2,
+          "scheduled_date": "2025-11-25T18:40:36.301531",
+          "content": "Day 2 social post for Climate Control Services",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 3,
+          "scheduled_date": "2025-11-26T18:40:36.301535",
+          "content": "Day 3 social post for Climate Control Services",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 4,
+          "scheduled_date": "2025-11-27T18:40:36.301538",
+          "content": "Day 4 social post for Climate Control Services",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 5,
+          "scheduled_date": "2025-11-28T18:40:36.301540",
+          "content": "Day 5 social post for Climate Control Services",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 6,
+          "scheduled_date": "2025-11-29T18:40:36.301543",
+          "content": "Day 6 social post for Climate Control Services",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 7,
+          "scheduled_date": "2025-11-30T18:40:36.301545",
+          "content": "Day 7 social post for Climate Control Services",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 8,
+          "scheduled_date": "2025-12-01T18:40:36.301551",
+          "content": "Day 8 social post for Climate Control Services",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 9,
+          "scheduled_date": "2025-12-02T18:40:36.301567",
+          "content": "Day 9 social post for Climate Control Services",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 10,
+          "scheduled_date": "2025-12-03T18:40:36.301570",
+          "content": "Day 10 social post for Climate Control Services",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 11,
+          "scheduled_date": "2025-12-04T18:40:36.301572",
+          "content": "Day 11 social post for Climate Control Services",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 12,
+          "scheduled_date": "2025-12-05T18:40:36.301575",
+          "content": "Day 12 social post for Climate Control Services",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 13,
+          "scheduled_date": "2025-12-06T18:40:36.301577",
+          "content": "Day 13 social post for Climate Control Services",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 14,
+          "scheduled_date": "2025-12-07T18:40:36.301579",
+          "content": "Day 14 social post for Climate Control Services",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 15,
+          "scheduled_date": "2025-12-08T18:40:36.301582",
+          "content": "Day 15 social post for Climate Control Services",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 16,
+          "scheduled_date": "2025-12-09T18:40:36.301584",
+          "content": "Day 16 social post for Climate Control Services",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 17,
+          "scheduled_date": "2025-12-10T18:40:36.301586",
+          "content": "Day 17 social post for Climate Control Services",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 18,
+          "scheduled_date": "2025-12-11T18:40:36.301588",
+          "content": "Day 18 social post for Climate Control Services",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 19,
+          "scheduled_date": "2025-12-12T18:40:36.301591",
+          "content": "Day 19 social post for Climate Control Services",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 20,
+          "scheduled_date": "2025-12-13T18:40:36.301593",
+          "content": "Day 20 social post for Climate Control Services",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 21,
+          "scheduled_date": "2025-12-14T18:40:36.301595",
+          "content": "Day 21 social post for Climate Control Services",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 22,
+          "scheduled_date": "2025-12-15T18:40:36.301597",
+          "content": "Day 22 social post for Climate Control Services",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 23,
+          "scheduled_date": "2025-12-16T18:40:36.301599",
+          "content": "Day 23 social post for Climate Control Services",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 24,
+          "scheduled_date": "2025-12-17T18:40:36.301600",
+          "content": "Day 24 social post for Climate Control Services",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 25,
+          "scheduled_date": "2025-12-18T18:40:36.301602",
+          "content": "Day 25 social post for Climate Control Services",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 26,
+          "scheduled_date": "2025-12-19T18:40:36.301605",
+          "content": "Day 26 social post for Climate Control Services",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 27,
+          "scheduled_date": "2025-12-20T18:40:36.301607",
+          "content": "Day 27 social post for Climate Control Services",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 28,
+          "scheduled_date": "2025-12-21T18:40:36.301609",
+          "content": "Day 28 social post for Climate Control Services",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 29,
+          "scheduled_date": "2025-12-22T18:40:36.301610",
+          "content": "Day 29 social post for Climate Control Services",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 30,
+          "scheduled_date": "2025-12-23T18:40:36.301612",
+          "content": "Day 30 social post for Climate Control Services",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        }
+      ],
+      "email_campaigns": [
+        {
+          "week": 1,
+          "scheduled_date": "2025-11-30T18:40:36.301615",
+          "campaign_name": "Week 1 Campaign",
+          "status": "scheduled"
+        },
+        {
+          "week": 2,
+          "scheduled_date": "2025-12-07T18:40:36.301620",
+          "campaign_name": "Week 2 Campaign",
+          "status": "scheduled"
+        },
+        {
+          "week": 3,
+          "scheduled_date": "2025-12-14T18:40:36.301622",
+          "campaign_name": "Week 3 Campaign",
+          "status": "scheduled"
+        },
+        {
+          "week": 4,
+          "scheduled_date": "2025-12-21T18:40:36.301625",
+          "campaign_name": "Week 4 Campaign",
+          "status": "scheduled"
+        }
+      ],
+      "blog_posts": []
+    },
+    "metrics": {
+      "total_posts": 0,
+      "total_emails_sent": 0,
+      "leads_generated": 297,
+      "revenue_generated": 103377,
+      "our_earnings": 20675.399999999994
+    },
+    "automation_schedule": {
+      "daily_tasks": [
+        {
+          "task": "post_social_media",
+          "time": "09:00"
+        },
+        {
+          "task": "check_analytics",
+          "time": "17:00"
+        },
+        {
+          "task": "update_metrics",
+          "time": "23:00"
+        }
+      ],
+      "weekly_tasks": [
+        {
+          "task": "send_email_campaign",
+          "day": "monday",
+          "time": "10:00"
+        },
+        {
+          "task": "generate_report",
+          "day": "friday",
+          "time": "16:00"
+        }
+      ],
+      "monthly_tasks": [
+        {
+          "task": "calculate_payment",
+          "day": 1,
+          "time": "09:00"
+        },
+        {
+          "task": "send_payment",
+          "day": 5,
+          "time": "09:00"
+        },
+        {
+          "task": "optimize_campaigns",
+          "day": 15,
+          "time": "14:00"
+        }
+      ]
+    }
+  },
+  "client_2_20251123184541": {
+    "id": "client_2_20251123184541",
+    "company_name": "Air Conditioning Repair #68",
+    "industry": "hvac",
+    "onboarded_date": "2025-11-23T18:45:41.572888",
+    "status": "active",
+    "deal_info": {
+      "company": "Air Conditioning Repair #68",
+      "industry": "hvac",
+      "split": "20%",
+      "solution": "Marketing Automation",
+      "deal_value": "$3,000-7,000"
+    },
+    "revenue_share": "20%",
+    "package_type": "Marketing Automation",
+    "accounts": {
+      "buffer": {
+        "platform": "buffer",
+        "status": "active",
+        "credentials": "buffer_air_conditioning_repair_#68",
+        "connected_platforms": [
+          "facebook",
+          "instagram",
+          "twitter",
+          "linkedin"
+        ],
+        "setup_date": "2025-11-23T18:45:41.572928"
+      },
+      "mailchimp": {
+        "platform": "mailchimp",
+        "status": "active",
+        "credentials": "mailchimp_air_conditioning_repair_#68",
+        "list_name": "Air Conditioning Repair #68 Customer List",
+        "setup_date": "2025-11-23T18:45:41.572935"
+      },
+      "google_business": {
+        "platform": "google_my_business",
+        "status": "active",
+        "business_name": "Air Conditioning Repair #68",
+        "setup_date": "2025-11-23T18:45:41.572941"
+      },
+      "analytics": {
+        "platform": "google_analytics",
+        "status": "active",
+        "tracking_id": "GA-33619243",
+        "setup_date": "2025-11-23T18:45:41.572954"
+      }
+    },
+    "content_schedule": {
+      "social_media": [
+        {
+          "day": 1,
+          "scheduled_date": "2025-11-24T18:45:42.573748",
+          "content": "Day 1 social post for Air Conditioning Repair #68",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 2,
+          "scheduled_date": "2025-11-25T18:45:42.573778",
+          "content": "Day 2 social post for Air Conditioning Repair #68",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 3,
+          "scheduled_date": "2025-11-26T18:45:42.573782",
+          "content": "Day 3 social post for Air Conditioning Repair #68",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 4,
+          "scheduled_date": "2025-11-27T18:45:42.573785",
+          "content": "Day 4 social post for Air Conditioning Repair #68",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 5,
+          "scheduled_date": "2025-11-28T18:45:42.573787",
+          "content": "Day 5 social post for Air Conditioning Repair #68",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 6,
+          "scheduled_date": "2025-11-29T18:45:42.573790",
+          "content": "Day 6 social post for Air Conditioning Repair #68",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 7,
+          "scheduled_date": "2025-11-30T18:45:42.573792",
+          "content": "Day 7 social post for Air Conditioning Repair #68",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 8,
+          "scheduled_date": "2025-12-01T18:45:42.573798",
+          "content": "Day 8 social post for Air Conditioning Repair #68",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 9,
+          "scheduled_date": "2025-12-02T18:45:42.573809",
+          "content": "Day 9 social post for Air Conditioning Repair #68",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 10,
+          "scheduled_date": "2025-12-03T18:45:42.573812",
+          "content": "Day 10 social post for Air Conditioning Repair #68",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 11,
+          "scheduled_date": "2025-12-04T18:45:42.573815",
+          "content": "Day 11 social post for Air Conditioning Repair #68",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 12,
+          "scheduled_date": "2025-12-05T18:45:42.573817",
+          "content": "Day 12 social post for Air Conditioning Repair #68",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 13,
+          "scheduled_date": "2025-12-06T18:45:42.573819",
+          "content": "Day 13 social post for Air Conditioning Repair #68",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 14,
+          "scheduled_date": "2025-12-07T18:45:42.573822",
+          "content": "Day 14 social post for Air Conditioning Repair #68",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 15,
+          "scheduled_date": "2025-12-08T18:45:42.573824",
+          "content": "Day 15 social post for Air Conditioning Repair #68",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 16,
+          "scheduled_date": "2025-12-09T18:45:42.573826",
+          "content": "Day 16 social post for Air Conditioning Repair #68",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 17,
+          "scheduled_date": "2025-12-10T18:45:42.573828",
+          "content": "Day 17 social post for Air Conditioning Repair #68",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 18,
+          "scheduled_date": "2025-12-11T18:45:42.573830",
+          "content": "Day 18 social post for Air Conditioning Repair #68",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 19,
+          "scheduled_date": "2025-12-12T18:45:42.573832",
+          "content": "Day 19 social post for Air Conditioning Repair #68",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 20,
+          "scheduled_date": "2025-12-13T18:45:42.573834",
+          "content": "Day 20 social post for Air Conditioning Repair #68",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 21,
+          "scheduled_date": "2025-12-14T18:45:42.573836",
+          "content": "Day 21 social post for Air Conditioning Repair #68",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 22,
+          "scheduled_date": "2025-12-15T18:45:42.573838",
+          "content": "Day 22 social post for Air Conditioning Repair #68",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 23,
+          "scheduled_date": "2025-12-16T18:45:42.573839",
+          "content": "Day 23 social post for Air Conditioning Repair #68",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 24,
+          "scheduled_date": "2025-12-17T18:45:42.573841",
+          "content": "Day 24 social post for Air Conditioning Repair #68",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 25,
+          "scheduled_date": "2025-12-18T18:45:42.573843",
+          "content": "Day 25 social post for Air Conditioning Repair #68",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 26,
+          "scheduled_date": "2025-12-19T18:45:42.573846",
+          "content": "Day 26 social post for Air Conditioning Repair #68",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 27,
+          "scheduled_date": "2025-12-20T18:45:42.573848",
+          "content": "Day 27 social post for Air Conditioning Repair #68",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 28,
+          "scheduled_date": "2025-12-21T18:45:42.573849",
+          "content": "Day 28 social post for Air Conditioning Repair #68",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 29,
+          "scheduled_date": "2025-12-22T18:45:42.573851",
+          "content": "Day 29 social post for Air Conditioning Repair #68",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 30,
+          "scheduled_date": "2025-12-23T18:45:42.573853",
+          "content": "Day 30 social post for Air Conditioning Repair #68",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        }
+      ],
+      "email_campaigns": [
+        {
+          "week": 1,
+          "scheduled_date": "2025-11-30T18:45:42.573856",
+          "campaign_name": "Week 1 Campaign",
+          "status": "scheduled"
+        },
+        {
+          "week": 2,
+          "scheduled_date": "2025-12-07T18:45:42.573861",
+          "campaign_name": "Week 2 Campaign",
+          "status": "scheduled"
+        },
+        {
+          "week": 3,
+          "scheduled_date": "2025-12-14T18:45:42.573863",
+          "campaign_name": "Week 3 Campaign",
+          "status": "scheduled"
+        },
+        {
+          "week": 4,
+          "scheduled_date": "2025-12-21T18:45:42.573865",
+          "campaign_name": "Week 4 Campaign",
+          "status": "scheduled"
+        }
+      ],
+      "blog_posts": []
+    },
+    "metrics": {
+      "total_posts": 0,
+      "total_emails_sent": 0,
+      "leads_generated": 154,
+      "revenue_generated": 54970,
+      "our_earnings": 10993.999999999998
+    },
+    "automation_schedule": {
+      "daily_tasks": [
+        {
+          "task": "post_social_media",
+          "time": "09:00"
+        },
+        {
+          "task": "check_analytics",
+          "time": "17:00"
+        },
+        {
+          "task": "update_metrics",
+          "time": "23:00"
+        }
+      ],
+      "weekly_tasks": [
+        {
+          "task": "send_email_campaign",
+          "day": "monday",
+          "time": "10:00"
+        },
+        {
+          "task": "generate_report",
+          "day": "friday",
+          "time": "16:00"
+        }
+      ],
+      "monthly_tasks": [
+        {
+          "task": "calculate_payment",
+          "day": 1,
+          "time": "09:00"
+        },
+        {
+          "task": "send_payment",
+          "day": 5,
+          "time": "09:00"
+        },
+        {
+          "task": "optimize_campaigns",
+          "day": 15,
+          "time": "14:00"
+        }
+      ]
+    }
+  },
+  "client_3_20251123184542": {
+    "id": "client_3_20251123184542",
+    "company_name": "Air Conditioning Repair #93",
+    "industry": "hvac",
+    "onboarded_date": "2025-11-23T18:45:42.575884",
+    "status": "active",
+    "deal_info": {
+      "company": "Air Conditioning Repair #93",
+      "industry": "hvac",
+      "split": "20%",
+      "solution": "Customer Management System",
+      "deal_value": "$5,000-8,000"
+    },
+    "revenue_share": "20%",
+    "package_type": "Customer Management System",
+    "accounts": {
+      "buffer": {
+        "platform": "buffer",
+        "status": "active",
+        "credentials": "buffer_air_conditioning_repair_#93",
+        "connected_platforms": [
+          "facebook",
+          "instagram",
+          "twitter",
+          "linkedin"
+        ],
+        "setup_date": "2025-11-23T18:45:42.575918"
+      },
+      "mailchimp": {
+        "platform": "mailchimp",
+        "status": "active",
+        "credentials": "mailchimp_air_conditioning_repair_#93",
+        "list_name": "Air Conditioning Repair #93 Customer List",
+        "setup_date": "2025-11-23T18:45:42.575927"
+      },
+      "google_business": {
+        "platform": "google_my_business",
+        "status": "active",
+        "business_name": "Air Conditioning Repair #93",
+        "setup_date": "2025-11-23T18:45:42.575939"
+      },
+      "analytics": {
+        "platform": "google_analytics",
+        "status": "active",
+        "tracking_id": "GA-21430302",
+        "setup_date": "2025-11-23T18:45:42.575953"
+      }
+    },
+    "content_schedule": {
+      "social_media": [
+        {
+          "day": 1,
+          "scheduled_date": "2025-11-24T18:45:43.577021",
+          "content": "Day 1 social post for Air Conditioning Repair #93",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 2,
+          "scheduled_date": "2025-11-25T18:45:43.577060",
+          "content": "Day 2 social post for Air Conditioning Repair #93",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 3,
+          "scheduled_date": "2025-11-26T18:45:43.577064",
+          "content": "Day 3 social post for Air Conditioning Repair #93",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 4,
+          "scheduled_date": "2025-11-27T18:45:43.577069",
+          "content": "Day 4 social post for Air Conditioning Repair #93",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 5,
+          "scheduled_date": "2025-11-28T18:45:43.577072",
+          "content": "Day 5 social post for Air Conditioning Repair #93",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 6,
+          "scheduled_date": "2025-11-29T18:45:43.577075",
+          "content": "Day 6 social post for Air Conditioning Repair #93",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 7,
+          "scheduled_date": "2025-11-30T18:45:43.577078",
+          "content": "Day 7 social post for Air Conditioning Repair #93",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 8,
+          "scheduled_date": "2025-12-01T18:45:43.577080",
+          "content": "Day 8 social post for Air Conditioning Repair #93",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 9,
+          "scheduled_date": "2025-12-02T18:45:43.577083",
+          "content": "Day 9 social post for Air Conditioning Repair #93",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 10,
+          "scheduled_date": "2025-12-03T18:45:43.577085",
+          "content": "Day 10 social post for Air Conditioning Repair #93",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 11,
+          "scheduled_date": "2025-12-04T18:45:43.577087",
+          "content": "Day 11 social post for Air Conditioning Repair #93",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 12,
+          "scheduled_date": "2025-12-05T18:45:43.577089",
+          "content": "Day 12 social post for Air Conditioning Repair #93",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 13,
+          "scheduled_date": "2025-12-06T18:45:43.577092",
+          "content": "Day 13 social post for Air Conditioning Repair #93",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 14,
+          "scheduled_date": "2025-12-07T18:45:43.577094",
+          "content": "Day 14 social post for Air Conditioning Repair #93",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 15,
+          "scheduled_date": "2025-12-08T18:45:43.577096",
+          "content": "Day 15 social post for Air Conditioning Repair #93",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 16,
+          "scheduled_date": "2025-12-09T18:45:43.577097",
+          "content": "Day 16 social post for Air Conditioning Repair #93",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 17,
+          "scheduled_date": "2025-12-10T18:45:43.577099",
+          "content": "Day 17 social post for Air Conditioning Repair #93",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 18,
+          "scheduled_date": "2025-12-11T18:45:43.577101",
+          "content": "Day 18 social post for Air Conditioning Repair #93",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 19,
+          "scheduled_date": "2025-12-12T18:45:43.577103",
+          "content": "Day 19 social post for Air Conditioning Repair #93",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 20,
+          "scheduled_date": "2025-12-13T18:45:43.577104",
+          "content": "Day 20 social post for Air Conditioning Repair #93",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 21,
+          "scheduled_date": "2025-12-14T18:45:43.577106",
+          "content": "Day 21 social post for Air Conditioning Repair #93",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 22,
+          "scheduled_date": "2025-12-15T18:45:43.577108",
+          "content": "Day 22 social post for Air Conditioning Repair #93",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 23,
+          "scheduled_date": "2025-12-16T18:45:43.577110",
+          "content": "Day 23 social post for Air Conditioning Repair #93",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 24,
+          "scheduled_date": "2025-12-17T18:45:43.577111",
+          "content": "Day 24 social post for Air Conditioning Repair #93",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 25,
+          "scheduled_date": "2025-12-18T18:45:43.577113",
+          "content": "Day 25 social post for Air Conditioning Repair #93",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 26,
+          "scheduled_date": "2025-12-19T18:45:43.577116",
+          "content": "Day 26 social post for Air Conditioning Repair #93",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 27,
+          "scheduled_date": "2025-12-20T18:45:43.577118",
+          "content": "Day 27 social post for Air Conditioning Repair #93",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 28,
+          "scheduled_date": "2025-12-21T18:45:43.577119",
+          "content": "Day 28 social post for Air Conditioning Repair #93",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 29,
+          "scheduled_date": "2025-12-22T18:45:43.577121",
+          "content": "Day 29 social post for Air Conditioning Repair #93",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 30,
+          "scheduled_date": "2025-12-23T18:45:43.577123",
+          "content": "Day 30 social post for Air Conditioning Repair #93",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        }
+      ],
+      "email_campaigns": [
+        {
+          "week": 1,
+          "scheduled_date": "2025-11-30T18:45:43.577125",
+          "campaign_name": "Week 1 Campaign",
+          "status": "scheduled"
+        },
+        {
+          "week": 2,
+          "scheduled_date": "2025-12-07T18:45:43.577129",
+          "campaign_name": "Week 2 Campaign",
+          "status": "scheduled"
+        },
+        {
+          "week": 3,
+          "scheduled_date": "2025-12-14T18:45:43.577132",
+          "campaign_name": "Week 3 Campaign",
+          "status": "scheduled"
+        },
+        {
+          "week": 4,
+          "scheduled_date": "2025-12-21T18:45:43.577134",
+          "campaign_name": "Week 4 Campaign",
+          "status": "scheduled"
+        }
+      ],
+      "blog_posts": []
+    },
+    "metrics": {
+      "total_posts": 0,
+      "total_emails_sent": 0,
+      "leads_generated": 155,
+      "revenue_generated": 53985,
+      "our_earnings": 10797.000000000004
+    },
+    "automation_schedule": {
+      "daily_tasks": [
+        {
+          "task": "post_social_media",
+          "time": "09:00"
+        },
+        {
+          "task": "check_analytics",
+          "time": "17:00"
+        },
+        {
+          "task": "update_metrics",
+          "time": "23:00"
+        }
+      ],
+      "weekly_tasks": [
+        {
+          "task": "send_email_campaign",
+          "day": "monday",
+          "time": "10:00"
+        },
+        {
+          "task": "generate_report",
+          "day": "friday",
+          "time": "16:00"
+        }
+      ],
+      "monthly_tasks": [
+        {
+          "task": "calculate_payment",
+          "day": 1,
+          "time": "09:00"
+        },
+        {
+          "task": "send_payment",
+          "day": 5,
+          "time": "09:00"
+        },
+        {
+          "task": "optimize_campaigns",
+          "day": 15,
+          "time": "14:00"
+        }
+      ]
+    }
+  },
+  "client_4_20251123184543": {
+    "id": "client_4_20251123184543",
+    "company_name": "Climate Control Services #11",
+    "industry": "hvac",
+    "onboarded_date": "2025-11-23T18:45:43.580051",
+    "status": "active",
+    "deal_info": {
+      "company": "Climate Control Services #11",
+      "industry": "hvac",
+      "split": "20%",
+      "solution": "Customer Management System",
+      "deal_value": "$5,000-8,000"
+    },
+    "revenue_share": "20%",
+    "package_type": "Customer Management System",
+    "accounts": {
+      "buffer": {
+        "platform": "buffer",
+        "status": "active",
+        "credentials": "buffer_climate_control_services_#11",
+        "connected_platforms": [
+          "facebook",
+          "instagram",
+          "twitter",
+          "linkedin"
+        ],
+        "setup_date": "2025-11-23T18:45:43.580082"
+      },
+      "mailchimp": {
+        "platform": "mailchimp",
+        "status": "active",
+        "credentials": "mailchimp_climate_control_services_#11",
+        "list_name": "Climate Control Services #11 Customer List",
+        "setup_date": "2025-11-23T18:45:43.580100"
+      },
+      "google_business": {
+        "platform": "google_my_business",
+        "status": "active",
+        "business_name": "Climate Control Services #11",
+        "setup_date": "2025-11-23T18:45:43.580106"
+      },
+      "analytics": {
+        "platform": "google_analytics",
+        "status": "active",
+        "tracking_id": "GA-82161673",
+        "setup_date": "2025-11-23T18:45:43.580119"
+      }
+    },
+    "content_schedule": {
+      "social_media": [
+        {
+          "day": 1,
+          "scheduled_date": "2025-11-24T18:45:44.580682",
+          "content": "Day 1 social post for Climate Control Services #11",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 2,
+          "scheduled_date": "2025-11-25T18:45:44.580723",
+          "content": "Day 2 social post for Climate Control Services #11",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 3,
+          "scheduled_date": "2025-11-26T18:45:44.580727",
+          "content": "Day 3 social post for Climate Control Services #11",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 4,
+          "scheduled_date": "2025-11-27T18:45:44.580730",
+          "content": "Day 4 social post for Climate Control Services #11",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 5,
+          "scheduled_date": "2025-11-28T18:45:44.580734",
+          "content": "Day 5 social post for Climate Control Services #11",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 6,
+          "scheduled_date": "2025-11-29T18:45:44.580738",
+          "content": "Day 6 social post for Climate Control Services #11",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 7,
+          "scheduled_date": "2025-11-30T18:45:44.580741",
+          "content": "Day 7 social post for Climate Control Services #11",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 8,
+          "scheduled_date": "2025-12-01T18:45:44.580744",
+          "content": "Day 8 social post for Climate Control Services #11",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 9,
+          "scheduled_date": "2025-12-02T18:45:44.580748",
+          "content": "Day 9 social post for Climate Control Services #11",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 10,
+          "scheduled_date": "2025-12-03T18:45:44.580752",
+          "content": "Day 10 social post for Climate Control Services #11",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 11,
+          "scheduled_date": "2025-12-04T18:45:44.580770",
+          "content": "Day 11 social post for Climate Control Services #11",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 12,
+          "scheduled_date": "2025-12-05T18:45:44.580773",
+          "content": "Day 12 social post for Climate Control Services #11",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 13,
+          "scheduled_date": "2025-12-06T18:45:44.580777",
+          "content": "Day 13 social post for Climate Control Services #11",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 14,
+          "scheduled_date": "2025-12-07T18:45:44.580780",
+          "content": "Day 14 social post for Climate Control Services #11",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 15,
+          "scheduled_date": "2025-12-08T18:45:44.580783",
+          "content": "Day 15 social post for Climate Control Services #11",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 16,
+          "scheduled_date": "2025-12-09T18:45:44.580787",
+          "content": "Day 16 social post for Climate Control Services #11",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 17,
+          "scheduled_date": "2025-12-10T18:45:44.580790",
+          "content": "Day 17 social post for Climate Control Services #11",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 18,
+          "scheduled_date": "2025-12-11T18:45:44.580793",
+          "content": "Day 18 social post for Climate Control Services #11",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 19,
+          "scheduled_date": "2025-12-12T18:45:44.580796",
+          "content": "Day 19 social post for Climate Control Services #11",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 20,
+          "scheduled_date": "2025-12-13T18:45:44.580799",
+          "content": "Day 20 social post for Climate Control Services #11",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 21,
+          "scheduled_date": "2025-12-14T18:45:44.580802",
+          "content": "Day 21 social post for Climate Control Services #11",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 22,
+          "scheduled_date": "2025-12-15T18:45:44.580805",
+          "content": "Day 22 social post for Climate Control Services #11",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 23,
+          "scheduled_date": "2025-12-16T18:45:44.580808",
+          "content": "Day 23 social post for Climate Control Services #11",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 24,
+          "scheduled_date": "2025-12-17T18:45:44.580811",
+          "content": "Day 24 social post for Climate Control Services #11",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 25,
+          "scheduled_date": "2025-12-18T18:45:44.580813",
+          "content": "Day 25 social post for Climate Control Services #11",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 26,
+          "scheduled_date": "2025-12-19T18:45:44.580816",
+          "content": "Day 26 social post for Climate Control Services #11",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 27,
+          "scheduled_date": "2025-12-20T18:45:44.580818",
+          "content": "Day 27 social post for Climate Control Services #11",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 28,
+          "scheduled_date": "2025-12-21T18:45:44.580820",
+          "content": "Day 28 social post for Climate Control Services #11",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 29,
+          "scheduled_date": "2025-12-22T18:45:44.580822",
+          "content": "Day 29 social post for Climate Control Services #11",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 30,
+          "scheduled_date": "2025-12-23T18:45:44.580825",
+          "content": "Day 30 social post for Climate Control Services #11",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        }
+      ],
+      "email_campaigns": [
+        {
+          "week": 1,
+          "scheduled_date": "2025-11-30T18:45:44.580829",
+          "campaign_name": "Week 1 Campaign",
+          "status": "scheduled"
+        },
+        {
+          "week": 2,
+          "scheduled_date": "2025-12-07T18:45:44.580836",
+          "campaign_name": "Week 2 Campaign",
+          "status": "scheduled"
+        },
+        {
+          "week": 3,
+          "scheduled_date": "2025-12-14T18:45:44.580840",
+          "campaign_name": "Week 3 Campaign",
+          "status": "scheduled"
+        },
+        {
+          "week": 4,
+          "scheduled_date": "2025-12-21T18:45:44.580844",
+          "campaign_name": "Week 4 Campaign",
+          "status": "scheduled"
+        }
+      ],
+      "blog_posts": []
+    },
+    "metrics": {
+      "total_posts": 0,
+      "total_emails_sent": 0,
+      "leads_generated": 155,
+      "revenue_generated": 52495,
+      "our_earnings": 10499.0
+    },
+    "automation_schedule": {
+      "daily_tasks": [
+        {
+          "task": "post_social_media",
+          "time": "09:00"
+        },
+        {
+          "task": "check_analytics",
+          "time": "17:00"
+        },
+        {
+          "task": "update_metrics",
+          "time": "23:00"
+        }
+      ],
+      "weekly_tasks": [
+        {
+          "task": "send_email_campaign",
+          "day": "monday",
+          "time": "10:00"
+        },
+        {
+          "task": "generate_report",
+          "day": "friday",
+          "time": "16:00"
+        }
+      ],
+      "monthly_tasks": [
+        {
+          "task": "calculate_payment",
+          "day": 1,
+          "time": "09:00"
+        },
+        {
+          "task": "send_payment",
+          "day": 5,
+          "time": "09:00"
+        },
+        {
+          "task": "optimize_campaigns",
+          "day": 15,
+          "time": "14:00"
+        }
+      ]
+    }
+  },
+  "client_5_20251123184544": {
+    "id": "client_5_20251123184544",
+    "company_name": "HVAC Installation #25",
+    "industry": "hvac",
+    "onboarded_date": "2025-11-23T18:45:44.584190",
+    "status": "active",
+    "deal_info": {
+      "company": "HVAC Installation #25",
+      "industry": "hvac",
+      "split": "20%",
+      "solution": "Customer Management System",
+      "deal_value": "$5,000-8,000"
+    },
+    "revenue_share": "20%",
+    "package_type": "Customer Management System",
+    "accounts": {
+      "buffer": {
+        "platform": "buffer",
+        "status": "active",
+        "credentials": "buffer_hvac_installation_#25",
+        "connected_platforms": [
+          "facebook",
+          "instagram",
+          "twitter",
+          "linkedin"
+        ],
+        "setup_date": "2025-11-23T18:45:44.584216"
+      },
+      "mailchimp": {
+        "platform": "mailchimp",
+        "status": "active",
+        "credentials": "mailchimp_hvac_installation_#25",
+        "list_name": "HVAC Installation #25 Customer List",
+        "setup_date": "2025-11-23T18:45:44.584225"
+      },
+      "google_business": {
+        "platform": "google_my_business",
+        "status": "active",
+        "business_name": "HVAC Installation #25",
+        "setup_date": "2025-11-23T18:45:44.584234"
+      },
+      "analytics": {
+        "platform": "google_analytics",
+        "status": "active",
+        "tracking_id": "GA-49649659",
+        "setup_date": "2025-11-23T18:45:44.584248"
+      }
+    },
+    "content_schedule": {
+      "social_media": [
+        {
+          "day": 1,
+          "scheduled_date": "2025-11-24T18:45:45.584571",
+          "content": "Day 1 social post for HVAC Installation #25",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 2,
+          "scheduled_date": "2025-11-25T18:45:45.584601",
+          "content": "Day 2 social post for HVAC Installation #25",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 3,
+          "scheduled_date": "2025-11-26T18:45:45.584604",
+          "content": "Day 3 social post for HVAC Installation #25",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 4,
+          "scheduled_date": "2025-11-27T18:45:45.584608",
+          "content": "Day 4 social post for HVAC Installation #25",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 5,
+          "scheduled_date": "2025-11-28T18:45:45.584610",
+          "content": "Day 5 social post for HVAC Installation #25",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 6,
+          "scheduled_date": "2025-11-29T18:45:45.584613",
+          "content": "Day 6 social post for HVAC Installation #25",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 7,
+          "scheduled_date": "2025-11-30T18:45:45.584616",
+          "content": "Day 7 social post for HVAC Installation #25",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 8,
+          "scheduled_date": "2025-12-01T18:45:45.584618",
+          "content": "Day 8 social post for HVAC Installation #25",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 9,
+          "scheduled_date": "2025-12-02T18:45:45.584622",
+          "content": "Day 9 social post for HVAC Installation #25",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 10,
+          "scheduled_date": "2025-12-03T18:45:45.584624",
+          "content": "Day 10 social post for HVAC Installation #25",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 11,
+          "scheduled_date": "2025-12-04T18:45:45.584626",
+          "content": "Day 11 social post for HVAC Installation #25",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 12,
+          "scheduled_date": "2025-12-05T18:45:45.584629",
+          "content": "Day 12 social post for HVAC Installation #25",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 13,
+          "scheduled_date": "2025-12-06T18:45:45.584644",
+          "content": "Day 13 social post for HVAC Installation #25",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 14,
+          "scheduled_date": "2025-12-07T18:45:45.584646",
+          "content": "Day 14 social post for HVAC Installation #25",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 15,
+          "scheduled_date": "2025-12-08T18:45:45.584648",
+          "content": "Day 15 social post for HVAC Installation #25",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 16,
+          "scheduled_date": "2025-12-09T18:45:45.584649",
+          "content": "Day 16 social post for HVAC Installation #25",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 17,
+          "scheduled_date": "2025-12-10T18:45:45.584651",
+          "content": "Day 17 social post for HVAC Installation #25",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 18,
+          "scheduled_date": "2025-12-11T18:45:45.584653",
+          "content": "Day 18 social post for HVAC Installation #25",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 19,
+          "scheduled_date": "2025-12-12T18:45:45.584758",
+          "content": "Day 19 social post for HVAC Installation #25",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 20,
+          "scheduled_date": "2025-12-13T18:45:45.584761",
+          "content": "Day 20 social post for HVAC Installation #25",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 21,
+          "scheduled_date": "2025-12-14T18:45:45.584763",
+          "content": "Day 21 social post for HVAC Installation #25",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 22,
+          "scheduled_date": "2025-12-15T18:45:45.584764",
+          "content": "Day 22 social post for HVAC Installation #25",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 23,
+          "scheduled_date": "2025-12-16T18:45:45.584766",
+          "content": "Day 23 social post for HVAC Installation #25",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 24,
+          "scheduled_date": "2025-12-17T18:45:45.584768",
+          "content": "Day 24 social post for HVAC Installation #25",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 25,
+          "scheduled_date": "2025-12-18T18:45:45.584770",
+          "content": "Day 25 social post for HVAC Installation #25",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 26,
+          "scheduled_date": "2025-12-19T18:45:45.584771",
+          "content": "Day 26 social post for HVAC Installation #25",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 27,
+          "scheduled_date": "2025-12-20T18:45:45.584773",
+          "content": "Day 27 social post for HVAC Installation #25",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 28,
+          "scheduled_date": "2025-12-21T18:45:45.584774",
+          "content": "Day 28 social post for HVAC Installation #25",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 29,
+          "scheduled_date": "2025-12-22T18:45:45.584776",
+          "content": "Day 29 social post for HVAC Installation #25",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 30,
+          "scheduled_date": "2025-12-23T18:45:45.584778",
+          "content": "Day 30 social post for HVAC Installation #25",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        }
+      ],
+      "email_campaigns": [
+        {
+          "week": 1,
+          "scheduled_date": "2025-11-30T18:45:45.584780",
+          "campaign_name": "Week 1 Campaign",
+          "status": "scheduled"
+        },
+        {
+          "week": 2,
+          "scheduled_date": "2025-12-07T18:45:45.584784",
+          "campaign_name": "Week 2 Campaign",
+          "status": "scheduled"
+        },
+        {
+          "week": 3,
+          "scheduled_date": "2025-12-14T18:45:45.584787",
+          "campaign_name": "Week 3 Campaign",
+          "status": "scheduled"
+        },
+        {
+          "week": 4,
+          "scheduled_date": "2025-12-21T18:45:45.584789",
+          "campaign_name": "Week 4 Campaign",
+          "status": "scheduled"
+        }
+      ],
+      "blog_posts": []
+    },
+    "metrics": {
+      "total_posts": 0,
+      "total_emails_sent": 0,
+      "leads_generated": 154,
+      "revenue_generated": 53465,
+      "our_earnings": 10693.000000000002
+    },
+    "automation_schedule": {
+      "daily_tasks": [
+        {
+          "task": "post_social_media",
+          "time": "09:00"
+        },
+        {
+          "task": "check_analytics",
+          "time": "17:00"
+        },
+        {
+          "task": "update_metrics",
+          "time": "23:00"
+        }
+      ],
+      "weekly_tasks": [
+        {
+          "task": "send_email_campaign",
+          "day": "monday",
+          "time": "10:00"
+        },
+        {
+          "task": "generate_report",
+          "day": "friday",
+          "time": "16:00"
+        }
+      ],
+      "monthly_tasks": [
+        {
+          "task": "calculate_payment",
+          "day": 1,
+          "time": "09:00"
+        },
+        {
+          "task": "send_payment",
+          "day": 5,
+          "time": "09:00"
+        },
+        {
+          "task": "optimize_campaigns",
+          "day": 15,
+          "time": "14:00"
+        }
+      ]
+    }
+  },
+  "client_6_20251123184545": {
+    "id": "client_6_20251123184545",
+    "company_name": "Air Conditioning Repair #8",
+    "industry": "hvac",
+    "onboarded_date": "2025-11-23T18:45:45.588413",
+    "status": "active",
+    "deal_info": {
+      "company": "Air Conditioning Repair #8",
+      "industry": "hvac",
+      "split": "20%",
+      "solution": "Marketing Automation",
+      "deal_value": "$3,000-7,000"
+    },
+    "revenue_share": "20%",
+    "package_type": "Marketing Automation",
+    "accounts": {
+      "buffer": {
+        "platform": "buffer",
+        "status": "active",
+        "credentials": "buffer_air_conditioning_repair_#8",
+        "connected_platforms": [
+          "facebook",
+          "instagram",
+          "twitter",
+          "linkedin"
+        ],
+        "setup_date": "2025-11-23T18:45:45.588438"
+      },
+      "mailchimp": {
+        "platform": "mailchimp",
+        "status": "active",
+        "credentials": "mailchimp_air_conditioning_repair_#8",
+        "list_name": "Air Conditioning Repair #8 Customer List",
+        "setup_date": "2025-11-23T18:45:45.588448"
+      },
+      "google_business": {
+        "platform": "google_my_business",
+        "status": "active",
+        "business_name": "Air Conditioning Repair #8",
+        "setup_date": "2025-11-23T18:45:45.588454"
+      },
+      "analytics": {
+        "platform": "google_analytics",
+        "status": "active",
+        "tracking_id": "GA-18725351",
+        "setup_date": "2025-11-23T18:45:45.588470"
+      }
+    },
+    "content_schedule": {
+      "social_media": [
+        {
+          "day": 1,
+          "scheduled_date": "2025-11-24T18:45:46.589434",
+          "content": "Day 1 social post for Air Conditioning Repair #8",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 2,
+          "scheduled_date": "2025-11-25T18:45:46.589468",
+          "content": "Day 2 social post for Air Conditioning Repair #8",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 3,
+          "scheduled_date": "2025-11-26T18:45:46.589472",
+          "content": "Day 3 social post for Air Conditioning Repair #8",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 4,
+          "scheduled_date": "2025-11-27T18:45:46.589476",
+          "content": "Day 4 social post for Air Conditioning Repair #8",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 5,
+          "scheduled_date": "2025-11-28T18:45:46.589479",
+          "content": "Day 5 social post for Air Conditioning Repair #8",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 6,
+          "scheduled_date": "2025-11-29T18:45:46.589482",
+          "content": "Day 6 social post for Air Conditioning Repair #8",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 7,
+          "scheduled_date": "2025-11-30T18:45:46.589485",
+          "content": "Day 7 social post for Air Conditioning Repair #8",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 8,
+          "scheduled_date": "2025-12-01T18:45:46.589489",
+          "content": "Day 8 social post for Air Conditioning Repair #8",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 9,
+          "scheduled_date": "2025-12-02T18:45:46.589494",
+          "content": "Day 9 social post for Air Conditioning Repair #8",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 10,
+          "scheduled_date": "2025-12-03T18:45:46.589497",
+          "content": "Day 10 social post for Air Conditioning Repair #8",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 11,
+          "scheduled_date": "2025-12-04T18:45:46.589500",
+          "content": "Day 11 social post for Air Conditioning Repair #8",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 12,
+          "scheduled_date": "2025-12-05T18:45:46.589503",
+          "content": "Day 12 social post for Air Conditioning Repair #8",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 13,
+          "scheduled_date": "2025-12-06T18:45:46.589506",
+          "content": "Day 13 social post for Air Conditioning Repair #8",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 14,
+          "scheduled_date": "2025-12-07T18:45:46.589509",
+          "content": "Day 14 social post for Air Conditioning Repair #8",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 15,
+          "scheduled_date": "2025-12-08T18:45:46.589512",
+          "content": "Day 15 social post for Air Conditioning Repair #8",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 16,
+          "scheduled_date": "2025-12-09T18:45:46.589515",
+          "content": "Day 16 social post for Air Conditioning Repair #8",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 17,
+          "scheduled_date": "2025-12-10T18:45:46.589518",
+          "content": "Day 17 social post for Air Conditioning Repair #8",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 18,
+          "scheduled_date": "2025-12-11T18:45:46.589521",
+          "content": "Day 18 social post for Air Conditioning Repair #8",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 19,
+          "scheduled_date": "2025-12-12T18:45:46.589524",
+          "content": "Day 19 social post for Air Conditioning Repair #8",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 20,
+          "scheduled_date": "2025-12-13T18:45:46.589527",
+          "content": "Day 20 social post for Air Conditioning Repair #8",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 21,
+          "scheduled_date": "2025-12-14T18:45:46.589530",
+          "content": "Day 21 social post for Air Conditioning Repair #8",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 22,
+          "scheduled_date": "2025-12-15T18:45:46.589533",
+          "content": "Day 22 social post for Air Conditioning Repair #8",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 23,
+          "scheduled_date": "2025-12-16T18:45:46.589536",
+          "content": "Day 23 social post for Air Conditioning Repair #8",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 24,
+          "scheduled_date": "2025-12-17T18:45:46.589539",
+          "content": "Day 24 social post for Air Conditioning Repair #8",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 25,
+          "scheduled_date": "2025-12-18T18:45:46.589542",
+          "content": "Day 25 social post for Air Conditioning Repair #8",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 26,
+          "scheduled_date": "2025-12-19T18:45:46.589546",
+          "content": "Day 26 social post for Air Conditioning Repair #8",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 27,
+          "scheduled_date": "2025-12-20T18:45:46.589549",
+          "content": "Day 27 social post for Air Conditioning Repair #8",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 28,
+          "scheduled_date": "2025-12-21T18:45:46.589552",
+          "content": "Day 28 social post for Air Conditioning Repair #8",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 29,
+          "scheduled_date": "2025-12-22T18:45:46.589555",
+          "content": "Day 29 social post for Air Conditioning Repair #8",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 30,
+          "scheduled_date": "2025-12-23T18:45:46.589558",
+          "content": "Day 30 social post for Air Conditioning Repair #8",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        }
+      ],
+      "email_campaigns": [
+        {
+          "week": 1,
+          "scheduled_date": "2025-11-30T18:45:46.589561",
+          "campaign_name": "Week 1 Campaign",
+          "status": "scheduled"
+        },
+        {
+          "week": 2,
+          "scheduled_date": "2025-12-07T18:45:46.589567",
+          "campaign_name": "Week 2 Campaign",
+          "status": "scheduled"
+        },
+        {
+          "week": 3,
+          "scheduled_date": "2025-12-14T18:45:46.589571",
+          "campaign_name": "Week 3 Campaign",
+          "status": "scheduled"
+        },
+        {
+          "week": 4,
+          "scheduled_date": "2025-12-21T18:45:46.589574",
+          "campaign_name": "Week 4 Campaign",
+          "status": "scheduled"
+        }
+      ],
+      "blog_posts": []
+    },
+    "metrics": {
+      "total_posts": 0,
+      "total_emails_sent": 0,
+      "leads_generated": 158,
+      "revenue_generated": 50136,
+      "our_earnings": 10027.2
+    },
+    "automation_schedule": {
+      "daily_tasks": [
+        {
+          "task": "post_social_media",
+          "time": "09:00"
+        },
+        {
+          "task": "check_analytics",
+          "time": "17:00"
+        },
+        {
+          "task": "update_metrics",
+          "time": "23:00"
+        }
+      ],
+      "weekly_tasks": [
+        {
+          "task": "send_email_campaign",
+          "day": "monday",
+          "time": "10:00"
+        },
+        {
+          "task": "generate_report",
+          "day": "friday",
+          "time": "16:00"
+        }
+      ],
+      "monthly_tasks": [
+        {
+          "task": "calculate_payment",
+          "day": 1,
+          "time": "09:00"
+        },
+        {
+          "task": "send_payment",
+          "day": 5,
+          "time": "09:00"
+        },
+        {
+          "task": "optimize_campaigns",
+          "day": 15,
+          "time": "14:00"
+        }
+      ]
+    }
+  },
+  "client_7_20251123184546": {
+    "id": "client_7_20251123184546",
+    "company_name": "HVAC Installation #14",
+    "industry": "hvac",
+    "onboarded_date": "2025-11-23T18:45:46.594207",
+    "status": "active",
+    "deal_info": {
+      "company": "HVAC Installation #14",
+      "industry": "hvac",
+      "split": "20%",
+      "solution": "Online Booking System",
+      "deal_value": "$2,000-4,000"
+    },
+    "revenue_share": "20%",
+    "package_type": "Online Booking System",
+    "accounts": {
+      "buffer": {
+        "platform": "buffer",
+        "status": "active",
+        "credentials": "buffer_hvac_installation_#14",
+        "connected_platforms": [
+          "facebook",
+          "instagram",
+          "twitter",
+          "linkedin"
+        ],
+        "setup_date": "2025-11-23T18:45:46.594251"
+      },
+      "mailchimp": {
+        "platform": "mailchimp",
+        "status": "active",
+        "credentials": "mailchimp_hvac_installation_#14",
+        "list_name": "HVAC Installation #14 Customer List",
+        "setup_date": "2025-11-23T18:45:46.594261"
+      },
+      "google_business": {
+        "platform": "google_my_business",
+        "status": "active",
+        "business_name": "HVAC Installation #14",
+        "setup_date": "2025-11-23T18:45:46.594268"
+      },
+      "analytics": {
+        "platform": "google_analytics",
+        "status": "active",
+        "tracking_id": "GA-53788703",
+        "setup_date": "2025-11-23T18:45:46.594283"
+      }
+    },
+    "content_schedule": {
+      "social_media": [
+        {
+          "day": 1,
+          "scheduled_date": "2025-11-24T18:45:47.594896",
+          "content": "Day 1 social post for HVAC Installation #14",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 2,
+          "scheduled_date": "2025-11-25T18:45:47.594924",
+          "content": "Day 2 social post for HVAC Installation #14",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 3,
+          "scheduled_date": "2025-11-26T18:45:47.594928",
+          "content": "Day 3 social post for HVAC Installation #14",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 4,
+          "scheduled_date": "2025-11-27T18:45:47.594930",
+          "content": "Day 4 social post for HVAC Installation #14",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 5,
+          "scheduled_date": "2025-11-28T18:45:47.594933",
+          "content": "Day 5 social post for HVAC Installation #14",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 6,
+          "scheduled_date": "2025-11-29T18:45:47.594935",
+          "content": "Day 6 social post for HVAC Installation #14",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 7,
+          "scheduled_date": "2025-11-30T18:45:47.594937",
+          "content": "Day 7 social post for HVAC Installation #14",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 8,
+          "scheduled_date": "2025-12-01T18:45:47.594939",
+          "content": "Day 8 social post for HVAC Installation #14",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 9,
+          "scheduled_date": "2025-12-02T18:45:47.594943",
+          "content": "Day 9 social post for HVAC Installation #14",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 10,
+          "scheduled_date": "2025-12-03T18:45:47.594945",
+          "content": "Day 10 social post for HVAC Installation #14",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 11,
+          "scheduled_date": "2025-12-04T18:45:47.594947",
+          "content": "Day 11 social post for HVAC Installation #14",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 12,
+          "scheduled_date": "2025-12-05T18:45:47.594949",
+          "content": "Day 12 social post for HVAC Installation #14",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 13,
+          "scheduled_date": "2025-12-06T18:45:47.594951",
+          "content": "Day 13 social post for HVAC Installation #14",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 14,
+          "scheduled_date": "2025-12-07T18:45:47.594953",
+          "content": "Day 14 social post for HVAC Installation #14",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 15,
+          "scheduled_date": "2025-12-08T18:45:47.594955",
+          "content": "Day 15 social post for HVAC Installation #14",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 16,
+          "scheduled_date": "2025-12-09T18:45:47.594969",
+          "content": "Day 16 social post for HVAC Installation #14",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 17,
+          "scheduled_date": "2025-12-10T18:45:47.594971",
+          "content": "Day 17 social post for HVAC Installation #14",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 18,
+          "scheduled_date": "2025-12-11T18:45:47.594974",
+          "content": "Day 18 social post for HVAC Installation #14",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 19,
+          "scheduled_date": "2025-12-12T18:45:47.594976",
+          "content": "Day 19 social post for HVAC Installation #14",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 20,
+          "scheduled_date": "2025-12-13T18:45:47.594978",
+          "content": "Day 20 social post for HVAC Installation #14",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 21,
+          "scheduled_date": "2025-12-14T18:45:47.594980",
+          "content": "Day 21 social post for HVAC Installation #14",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 22,
+          "scheduled_date": "2025-12-15T18:45:47.594982",
+          "content": "Day 22 social post for HVAC Installation #14",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 23,
+          "scheduled_date": "2025-12-16T18:45:47.594985",
+          "content": "Day 23 social post for HVAC Installation #14",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 24,
+          "scheduled_date": "2025-12-17T18:45:47.594987",
+          "content": "Day 24 social post for HVAC Installation #14",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 25,
+          "scheduled_date": "2025-12-18T18:45:47.594989",
+          "content": "Day 25 social post for HVAC Installation #14",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 26,
+          "scheduled_date": "2025-12-19T18:45:47.594992",
+          "content": "Day 26 social post for HVAC Installation #14",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 27,
+          "scheduled_date": "2025-12-20T18:45:47.594994",
+          "content": "Day 27 social post for HVAC Installation #14",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 28,
+          "scheduled_date": "2025-12-21T18:45:47.594996",
+          "content": "Day 28 social post for HVAC Installation #14",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 29,
+          "scheduled_date": "2025-12-22T18:45:47.594998",
+          "content": "Day 29 social post for HVAC Installation #14",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 30,
+          "scheduled_date": "2025-12-23T18:45:47.595000",
+          "content": "Day 30 social post for HVAC Installation #14",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        }
+      ],
+      "email_campaigns": [
+        {
+          "week": 1,
+          "scheduled_date": "2025-11-30T18:45:47.595002",
+          "campaign_name": "Week 1 Campaign",
+          "status": "scheduled"
+        },
+        {
+          "week": 2,
+          "scheduled_date": "2025-12-07T18:45:47.595007",
+          "campaign_name": "Week 2 Campaign",
+          "status": "scheduled"
+        },
+        {
+          "week": 3,
+          "scheduled_date": "2025-12-14T18:45:47.595009",
+          "campaign_name": "Week 3 Campaign",
+          "status": "scheduled"
+        },
+        {
+          "week": 4,
+          "scheduled_date": "2025-12-21T18:45:47.595012",
+          "campaign_name": "Week 4 Campaign",
+          "status": "scheduled"
+        }
+      ],
+      "blog_posts": []
+    },
+    "metrics": {
+      "total_posts": 0,
+      "total_emails_sent": 0,
+      "leads_generated": 149,
+      "revenue_generated": 53579,
+      "our_earnings": 10715.8
+    },
+    "automation_schedule": {
+      "daily_tasks": [
+        {
+          "task": "post_social_media",
+          "time": "09:00"
+        },
+        {
+          "task": "check_analytics",
+          "time": "17:00"
+        },
+        {
+          "task": "update_metrics",
+          "time": "23:00"
+        }
+      ],
+      "weekly_tasks": [
+        {
+          "task": "send_email_campaign",
+          "day": "monday",
+          "time": "10:00"
+        },
+        {
+          "task": "generate_report",
+          "day": "friday",
+          "time": "16:00"
+        }
+      ],
+      "monthly_tasks": [
+        {
+          "task": "calculate_payment",
+          "day": 1,
+          "time": "09:00"
+        },
+        {
+          "task": "send_payment",
+          "day": 5,
+          "time": "09:00"
+        },
+        {
+          "task": "optimize_campaigns",
+          "day": 15,
+          "time": "14:00"
+        }
+      ]
+    }
+  },
+  "client_8_20251123184547": {
+    "id": "client_8_20251123184547",
+    "company_name": "Heating & Cooling #18",
+    "industry": "hvac",
+    "onboarded_date": "2025-11-23T18:45:47.599759",
+    "status": "active",
+    "deal_info": {
+      "company": "Heating & Cooling #18",
+      "industry": "hvac",
+      "split": "20%",
+      "solution": "Online Booking System",
+      "deal_value": "$2,000-4,000"
+    },
+    "revenue_share": "20%",
+    "package_type": "Online Booking System",
+    "accounts": {
+      "buffer": {
+        "platform": "buffer",
+        "status": "active",
+        "credentials": "buffer_heating_&_cooling_#18",
+        "connected_platforms": [
+          "facebook",
+          "instagram",
+          "twitter",
+          "linkedin"
+        ],
+        "setup_date": "2025-11-23T18:45:47.599789"
+      },
+      "mailchimp": {
+        "platform": "mailchimp",
+        "status": "active",
+        "credentials": "mailchimp_heating_&_cooling_#18",
+        "list_name": "Heating & Cooling #18 Customer List",
+        "setup_date": "2025-11-23T18:45:47.599799"
+      },
+      "google_business": {
+        "platform": "google_my_business",
+        "status": "active",
+        "business_name": "Heating & Cooling #18",
+        "setup_date": "2025-11-23T18:45:47.599811"
+      },
+      "analytics": {
+        "platform": "google_analytics",
+        "status": "active",
+        "tracking_id": "GA-71079861",
+        "setup_date": "2025-11-23T18:45:47.599825"
+      }
+    },
+    "content_schedule": {
+      "social_media": [
+        {
+          "day": 1,
+          "scheduled_date": "2025-11-24T18:45:48.600533",
+          "content": "Day 1 social post for Heating & Cooling #18",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 2,
+          "scheduled_date": "2025-11-25T18:45:48.600562",
+          "content": "Day 2 social post for Heating & Cooling #18",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 3,
+          "scheduled_date": "2025-11-26T18:45:48.600565",
+          "content": "Day 3 social post for Heating & Cooling #18",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 4,
+          "scheduled_date": "2025-11-27T18:45:48.600568",
+          "content": "Day 4 social post for Heating & Cooling #18",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 5,
+          "scheduled_date": "2025-11-28T18:45:48.600570",
+          "content": "Day 5 social post for Heating & Cooling #18",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 6,
+          "scheduled_date": "2025-11-29T18:45:48.600572",
+          "content": "Day 6 social post for Heating & Cooling #18",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 7,
+          "scheduled_date": "2025-11-30T18:45:48.600574",
+          "content": "Day 7 social post for Heating & Cooling #18",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 8,
+          "scheduled_date": "2025-12-01T18:45:48.600576",
+          "content": "Day 8 social post for Heating & Cooling #18",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 9,
+          "scheduled_date": "2025-12-02T18:45:48.600580",
+          "content": "Day 9 social post for Heating & Cooling #18",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 10,
+          "scheduled_date": "2025-12-03T18:45:48.600582",
+          "content": "Day 10 social post for Heating & Cooling #18",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 11,
+          "scheduled_date": "2025-12-04T18:45:48.600584",
+          "content": "Day 11 social post for Heating & Cooling #18",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 12,
+          "scheduled_date": "2025-12-05T18:45:48.600586",
+          "content": "Day 12 social post for Heating & Cooling #18",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 13,
+          "scheduled_date": "2025-12-06T18:45:48.600588",
+          "content": "Day 13 social post for Heating & Cooling #18",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 14,
+          "scheduled_date": "2025-12-07T18:45:48.600590",
+          "content": "Day 14 social post for Heating & Cooling #18",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 15,
+          "scheduled_date": "2025-12-08T18:45:48.600592",
+          "content": "Day 15 social post for Heating & Cooling #18",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 16,
+          "scheduled_date": "2025-12-09T18:45:48.600594",
+          "content": "Day 16 social post for Heating & Cooling #18",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 17,
+          "scheduled_date": "2025-12-10T18:45:48.600596",
+          "content": "Day 17 social post for Heating & Cooling #18",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 18,
+          "scheduled_date": "2025-12-11T18:45:48.600598",
+          "content": "Day 18 social post for Heating & Cooling #18",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 19,
+          "scheduled_date": "2025-12-12T18:45:48.600601",
+          "content": "Day 19 social post for Heating & Cooling #18",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 20,
+          "scheduled_date": "2025-12-13T18:45:48.600602",
+          "content": "Day 20 social post for Heating & Cooling #18",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 21,
+          "scheduled_date": "2025-12-14T18:45:48.600605",
+          "content": "Day 21 social post for Heating & Cooling #18",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 22,
+          "scheduled_date": "2025-12-15T18:45:48.600606",
+          "content": "Day 22 social post for Heating & Cooling #18",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 23,
+          "scheduled_date": "2025-12-16T18:45:48.600608",
+          "content": "Day 23 social post for Heating & Cooling #18",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 24,
+          "scheduled_date": "2025-12-17T18:45:48.600610",
+          "content": "Day 24 social post for Heating & Cooling #18",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 25,
+          "scheduled_date": "2025-12-18T18:45:48.600612",
+          "content": "Day 25 social post for Heating & Cooling #18",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 26,
+          "scheduled_date": "2025-12-19T18:45:48.600615",
+          "content": "Day 26 social post for Heating & Cooling #18",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 27,
+          "scheduled_date": "2025-12-20T18:45:48.600617",
+          "content": "Day 27 social post for Heating & Cooling #18",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 28,
+          "scheduled_date": "2025-12-21T18:45:48.600619",
+          "content": "Day 28 social post for Heating & Cooling #18",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 29,
+          "scheduled_date": "2025-12-22T18:45:48.600621",
+          "content": "Day 29 social post for Heating & Cooling #18",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 30,
+          "scheduled_date": "2025-12-23T18:45:48.600623",
+          "content": "Day 30 social post for Heating & Cooling #18",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        }
+      ],
+      "email_campaigns": [
+        {
+          "week": 1,
+          "scheduled_date": "2025-11-30T18:45:48.600625",
+          "campaign_name": "Week 1 Campaign",
+          "status": "scheduled"
+        },
+        {
+          "week": 2,
+          "scheduled_date": "2025-12-07T18:45:48.600629",
+          "campaign_name": "Week 2 Campaign",
+          "status": "scheduled"
+        },
+        {
+          "week": 3,
+          "scheduled_date": "2025-12-14T18:45:48.600633",
+          "campaign_name": "Week 3 Campaign",
+          "status": "scheduled"
+        },
+        {
+          "week": 4,
+          "scheduled_date": "2025-12-21T18:45:48.600635",
+          "campaign_name": "Week 4 Campaign",
+          "status": "scheduled"
+        }
+      ],
+      "blog_posts": []
+    },
+    "metrics": {
+      "total_posts": 0,
+      "total_emails_sent": 0,
+      "leads_generated": 162,
+      "revenue_generated": 58821,
+      "our_earnings": 11764.200000000003
+    },
+    "automation_schedule": {
+      "daily_tasks": [
+        {
+          "task": "post_social_media",
+          "time": "09:00"
+        },
+        {
+          "task": "check_analytics",
+          "time": "17:00"
+        },
+        {
+          "task": "update_metrics",
+          "time": "23:00"
+        }
+      ],
+      "weekly_tasks": [
+        {
+          "task": "send_email_campaign",
+          "day": "monday",
+          "time": "10:00"
+        },
+        {
+          "task": "generate_report",
+          "day": "friday",
+          "time": "16:00"
+        }
+      ],
+      "monthly_tasks": [
+        {
+          "task": "calculate_payment",
+          "day": 1,
+          "time": "09:00"
+        },
+        {
+          "task": "send_payment",
+          "day": 5,
+          "time": "09:00"
+        },
+        {
+          "task": "optimize_campaigns",
+          "day": 15,
+          "time": "14:00"
+        }
+      ]
+    }
+  },
+  "client_9_20251123184548": {
+    "id": "client_9_20251123184548",
+    "company_name": "Heating & Cooling #98",
+    "industry": "hvac",
+    "onboarded_date": "2025-11-23T18:45:48.607006",
+    "status": "active",
+    "deal_info": {
+      "company": "Heating & Cooling #98",
+      "industry": "hvac",
+      "split": "20%",
+      "solution": "Marketing Automation",
+      "deal_value": "$3,000-7,000"
+    },
+    "revenue_share": "20%",
+    "package_type": "Marketing Automation",
+    "accounts": {
+      "buffer": {
+        "platform": "buffer",
+        "status": "active",
+        "credentials": "buffer_heating_&_cooling_#98",
+        "connected_platforms": [
+          "facebook",
+          "instagram",
+          "twitter",
+          "linkedin"
+        ],
+        "setup_date": "2025-11-23T18:45:48.607039"
+      },
+      "mailchimp": {
+        "platform": "mailchimp",
+        "status": "active",
+        "credentials": "mailchimp_heating_&_cooling_#98",
+        "list_name": "Heating & Cooling #98 Customer List",
+        "setup_date": "2025-11-23T18:45:48.607048"
+      },
+      "google_business": {
+        "platform": "google_my_business",
+        "status": "active",
+        "business_name": "Heating & Cooling #98",
+        "setup_date": "2025-11-23T18:45:48.607057"
+      },
+      "analytics": {
+        "platform": "google_analytics",
+        "status": "active",
+        "tracking_id": "GA-41760755",
+        "setup_date": "2025-11-23T18:45:48.607076"
+      }
+    },
+    "content_schedule": {
+      "social_media": [
+        {
+          "day": 1,
+          "scheduled_date": "2025-11-24T18:45:49.607468",
+          "content": "Day 1 social post for Heating & Cooling #98",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 2,
+          "scheduled_date": "2025-11-25T18:45:49.607494",
+          "content": "Day 2 social post for Heating & Cooling #98",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 3,
+          "scheduled_date": "2025-11-26T18:45:49.607498",
+          "content": "Day 3 social post for Heating & Cooling #98",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 4,
+          "scheduled_date": "2025-11-27T18:45:49.607501",
+          "content": "Day 4 social post for Heating & Cooling #98",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 5,
+          "scheduled_date": "2025-11-28T18:45:49.607503",
+          "content": "Day 5 social post for Heating & Cooling #98",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 6,
+          "scheduled_date": "2025-11-29T18:45:49.607506",
+          "content": "Day 6 social post for Heating & Cooling #98",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 7,
+          "scheduled_date": "2025-11-30T18:45:49.607508",
+          "content": "Day 7 social post for Heating & Cooling #98",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 8,
+          "scheduled_date": "2025-12-01T18:45:49.607511",
+          "content": "Day 8 social post for Heating & Cooling #98",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 9,
+          "scheduled_date": "2025-12-02T18:45:49.607514",
+          "content": "Day 9 social post for Heating & Cooling #98",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 10,
+          "scheduled_date": "2025-12-03T18:45:49.607516",
+          "content": "Day 10 social post for Heating & Cooling #98",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 11,
+          "scheduled_date": "2025-12-04T18:45:49.607519",
+          "content": "Day 11 social post for Heating & Cooling #98",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 12,
+          "scheduled_date": "2025-12-05T18:45:49.607521",
+          "content": "Day 12 social post for Heating & Cooling #98",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 13,
+          "scheduled_date": "2025-12-06T18:45:49.607523",
+          "content": "Day 13 social post for Heating & Cooling #98",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 14,
+          "scheduled_date": "2025-12-07T18:45:49.607525",
+          "content": "Day 14 social post for Heating & Cooling #98",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 15,
+          "scheduled_date": "2025-12-08T18:45:49.607527",
+          "content": "Day 15 social post for Heating & Cooling #98",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 16,
+          "scheduled_date": "2025-12-09T18:45:49.607529",
+          "content": "Day 16 social post for Heating & Cooling #98",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 17,
+          "scheduled_date": "2025-12-10T18:45:49.607531",
+          "content": "Day 17 social post for Heating & Cooling #98",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 18,
+          "scheduled_date": "2025-12-11T18:45:49.607533",
+          "content": "Day 18 social post for Heating & Cooling #98",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 19,
+          "scheduled_date": "2025-12-12T18:45:49.607535",
+          "content": "Day 19 social post for Heating & Cooling #98",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 20,
+          "scheduled_date": "2025-12-13T18:45:49.607537",
+          "content": "Day 20 social post for Heating & Cooling #98",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 21,
+          "scheduled_date": "2025-12-14T18:45:49.607539",
+          "content": "Day 21 social post for Heating & Cooling #98",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 22,
+          "scheduled_date": "2025-12-15T18:45:49.607541",
+          "content": "Day 22 social post for Heating & Cooling #98",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 23,
+          "scheduled_date": "2025-12-16T18:45:49.607543",
+          "content": "Day 23 social post for Heating & Cooling #98",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 24,
+          "scheduled_date": "2025-12-17T18:45:49.607544",
+          "content": "Day 24 social post for Heating & Cooling #98",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 25,
+          "scheduled_date": "2025-12-18T18:45:49.607546",
+          "content": "Day 25 social post for Heating & Cooling #98",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 26,
+          "scheduled_date": "2025-12-19T18:45:49.607549",
+          "content": "Day 26 social post for Heating & Cooling #98",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 27,
+          "scheduled_date": "2025-12-20T18:45:49.607551",
+          "content": "Day 27 social post for Heating & Cooling #98",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 28,
+          "scheduled_date": "2025-12-21T18:45:49.607553",
+          "content": "Day 28 social post for Heating & Cooling #98",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 29,
+          "scheduled_date": "2025-12-22T18:45:49.607555",
+          "content": "Day 29 social post for Heating & Cooling #98",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        },
+        {
+          "day": 30,
+          "scheduled_date": "2025-12-23T18:45:49.607557",
+          "content": "Day 30 social post for Heating & Cooling #98",
+          "platforms": [
+            "facebook",
+            "instagram",
+            "twitter",
+            "linkedin"
+          ],
+          "status": "scheduled"
+        }
+      ],
+      "email_campaigns": [
+        {
+          "week": 1,
+          "scheduled_date": "2025-11-30T18:45:49.607559",
+          "campaign_name": "Week 1 Campaign",
+          "status": "scheduled"
+        },
+        {
+          "week": 2,
+          "scheduled_date": "2025-12-07T18:45:49.607564",
+          "campaign_name": "Week 2 Campaign",
+          "status": "scheduled"
+        },
+        {
+          "week": 3,
+          "scheduled_date": "2025-12-14T18:45:49.607567",
+          "campaign_name": "Week 3 Campaign",
+          "status": "scheduled"
+        },
+        {
+          "week": 4,
+          "scheduled_date": "2025-12-21T18:45:49.607569",
+          "campaign_name": "Week 4 Campaign",
+          "status": "scheduled"
+        }
+      ],
+      "blog_posts": []
+    },
+    "metrics": {
+      "total_posts": 0,
+      "total_emails_sent": 0,
+      "leads_generated": 133,
+      "revenue_generated": 46232,
+      "our_earnings": 9246.400000000003
+    },
+    "automation_schedule": {
+      "daily_tasks": [
+        {
+          "task": "post_social_media",
+          "time": "09:00"
+        },
+        {
+          "task": "check_analytics",
+          "time": "17:00"
+        },
+        {
+          "task": "update_metrics",
+          "time": "23:00"
+        }
+      ],
+      "weekly_tasks": [
+        {
+          "task": "send_email_campaign",
+          "day": "monday",
+          "time": "10:00"
+        },
+        {
+          "task": "generate_report",
+          "day": "friday",
+          "time": "16:00"
+        }
+      ],
+      "monthly_tasks": [
+        {
+          "task": "calculate_payment",
+          "day": 1,
+          "time": "09:00"
+        },
+        {
+          "task": "send_payment",
+          "day": 5,
+          "time": "09:00"
+        },
+        {
+          "task": "optimize_campaigns",
+          "day": 15,
+          "time": "14:00"
+        }
+      ]
+    }
+  }
+}

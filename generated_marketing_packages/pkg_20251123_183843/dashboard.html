@@ -1,0 +1,124 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Climate Control Services - Marketing Dashboard</title>
+    <style>
+        * { margin: 0; padding: 0; box-sizing: border-box; }
+        body { font-family: Arial, sans-serif; background: #f5f5f5; }
+        .header { background: linear-gradient(135deg, #667eea 0%, #764ba2 100%);
+                   color: white; padding: 30px; text-align: center; }
+        .container { max-width: 1200px; margin: 20px auto; padding: 20px; }
+        .card { background: white; padding: 20px; margin: 10px 0; border-radius: 10px;
+                 box-shadow: 0 2px 10px rgba(0,0,0,0.1); }
+        .stat { display: inline-block; margin: 20px; text-align: center; }
+        .stat-value { font-size: 48px; font-weight: bold; color: #667eea; }
+        .stat-label { font-size: 14px; color: #666; text-transform: uppercase; }
+        .action-btn { background: #667eea; color: white; padding: 15px 30px;
+                      border: none; border-radius: 5px; cursor: pointer; margin: 10px; }
+        .action-btn:hover { background: #5568d3; }
+        .calendar { display: grid; grid-template-columns: repeat(7, 1fr); gap: 10px; }
+        .day { padding: 15px; background: #ecf0f1; border-radius: 5px; text-align: center; }
+        .day.scheduled { background: #3498db; color: white; }
+        .checklist { list-style: none; }
+        .checklist li { padding: 10px; margin: 5px 0; background: #ecf0f1; border-radius: 5px; }
+        .checklist li:before { content: "☐ "; font-size: 20px; margin-right: 10px; }
+        .checklist li.done { background: #d4edda; }
+        .checklist li.done:before { content: "✓ "; color: #28a745; }
+    </style>
+</head>
+<body>
+    <div class="header">
+        <h1>Climate Control Services</h1>
+        <p>Marketing Automation Dashboard</p>
+    </div>
+
+    <div class="container">
+        <!-- Stats -->
+        <div class="card">
+            <h2>📊 This Month</h2>
+            <div class="stat">
+                <div class="stat-value">30</div>
+                <div class="stat-label">Social Posts Ready</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">5</div>
+                <div class="stat-label">Email Campaigns</div>
+            </div>
+            <div class="stat">
+                <div class="stat-value">100%</div>
+                <div class="stat-label">Automated</div>
+            </div>
+        </div>
+
+        <!-- Quick Actions -->
+        <div class="card">
+            <h2>⚡ Quick Actions</h2>
+            <button class="action-btn" onclick="alert('Open social_media_posts.txt to see your posts!')">
+                📱 View Social Posts
+            </button>
+            <button class="action-btn" onclick="alert('Open email_templates.html to see your email campaigns!')">
+                📧 View Email Templates
+            </button>
+            <button class="action-btn" onclick="alert('Check SETUP_GUIDE.md for instructions!')">
+                📋 Setup Guide
+            </button>
+        </div>
+
+        <!-- 30-Day Calendar -->
+        <div class="card">
+            <h2>📅 30-Day Content Calendar</h2>
+            <p style="margin-bottom: 20px;">Green = Post scheduled automatically</p>
+            <div class="calendar" id="calendar"></div>
+        </div>
+
+        <!-- Setup Checklist -->
+        <div class="card">
+            <h2>✅ Setup Checklist</h2>
+            <ul class="checklist">
+                <li>Review all 30 social media posts</li>
+                <li>Customize posts with your phone/website</li>
+                <li>Review 5 email templates</li>
+                <li>Add your logo and branding</li>
+                <li>Connect social media accounts</li>
+                <li>Set up email marketing platform</li>
+                <li>Schedule first week of posts</li>
+                <li>Send welcome email to customers</li>
+            </ul>
+        </div>
+
+        <!-- Tools Needed -->
+        <div class="card">
+            <h2>🛠️ Recommended Tools (Free/Low-Cost)</h2>
+            <ul>
+                <li><strong>Social Media Scheduling:</strong> Buffer (free), Hootsuite, Later</li>
+                <li><strong>Email Marketing:</strong> Mailchimp (free up to 500 contacts), SendGrid</li>
+                <li><strong>Graphics:</strong> Canva (free), Unsplash (free stock photos)</li>
+                <li><strong>Analytics:</strong> Google Analytics (free), Facebook Insights (free)</li>
+            </ul>
+        </div>
+    </div>
+
+    <script>
+        // Generate 30-day calendar
+        const calendar = document.getElementById('calendar');
+        const days = ['Sun', 'Mon', 'Tue', 'Wed', 'Thu', 'Fri', 'Sat'];
+
+        // Add day labels
+        days.forEach(day => {
+            const label = document.createElement('div');
+            label.style.fontWeight = 'bold';
+            label.style.textAlign = 'center';
+            label.textContent = day;
+            calendar.appendChild(label);
+        });
+
+        // Add 30 days
+        for (let i = 1; i <= 30; i++) {
+            const day = document.createElement('div');
+            day.className = 'day scheduled';
+            day.innerHTML = `<strong>Day ${i}</strong><br><small>Post Ready</small>`;
+            calendar.appendChild(day);
+        }
+    </script>
+</body>
+</html>

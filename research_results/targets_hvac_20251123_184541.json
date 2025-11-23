@@ -1,0 +1,2002 @@
+[
+  {
+    "id": "target_068",
+    "company": "Air Conditioning Repair #68",
+    "type": "Air Conditioning Repair",
+    "location": "Miami, FL",
+    "phone": "+1-555-1768",
+    "employees": 20,
+    "years_in_business": 4,
+    "has_website": true,
+    "estimated_revenue": 1905144,
+    "digital_presence": "weak",
+    "needs_assessment": {
+      "online_booking": true,
+      "customer_management": true,
+      "marketing_automation": true,
+      "mobile_app": false
+    },
+    "score": 93,
+    "priority": "HIGH"
+  },
+  {
+    "id": "target_055",
+    "company": "HVAC Installation #55",
+    "type": "HVAC Installation",
+    "location": "Denver, CO",
+    "phone": "+1-555-3653",
+    "employees": 5,
+    "years_in_business": 3,
+    "has_website": true,
+    "estimated_revenue": 4929015,
+    "digital_presence": "weak",
+    "needs_assessment": {
+      "online_booking": false,
+      "customer_management": true,
+      "marketing_automation": true,
+      "mobile_app": false
+    },
+    "score": 87,
+    "priority": "HIGH"
+  },
+  {
+    "id": "target_085",
+    "company": "Heating & Cooling #85",
+    "type": "Heating & Cooling",
+    "location": "Miami, FL",
+    "phone": "+1-555-6053",
+    "employees": 20,
+    "years_in_business": 9,
+    "has_website": true,
+    "estimated_revenue": 3224201,
+    "digital_presence": "weak",
+    "needs_assessment": {
+      "online_booking": true,
+      "customer_management": false,
+      "marketing_automation": true,
+      "mobile_app": false
+    },
+    "score": 87,
+    "priority": "HIGH"
+  },
+  {
+    "id": "target_091",
+    "company": "Heating & Cooling #91",
+    "type": "Heating & Cooling",
+    "location": "Dallas, TX",
+    "phone": "+1-555-8639",
+    "employees": 15,
+    "years_in_business": 20,
+    "has_website": true,
+    "estimated_revenue": 2832768,
+    "digital_presence": "weak",
+    "needs_assessment": {
+      "online_booking": false,
+      "customer_management": true,
+      "marketing_automation": false,
+      "mobile_app": true
+    },
+    "score": 82,
+    "priority": "HIGH"
+  },
+  {
+    "id": "target_052",
+    "company": "Heating & Cooling #52",
+    "type": "Heating & Cooling",
+    "location": "Dallas, TX",
+    "phone": "+1-555-7038",
+    "employees": 19,
+    "years_in_business": 9,
+    "has_website": true,
+    "estimated_revenue": 4095171,
+    "digital_presence": "weak",
+    "needs_assessment": {
+      "online_booking": false,
+      "customer_management": true,
+      "marketing_automation": false,
+      "mobile_app": false
+    },
+    "score": 81,
+    "priority": "HIGH"
+  },
+  {
+    "id": "target_041",
+    "company": "Air Conditioning Repair #41",
+    "type": "Air Conditioning Repair",
+    "location": "Denver, CO",
+    "phone": "+1-555-3756",
+    "employees": 13,
+    "years_in_business": 13,
+    "has_website": false,
+    "estimated_revenue": 2964287,
+    "digital_presence": "moderate",
+    "needs_assessment": {
+      "online_booking": true,
+      "customer_management": true,
+      "marketing_automation": true,
+      "mobile_app": false
+    },
+    "score": 78,
+    "priority": "HIGH"
+  },
+  {
+    "id": "target_061",
+    "company": "Heating & Cooling #61",
+    "type": "Heating & Cooling",
+    "location": "Dallas, TX",
+    "phone": "+1-555-4638",
+    "employees": 2,
+    "years_in_business": 18,
+    "has_website": false,
+    "estimated_revenue": 4294936,
+    "digital_presence": "weak",
+    "needs_assessment": {
+      "online_booking": true,
+      "customer_management": false,
+      "marketing_automation": false,
+      "mobile_app": true
+    },
+    "score": 77,
+    "priority": "HIGH"
+  },
+  {
+    "id": "target_093",
+    "company": "Air Conditioning Repair #93",
+    "type": "Air Conditioning Repair",
+    "location": "Denver, CO",
+    "phone": "+1-555-2907",
+    "employees": 9,
+    "years_in_business": 4,
+    "has_website": false,
+    "estimated_revenue": 708009,
+    "digital_presence": "weak",
+    "needs_assessment": {
+      "online_booking": false,
+      "customer_management": true,
+      "marketing_automation": false,
+      "mobile_app": true
+    },
+    "score": 77,
+    "priority": "HIGH"
+  },
+  {
+    "id": "target_019",
+    "company": "HVAC Installation #19",
+    "type": "HVAC Installation",
+    "location": "Orlando, FL",
+    "phone": "+1-555-3287",
+    "employees": 17,
+    "years_in_business": 16,
+    "has_website": true,
+    "estimated_revenue": 4226387,
+    "digital_presence": "weak",
+    "needs_assessment": {
+      "online_booking": false,
+      "customer_management": true,
+      "marketing_automation": false,
+      "mobile_app": false
+    },
+    "score": 76,
+    "priority": "HIGH"
+  },
+  {
+    "id": "target_063",
+    "company": "HVAC Installation #63",
+    "type": "HVAC Installation",
+    "location": "Tampa, FL",
+    "phone": "+1-555-9930",
+    "employees": 2,
+    "years_in_business": 3,
+    "has_website": false,
+    "estimated_revenue": 2704976,
+    "digital_presence": "weak",
+    "needs_assessment": {
+      "online_booking": false,
+      "customer_management": true,
+      "marketing_automation": false,
+      "mobile_app": false
+    },
+    "score": 76,
+    "priority": "HIGH"
+  },
+  {
+    "id": "target_082",
+    "company": "Air Conditioning Repair #82",
+    "type": "Air Conditioning Repair",
+    "location": "Denver, CO",
+    "phone": "+1-555-5932",
+    "employees": 9,
+    "years_in_business": 11,
+    "has_website": false,
+    "estimated_revenue": 1334268,
+    "digital_presence": "weak",
+    "needs_assessment": {
+      "online_booking": true,
+      "customer_management": false,
+      "marketing_automation": false,
+      "mobile_app": false
+    },
+    "score": 76,
+    "priority": "HIGH"
+  },
+  {
+    "id": "target_083",
+    "company": "HVAC Installation #83",
+    "type": "HVAC Installation",
+    "location": "Houston, TX",
+    "phone": "+1-555-2259",
+    "employees": 17,
+    "years_in_business": 17,
+    "has_website": false,
+    "estimated_revenue": 4502124,
+    "digital_presence": "weak",
+    "needs_assessment": {
+      "online_booking": false,
+      "customer_management": true,
+      "marketing_automation": false,
+      "mobile_app": false
+    },
+    "score": 76,
+    "priority": "HIGH"
+  },
+  {
+    "id": "target_097",
+    "company": "Heating & Cooling #97",
+    "type": "Heating & Cooling",
+    "location": "Houston, TX",
+    "phone": "+1-555-2504",
+    "employees": 49,
+    "years_in_business": 7,
+    "has_website": true,
+    "estimated_revenue": 3042851,
+    "digital_presence": "moderate",
+    "needs_assessment": {
+      "online_booking": true,
+      "customer_management": false,
+      "marketing_automation": true,
+      "mobile_app": true
+    },
+    "score": 73,
+    "priority": "HIGH"
+  },
+  {
+    "id": "target_011",
+    "company": "Climate Control Services #11",
+    "type": "Climate Control Services",
+    "location": "Denver, CO",
+    "phone": "+1-555-7061",
+    "employees": 40,
+    "years_in_business": 15,
+    "has_website": true,
+    "estimated_revenue": 1325908,
+    "digital_presence": "weak",
+    "needs_assessment": {
+      "online_booking": true,
+      "customer_management": true,
+      "marketing_automation": false,
+      "mobile_app": false
+    },
+    "score": 72,
+    "priority": "HIGH"
+  },
+  {
+    "id": "target_012",
+    "company": "Heating & Cooling #12",
+    "type": "Heating & Cooling",
+    "location": "Orlando, FL",
+    "phone": "+1-555-2724",
+    "employees": 47,
+    "years_in_business": 16,
+    "has_website": true,
+    "estimated_revenue": 3433996,
+    "digital_presence": "weak",
+    "needs_assessment": {
+      "online_booking": true,
+      "customer_management": false,
+      "marketing_automation": true,
+      "mobile_app": false
+    },
+    "score": 72,
+    "priority": "HIGH"
+  },
+  {
+    "id": "target_021",
+    "company": "Heating & Cooling #21",
+    "type": "Heating & Cooling",
+    "location": "Jacksonville, FL",
+    "phone": "+1-555-1623",
+    "employees": 6,
+    "years_in_business": 16,
+    "has_website": true,
+    "estimated_revenue": 3426515,
+    "digital_presence": "moderate",
+    "needs_assessment": {
+      "online_booking": false,
+      "customer_management": true,
+      "marketing_automation": false,
+      "mobile_app": true
+    },
+    "score": 72,
+    "priority": "HIGH"
+  },
+  {
+    "id": "target_024",
+    "company": "Air Conditioning Repair #24",
+    "type": "Air Conditioning Repair",
+    "location": "Miami, FL",
+    "phone": "+1-555-4583",
+    "employees": 48,
+    "years_in_business": 16,
+    "has_website": false,
+    "estimated_revenue": 4435812,
+    "digital_presence": "weak",
+    "needs_assessment": {
+      "online_booking": false,
+      "customer_management": true,
+      "marketing_automation": true,
+      "mobile_app": false
+    },
+    "score": 72,
+    "priority": "HIGH"
+  },
+  {
+    "id": "target_046",
+    "company": "HVAC Installation #46",
+    "type": "HVAC Installation",
+    "location": "Tampa, FL",
+    "phone": "+1-555-3621",
+    "employees": 15,
+    "years_in_business": 13,
+    "has_website": true,
+    "estimated_revenue": 2978986,
+    "digital_presence": "moderate",
+    "needs_assessment": {
+      "online_booking": true,
+      "customer_management": true,
+      "marketing_automation": false,
+      "mobile_app": false
+    },
+    "score": 72,
+    "priority": "HIGH"
+  },
+  {
+    "id": "target_050",
+    "company": "Air Conditioning Repair #50",
+    "type": "Air Conditioning Repair",
+    "location": "Denver, CO",
+    "phone": "+1-555-8784",
+    "employees": 27,
+    "years_in_business": 17,
+    "has_website": true,
+    "estimated_revenue": 2223988,
+    "digital_presence": "weak",
+    "needs_assessment": {
+      "online_booking": true,
+      "customer_management": false,
+      "marketing_automation": true,
+      "mobile_app": false
+    },
+    "score": 72,
+    "priority": "HIGH"
+  },
+  {
+    "id": "target_072",
+    "company": "Air Conditioning Repair #72",
+    "type": "Air Conditioning Repair",
+    "location": "Atlanta, GA",
+    "phone": "+1-555-6781",
+    "employees": 20,
+    "years_in_business": 11,
+    "has_website": true,
+    "estimated_revenue": 3664760,
+    "digital_presence": "moderate",
+    "needs_assessment": {
+      "online_booking": true,
+      "customer_management": false,
+      "marketing_automation": false,
+      "mobile_app": true
+    },
+    "score": 72,
+    "priority": "HIGH"
+  },
+  {
+    "id": "target_025",
+    "company": "HVAC Installation #25",
+    "type": "HVAC Installation",
+    "location": "Orlando, FL",
+    "phone": "+1-555-5096",
+    "employees": 7,
+    "years_in_business": 6,
+    "has_website": true,
+    "estimated_revenue": 2136379,
+    "digital_presence": "moderate",
+    "needs_assessment": {
+      "online_booking": false,
+      "customer_management": false,
+      "marketing_automation": false,
+      "mobile_app": true
+    },
+    "score": 71,
+    "priority": "HIGH"
+  },
+  {
+    "id": "target_049",
+    "company": "Climate Control Services #49",
+    "type": "Climate Control Services",
+    "location": "Tampa, FL",
+    "phone": "+1-555-8432",
+    "employees": 20,
+    "years_in_business": 7,
+    "has_website": true,
+    "estimated_revenue": 2817008,
+    "digital_presence": "moderate",
+    "needs_assessment": {
+      "online_booking": true,
+      "customer_management": false,
+      "marketing_automation": false,
+      "mobile_app": false
+    },
+    "score": 71,
+    "priority": "HIGH"
+  },
+  {
+    "id": "target_088",
+    "company": "Climate Control Services #88",
+    "type": "Climate Control Services",
+    "location": "Denver, CO",
+    "phone": "+1-555-6188",
+    "employees": 17,
+    "years_in_business": 19,
+    "has_website": true,
+    "estimated_revenue": 2146474,
+    "digital_presence": "weak",
+    "needs_assessment": {
+      "online_booking": false,
+      "customer_management": false,
+      "marketing_automation": false,
+      "mobile_app": false
+    },
+    "score": 70,
+    "priority": "MEDIUM"
+  },
+  {
+    "id": "target_100",
+    "company": "Climate Control Services #100",
+    "type": "Climate Control Services",
+    "location": "Tampa, FL",
+    "phone": "+1-555-3190",
+    "employees": 27,
+    "years_in_business": 1,
+    "has_website": true,
+    "estimated_revenue": 2516329,
+    "digital_presence": "weak",
+    "needs_assessment": {
+      "online_booking": true,
+      "customer_management": false,
+      "marketing_automation": true,
+      "mobile_app": true
+    },
+    "score": 68,
+    "priority": "MEDIUM"
+  },
+  {
+    "id": "target_002",
+    "company": "Climate Control Services #2",
+    "type": "Climate Control Services",
+    "location": "Jacksonville, FL",
+    "phone": "+1-555-4756",
+    "employees": 3,
+    "years_in_business": 1,
+    "has_website": false,
+    "estimated_revenue": 2192111,
+    "digital_presence": "weak",
+    "needs_assessment": {
+      "online_booking": true,
+      "customer_management": true,
+      "marketing_automation": false,
+      "mobile_app": false
+    },
+    "score": 67,
+    "priority": "MEDIUM"
+  },
+  {
+    "id": "target_035",
+    "company": "Climate Control Services #35",
+    "type": "Climate Control Services",
+    "location": "Phoenix, AZ",
+    "phone": "+1-555-6282",
+    "employees": 11,
+    "years_in_business": 4,
+    "has_website": true,
+    "estimated_revenue": 1085901,
+    "digital_presence": "strong",
+    "needs_assessment": {
+      "online_booking": true,
+      "customer_management": false,
+      "marketing_automation": false,
+      "mobile_app": true
+    },
+    "score": 67,
+    "priority": "MEDIUM"
+  },
+  {
+    "id": "target_045",
+    "company": "HVAC Installation #45",
+    "type": "HVAC Installation",
+    "location": "Jacksonville, FL",
+    "phone": "+1-555-3671",
+    "employees": 42,
+    "years_in_business": 6,
+    "has_website": true,
+    "estimated_revenue": 2690665,
+    "digital_presence": "moderate",
+    "needs_assessment": {
+      "online_booking": true,
+      "customer_management": false,
+      "marketing_automation": false,
+      "mobile_app": true
+    },
+    "score": 67,
+    "priority": "MEDIUM"
+  },
+  {
+    "id": "target_094",
+    "company": "Heating & Cooling #94",
+    "type": "Heating & Cooling",
+    "location": "Houston, TX",
+    "phone": "+1-555-4552",
+    "employees": 34,
+    "years_in_business": 5,
+    "has_website": true,
+    "estimated_revenue": 2833678,
+    "digital_presence": "moderate",
+    "needs_assessment": {
+      "online_booking": true,
+      "customer_management": false,
+      "marketing_automation": true,
+      "mobile_app": false
+    },
+    "score": 67,
+    "priority": "MEDIUM"
+  },
+  {
+    "id": "target_007",
+    "company": "Climate Control Services #7",
+    "type": "Climate Control Services",
+    "location": "Jacksonville, FL",
+    "phone": "+1-555-2984",
+    "employees": 19,
+    "years_in_business": 12,
+    "has_website": true,
+    "estimated_revenue": 2497590,
+    "digital_presence": "moderate",
+    "needs_assessment": {
+      "online_booking": true,
+      "customer_management": false,
+      "marketing_automation": false,
+      "mobile_app": false
+    },
+    "score": 66,
+    "priority": "MEDIUM"
+  },
+  {
+    "id": "target_008",
+    "company": "Air Conditioning Repair #8",
+    "type": "Air Conditioning Repair",
+    "location": "Phoenix, AZ",
+    "phone": "+1-555-7883",
+    "employees": 43,
+    "years_in_business": 12,
+    "has_website": true,
+    "estimated_revenue": 2671037,
+    "digital_presence": "weak",
+    "needs_assessment": {
+      "online_booking": false,
+      "customer_management": false,
+      "marketing_automation": true,
+      "mobile_app": false
+    },
+    "score": 66,
+    "priority": "MEDIUM"
+  },
+  {
+    "id": "target_014",
+    "company": "HVAC Installation #14",
+    "type": "HVAC Installation",
+    "location": "Houston, TX",
+    "phone": "+1-555-5934",
+    "employees": 43,
+    "years_in_business": 15,
+    "has_website": false,
+    "estimated_revenue": 4875669,
+    "digital_presence": "weak",
+    "needs_assessment": {
+      "online_booking": true,
+      "customer_management": false,
+      "marketing_automation": false,
+      "mobile_app": false
+    },
+    "score": 66,
+    "priority": "MEDIUM"
+  },
+  {
+    "id": "target_022",
+    "company": "Ventilation Systems #22",
+    "type": "Ventilation Systems",
+    "location": "Miami, FL",
+    "phone": "+1-555-1263",
+    "employees": 25,
+    "years_in_business": 20,
+    "has_website": true,
+    "estimated_revenue": 2353373,
+    "digital_presence": "weak",
+    "needs_assessment": {
+      "online_booking": true,
+      "customer_management": false,
+      "marketing_automation": false,
+      "mobile_app": false
+    },
+    "score": 66,
+    "priority": "MEDIUM"
+  },
+  {
+    "id": "target_029",
+    "company": "HVAC Installation #29",
+    "type": "HVAC Installation",
+    "location": "Tampa, FL",
+    "phone": "+1-555-9352",
+    "employees": 49,
+    "years_in_business": 20,
+    "has_website": true,
+    "estimated_revenue": 2345083,
+    "digital_presence": "weak",
+    "needs_assessment": {
+      "online_booking": true,
+      "customer_management": false,
+      "marketing_automation": false,
+      "mobile_app": false
+    },
+    "score": 66,
+    "priority": "MEDIUM"
+  },
+  {
+    "id": "target_042",
+    "company": "Climate Control Services #42",
+    "type": "Climate Control Services",
+    "location": "Orlando, FL",
+    "phone": "+1-555-4239",
+    "employees": 40,
+    "years_in_business": 15,
+    "has_website": true,
+    "estimated_revenue": 4327371,
+    "digital_presence": "weak",
+    "needs_assessment": {
+      "online_booking": false,
+      "customer_management": false,
+      "marketing_automation": true,
+      "mobile_app": false
+    },
+    "score": 66,
+    "priority": "MEDIUM"
+  },
+  {
+    "id": "target_044",
+    "company": "Air Conditioning Repair #44",
+    "type": "Air Conditioning Repair",
+    "location": "Dallas, TX",
+    "phone": "+1-555-6243",
+    "employees": 40,
+    "years_in_business": 11,
+    "has_website": true,
+    "estimated_revenue": 2561505,
+    "digital_presence": "weak",
+    "needs_assessment": {
+      "online_booking": true,
+      "customer_management": false,
+      "marketing_automation": false,
+      "mobile_app": false
+    },
+    "score": 66,
+    "priority": "MEDIUM"
+  },
+  {
+    "id": "target_064",
+    "company": "HVAC Installation #64",
+    "type": "HVAC Installation",
+    "location": "Houston, TX",
+    "phone": "+1-555-7513",
+    "employees": 4,
+    "years_in_business": 3,
+    "has_website": false,
+    "estimated_revenue": 4583292,
+    "digital_presence": "moderate",
+    "needs_assessment": {
+      "online_booking": false,
+      "customer_management": true,
+      "marketing_automation": false,
+      "mobile_app": false
+    },
+    "score": 66,
+    "priority": "MEDIUM"
+  },
+  {
+    "id": "target_066",
+    "company": "Heating & Cooling #66",
+    "type": "Heating & Cooling",
+    "location": "Miami, FL",
+    "phone": "+1-555-8072",
+    "employees": 32,
+    "years_in_business": 14,
+    "has_website": true,
+    "estimated_revenue": 2338325,
+    "digital_presence": "weak",
+    "needs_assessment": {
+      "online_booking": false,
+      "customer_management": true,
+      "marketing_automation": false,
+      "mobile_app": false
+    },
+    "score": 66,
+    "priority": "MEDIUM"
+  },
+  {
+    "id": "target_087",
+    "company": "Air Conditioning Repair #87",
+    "type": "Air Conditioning Repair",
+    "location": "Tampa, FL",
+    "phone": "+1-555-3221",
+    "employees": 13,
+    "years_in_business": 18,
+    "has_website": true,
+    "estimated_revenue": 2575694,
+    "digital_presence": "moderate",
+    "needs_assessment": {
+      "online_booking": true,
+      "customer_management": false,
+      "marketing_automation": false,
+      "mobile_app": false
+    },
+    "score": 66,
+    "priority": "MEDIUM"
+  },
+  {
+    "id": "target_015",
+    "company": "Heating & Cooling #15",
+    "type": "Heating & Cooling",
+    "location": "Charlotte, NC",
+    "phone": "+1-555-7757",
+    "employees": 49,
+    "years_in_business": 4,
+    "has_website": false,
+    "estimated_revenue": 3652592,
+    "digital_presence": "weak",
+    "needs_assessment": {
+      "online_booking": false,
+      "customer_management": false,
+      "marketing_automation": false,
+      "mobile_app": false
+    },
+    "score": 65,
+    "priority": "MEDIUM"
+  },
+  {
+    "id": "target_026",
+    "company": "Heating & Cooling #26",
+    "type": "Heating & Cooling",
+    "location": "Atlanta, GA",
+    "phone": "+1-555-1211",
+    "employees": 13,
+    "years_in_business": 8,
+    "has_website": false,
+    "estimated_revenue": 637169,
+    "digital_presence": "weak",
+    "needs_assessment": {
+      "online_booking": false,
+      "customer_management": false,
+      "marketing_automation": false,
+      "mobile_app": false
+    },
+    "score": 65,
+    "priority": "MEDIUM"
+  },
+  {
+    "id": "target_034",
+    "company": "Ventilation Systems #34",
+    "type": "Ventilation Systems",
+    "location": "Miami, FL",
+    "phone": "+1-555-5291",
+    "employees": 31,
+    "years_in_business": 7,
+    "has_website": true,
+    "estimated_revenue": 3323481,
+    "digital_presence": "weak",
+    "needs_assessment": {
+      "online_booking": false,
+      "customer_management": false,
+      "marketing_automation": false,
+      "mobile_app": false
+    },
+    "score": 65,
+    "priority": "MEDIUM"
+  },
+  {
+    "id": "target_059",
+    "company": "Heating & Cooling #59",
+    "type": "Heating & Cooling",
+    "location": "Jacksonville, FL",
+    "phone": "+1-555-8353",
+    "employees": 45,
+    "years_in_business": 8,
+    "has_website": false,
+    "estimated_revenue": 3429968,
+    "digital_presence": "strong",
+    "needs_assessment": {
+      "online_booking": true,
+      "customer_management": false,
+      "marketing_automation": true,
+      "mobile_app": true
+    },
+    "score": 63,
+    "priority": "MEDIUM"
+  },
+  {
+    "id": "target_013",
+    "company": "Climate Control Services #13",
+    "type": "Climate Control Services",
+    "location": "Charlotte, NC",
+    "phone": "+1-555-5516",
+    "employees": 12,
+    "years_in_business": 15,
+    "has_website": true,
+    "estimated_revenue": 1477010,
+    "digital_presence": "strong",
+    "needs_assessment": {
+      "online_booking": true,
+      "customer_management": true,
+      "marketing_automation": false,
+      "mobile_app": false
+    },
+    "score": 62,
+    "priority": "MEDIUM"
+  },
+  {
+    "id": "target_018",
+    "company": "Heating & Cooling #18",
+    "type": "Heating & Cooling",
+    "location": "Miami, FL",
+    "phone": "+1-555-7643",
+    "employees": 24,
+    "years_in_business": 19,
+    "has_website": true,
+    "estimated_revenue": 3937947,
+    "digital_presence": "moderate",
+    "needs_assessment": {
+      "online_booking": true,
+      "customer_management": false,
+      "marketing_automation": true,
+      "mobile_app": false
+    },
+    "score": 62,
+    "priority": "MEDIUM"
+  },
+  {
+    "id": "target_081",
+    "company": "Air Conditioning Repair #81",
+    "type": "Air Conditioning Repair",
+    "location": "Miami, FL",
+    "phone": "+1-555-8660",
+    "employees": 8,
+    "years_in_business": 15,
+    "has_website": false,
+    "estimated_revenue": 925536,
+    "digital_presence": "moderate",
+    "needs_assessment": {
+      "online_booking": true,
+      "customer_management": false,
+      "marketing_automation": true,
+      "mobile_app": false
+    },
+    "score": 62,
+    "priority": "MEDIUM"
+  },
+  {
+    "id": "target_098",
+    "company": "Heating & Cooling #98",
+    "type": "Heating & Cooling",
+    "location": "Phoenix, AZ",
+    "phone": "+1-555-9924",
+    "employees": 5,
+    "years_in_business": 17,
+    "has_website": true,
+    "estimated_revenue": 3605514,
+    "digital_presence": "strong",
+    "needs_assessment": {
+      "online_booking": false,
+      "customer_management": true,
+      "marketing_automation": true,
+      "mobile_app": false
+    },
+    "score": 62,
+    "priority": "MEDIUM"
+  },
+  {
+    "id": "target_005",
+    "company": "HVAC Installation #5",
+    "type": "HVAC Installation",
+    "location": "Miami, FL",
+    "phone": "+1-555-1911",
+    "employees": 5,
+    "years_in_business": 3,
+    "has_website": true,
+    "estimated_revenue": 1233807,
+    "digital_presence": "strong",
+    "needs_assessment": {
+      "online_booking": true,
+      "customer_management": false,
+      "marketing_automation": false,
+      "mobile_app": false
+    },
+    "score": 61,
+    "priority": "MEDIUM"
+  },
+  {
+    "id": "target_017",
+    "company": "Ventilation Systems #17",
+    "type": "Ventilation Systems",
+    "location": "Orlando, FL",
+    "phone": "+1-555-2499",
+    "employees": 2,
+    "years_in_business": 11,
+    "has_website": false,
+    "estimated_revenue": 3214225,
+    "digital_presence": "moderate",
+    "needs_assessment": {
+      "online_booking": false,
+      "customer_management": true,
+      "marketing_automation": false,
+      "mobile_app": false
+    },
+    "score": 61,
+    "priority": "MEDIUM"
+  },
+  {
+    "id": "target_003",
+    "company": "HVAC Installation #3",
+    "type": "HVAC Installation",
+    "location": "Houston, TX",
+    "phone": "+1-555-9861",
+    "employees": 29,
+    "years_in_business": 17,
+    "has_website": true,
+    "estimated_revenue": 4697378,
+    "digital_presence": "weak",
+    "needs_assessment": {
+      "online_booking": false,
+      "customer_management": false,
+      "marketing_automation": false,
+      "mobile_app": false
+    },
+    "score": 60,
+    "priority": "MEDIUM"
+  },
+  {
+    "id": "target_009",
+    "company": "HVAC Installation #9",
+    "type": "HVAC Installation",
+    "location": "Jacksonville, FL",
+    "phone": "+1-555-3636",
+    "employees": 2,
+    "years_in_business": 9,
+    "has_website": true,
+    "estimated_revenue": 645991,
+    "digital_presence": "weak",
+    "needs_assessment": {
+      "online_booking": false,
+      "customer_management": false,
+      "marketing_automation": false,
+      "mobile_app": false
+    },
+    "score": 60,
+    "priority": "MEDIUM"
+  },
+  {
+    "id": "target_053",
+    "company": "Air Conditioning Repair #53",
+    "type": "Air Conditioning Repair",
+    "location": "Orlando, FL",
+    "phone": "+1-555-6382",
+    "employees": 11,
+    "years_in_business": 20,
+    "has_website": true,
+    "estimated_revenue": 942412,
+    "digital_presence": "weak",
+    "needs_assessment": {
+      "online_booking": false,
+      "customer_management": false,
+      "marketing_automation": false,
+      "mobile_app": false
+    },
+    "score": 60,
+    "priority": "MEDIUM"
+  },
+  {
+    "id": "target_043",
+    "company": "HVAC Installation #43",
+    "type": "HVAC Installation",
+    "location": "Denver, CO",
+    "phone": "+1-555-7573",
+    "employees": 24,
+    "years_in_business": 9,
+    "has_website": true,
+    "estimated_revenue": 704663,
+    "digital_presence": "strong",
+    "needs_assessment": {
+      "online_booking": true,
+      "customer_management": true,
+      "marketing_automation": true,
+      "mobile_app": true
+    },
+    "score": 59,
+    "priority": "MEDIUM"
+  },
+  {
+    "id": "target_033",
+    "company": "Ventilation Systems #33",
+    "type": "Ventilation Systems",
+    "location": "Jacksonville, FL",
+    "phone": "+1-555-7540",
+    "employees": 2,
+    "years_in_business": 15,
+    "has_website": false,
+    "estimated_revenue": 4680477,
+    "digital_presence": "strong",
+    "needs_assessment": {
+      "online_booking": true,
+      "customer_management": false,
+      "marketing_automation": true,
+      "mobile_app": false
+    },
+    "score": 57,
+    "priority": "MEDIUM"
+  },
+  {
+    "id": "target_058",
+    "company": "Air Conditioning Repair #58",
+    "type": "Air Conditioning Repair",
+    "location": "Charlotte, NC",
+    "phone": "+1-555-9469",
+    "employees": 30,
+    "years_in_business": 4,
+    "has_website": true,
+    "estimated_revenue": 1077935,
+    "digital_presence": "strong",
+    "needs_assessment": {
+      "online_booking": true,
+      "customer_management": false,
+      "marketing_automation": true,
+      "mobile_app": false
+    },
+    "score": 57,
+    "priority": "MEDIUM"
+  },
+  {
+    "id": "target_067",
+    "company": "Climate Control Services #67",
+    "type": "Climate Control Services",
+    "location": "Miami, FL",
+    "phone": "+1-555-6892",
+    "employees": 31,
+    "years_in_business": 6,
+    "has_website": true,
+    "estimated_revenue": 163358,
+    "digital_presence": "weak",
+    "needs_assessment": {
+      "online_booking": true,
+      "customer_management": false,
+      "marketing_automation": true,
+      "mobile_app": false
+    },
+    "score": 57,
+    "priority": "MEDIUM"
+  },
+  {
+    "id": "target_092",
+    "company": "Climate Control Services #92",
+    "type": "Climate Control Services",
+    "location": "Jacksonville, FL",
+    "phone": "+1-555-7966",
+    "employees": 46,
+    "years_in_business": 9,
+    "has_website": false,
+    "estimated_revenue": 2073727,
+    "digital_presence": "strong",
+    "needs_assessment": {
+      "online_booking": true,
+      "customer_management": true,
+      "marketing_automation": false,
+      "mobile_app": false
+    },
+    "score": 57,
+    "priority": "MEDIUM"
+  },
+  {
+    "id": "target_016",
+    "company": "Ventilation Systems #16",
+    "type": "Ventilation Systems",
+    "location": "Orlando, FL",
+    "phone": "+1-555-9250",
+    "employees": 29,
+    "years_in_business": 16,
+    "has_website": true,
+    "estimated_revenue": 1173799,
+    "digital_presence": "moderate",
+    "needs_assessment": {
+      "online_booking": true,
+      "customer_management": false,
+      "marketing_automation": false,
+      "mobile_app": false
+    },
+    "score": 56,
+    "priority": "MEDIUM"
+  },
+  {
+    "id": "target_028",
+    "company": "Heating & Cooling #28",
+    "type": "Heating & Cooling",
+    "location": "Tampa, FL",
+    "phone": "+1-555-4022",
+    "employees": 44,
+    "years_in_business": 18,
+    "has_website": false,
+    "estimated_revenue": 4198557,
+    "digital_presence": "moderate",
+    "needs_assessment": {
+      "online_booking": true,
+      "customer_management": false,
+      "marketing_automation": false,
+      "mobile_app": false
+    },
+    "score": 56,
+    "priority": "MEDIUM"
+  },
+  {
+    "id": "target_062",
+    "company": "Air Conditioning Repair #62",
+    "type": "Air Conditioning Repair",
+    "location": "Jacksonville, FL",
+    "phone": "+1-555-6418",
+    "employees": 6,
+    "years_in_business": 15,
+    "has_website": false,
+    "estimated_revenue": 4867376,
+    "digital_presence": "strong",
+    "needs_assessment": {
+      "online_booking": true,
+      "customer_management": false,
+      "marketing_automation": false,
+      "mobile_app": false
+    },
+    "score": 56,
+    "priority": "MEDIUM"
+  },
+  {
+    "id": "target_069",
+    "company": "HVAC Installation #69",
+    "type": "HVAC Installation",
+    "location": "Denver, CO",
+    "phone": "+1-555-1567",
+    "employees": 25,
+    "years_in_business": 2,
+    "has_website": true,
+    "estimated_revenue": 1668415,
+    "digital_presence": "weak",
+    "needs_assessment": {
+      "online_booking": false,
+      "customer_management": true,
+      "marketing_automation": false,
+      "mobile_app": false
+    },
+    "score": 56,
+    "priority": "MEDIUM"
+  },
+  {
+    "id": "target_080",
+    "company": "Climate Control Services #80",
+    "type": "Climate Control Services",
+    "location": "Houston, TX",
+    "phone": "+1-555-8721",
+    "employees": 6,
+    "years_in_business": 17,
+    "has_website": true,
+    "estimated_revenue": 2850052,
+    "digital_presence": "strong",
+    "needs_assessment": {
+      "online_booking": false,
+      "customer_management": false,
+      "marketing_automation": true,
+      "mobile_app": false
+    },
+    "score": 56,
+    "priority": "MEDIUM"
+  },
+  {
+    "id": "target_086",
+    "company": "HVAC Installation #86",
+    "type": "HVAC Installation",
+    "location": "Jacksonville, FL",
+    "phone": "+1-555-7966",
+    "employees": 46,
+    "years_in_business": 8,
+    "has_website": true,
+    "estimated_revenue": 3013657,
+    "digital_presence": "moderate",
+    "needs_assessment": {
+      "online_booking": false,
+      "customer_management": false,
+      "marketing_automation": false,
+      "mobile_app": false
+    },
+    "score": 55,
+    "priority": "MEDIUM"
+  },
+  {
+    "id": "target_004",
+    "company": "Ventilation Systems #4",
+    "type": "Ventilation Systems",
+    "location": "Dallas, TX",
+    "phone": "+1-555-1977",
+    "employees": 42,
+    "years_in_business": 1,
+    "has_website": true,
+    "estimated_revenue": 3074939,
+    "digital_presence": "moderate",
+    "needs_assessment": {
+      "online_booking": false,
+      "customer_management": true,
+      "marketing_automation": false,
+      "mobile_app": true
+    },
+    "score": 52,
+    "priority": "MEDIUM"
+  },
+  {
+    "id": "target_038",
+    "company": "HVAC Installation #38",
+    "type": "HVAC Installation",
+    "location": "Dallas, TX",
+    "phone": "+1-555-9955",
+    "employees": 25,
+    "years_in_business": 19,
+    "has_website": false,
+    "estimated_revenue": 3354564,
+    "digital_presence": "strong",
+    "needs_assessment": {
+      "online_booking": true,
+      "customer_management": false,
+      "marketing_automation": false,
+      "mobile_app": true
+    },
+    "score": 52,
+    "priority": "MEDIUM"
+  },
+  {
+    "id": "target_010",
+    "company": "Air Conditioning Repair #10",
+    "type": "Air Conditioning Repair",
+    "location": "Orlando, FL",
+    "phone": "+1-555-4239",
+    "employees": 26,
+    "years_in_business": 6,
+    "has_website": true,
+    "estimated_revenue": 4006923,
+    "digital_presence": "strong",
+    "needs_assessment": {
+      "online_booking": false,
+      "customer_management": true,
+      "marketing_automation": false,
+      "mobile_app": false
+    },
+    "score": 51,
+    "priority": "MEDIUM"
+  },
+  {
+    "id": "target_027",
+    "company": "Air Conditioning Repair #27",
+    "type": "Air Conditioning Repair",
+    "location": "Charlotte, NC",
+    "phone": "+1-555-5868",
+    "employees": 30,
+    "years_in_business": 9,
+    "has_website": false,
+    "estimated_revenue": 2329880,
+    "digital_presence": "strong",
+    "needs_assessment": {
+      "online_booking": false,
+      "customer_management": false,
+      "marketing_automation": true,
+      "mobile_app": false
+    },
+    "score": 51,
+    "priority": "MEDIUM"
+  },
+  {
+    "id": "target_037",
+    "company": "HVAC Installation #37",
+    "type": "HVAC Installation",
+    "location": "Orlando, FL",
+    "phone": "+1-555-2626",
+    "employees": 41,
+    "years_in_business": 6,
+    "has_website": true,
+    "estimated_revenue": 3201771,
+    "digital_presence": "strong",
+    "needs_assessment": {
+      "online_booking": false,
+      "customer_management": true,
+      "marketing_automation": false,
+      "mobile_app": false
+    },
+    "score": 51,
+    "priority": "MEDIUM"
+  },
+  {
+    "id": "target_040",
+    "company": "Air Conditioning Repair #40",
+    "type": "Air Conditioning Repair",
+    "location": "Orlando, FL",
+    "phone": "+1-555-6165",
+    "employees": 3,
+    "years_in_business": 14,
+    "has_website": true,
+    "estimated_revenue": 4198632,
+    "digital_presence": "strong",
+    "needs_assessment": {
+      "online_booking": false,
+      "customer_management": true,
+      "marketing_automation": false,
+      "mobile_app": false
+    },
+    "score": 51,
+    "priority": "MEDIUM"
+  },
+  {
+    "id": "target_065",
+    "company": "Heating & Cooling #65",
+    "type": "Heating & Cooling",
+    "location": "Jacksonville, FL",
+    "phone": "+1-555-4177",
+    "employees": 2,
+    "years_in_business": 12,
+    "has_website": true,
+    "estimated_revenue": 713759,
+    "digital_presence": "moderate",
+    "needs_assessment": {
+      "online_booking": false,
+      "customer_management": true,
+      "marketing_automation": false,
+      "mobile_app": false
+    },
+    "score": 51,
+    "priority": "MEDIUM"
+  },
+  {
+    "id": "target_071",
+    "company": "Climate Control Services #71",
+    "type": "Climate Control Services",
+    "location": "Charlotte, NC",
+    "phone": "+1-555-1491",
+    "employees": 30,
+    "years_in_business": 8,
+    "has_website": true,
+    "estimated_revenue": 2122974,
+    "digital_presence": "strong",
+    "needs_assessment": {
+      "online_booking": true,
+      "customer_management": false,
+      "marketing_automation": false,
+      "mobile_app": false
+    },
+    "score": 51,
+    "priority": "MEDIUM"
+  },
+  {
+    "id": "target_051",
+    "company": "Ventilation Systems #51",
+    "type": "Ventilation Systems",
+    "location": "Dallas, TX",
+    "phone": "+1-555-9869",
+    "employees": 36,
+    "years_in_business": 17,
+    "has_website": true,
+    "estimated_revenue": 2350338,
+    "digital_presence": "moderate",
+    "needs_assessment": {
+      "online_booking": false,
+      "customer_management": false,
+      "marketing_automation": false,
+      "mobile_app": false
+    },
+    "score": 50,
+    "priority": "LOW"
+  },
+  {
+    "id": "target_077",
+    "company": "Ventilation Systems #77",
+    "type": "Ventilation Systems",
+    "location": "Atlanta, GA",
+    "phone": "+1-555-6139",
+    "employees": 38,
+    "years_in_business": 13,
+    "has_website": false,
+    "estimated_revenue": 1156990,
+    "digital_presence": "moderate",
+    "needs_assessment": {
+      "online_booking": false,
+      "customer_management": false,
+      "marketing_automation": false,
+      "mobile_app": false
+    },
+    "score": 50,
+    "priority": "LOW"
+  },
+  {
+    "id": "target_084",
+    "company": "Heating & Cooling #84",
+    "type": "Heating & Cooling",
+    "location": "Denver, CO",
+    "phone": "+1-555-8832",
+    "employees": 38,
+    "years_in_business": 1,
+    "has_website": false,
+    "estimated_revenue": 3765816,
+    "digital_presence": "weak",
+    "needs_assessment": {
+      "online_booking": false,
+      "customer_management": false,
+      "marketing_automation": false,
+      "mobile_app": false
+    },
+    "score": 50,
+    "priority": "LOW"
+  },
+  {
+    "id": "target_047",
+    "company": "Ventilation Systems #47",
+    "type": "Ventilation Systems",
+    "location": "Tampa, FL",
+    "phone": "+1-555-8938",
+    "employees": 49,
+    "years_in_business": 11,
+    "has_website": true,
+    "estimated_revenue": 560318,
+    "digital_presence": "strong",
+    "needs_assessment": {
+      "online_booking": true,
+      "customer_management": true,
+      "marketing_automation": false,
+      "mobile_app": true
+    },
+    "score": 48,
+    "priority": "LOW"
+  },
+  {
+    "id": "target_001",
+    "company": "Climate Control Services #1",
+    "type": "Climate Control Services",
+    "location": "Charlotte, NC",
+    "phone": "+1-555-3054",
+    "employees": 24,
+    "years_in_business": 20,
+    "has_website": true,
+    "estimated_revenue": 4581724,
+    "digital_presence": "strong",
+    "needs_assessment": {
+      "online_booking": true,
+      "customer_management": false,
+      "marketing_automation": false,
+      "mobile_app": false
+    },
+    "score": 46,
+    "priority": "LOW"
+  },
+  {
+    "id": "target_006",
+    "company": "Air Conditioning Repair #6",
+    "type": "Air Conditioning Repair",
+    "location": "Denver, CO",
+    "phone": "+1-555-7618",
+    "employees": 43,
+    "years_in_business": 20,
+    "has_website": false,
+    "estimated_revenue": 2912190,
+    "digital_presence": "strong",
+    "needs_assessment": {
+      "online_booking": false,
+      "customer_management": false,
+      "marketing_automation": true,
+      "mobile_app": false
+    },
+    "score": 46,
+    "priority": "LOW"
+  },
+  {
+    "id": "target_020",
+    "company": "Climate Control Services #20",
+    "type": "Climate Control Services",
+    "location": "Charlotte, NC",
+    "phone": "+1-555-6098",
+    "employees": 27,
+    "years_in_business": 11,
+    "has_website": true,
+    "estimated_revenue": 2120434,
+    "digital_presence": "strong",
+    "needs_assessment": {
+      "online_booking": false,
+      "customer_management": true,
+      "marketing_automation": false,
+      "mobile_app": false
+    },
+    "score": 46,
+    "priority": "LOW"
+  },
+  {
+    "id": "target_036",
+    "company": "HVAC Installation #36",
+    "type": "HVAC Installation",
+    "location": "Orlando, FL",
+    "phone": "+1-555-9047",
+    "employees": 25,
+    "years_in_business": 20,
+    "has_website": true,
+    "estimated_revenue": 4608570,
+    "digital_presence": "strong",
+    "needs_assessment": {
+      "online_booking": false,
+      "customer_management": true,
+      "marketing_automation": false,
+      "mobile_app": false
+    },
+    "score": 46,
+    "priority": "LOW"
+  },
+  {
+    "id": "target_054",
+    "company": "Air Conditioning Repair #54",
+    "type": "Air Conditioning Repair",
+    "location": "Miami, FL",
+    "phone": "+1-555-3885",
+    "employees": 27,
+    "years_in_business": 11,
+    "has_website": true,
+    "estimated_revenue": 1857533,
+    "digital_presence": "strong",
+    "needs_assessment": {
+      "online_booking": false,
+      "customer_management": true,
+      "marketing_automation": false,
+      "mobile_app": false
+    },
+    "score": 46,
+    "priority": "LOW"
+  },
+  {
+    "id": "target_056",
+    "company": "HVAC Installation #56",
+    "type": "HVAC Installation",
+    "location": "Atlanta, GA",
+    "phone": "+1-555-4102",
+    "employees": 46,
+    "years_in_business": 17,
+    "has_website": true,
+    "estimated_revenue": 649959,
+    "digital_presence": "moderate",
+    "needs_assessment": {
+      "online_booking": false,
+      "customer_management": true,
+      "marketing_automation": false,
+      "mobile_app": false
+    },
+    "score": 46,
+    "priority": "LOW"
+  },
+  {
+    "id": "target_075",
+    "company": "HVAC Installation #75",
+    "type": "HVAC Installation",
+    "location": "Jacksonville, FL",
+    "phone": "+1-555-2192",
+    "employees": 29,
+    "years_in_business": 12,
+    "has_website": true,
+    "estimated_revenue": 3777897,
+    "digital_presence": "strong",
+    "needs_assessment": {
+      "online_booking": true,
+      "customer_management": false,
+      "marketing_automation": false,
+      "mobile_app": false
+    },
+    "score": 46,
+    "priority": "LOW"
+  },
+  {
+    "id": "target_076",
+    "company": "Climate Control Services #76",
+    "type": "Climate Control Services",
+    "location": "Miami, FL",
+    "phone": "+1-555-1567",
+    "employees": 37,
+    "years_in_business": 20,
+    "has_website": true,
+    "estimated_revenue": 3805292,
+    "digital_presence": "strong",
+    "needs_assessment": {
+      "online_booking": true,
+      "customer_management": false,
+      "marketing_automation": false,
+      "mobile_app": false
+    },
+    "score": 46,
+    "priority": "LOW"
+  },
+  {
+    "id": "target_079",
+    "company": "HVAC Installation #79",
+    "type": "HVAC Installation",
+    "location": "Houston, TX",
+    "phone": "+1-555-6222",
+    "employees": 48,
+    "years_in_business": 17,
+    "has_website": true,
+    "estimated_revenue": 197081,
+    "digital_presence": "weak",
+    "needs_assessment": {
+      "online_booking": true,
+      "customer_management": false,
+      "marketing_automation": false,
+      "mobile_app": false
+    },
+    "score": 46,
+    "priority": "LOW"
+  },
+  {
+    "id": "target_095",
+    "company": "HVAC Installation #95",
+    "type": "HVAC Installation",
+    "location": "Dallas, TX",
+    "phone": "+1-555-8866",
+    "employees": 29,
+    "years_in_business": 14,
+    "has_website": true,
+    "estimated_revenue": 2347050,
+    "digital_presence": "strong",
+    "needs_assessment": {
+      "online_booking": true,
+      "customer_management": false,
+      "marketing_automation": false,
+      "mobile_app": false
+    },
+    "score": 46,
+    "priority": "LOW"
+  },
+  {
+    "id": "target_031",
+    "company": "Air Conditioning Repair #31",
+    "type": "Air Conditioning Repair",
+    "location": "Phoenix, AZ",
+    "phone": "+1-555-2135",
+    "employees": 33,
+    "years_in_business": 4,
+    "has_website": true,
+    "estimated_revenue": 3139245,
+    "digital_presence": "strong",
+    "needs_assessment": {
+      "online_booking": false,
+      "customer_management": false,
+      "marketing_automation": false,
+      "mobile_app": false
+    },
+    "score": 45,
+    "priority": "LOW"
+  },
+  {
+    "id": "target_030",
+    "company": "Heating & Cooling #30",
+    "type": "Heating & Cooling",
+    "location": "Atlanta, GA",
+    "phone": "+1-555-6839",
+    "employees": 46,
+    "years_in_business": 18,
+    "has_website": true,
+    "estimated_revenue": 893558,
+    "digital_presence": "strong",
+    "needs_assessment": {
+      "online_booking": true,
+      "customer_management": true,
+      "marketing_automation": false,
+      "mobile_app": false
+    },
+    "score": 42,
+    "priority": "LOW"
+  },
+  {
+    "id": "target_073",
+    "company": "Climate Control Services #73",
+    "type": "Climate Control Services",
+    "location": "Tampa, FL",
+    "phone": "+1-555-6910",
+    "employees": 37,
+    "years_in_business": 2,
+    "has_website": true,
+    "estimated_revenue": 4416461,
+    "digital_presence": "strong",
+    "needs_assessment": {
+      "online_booking": true,
+      "customer_management": true,
+      "marketing_automation": false,
+      "mobile_app": false
+    },
+    "score": 42,
+    "priority": "LOW"
+  },
+  {
+    "id": "target_060",
+    "company": "Ventilation Systems #60",
+    "type": "Ventilation Systems",
+    "location": "Dallas, TX",
+    "phone": "+1-555-1270",
+    "employees": 22,
+    "years_in_business": 10,
+    "has_website": true,
+    "estimated_revenue": 134615,
+    "digital_presence": "moderate",
+    "needs_assessment": {
+      "online_booking": false,
+      "customer_management": true,
+      "marketing_automation": false,
+      "mobile_app": false
+    },
+    "score": 41,
+    "priority": "LOW"
+  },
+  {
+    "id": "target_078",
+    "company": "HVAC Installation #78",
+    "type": "HVAC Installation",
+    "location": "Miami, FL",
+    "phone": "+1-555-8620",
+    "employees": 31,
+    "years_in_business": 6,
+    "has_website": true,
+    "estimated_revenue": 596706,
+    "digital_presence": "strong",
+    "needs_assessment": {
+      "online_booking": true,
+      "customer_management": false,
+      "marketing_automation": false,
+      "mobile_app": false
+    },
+    "score": 41,
+    "priority": "LOW"
+  },
+  {
+    "id": "target_039",
+    "company": "Climate Control Services #39",
+    "type": "Climate Control Services",
+    "location": "Phoenix, AZ",
+    "phone": "+1-555-4797",
+    "employees": 50,
+    "years_in_business": 15,
+    "has_website": true,
+    "estimated_revenue": 903901,
+    "digital_presence": "moderate",
+    "needs_assessment": {
+      "online_booking": false,
+      "customer_management": false,
+      "marketing_automation": false,
+      "mobile_app": false
+    },
+    "score": 40,
+    "priority": "LOW"
+  },
+  {
+    "id": "target_023",
+    "company": "Heating & Cooling #23",
+    "type": "Heating & Cooling",
+    "location": "Houston, TX",
+    "phone": "+1-555-7823",
+    "employees": 50,
+    "years_in_business": 1,
+    "has_website": true,
+    "estimated_revenue": 3712183,
+    "digital_presence": "strong",
+    "needs_assessment": {
+      "online_booking": false,
+      "customer_management": false,
+      "marketing_automation": false,
+      "mobile_app": true
+    },
+    "score": 36,
+    "priority": "LOW"
+  },
+  {
+    "id": "target_032",
+    "company": "Climate Control Services #32",
+    "type": "Climate Control Services",
+    "location": "Miami, FL",
+    "phone": "+1-555-2818",
+    "employees": 28,
+    "years_in_business": 17,
+    "has_website": true,
+    "estimated_revenue": 169755,
+    "digital_presence": "moderate",
+    "needs_assessment": {
+      "online_booking": false,
+      "customer_management": false,
+      "marketing_automation": false,
+      "mobile_app": true
+    },
+    "score": 36,
+    "priority": "LOW"
+  },
+  {
+    "id": "target_048",
+    "company": "HVAC Installation #48",
+    "type": "HVAC Installation",
+    "location": "Houston, TX",
+    "phone": "+1-555-3666",
+    "employees": 35,
+    "years_in_business": 1,
+    "has_website": true,
+    "estimated_revenue": 4692865,
+    "digital_presence": "strong",
+    "needs_assessment": {
+      "online_booking": false,
+      "customer_management": false,
+      "marketing_automation": false,
+      "mobile_app": true
+    },
+    "score": 36,
+    "priority": "LOW"
+  },
+  {
+    "id": "target_089",
+    "company": "HVAC Installation #89",
+    "type": "HVAC Installation",
+    "location": "Tampa, FL",
+    "phone": "+1-555-2313",
+    "employees": 25,
+    "years_in_business": 1,
+    "has_website": true,
+    "estimated_revenue": 469746,
+    "digital_presence": "weak",
+    "needs_assessment": {
+      "online_booking": true,
+      "customer_management": false,
+      "marketing_automation": false,
+      "mobile_app": false
+    },
+    "score": 36,
+    "priority": "LOW"
+  },
+  {
+    "id": "target_099",
+    "company": "Air Conditioning Repair #99",
+    "type": "Air Conditioning Repair",
+    "location": "Denver, CO",
+    "phone": "+1-555-6332",
+    "employees": 44,
+    "years_in_business": 2,
+    "has_website": true,
+    "estimated_revenue": 1389625,
+    "digital_presence": "strong",
+    "needs_assessment": {
+      "online_booking": true,
+      "customer_management": false,
+      "marketing_automation": false,
+      "mobile_app": false
+    },
+    "score": 36,
+    "priority": "LOW"
+  },
+  {
+    "id": "target_070",
+    "company": "Heating & Cooling #70",
+    "type": "Heating & Cooling",
+    "location": "Miami, FL",
+    "phone": "+1-555-4942",
+    "employees": 38,
+    "years_in_business": 8,
+    "has_website": true,
+    "estimated_revenue": 156816,
+    "digital_presence": "strong",
+    "needs_assessment": {
+      "online_booking": false,
+      "customer_management": true,
+      "marketing_automation": false,
+      "mobile_app": false
+    },
+    "score": 31,
+    "priority": "LOW"
+  },
+  {
+    "id": "target_074",
+    "company": "Air Conditioning Repair #74",
+    "type": "Air Conditioning Repair",
+    "location": "Atlanta, GA",
+    "phone": "+1-555-2001",
+    "employees": 42,
+    "years_in_business": 19,
+    "has_website": false,
+    "estimated_revenue": 508238,
+    "digital_presence": "strong",
+    "needs_assessment": {
+      "online_booking": false,
+      "customer_management": false,
+      "marketing_automation": false,
+      "mobile_app": false
+    },
+    "score": 30,
+    "priority": "LOW"
+  },
+  {
+    "id": "target_090",
+    "company": "Heating & Cooling #90",
+    "type": "Heating & Cooling",
+    "location": "Miami, FL",
+    "phone": "+1-555-1772",
+    "employees": 39,
+    "years_in_business": 1,
+    "has_website": true,
+    "estimated_revenue": 1991531,
+    "digital_presence": "strong",
+    "needs_assessment": {
+      "online_booking": false,
+      "customer_management": false,
+      "marketing_automation": false,
+      "mobile_app": false
+    },
+    "score": 30,
+    "priority": "LOW"
+  },
+  {
+    "id": "target_096",
+    "company": "Climate Control Services #96",
+    "type": "Climate Control Services",
+    "location": "Tampa, FL",
+    "phone": "+1-555-2198",
+    "employees": 12,
+    "years_in_business": 1,
+    "has_website": true,
+    "estimated_revenue": 180894,
+    "digital_presence": "moderate",
+    "needs_assessment": {
+      "online_booking": false,
+      "customer_management": false,
+      "marketing_automation": false,
+      "mobile_app": false
+    },
+    "score": 30,
+    "priority": "LOW"
+  },
+  {
+    "id": "target_057",
+    "company": "HVAC Installation #57",
+    "type": "HVAC Installation",
+    "location": "Orlando, FL",
+    "phone": "+1-555-3997",
+    "employees": 38,
+    "years_in_business": 14,
+    "has_website": true,
+    "estimated_revenue": 481722,
+    "digital_presence": "strong",
+    "needs_assessment": {
+      "online_booking": true,
+      "customer_management": false,
+      "marketing_automation": false,
+      "mobile_app": false
+    },
+    "score": 26,
+    "priority": "LOW"
+  }
+]

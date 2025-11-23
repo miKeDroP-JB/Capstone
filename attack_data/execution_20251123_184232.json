@@ -1,0 +1,24 @@
+{
+  "timestamp": "2025-11-23T18:42:32.835733",
+  "actions": [
+    {
+      "type": "ADD_CLIENTS",
+      "industry": "hvac",
+      "target_count": 20,
+      "timeline": "7 days",
+      "status": "READY_TO_EXECUTE"
+    },
+    {
+      "type": "AUTO_SCALE",
+      "steps": [
+        "Research 40 targets",
+        "Make 60 calls",
+        "Close 20 deals",
+        "Onboard all clients",
+        "Deploy automation"
+      ],
+      "timeline": "7 days",
+      "status": "READY"
+    }
+  ]
+}

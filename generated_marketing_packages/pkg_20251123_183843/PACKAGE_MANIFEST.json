@@ -1,0 +1,15 @@
+{
+  "package_id": "pkg_20251123_183843",
+  "company": "Climate Control Services",
+  "industry": "hvac",
+  "created": "2025-11-23T18:38:43.003161",
+  "components": {
+    "social_posts": "pkg_20251123_183843/social_media_posts.txt",
+    "email_templates": "pkg_20251123_183843/email_templates.html",
+    "dashboard": "pkg_20251123_183843/dashboard.html",
+    "calendar": "pkg_20251123_183843/content_calendar.txt",
+    "guide": "pkg_20251123_183843/SETUP_GUIDE.md"
+  },
+  "value": "$3,000-5,000",
+  "ready_to_use": true
+}
