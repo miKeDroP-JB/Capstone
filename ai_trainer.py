@@ -125,7 +125,7 @@ class AITrainer:
                     self._extract_patterns(session_results["conversations"][-10:])
 
         # Final stats
-        session_results["success_rate"] = successes / rounds
+        session_results["success_rate"] = successes / rounds if rounds > 0 else 0
 
         print(f"\n{'='*60}")
         print(f"TRAINING COMPLETE")
