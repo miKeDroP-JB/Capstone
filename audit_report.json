@@ -1,6 +1,6 @@
 {
-  "timestamp": "2025-11-23T19:52:40.575416",
-  "files_scanned": 47,
+  "timestamp": "2025-11-23T20:54:28.684148",
+  "files_scanned": 53,
   "security_issues": [
     {
       "file": "ai_connectors.py",
@@ -21,26 +21,6 @@
       "severity": "high"
     },
     {
-      "file": "attack_engine.py",
-      "issue": "Potential SQL injection (string concatenation in execute)",
-      "severity": "high"
-    },
-    {
-      "file": "the_instant_creator.py",
-      "issue": "API endpoints may lack input validation",
-      "severity": "medium"
-    },
-    {
-      "file": "MASTER.py",
-      "issue": "Potential SQL injection (string concatenation in execute)",
-      "severity": "high"
-    },
-    {
-      "file": "digital_twin.py",
-      "issue": "API endpoints may lack input validation",
-      "severity": "medium"
-    },
-    {
       "file": "repo_audit.py",
       "issue": "Command injection risk (shell=True with user input)",
       "severity": "high"
@@ -51,6 +31,43 @@
       "severity": "medium"
     },
     {
+      "file": "digital_twin.py",
+      "issue": "API endpoints may lack input validation",
+      "severity": "medium"
+    },
+    {
+      "file": "MASTER.py",
+      "issue": "Potential SQL injection (string concatenation in execute)",
+      "severity": "high"
+    },
+    {
+      "file": "attack_engine.py",
+      "issue": "Potential SQL injection (string concatenation in execute)",
+      "severity": "high"
+    },
+    {
+      "file": "the_instant_creator.py",
+      "issue": "API endpoints may lack input validation",
+      "severity": "medium"
+    },
+    {
+      "file": "hvac_agent_now.py",
+      "line": 393,
+      "issue": "Hardcoded token",
+      "severity": "high"
+    },
+    {
+      "file": "hvac_agent_now.py",
+      "line": 440,
+      "issue": "Hardcoded token",
+      "severity": "high"
+    },
+    {
+      "file": "hvac_agent_now.py",
+      "issue": "API endpoints may lack input validation",
+      "severity": "medium"
+    },
+    {
       "file": "0rb-complete/backend/brain/orb_bridge.py",
       "issue": "API endpoints may lack input validation",
       "severity": "medium"
@@ -58,24 +75,19 @@
   ],
   "code_quality": [
     {
-      "file": "ekosystem.py",
-      "line": 129,
-      "issue": "Long function '_detect_channel' (168 lines)",
+      "file": "ai_connectors.py",
+      "line": 127,
+      "issue": "Long function 'is_configured' (52 lines)",
       "severity": "low"
     },
     {
-      "file": "ekosystem.py",
-      "issue": "Missing docstrings (2/8 functions documented)",
+      "file": "ai_connectors.py",
+      "line": 225,
+      "issue": "Long function 'route' (62 lines)",
       "severity": "low"
     },
     {
-      "file": "multi_harvester.py",
-      "line": 37,
-      "issue": "Long function 'harvest_google_cloud' (63 lines)",
-      "severity": "low"
-    },
-    {
-      "file": "multi_harvester.py",
+      "file": "mega_harvest.py",
       "issue": "Bare except clauses (1) - should catch specific exceptions",
       "severity": "medium"
     },
@@ -90,20 +102,9 @@
       "severity": "medium"
     },
     {
-      "file": "mega_harvest.py",
-      "issue": "Bare except clauses (1) - should catch specific exceptions",
-      "severity": "medium"
-    },
-    {
-      "file": "ai_connectors.py",
-      "line": 127,
-      "issue": "Long function 'is_configured' (52 lines)",
-      "severity": "low"
-    },
-    {
-      "file": "ai_connectors.py",
-      "line": 225,
-      "issue": "Long function 'route' (62 lines)",
+      "file": "seed_grimoire (1).py",
+      "line": 11,
+      "issue": "Long function 'generate_synthetic_patterns' (234 lines)",
       "severity": "low"
     },
     {
@@ -112,34 +113,77 @@
       "severity": "low"
     },
     {
-      "file": "seed_grimoire (1).py",
-      "line": 11,
-      "issue": "Long function 'generate_synthetic_patterns' (234 lines)",
+      "file": "multi_harvester.py",
+      "line": 37,
+      "issue": "Long function 'harvest_google_cloud' (63 lines)",
       "severity": "low"
     },
     {
-      "file": "LAUNCH.py",
-      "line": 40,
-      "issue": "Long function '__init__' (192 lines)",
+      "file": "multi_harvester.py",
+      "issue": "Bare except clauses (1) - should catch specific exceptions",
+      "severity": "medium"
+    },
+    {
+      "file": "ekosystem.py",
+      "line": 129,
+      "issue": "Long function '_detect_channel' (168 lines)",
       "severity": "low"
     },
     {
-      "file": "customer_crm.py",
-      "line": 210,
-      "issue": "Long function 'create_dispute' (63 lines)",
+      "file": "ekosystem.py",
+      "issue": "Missing docstrings (2/8 functions documented)",
       "severity": "low"
     },
     {
-      "file": "hvac_voice_agent.py",
-      "line": 85,
-      "issue": "Long function '__init__' (240 lines)",
+      "file": "client_dashboard_and_billing.py",
+      "issue": "Bare except clauses (1) - should catch specific exceptions",
+      "severity": "medium"
+    },
+    {
+      "file": "ai_trainer.py",
+      "line": 73,
+      "issue": "Long function 'train' (75 lines)",
       "severity": "low"
     },
     {
-      "file": "hvac_voice_agent.py",
-      "line": 406,
-      "issue": "Long function '_fallback_response' (81 lines)",
+      "file": "ai_trainer.py",
+      "line": 149,
+      "issue": "Long function '_simulate_training_call' (118 lines)",
       "severity": "low"
+    },
+    {
+      "file": "research_agent.py",
+      "line": 71,
+      "issue": "Long function '_simulate_research' (67 lines)",
+      "severity": "low"
+    },
+    {
+      "file": "hvac_api.py",
+      "issue": "Bare except clauses (1) - should catch specific exceptions",
+      "severity": "medium"
+    },
+    {
+      "file": "repo_audit.py",
+      "line": 87,
+      "issue": "Long function '_check_security' (59 lines)",
+      "severity": "low"
+    },
+    {
+      "file": "repo_audit.py",
+      "line": 147,
+      "issue": "Long function '_check_code_quality' (57 lines)",
+      "severity": "low"
+    },
+    {
+      "file": "repo_audit.py",
+      "line": 261,
+      "issue": "Long function '_generate_report' (74 lines)",
+      "severity": "low"
+    },
+    {
+      "file": "repo_audit.py",
+      "issue": "Bare except clauses (1) - should catch specific exceptions",
+      "severity": "medium"
     },
     {
       "file": "instant_marketing_automation.py",
@@ -166,115 +210,9 @@
       "severity": "low"
     },
     {
-      "file": "agent_closer.py",
-      "line": 60,
-      "issue": "Long function '_generate_realistic_targets' (75 lines)",
-      "severity": "low"
-    },
-    {
-      "file": "agent_closer.py",
-      "line": 136,
-      "issue": "Long function 'close_deals' (69 lines)",
-      "severity": "low"
-    },
-    {
-      "file": "agent_closer.py",
-      "line": 225,
-      "issue": "Long function '_print_summary' (62 lines)",
-      "severity": "low"
-    },
-    {
-      "file": "attack_engine.py",
-      "line": 85,
-      "issue": "Long function 'analyze_ecosystem' (81 lines)",
-      "severity": "low"
-    },
-    {
-      "file": "attack_engine.py",
-      "line": 319,
-      "issue": "Long function 'execute_attack_strategy' (87 lines)",
-      "severity": "low"
-    },
-    {
-      "file": "auto_revenue_engine.py",
-      "line": 143,
-      "issue": "Long function '_save_results' (274 lines)",
-      "severity": "low"
-    },
-    {
-      "file": "CALL_REAL_NOW.py",
-      "line": 45,
-      "issue": "Long function 'quick_start' (76 lines)",
-      "severity": "low"
-    },
-    {
-      "file": "CALL_REAL_NOW.py",
-      "line": 122,
-      "issue": "Long function 'find_businesses' (80 lines)",
-      "severity": "low"
-    },
-    {
-      "file": "CALL_REAL_NOW.py",
-      "issue": "Bare except clauses (1) - should catch specific exceptions",
-      "severity": "medium"
-    },
-    {
-      "file": "hvac_api.py",
-      "issue": "Bare except clauses (1) - should catch specific exceptions",
-      "severity": "medium"
-    },
-    {
-      "file": "research_agent.py",
-      "line": 71,
-      "issue": "Long function '_simulate_research' (67 lines)",
-      "severity": "low"
-    },
-    {
-      "file": "stripe_retainer.py",
-      "line": 40,
-      "issue": "Long function 'create_payment_link' (68 lines)",
-      "severity": "low"
-    },
-    {
-      "file": "AUTOMATE.py",
-      "line": 34,
-      "issue": "Long function '__init__' (101 lines)",
-      "severity": "low"
-    },
-    {
-      "file": "ai_guide.py",
-      "line": 72,
-      "issue": "Long function '_update_milestone' (105 lines)",
-      "severity": "low"
-    },
-    {
-      "file": "ai_guide.py",
-      "line": 178,
-      "issue": "Long function '_fallback_answer' (339 lines)",
-      "severity": "low"
-    },
-    {
-      "file": "the_instant_creator.py",
-      "line": 213,
-      "issue": "Long function '__init__' (213 lines)",
-      "severity": "low"
-    },
-    {
-      "file": "client_management_system.py",
-      "line": 83,
-      "issue": "Long function 'onboard_client' (74 lines)",
-      "severity": "low"
-    },
-    {
-      "file": "client_management_system.py",
-      "line": 158,
-      "issue": "Long function '_setup_accounts' (56 lines)",
-      "severity": "low"
-    },
-    {
-      "file": "client_management_system.py",
-      "line": 388,
-      "issue": "Long function 'calculate_monthly_payments' (70 lines)",
+      "file": "digital_twin.py",
+      "line": 48,
+      "issue": "Long function '_create_base_profile' (72 lines)",
       "severity": "low"
     },
     {
@@ -290,80 +228,15 @@
       "severity": "low"
     },
     {
-      "file": "digital_twin.py",
-      "line": 48,
-      "issue": "Long function '_create_base_profile' (72 lines)",
+      "file": "attack_engine.py",
+      "line": 85,
+      "issue": "Long function 'analyze_ecosystem' (81 lines)",
       "severity": "low"
     },
     {
-      "file": "repo_audit.py",
-      "line": 87,
-      "issue": "Long function '_check_security' (59 lines)",
-      "severity": "low"
-    },
-    {
-      "file": "repo_audit.py",
-      "line": 147,
-      "issue": "Long function '_check_code_quality' (57 lines)",
-      "severity": "low"
-    },
-    {
-      "file": "repo_audit.py",
-      "line": 261,
-      "issue": "Long function '_generate_report' (74 lines)",
-      "severity": "low"
-    },
-    {
-      "file": "repo_audit.py",
-      "issue": "Bare except clauses (1) - should catch specific exceptions",
-      "severity": "medium"
-    },
-    {
-      "file": "real_business_finder.py",
-      "line": 30,
-      "issue": "Long function 'find_businesses' (89 lines)",
-      "severity": "low"
-    },
-    {
-      "file": "traffic_generator.py",
-      "line": 80,
-      "issue": "Long function 'generate_social_campaign' (60 lines)",
-      "severity": "low"
-    },
-    {
-      "file": "traffic_generator.py",
-      "line": 141,
-      "issue": "Long function 'generate_email_campaign' (146 lines)",
-      "severity": "low"
-    },
-    {
-      "file": "traffic_generator.py",
-      "line": 288,
-      "issue": "Long function 'generate_phone_scripts' (107 lines)",
-      "severity": "low"
-    },
-    {
-      "file": "instant_game_creator.py",
-      "line": 83,
-      "issue": "Long function '_platformer_template' (206 lines)",
-      "severity": "low"
-    },
-    {
-      "file": "instant_game_creator.py",
-      "line": 290,
-      "issue": "Long function '_shooter_template' (115 lines)",
-      "severity": "low"
-    },
-    {
-      "file": "ai_trainer.py",
-      "line": 73,
-      "issue": "Long function 'train' (75 lines)",
-      "severity": "low"
-    },
-    {
-      "file": "ai_trainer.py",
-      "line": 149,
-      "issue": "Long function '_simulate_training_call' (118 lines)",
+      "file": "attack_engine.py",
+      "line": 319,
+      "issue": "Long function 'execute_attack_strategy' (87 lines)",
       "severity": "low"
     },
     {
@@ -385,15 +258,247 @@
       "severity": "low"
     },
     {
+      "file": "instant_game_creator.py",
+      "line": 83,
+      "issue": "Long function '_platformer_template' (206 lines)",
+      "severity": "low"
+    },
+    {
+      "file": "instant_game_creator.py",
+      "line": 290,
+      "issue": "Long function '_shooter_template' (115 lines)",
+      "severity": "low"
+    },
+    {
+      "file": "agent_closer.py",
+      "line": 60,
+      "issue": "Long function '_generate_realistic_targets' (75 lines)",
+      "severity": "low"
+    },
+    {
+      "file": "agent_closer.py",
+      "line": 136,
+      "issue": "Long function 'close_deals' (69 lines)",
+      "severity": "low"
+    },
+    {
+      "file": "agent_closer.py",
+      "line": 225,
+      "issue": "Long function '_print_summary' (62 lines)",
+      "severity": "low"
+    },
+    {
+      "file": "auto_revenue_engine.py",
+      "line": 143,
+      "issue": "Long function '_save_results' (274 lines)",
+      "severity": "low"
+    },
+    {
+      "file": "client_management_system.py",
+      "line": 83,
+      "issue": "Long function 'onboard_client' (74 lines)",
+      "severity": "low"
+    },
+    {
+      "file": "client_management_system.py",
+      "line": 158,
+      "issue": "Long function '_setup_accounts' (56 lines)",
+      "severity": "low"
+    },
+    {
+      "file": "client_management_system.py",
+      "line": 388,
+      "issue": "Long function 'calculate_monthly_payments' (70 lines)",
+      "severity": "low"
+    },
+    {
+      "file": "the_instant_creator.py",
+      "line": 213,
+      "issue": "Long function '__init__' (213 lines)",
+      "severity": "low"
+    },
+    {
+      "file": "customer_crm.py",
+      "line": 210,
+      "issue": "Long function 'create_dispute' (63 lines)",
+      "severity": "low"
+    },
+    {
+      "file": "hvac_voice_agent.py",
+      "line": 85,
+      "issue": "Long function '__init__' (240 lines)",
+      "severity": "low"
+    },
+    {
+      "file": "hvac_voice_agent.py",
+      "line": 406,
+      "issue": "Long function '_fallback_response' (81 lines)",
+      "severity": "low"
+    },
+    {
+      "file": "hvac_agent_now.py",
+      "line": 66,
+      "issue": "Long function 'make_call' (72 lines)",
+      "severity": "low"
+    },
+    {
+      "file": "hvac_agent_now.py",
+      "line": 166,
+      "issue": "Long function 'generate_twiml_response' (52 lines)",
+      "severity": "low"
+    },
+    {
+      "file": "traffic_generator.py",
+      "line": 80,
+      "issue": "Long function 'generate_social_campaign' (60 lines)",
+      "severity": "low"
+    },
+    {
+      "file": "traffic_generator.py",
+      "line": 141,
+      "issue": "Long function 'generate_email_campaign' (146 lines)",
+      "severity": "low"
+    },
+    {
+      "file": "traffic_generator.py",
+      "line": 288,
+      "issue": "Long function 'generate_phone_scripts' (107 lines)",
+      "severity": "low"
+    },
+    {
+      "file": "stripe_retainer.py",
+      "line": 40,
+      "issue": "Long function 'create_payment_link' (68 lines)",
+      "severity": "low"
+    },
+    {
+      "file": "LAUNCH.py",
+      "line": 40,
+      "issue": "Long function '__init__' (192 lines)",
+      "severity": "low"
+    },
+    {
+      "file": "AUTOMATE.py",
+      "line": 34,
+      "issue": "Long function '__init__' (101 lines)",
+      "severity": "low"
+    },
+    {
+      "file": "ai_guide.py",
+      "line": 72,
+      "issue": "Long function '_update_milestone' (105 lines)",
+      "severity": "low"
+    },
+    {
+      "file": "ai_guide.py",
+      "line": 178,
+      "issue": "Long function '_fallback_answer' (339 lines)",
+      "severity": "low"
+    },
+    {
+      "file": "real_business_finder.py",
+      "line": 30,
+      "issue": "Long function 'find_businesses' (89 lines)",
+      "severity": "low"
+    },
+    {
+      "file": "agent_swarm.py",
+      "line": 116,
+      "issue": "Long function '__init__' (84 lines)",
+      "severity": "low"
+    },
+    {
+      "file": "agent_swarm.py",
+      "line": 201,
+      "issue": "Long function '_score_response' (54 lines)",
+      "severity": "low"
+    },
+    {
+      "file": "agent_swarm.py",
+      "line": 256,
+      "issue": "Long function '__init__' (67 lines)",
+      "severity": "low"
+    },
+    {
+      "file": "agent_swarm.py",
+      "line": 362,
+      "issue": "Long function '__init__' (108 lines)",
+      "severity": "low"
+    },
+    {
+      "file": "agent_swarm.py",
+      "line": 476,
+      "issue": "Long function '_load_brand_voice' (103 lines)",
+      "severity": "low"
+    },
+    {
+      "file": "agent_swarm.py",
+      "issue": "Bare except clauses (2) - should catch specific exceptions",
+      "severity": "medium"
+    },
+    {
+      "file": "contest_readiness_test.py",
+      "line": 64,
+      "issue": "Long function 'test_next_top_ai_agent_criteria' (62 lines)",
+      "severity": "low"
+    },
+    {
+      "file": "contest_readiness_test.py",
+      "line": 127,
+      "issue": "Long function 'test_a16z_speedrun_criteria' (68 lines)",
+      "severity": "low"
+    },
+    {
+      "file": "contest_readiness_test.py",
+      "line": 454,
+      "issue": "Long function 'generate_gap_analysis' (51 lines)",
+      "severity": "low"
+    },
+    {
       "file": "live_calling_assistant.py",
       "line": 106,
       "issue": "Long function 'make_call' (126 lines)",
       "severity": "low"
     },
     {
-      "file": "0rb-aether/tools/asr/voice_auth.py",
-      "line": 121,
-      "issue": "Long function 'authenticate' (62 lines)",
+      "file": "CALL_REAL_NOW.py",
+      "line": 45,
+      "issue": "Long function 'quick_start' (76 lines)",
+      "severity": "low"
+    },
+    {
+      "file": "CALL_REAL_NOW.py",
+      "line": 122,
+      "issue": "Long function 'find_businesses' (80 lines)",
+      "severity": "low"
+    },
+    {
+      "file": "CALL_REAL_NOW.py",
+      "issue": "Bare except clauses (1) - should catch specific exceptions",
+      "severity": "medium"
+    },
+    {
+      "file": "benchmarks_and_contests.py",
+      "line": 35,
+      "issue": "Long function 'analyze_our_system' (56 lines)",
+      "severity": "low"
+    },
+    {
+      "file": "benchmarks_and_contests.py",
+      "line": 92,
+      "issue": "Long function 'compare_to_competition' (71 lines)",
+      "severity": "low"
+    },
+    {
+      "file": "benchmarks_and_contests.py",
+      "line": 210,
+      "issue": "Long function 'identify_contests' (120 lines)",
+      "severity": "low"
+    },
+    {
+      "file": "benchmarks_and_contests.py",
+      "line": 331,
+      "issue": "Long function 'generate_recommendations' (62 lines)",
       "severity": "low"
     },
     {
@@ -412,22 +517,28 @@
       "file": "0rb-complete/backend/brain/orb_bridge.py",
       "issue": "Bare except clauses (1) - should catch specific exceptions",
       "severity": "medium"
+    },
+    {
+      "file": "0rb-aether/tools/asr/voice_auth.py",
+      "line": 121,
+      "issue": "Long function 'authenticate' (62 lines)",
+      "severity": "low"
     }
   ],
   "integration_gaps": [
-    {
-      "file": "ekosystem.py",
-      "missing": [
-        "brain_os",
-        "ai_connectors"
-      ],
-      "severity": "medium"
-    },
     {
       "file": "brain_os.py",
       "missing": [
         "ekosystem",
         "glyph_core"
+      ],
+      "severity": "medium"
+    },
+    {
+      "file": "ekosystem.py",
+      "missing": [
+        "brain_os",
+        "ai_connectors"
       ],
       "severity": "medium"
     }
@@ -439,18 +550,18 @@
       "type": "algorithmic"
     },
     {
-      "file": "show_stripe_revenue.py",
+      "file": "ai_trainer.py",
       "issue": "Nested loops detected - consider optimization",
       "type": "algorithmic"
     },
     {
-      "file": "ai_trainer.py",
+      "file": "show_stripe_revenue.py",
       "issue": "Nested loops detected - consider optimization",
       "type": "algorithmic"
     }
   ],
   "recommendations": [
-    "\ud83d\udd12 URGENT: Fix 6 high-severity security issues",
+    "\ud83d\udd12 URGENT: Fix 8 high-severity security issues",
     "\ud83d\udd17 Connect 2 integration gaps for full system flow",
     "\ud83d\udcdd Add comprehensive error handling to all API endpoints",
     "\ud83e\uddea Add unit tests for core business logic",
