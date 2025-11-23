@@ -1,0 +1,78 @@
+[
+  {
+    "system": "Free Learning Game",
+    "timestamp": "2025-11-23T15:33:56.417124",
+    "value_created": {
+      "users_helped": 1000,
+      "problems_solved": 50,
+      "time_saved_hours": 5000
+    },
+    "extraction": {
+      "revenue_usd": 0,
+      "resources_cost_usd": 100
+    },
+    "regeneration": {
+      "community_share_percent": 100,
+      "open_source": true
+    },
+    "love_score": 1.0,
+    "net_positive": true
+  },
+  {
+    "system": "Pure Extraction System",
+    "timestamp": "2025-11-23T15:33:56.417524",
+    "value_created": {
+      "users_helped": 10,
+      "problems_solved": 1,
+      "time_saved_hours": 100
+    },
+    "extraction": {
+      "revenue_usd": 50000,
+      "resources_cost_usd": 5000
+    },
+    "regeneration": {
+      "community_share_percent": 0,
+      "open_source": false
+    },
+    "love_score": 0.6124999999999999,
+    "net_positive": false
+  },
+  {
+    "system": "Free Learning Game",
+    "timestamp": "2025-11-23T15:34:11.388075",
+    "value_created": {
+      "users_helped": 1000,
+      "problems_solved": 50,
+      "time_saved_hours": 5000
+    },
+    "extraction": {
+      "revenue_usd": 0,
+      "resources_cost_usd": 100
+    },
+    "regeneration": {
+      "community_share_percent": 100,
+      "open_source": true
+    },
+    "love_score": 1.0,
+    "net_positive": true
+  },
+  {
+    "system": "Pure Extraction System",
+    "timestamp": "2025-11-23T15:34:11.388471",
+    "value_created": {
+      "users_helped": 10,
+      "problems_solved": 1,
+      "time_saved_hours": 100
+    },
+    "extraction": {
+      "revenue_usd": 50000,
+      "resources_cost_usd": 5000
+    },
+    "regeneration": {
+      "community_share_percent": 0,
+      "open_source": false
+    },
+    "love_score": 0.6124999999999999,
+    "net_positive": false
+  }
+]
