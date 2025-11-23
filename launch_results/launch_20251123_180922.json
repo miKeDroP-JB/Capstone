@@ -1,0 +1,41 @@
+{
+  "launch_id": "launch_20251123_180922",
+  "timestamp": "2025-11-23T18:09:22.781028",
+  "config": {
+    "industry": "hvac",
+    "train_rounds": 10,
+    "num_calls": 10,
+    "full_auto": false
+  },
+  "phases": {
+    "research": {
+      "targets_found": 20,
+      "targets_selected": 10,
+      "avg_score": 70.7
+    },
+    "training": {
+      "rounds_completed": 10,
+      "success_rate": 0.5,
+      "patterns_learned": 0
+    },
+    "calling": {
+      "calls_made": 10,
+      "closes": 1,
+      "interested": 0,
+      "close_rate": 10.0,
+      "interest_rate": 10.0
+    },
+    "building": {
+      "solutions_built": 1,
+      "types": [
+        "customer_management"
+      ]
+    }
+  },
+  "revenue": {
+    "estimated_total": 3000,
+    "our_cut_20%": 600.0,
+    "their_cut_80%": 2400.0,
+    "deals_closed": 1
+  }
+}

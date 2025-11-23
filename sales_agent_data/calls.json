@@ -1,0 +1,520 @@
+[
+  {
+    "id": "call_0001",
+    "timestamp": "2025-11-23T18:09:22.783521",
+    "target": {
+      "id": "target_004",
+      "company": "Heating & Cooling #4",
+      "type": "Heating & Cooling",
+      "location": "Tampa, FL",
+      "phone": "+1-555-4449",
+      "employees": 11,
+      "years_in_business": 7,
+      "has_website": true,
+      "estimated_revenue": 4260911,
+      "digital_presence": "moderate",
+      "needs_assessment": {
+        "online_booking": true,
+        "customer_management": true,
+        "marketing_automation": true,
+        "mobile_app": false
+      },
+      "score": 83,
+      "priority": "HIGH"
+    },
+    "conversation": [
+      {
+        "agent": "Hi, this is [AI Agent]. I help businesses like yours grow faster with custom digital solutions. Do you have 60 seconds?"
+      },
+      {
+        "prospect": "I'm busy, make it quick."
+      }
+    ],
+    "discovered_need": null,
+    "solution_offered": null,
+    "outcome": "rejected_early",
+    "close_probability": 0
+  },
+  {
+    "id": "call_0002",
+    "timestamp": "2025-11-23T18:09:23.284513",
+    "target": {
+      "id": "target_011",
+      "company": "Ventilation Systems #11",
+      "type": "Ventilation Systems",
+      "location": "Miami, FL",
+      "phone": "+1-555-6840",
+      "employees": 42,
+      "years_in_business": 18,
+      "has_website": true,
+      "estimated_revenue": 4046207,
+      "digital_presence": "weak",
+      "needs_assessment": {
+        "online_booking": false,
+        "customer_management": false,
+        "marketing_automation": true,
+        "mobile_app": true
+      },
+      "score": 72,
+      "priority": "HIGH"
+    },
+    "conversation": [
+      {
+        "agent": "Hey, I noticed your business and had an idea that could help you get more customers. Got a quick minute?"
+      },
+      {
+        "prospect": "I'm busy, make it quick."
+      }
+    ],
+    "discovered_need": null,
+    "solution_offered": null,
+    "outcome": "rejected_early",
+    "close_probability": 0
+  },
+  {
+    "id": "call_0003",
+    "timestamp": "2025-11-23T18:09:23.785610",
+    "target": {
+      "id": "target_018",
+      "company": "Ventilation Systems #18",
+      "type": "Ventilation Systems",
+      "location": "Phoenix, AZ",
+      "phone": "+1-555-5961",
+      "employees": 6,
+      "years_in_business": 16,
+      "has_website": false,
+      "estimated_revenue": 3950870,
+      "digital_presence": "moderate",
+      "needs_assessment": {
+        "online_booking": false,
+        "customer_management": true,
+        "marketing_automation": true,
+        "mobile_app": false
+      },
+      "score": 72,
+      "priority": "HIGH"
+    },
+    "conversation": [
+      {
+        "agent": "Hi! I'm calling because I think I can help you automate some of your work and save time. Can we chat for a minute?"
+      },
+      {
+        "prospect": "Sure, what's this about?"
+      },
+      {
+        "agent": "What's your biggest challenge right now with getting new customers?"
+      },
+      {
+        "prospect": "I have customer info everywhere - spreadsheets, paper, my head. It's a mess."
+      },
+      {
+        "agent": "How are you currently handling bookings/scheduling?"
+      },
+      {
+        "prospect": "I have customer info everywhere - spreadsheets, paper, my head. It's a mess."
+      },
+      {
+        "agent": "What takes up most of your time that you wish was automated?"
+      },
+      {
+        "prospect": "I barely have time to market. I know I should do more social media but..."
+      },
+      {
+        "agent": "Perfect! I can build you a Customer Management System in about 4 hours.\n\nHere's the deal - normally this would cost $5,000-8,000, but I have a better model:\n\nI build it for FREE. You pay me nothing upfront.\n\nThen, I get 20% of what it makes you. You keep 80%.\n\nSo if this helps you make an extra $10,000, you keep $8,000 and I get $2,000. If it makes you nothing, I get nothing.\n\nFair?"
+      },
+      {
+        "prospect": "That sounds interesting. How much does it cost?"
+      }
+    ],
+    "discovered_need": "customer_management",
+    "solution_offered": {
+      "name": "Customer Management System",
+      "build_time": "4 hours",
+      "value": "$5,000-8,000",
+      "our_cut": "20% of new customer revenue"
+    },
+    "outcome": "not_interested",
+    "close_probability": 0.1
+  },
+  {
+    "id": "call_0004",
+    "timestamp": "2025-11-23T18:09:24.287619",
+    "target": {
+      "id": "target_006",
+      "company": "Air Conditioning Repair #6",
+      "type": "Air Conditioning Repair",
+      "location": "Charlotte, NC",
+      "phone": "+1-555-7386",
+      "employees": 28,
+      "years_in_business": 4,
+      "has_website": true,
+      "estimated_revenue": 2500928,
+      "digital_presence": "weak",
+      "needs_assessment": {
+        "online_booking": false,
+        "customer_management": true,
+        "marketing_automation": false,
+        "mobile_app": false
+      },
+      "score": 71,
+      "priority": "HIGH"
+    },
+    "conversation": [
+      {
+        "agent": "Hey, I noticed your business and had an idea that could help you get more customers. Got a quick minute?"
+      },
+      {
+        "prospect": "Sure, what's this about?"
+      },
+      {
+        "agent": "What's your biggest challenge right now with getting new customers?"
+      },
+      {
+        "prospect": "I have customer info everywhere - spreadsheets, paper, my head. It's a mess."
+      },
+      {
+        "agent": "How are you currently handling bookings/scheduling?"
+      },
+      {
+        "prospect": "I have customer info everywhere - spreadsheets, paper, my head. It's a mess."
+      },
+      {
+        "agent": "What takes up most of your time that you wish was automated?"
+      },
+      {
+        "prospect": "I have customer info everywhere - spreadsheets, paper, my head. It's a mess."
+      },
+      {
+        "agent": "Perfect! I can build you a Customer Management System in about 4 hours.\n\nHere's the deal - normally this would cost $5,000-8,000, but I have a better model:\n\nI build it for FREE. You pay me nothing upfront.\n\nThen, I get 20% of what it makes you. You keep 80%.\n\nSo if this helps you make an extra $10,000, you keep $8,000 and I get $2,000. If it makes you nothing, I get nothing.\n\nFair?"
+      },
+      {
+        "prospect": "Tell me more about this."
+      },
+      {
+        "agent": "Great! Here's what happens next:\n\n1. I build your solution (takes [build_time])\n2. You review it and we tweak it\n3. You start using it\n4. You make money\n5. We both win\n\nI can start today. Want to do this?"
+      },
+      {
+        "prospect": "You know what, let's do it. What's next?"
+      }
+    ],
+    "discovered_need": "customer_management",
+    "solution_offered": {
+      "name": "Customer Management System",
+      "build_time": "4 hours",
+      "value": "$5,000-8,000",
+      "our_cut": "20% of new customer revenue"
+    },
+    "outcome": "closed",
+    "close_probability": 0.95
+  },
+  {
+    "id": "call_0005",
+    "timestamp": "2025-11-23T18:09:24.790415",
+    "target": {
+      "id": "target_010",
+      "company": "Heating & Cooling #10",
+      "type": "Heating & Cooling",
+      "location": "Dallas, TX",
+      "phone": "+1-555-1188",
+      "employees": 43,
+      "years_in_business": 9,
+      "has_website": true,
+      "estimated_revenue": 1764020,
+      "digital_presence": "weak",
+      "needs_assessment": {
+        "online_booking": false,
+        "customer_management": false,
+        "marketing_automation": true,
+        "mobile_app": false
+      },
+      "score": 71,
+      "priority": "HIGH"
+    },
+    "conversation": [
+      {
+        "agent": "Hey, I noticed your business and had an idea that could help you get more customers. Got a quick minute?"
+      },
+      {
+        "prospect": "I'm busy, make it quick."
+      }
+    ],
+    "discovered_need": null,
+    "solution_offered": null,
+    "outcome": "rejected_early",
+    "close_probability": 0
+  },
+  {
+    "id": "call_0006",
+    "timestamp": "2025-11-23T18:09:25.292330",
+    "target": {
+      "id": "target_017",
+      "company": "Air Conditioning Repair #17",
+      "type": "Air Conditioning Repair",
+      "location": "Dallas, TX",
+      "phone": "+1-555-5389",
+      "employees": 4,
+      "years_in_business": 12,
+      "has_website": true,
+      "estimated_revenue": 3862816,
+      "digital_presence": "weak",
+      "needs_assessment": {
+        "online_booking": true,
+        "customer_management": false,
+        "marketing_automation": false,
+        "mobile_app": false
+      },
+      "score": 71,
+      "priority": "HIGH"
+    },
+    "conversation": [
+      {
+        "agent": "Hey, I noticed your business and had an idea that could help you get more customers. Got a quick minute?"
+      },
+      {
+        "prospect": "I'm busy, make it quick."
+      }
+    ],
+    "discovered_need": null,
+    "solution_offered": null,
+    "outcome": "rejected_early",
+    "close_probability": 0
+  },
+  {
+    "id": "call_0007",
+    "timestamp": "2025-11-23T18:09:25.794409",
+    "target": {
+      "id": "target_005",
+      "company": "Climate Control Services #5",
+      "type": "Climate Control Services",
+      "location": "Tampa, FL",
+      "phone": "+1-555-4602",
+      "employees": 3,
+      "years_in_business": 6,
+      "has_website": false,
+      "estimated_revenue": 288737,
+      "digital_presence": "weak",
+      "needs_assessment": {
+        "online_booking": true,
+        "customer_management": true,
+        "marketing_automation": true,
+        "mobile_app": false
+      },
+      "score": 68,
+      "priority": "MEDIUM"
+    },
+    "conversation": [
+      {
+        "agent": "Hey, I noticed your business and had an idea that could help you get more customers. Got a quick minute?"
+      },
+      {
+        "prospect": "I'm busy, make it quick."
+      }
+    ],
+    "discovered_need": null,
+    "solution_offered": null,
+    "outcome": "rejected_early",
+    "close_probability": 0
+  },
+  {
+    "id": "call_0008",
+    "timestamp": "2025-11-23T18:09:26.295966",
+    "target": {
+      "id": "target_008",
+      "company": "Climate Control Services #8",
+      "type": "Climate Control Services",
+      "location": "Miami, FL",
+      "phone": "+1-555-8368",
+      "employees": 29,
+      "years_in_business": 6,
+      "has_website": true,
+      "estimated_revenue": 1115178,
+      "digital_presence": "moderate",
+      "needs_assessment": {
+        "online_booking": true,
+        "customer_management": false,
+        "marketing_automation": true,
+        "mobile_app": false
+      },
+      "score": 67,
+      "priority": "MEDIUM"
+    },
+    "conversation": [
+      {
+        "agent": "Hey, I noticed your business and had an idea that could help you get more customers. Got a quick minute?"
+      },
+      {
+        "prospect": "Sure, what's this about?"
+      },
+      {
+        "agent": "What's your biggest challenge right now with getting new customers?"
+      },
+      {
+        "prospect": "I barely have time to market. I know I should do more social media but..."
+      },
+      {
+        "agent": "How are you currently handling bookings/scheduling?"
+      },
+      {
+        "prospect": "We're still taking calls and it's chaos. I miss appointments sometimes."
+      },
+      {
+        "agent": "What takes up most of your time that you wish was automated?"
+      },
+      {
+        "prospect": "We're still taking calls and it's chaos. I miss appointments sometimes."
+      },
+      {
+        "agent": "Perfect! I can build you a Marketing Automation in about 1 day.\n\nHere's the deal - normally this would cost $3,000-7,000, but I have a better model:\n\nI build it for FREE. You pay me nothing upfront.\n\nThen, I get 20% of what it makes you. You keep 80%.\n\nSo if this helps you make an extra $10,000, you keep $8,000 and I get $2,000. If it makes you nothing, I get nothing.\n\nFair?"
+      },
+      {
+        "prospect": "That sounds interesting. How much does it cost?"
+      }
+    ],
+    "discovered_need": "marketing",
+    "solution_offered": {
+      "name": "Marketing Automation",
+      "build_time": "1 day",
+      "value": "$3,000-7,000",
+      "our_cut": "20% of marketing ROI"
+    },
+    "outcome": "not_interested",
+    "close_probability": 0.1
+  },
+  {
+    "id": "call_0009",
+    "timestamp": "2025-11-23T18:09:26.798515",
+    "target": {
+      "id": "target_014",
+      "company": "Climate Control Services #14",
+      "type": "Climate Control Services",
+      "location": "Orlando, FL",
+      "phone": "+1-555-4002",
+      "employees": 13,
+      "years_in_business": 2,
+      "has_website": true,
+      "estimated_revenue": 1982902,
+      "digital_presence": "weak",
+      "needs_assessment": {
+        "online_booking": true,
+        "customer_management": false,
+        "marketing_automation": false,
+        "mobile_app": false
+      },
+      "score": 66,
+      "priority": "MEDIUM"
+    },
+    "conversation": [
+      {
+        "agent": "Hey, I noticed your business and had an idea that could help you get more customers. Got a quick minute?"
+      },
+      {
+        "prospect": "Sure, what's this about?"
+      },
+      {
+        "agent": "What's your biggest challenge right now with getting new customers?"
+      },
+      {
+        "prospect": "We're still taking calls and it's chaos. I miss appointments sometimes."
+      },
+      {
+        "agent": "How are you currently handling bookings/scheduling?"
+      },
+      {
+        "prospect": "We're still taking calls and it's chaos. I miss appointments sometimes."
+      },
+      {
+        "agent": "What takes up most of your time that you wish was automated?"
+      },
+      {
+        "prospect": "We're still taking calls and it's chaos. I miss appointments sometimes."
+      },
+      {
+        "agent": "Perfect! I can build you a Online Booking System in about 3 hours.\n\nHere's the deal - normally this would cost $2,000-4,000, but I have a better model:\n\nI build it for FREE. You pay me nothing upfront.\n\nThen, I get 20% of what it makes you. You keep 80%.\n\nSo if this helps you make an extra $10,000, you keep $8,000 and I get $2,000. If it makes you nothing, I get nothing.\n\nFair?"
+      },
+      {
+        "prospect": "20% seems high. Can you do 10%?"
+      },
+      {
+        "agent": "You know what? For the right partner, I can do 10%. You keep 90%, I get 10%. Deal?"
+      },
+      {
+        "prospect": "I need to talk to my partner first."
+      }
+    ],
+    "discovered_need": "online_booking",
+    "solution_offered": {
+      "name": "Online Booking System",
+      "build_time": "3 hours",
+      "value": "$2,000-4,000",
+      "our_cut": "20% of bookings revenue"
+    },
+    "outcome": "not_interested",
+    "close_probability": 0.1,
+    "final_split": "10%"
+  },
+  {
+    "id": "call_0010",
+    "timestamp": "2025-11-23T18:09:27.300720",
+    "target": {
+      "id": "target_016",
+      "company": "Air Conditioning Repair #16",
+      "type": "Air Conditioning Repair",
+      "location": "Atlanta, GA",
+      "phone": "+1-555-4763",
+      "employees": 39,
+      "years_in_business": 17,
+      "has_website": true,
+      "estimated_revenue": 1638813,
+      "digital_presence": "weak",
+      "needs_assessment": {
+        "online_booking": false,
+        "customer_management": false,
+        "marketing_automation": true,
+        "mobile_app": false
+      },
+      "score": 66,
+      "priority": "MEDIUM"
+    },
+    "conversation": [
+      {
+        "agent": "Hey, I noticed your business and had an idea that could help you get more customers. Got a quick minute?"
+      },
+      {
+        "prospect": "Sure, what's this about?"
+      },
+      {
+        "agent": "What's your biggest challenge right now with getting new customers?"
+      },
+      {
+        "prospect": "I barely have time to market. I know I should do more social media but..."
+      },
+      {
+        "agent": "How are you currently handling bookings/scheduling?"
+      },
+      {
+        "prospect": "I barely have time to market. I know I should do more social media but..."
+      },
+      {
+        "agent": "What takes up most of your time that you wish was automated?"
+      },
+      {
+        "prospect": "I barely have time to market. I know I should do more social media but..."
+      },
+      {
+        "agent": "Perfect! I can build you a Marketing Automation in about 1 day.\n\nHere's the deal - normally this would cost $3,000-7,000, but I have a better model:\n\nI build it for FREE. You pay me nothing upfront.\n\nThen, I get 20% of what it makes you. You keep 80%.\n\nSo if this helps you make an extra $10,000, you keep $8,000 and I get $2,000. If it makes you nothing, I get nothing.\n\nFair?"
+      },
+      {
+        "prospect": "That sounds interesting. How much does it cost?"
+      }
+    ],
+    "discovered_need": "marketing",
+    "solution_offered": {
+      "name": "Marketing Automation",
+      "build_time": "1 day",
+      "value": "$3,000-7,000",
+      "our_cut": "20% of marketing ROI"
+    },
+    "outcome": "not_interested",
+    "close_probability": 0.1
+  }
+]

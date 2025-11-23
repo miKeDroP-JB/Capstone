@@ -1,1 +1,26 @@
+# Python cache
+__pycache__/
+*.pyc
+*.pyo
+*.pyd
+.Python
+*.so
+*.egg
+*.egg-info/
+dist/
+build/
+
+# Generated games and videos (optional - can commit examples)
+# generated_games/
+# generated_videos/
+
+# OS files
+.DS_Store
+Thumbs.db
+
+
+# Node modules
 node_modules/
+npm-debug.log
+yarn-error.log
+

@@ -1,0 +1,235 @@
+[
+  {
+    "session_id": "session_20251123_180922",
+    "rounds": 10,
+    "threshold": 0.7,
+    "conversations": [
+      {
+        "round": 1,
+        "prospect_type": "Impulsive",
+        "transcript": [
+          {
+            "sales": "Hey, I noticed your business and have an idea that could help. Quick minute?"
+          },
+          {
+            "prospect": "How much does it cost?"
+          },
+          {
+            "sales": "Zero upfront. I build it free, then take 20% of what it makes you. You keep 80%."
+          }
+        ],
+        "outcome": "rejected",
+        "close_probability": 0.1
+      },
+      {
+        "round": 2,
+        "prospect_type": "Impulsive",
+        "transcript": [
+          {
+            "sales": "Good morning! I build custom solutions for businesses like yours. Interested?"
+          },
+          {
+            "prospect": "Not interested, thanks."
+          }
+        ],
+        "outcome": "rejected",
+        "close_probability": 0.1
+      },
+      {
+        "round": 3,
+        "prospect_type": "Busy",
+        "transcript": [
+          {
+            "sales": "Hey, I noticed your business and have an idea that could help. Quick minute?"
+          },
+          {
+            "prospect": "How much does it cost?"
+          },
+          {
+            "sales": "Zero upfront. I build it free, then take 20% of what it makes you. You keep 80%."
+          },
+          {
+            "prospect": "Interesting. Tell me more."
+          },
+          {
+            "sales": "What would make your life easier?"
+          },
+          {
+            "prospect": "We're still taking calls manually. It's chaos."
+          },
+          {
+            "sales": "I'll build you a CRM system in 4 hours. Free. Then I get 20% of new customer revenue. You in?"
+          },
+          {
+            "prospect": "Let me think about it."
+          }
+        ],
+        "outcome": "interested",
+        "close_probability": 0.6
+      },
+      {
+        "round": 4,
+        "prospect_type": "Interested",
+        "transcript": [
+          {
+            "sales": "Hi! I can help automate your work and save time. Can we chat?"
+          },
+          {
+            "prospect": "I'm really busy right now."
+          },
+          {
+            "sales": "I totally understand. This takes 2 minutes. When's a better time?"
+          }
+        ],
+        "outcome": "rejected",
+        "close_probability": 0.1
+      },
+      {
+        "round": 5,
+        "prospect_type": "Interested",
+        "transcript": [
+          {
+            "sales": "Hi there! I help companies get more customers online. Have a moment?"
+          },
+          {
+            "prospect": "Sure, what's this about?"
+          },
+          {
+            "sales": "How do you currently handle bookings?"
+          },
+          {
+            "prospect": "I don't have time for marketing."
+          },
+          {
+            "sales": "Perfect! I can build you an online booking system in 3 hours. Free upfront, I take 20% of bookings revenue. You keep 80%. Fair?"
+          },
+          {
+            "prospect": "You know what, let's try it."
+          }
+        ],
+        "outcome": "closed",
+        "close_probability": 0.95
+      },
+      {
+        "round": 6,
+        "prospect_type": "Impulsive",
+        "transcript": [
+          {
+            "sales": "Hi! I can help automate your work and save time. Can we chat?"
+          },
+          {
+            "prospect": "Sure, what's this about?"
+          },
+          {
+            "sales": "How do you currently handle bookings?"
+          },
+          {
+            "prospect": "I spend hours on admin work."
+          },
+          {
+            "sales": "I'll build you a CRM system in 4 hours. Free. Then I get 20% of new customer revenue. You in?"
+          },
+          {
+            "prospect": "Okay, I'm in. What's next?"
+          }
+        ],
+        "outcome": "closed",
+        "close_probability": 0.95
+      },
+      {
+        "round": 7,
+        "prospect_type": "Impulsive",
+        "transcript": [
+          {
+            "sales": "Hi! I can help automate your work and save time. Can we chat?"
+          },
+          {
+            "prospect": "Sure, what's this about?"
+          },
+          {
+            "sales": "How do you currently handle bookings?"
+          },
+          {
+            "prospect": "We're still taking calls manually. It's chaos."
+          },
+          {
+            "sales": "I'll build you a CRM system in 4 hours. Free. Then I get 20% of new customer revenue. You in?"
+          },
+          {
+            "prospect": "You know what, let's try it."
+          }
+        ],
+        "outcome": "closed",
+        "close_probability": 0.95
+      },
+      {
+        "round": 8,
+        "prospect_type": "Skeptical",
+        "transcript": [
+          {
+            "sales": "Good morning! I build custom solutions for businesses like yours. Interested?"
+          },
+          {
+            "prospect": "We already have someone for that."
+          }
+        ],
+        "outcome": "rejected",
+        "close_probability": 0.1
+      },
+      {
+        "round": 9,
+        "prospect_type": "Skeptical",
+        "transcript": [
+          {
+            "sales": "Hey, I noticed your business and have an idea that could help. Quick minute?"
+          },
+          {
+            "prospect": "Sure, what's this about?"
+          },
+          {
+            "sales": "What would make your life easier?"
+          },
+          {
+            "prospect": "I spend hours on admin work."
+          },
+          {
+            "sales": "Perfect! I can build you an online booking system in 3 hours. Free upfront, I take 20% of bookings revenue. You keep 80%. Fair?"
+          },
+          {
+            "prospect": "I don't think so, thanks."
+          }
+        ],
+        "outcome": "rejected",
+        "close_probability": 0.1
+      },
+      {
+        "round": 10,
+        "prospect_type": "Analytical",
+        "transcript": [
+          {
+            "sales": "Hey, I noticed your business and have an idea that could help. Quick minute?"
+          },
+          {
+            "prospect": "Sure, what's this about?"
+          },
+          {
+            "sales": "What's your biggest challenge getting new customers?"
+          },
+          {
+            "prospect": "Customer info is everywhere - spreadsheets, paper..."
+          },
+          {
+            "sales": "I can automate that for you in a day. Zero cost to start, I get 20% of what it saves you. Deal?"
+          },
+          {
+            "prospect": "Let me think about it."
+          }
+        ],
+        "outcome": "interested",
+        "close_probability": 0.6
+      }
+    ],
+    "success_rate": 0.5,
+    "improvements": []
+  }
+]
