@@ -1,0 +1,1379 @@
+{
+  "timestamp": "2025-11-23T18:57:08.895256",
+  "total_calls": 30,
+  "closes": [],
+  "interested": [],
+  "not_interested": [
+    {
+      "id": "call_0182",
+      "timestamp": "2025-11-23T18:57:08.895328",
+      "target": {
+        "id": "real_001",
+        "company": "Tampa Air Conditioning",
+        "type": "HVAC Services",
+        "location": "Tampa, Florida",
+        "phone": "+1-800-555-1000",
+        "website": "NONE",
+        "has_website": false,
+        "website_quality": "none",
+        "has_social_media": false,
+        "has_online_booking": false,
+        "needs": [
+          "website",
+          "social media management",
+          "online booking system",
+          "marketing automation"
+        ],
+        "score": 95,
+        "employees": 2,
+        "years_in_business": 1,
+        "annual_revenue": "$500,000"
+      },
+      "conversation": [
+        {
+          "agent": "Hey, I noticed your business and had an idea that could help you get more customers. Got a quick minute?"
+        },
+        {
+          "prospect": "Sure, what's this about?"
+        },
+        {
+          "agent": "What's your biggest challenge right now with getting new customers?"
+        },
+        {
+          "prospect": "We're doing alright. Always looking to improve though."
+        },
+        {
+          "agent": "How are you currently handling bookings/scheduling?"
+        },
+        {
+          "prospect": "We're doing alright. Always looking to improve though."
+        },
+        {
+          "agent": "What takes up most of your time that you wish was automated?"
+        },
+        {
+          "prospect": "We're doing alright. Always looking to improve though."
+        }
+      ],
+      "discovered_need": null,
+      "solution_offered": null,
+      "outcome": "no_need_discovered",
+      "close_probability": 0
+    },
+    {
+      "id": "call_0183",
+      "timestamp": "2025-11-23T18:57:08.904001",
+      "target": {
+        "id": "real_021",
+        "company": "Tampa Air Conditioning",
+        "type": "HVAC Services",
+        "location": "Tampa, Florida",
+        "phone": "+1-800-555-1020",
+        "website": "https://tampaairconditioning.com",
+        "has_website": true,
+        "website_quality": "poor",
+        "has_social_media": false,
+        "has_online_booking": false,
+        "needs": [
+          "website",
+          "social media management",
+          "online booking system",
+          "marketing automation"
+        ],
+        "score": 95,
+        "employees": 2,
+        "years_in_business": 1,
+        "annual_revenue": "$500,000"
+      },
+      "conversation": [
+        {
+          "agent": "Hey, I noticed your business and had an idea that could help you get more customers. Got a quick minute?"
+        },
+        {
+          "prospect": "Sure, what's this about?"
+        },
+        {
+          "agent": "What's your biggest challenge right now with getting new customers?"
+        },
+        {
+          "prospect": "We're doing alright. Always looking to improve though."
+        },
+        {
+          "agent": "How are you currently handling bookings/scheduling?"
+        },
+        {
+          "prospect": "We're doing alright. Always looking to improve though."
+        },
+        {
+          "agent": "What takes up most of your time that you wish was automated?"
+        },
+        {
+          "prospect": "We're doing alright. Always looking to improve though."
+        }
+      ],
+      "discovered_need": null,
+      "solution_offered": null,
+      "outcome": "no_need_discovered",
+      "close_probability": 0
+    },
+    {
+      "id": "call_0184",
+      "timestamp": "2025-11-23T18:57:08.912917",
+      "target": {
+        "id": "real_041",
+        "company": "Tampa Air Conditioning",
+        "type": "HVAC Services",
+        "location": "Tampa, Florida",
+        "phone": "+1-800-555-1040",
+        "website": "https://tampaairconditioning.com",
+        "has_website": true,
+        "website_quality": "poor",
+        "has_social_media": false,
+        "has_online_booking": false,
+        "needs": [
+          "website",
+          "social media management",
+          "online booking system",
+          "marketing automation"
+        ],
+        "score": 95,
+        "employees": 2,
+        "years_in_business": 1,
+        "annual_revenue": "$500,000"
+      },
+      "conversation": [
+        {
+          "agent": "Hey, I noticed your business and had an idea that could help you get more customers. Got a quick minute?"
+        },
+        {
+          "prospect": "I'm busy, make it quick."
+        }
+      ],
+      "discovered_need": null,
+      "solution_offered": null,
+      "outcome": "rejected_early",
+      "close_probability": 0
+    },
+    {
+      "id": "call_0185",
+      "timestamp": "2025-11-23T18:57:08.921658",
+      "target": {
+        "id": "real_011",
+        "company": "Tampa Air Conditioning",
+        "type": "HVAC Services",
+        "location": "Tampa, Florida",
+        "phone": "+1-800-555-1010",
+        "website": "https://tampaairconditioning.com",
+        "has_website": true,
+        "website_quality": "poor",
+        "has_social_media": true,
+        "has_online_booking": false,
+        "needs": [
+          "website",
+          "online booking system",
+          "marketing automation"
+        ],
+        "score": 90,
+        "employees": 2,
+        "years_in_business": 11,
+        "annual_revenue": "$500,000"
+      },
+      "conversation": [
+        {
+          "agent": "Hey, I noticed your business and had an idea that could help you get more customers. Got a quick minute?"
+        },
+        {
+          "prospect": "Sure, what's this about?"
+        },
+        {
+          "agent": "What's your biggest challenge right now with getting new customers?"
+        },
+        {
+          "prospect": "We're doing alright. Always looking to improve though."
+        },
+        {
+          "agent": "How are you currently handling bookings/scheduling?"
+        },
+        {
+          "prospect": "We're doing alright. Always looking to improve though."
+        },
+        {
+          "agent": "What takes up most of your time that you wish was automated?"
+        },
+        {
+          "prospect": "We're doing alright. Always looking to improve though."
+        }
+      ],
+      "discovered_need": null,
+      "solution_offered": null,
+      "outcome": "no_need_discovered",
+      "close_probability": 0
+    },
+    {
+      "id": "call_0186",
+      "timestamp": "2025-11-23T18:57:08.930092",
+      "target": {
+        "id": "real_016",
+        "company": "AllTemp Air Conditioning",
+        "type": "HVAC Services",
+        "location": "Charlotte, Florida",
+        "phone": "+1-800-555-1015",
+        "website": "NONE",
+        "has_website": false,
+        "website_quality": "none",
+        "has_social_media": true,
+        "has_online_booking": false,
+        "needs": [
+          "website",
+          "online booking system",
+          "marketing automation"
+        ],
+        "score": 90,
+        "employees": 7,
+        "years_in_business": 16,
+        "annual_revenue": "$500,000"
+      },
+      "conversation": [
+        {
+          "agent": "Hey, I noticed your business and had an idea that could help you get more customers. Got a quick minute?"
+        },
+        {
+          "prospect": "I'm busy, make it quick."
+        }
+      ],
+      "discovered_need": null,
+      "solution_offered": null,
+      "outcome": "rejected_early",
+      "close_probability": 0
+    },
+    {
+      "id": "call_0187",
+      "timestamp": "2025-11-23T18:57:08.938123",
+      "target": {
+        "id": "real_031",
+        "company": "Tampa Air Conditioning",
+        "type": "HVAC Services",
+        "location": "Tampa, Florida",
+        "phone": "+1-800-555-1030",
+        "website": "NONE",
+        "has_website": false,
+        "website_quality": "none",
+        "has_social_media": true,
+        "has_online_booking": false,
+        "needs": [
+          "website",
+          "online booking system",
+          "marketing automation"
+        ],
+        "score": 90,
+        "employees": 2,
+        "years_in_business": 11,
+        "annual_revenue": "$500,000"
+      },
+      "conversation": [
+        {
+          "agent": "Hey, I noticed your business and had an idea that could help you get more customers. Got a quick minute?"
+        },
+        {
+          "prospect": "Sure, what's this about?"
+        },
+        {
+          "agent": "What's your biggest challenge right now with getting new customers?"
+        },
+        {
+          "prospect": "We're doing alright. Always looking to improve though."
+        },
+        {
+          "agent": "How are you currently handling bookings/scheduling?"
+        },
+        {
+          "prospect": "We're doing alright. Always looking to improve though."
+        },
+        {
+          "agent": "What takes up most of your time that you wish was automated?"
+        },
+        {
+          "prospect": "We're doing alright. Always looking to improve though."
+        }
+      ],
+      "discovered_need": null,
+      "solution_offered": null,
+      "outcome": "no_need_discovered",
+      "close_probability": 0
+    },
+    {
+      "id": "call_0188",
+      "timestamp": "2025-11-23T18:57:08.947179",
+      "target": {
+        "id": "real_046",
+        "company": "AllTemp Air Conditioning",
+        "type": "HVAC Services",
+        "location": "Charlotte, Florida",
+        "phone": "+1-800-555-1045",
+        "website": "NONE",
+        "has_website": false,
+        "website_quality": "none",
+        "has_social_media": true,
+        "has_online_booking": false,
+        "needs": [
+          "website",
+          "online booking system",
+          "marketing automation"
+        ],
+        "score": 90,
+        "employees": 7,
+        "years_in_business": 6,
+        "annual_revenue": "$500,000"
+      },
+      "conversation": [
+        {
+          "agent": "Hey, I noticed your business and had an idea that could help you get more customers. Got a quick minute?"
+        },
+        {
+          "prospect": "I'm busy, make it quick."
+        }
+      ],
+      "discovered_need": null,
+      "solution_offered": null,
+      "outcome": "rejected_early",
+      "close_probability": 0
+    },
+    {
+      "id": "call_0189",
+      "timestamp": "2025-11-23T18:57:08.956942",
+      "target": {
+        "id": "real_005",
+        "company": "Comfort Zone Heating",
+        "type": "HVAC Services",
+        "location": "Atlanta, Florida",
+        "phone": "+1-800-555-1004",
+        "website": "https://comfortzoneheating.com",
+        "has_website": true,
+        "website_quality": "poor",
+        "has_social_media": false,
+        "has_online_booking": true,
+        "needs": [
+          "website",
+          "social media management",
+          "marketing automation"
+        ],
+        "score": 85,
+        "employees": 6,
+        "years_in_business": 5,
+        "annual_revenue": "$2,500,000"
+      },
+      "conversation": [
+        {
+          "agent": "Hey, I noticed your business and had an idea that could help you get more customers. Got a quick minute?"
+        },
+        {
+          "prospect": "I'm busy, make it quick."
+        }
+      ],
+      "discovered_need": null,
+      "solution_offered": null,
+      "outcome": "rejected_early",
+      "close_probability": 0
+    },
+    {
+      "id": "call_0190",
+      "timestamp": "2025-11-23T18:57:08.966604",
+      "target": {
+        "id": "real_009",
+        "company": "Total Comfort HVAC",
+        "type": "HVAC Services",
+        "location": "Phoenix, Florida",
+        "phone": "+1-800-555-1008",
+        "website": "https://totalcomforthvac.com",
+        "has_website": true,
+        "website_quality": "poor",
+        "has_social_media": false,
+        "has_online_booking": true,
+        "needs": [
+          "website",
+          "social media management",
+          "marketing automation"
+        ],
+        "score": 85,
+        "employees": 10,
+        "years_in_business": 9,
+        "annual_revenue": "$2,000,000"
+      },
+      "conversation": [
+        {
+          "agent": "Hey, I noticed your business and had an idea that could help you get more customers. Got a quick minute?"
+        },
+        {
+          "prospect": "Sure, what's this about?"
+        },
+        {
+          "agent": "What's your biggest challenge right now with getting new customers?"
+        },
+        {
+          "prospect": "We're doing alright. Always looking to improve though."
+        },
+        {
+          "agent": "How are you currently handling bookings/scheduling?"
+        },
+        {
+          "prospect": "We're doing alright. Always looking to improve though."
+        },
+        {
+          "agent": "What takes up most of your time that you wish was automated?"
+        },
+        {
+          "prospect": "We're doing alright. Always looking to improve though."
+        }
+      ],
+      "discovered_need": null,
+      "solution_offered": null,
+      "outcome": "no_need_discovered",
+      "close_probability": 0
+    },
+    {
+      "id": "call_0191",
+      "timestamp": "2025-11-23T18:57:08.977272",
+      "target": {
+        "id": "real_013",
+        "company": "ABC Climate Control",
+        "type": "HVAC Services",
+        "location": "Miami, Florida",
+        "phone": "+1-800-555-1012",
+        "website": "NONE",
+        "has_website": false,
+        "website_quality": "none",
+        "has_social_media": false,
+        "has_online_booking": true,
+        "needs": [
+          "website",
+          "social media management",
+          "marketing automation"
+        ],
+        "score": 85,
+        "employees": 4,
+        "years_in_business": 13,
+        "annual_revenue": "$1,500,000"
+      },
+      "conversation": [
+        {
+          "agent": "Hey, I noticed your business and had an idea that could help you get more customers. Got a quick minute?"
+        },
+        {
+          "prospect": "Sure, what's this about?"
+        },
+        {
+          "agent": "What's your biggest challenge right now with getting new customers?"
+        },
+        {
+          "prospect": "We're doing alright. Always looking to improve though."
+        },
+        {
+          "agent": "How are you currently handling bookings/scheduling?"
+        },
+        {
+          "prospect": "We're doing alright. Always looking to improve though."
+        },
+        {
+          "agent": "What takes up most of your time that you wish was automated?"
+        },
+        {
+          "prospect": "We're doing alright. Always looking to improve though."
+        }
+      ],
+      "discovered_need": null,
+      "solution_offered": null,
+      "outcome": "no_need_discovered",
+      "close_probability": 0
+    },
+    {
+      "id": "call_0192",
+      "timestamp": "2025-11-23T18:57:08.985716",
+      "target": {
+        "id": "real_017",
+        "company": "Premier Climate Solutions",
+        "type": "HVAC Services",
+        "location": "Dallas, Florida",
+        "phone": "+1-800-555-1016",
+        "website": "https://premierclimatesolutions.com",
+        "has_website": true,
+        "website_quality": "poor",
+        "has_social_media": false,
+        "has_online_booking": true,
+        "needs": [
+          "website",
+          "social media management",
+          "marketing automation"
+        ],
+        "score": 85,
+        "employees": 8,
+        "years_in_business": 17,
+        "annual_revenue": "$1,000,000"
+      },
+      "conversation": [
+        {
+          "agent": "Hey, I noticed your business and had an idea that could help you get more customers. Got a quick minute?"
+        },
+        {
+          "prospect": "I'm busy, make it quick."
+        }
+      ],
+      "discovered_need": null,
+      "solution_offered": null,
+      "outcome": "rejected_early",
+      "close_probability": 0
+    },
+    {
+      "id": "call_0193",
+      "timestamp": "2025-11-23T18:57:08.995888",
+      "target": {
+        "id": "real_025",
+        "company": "Comfort Zone Heating",
+        "type": "HVAC Services",
+        "location": "Atlanta, Florida",
+        "phone": "+1-800-555-1024",
+        "website": "NONE",
+        "has_website": false,
+        "website_quality": "none",
+        "has_social_media": false,
+        "has_online_booking": true,
+        "needs": [
+          "website",
+          "social media management",
+          "marketing automation"
+        ],
+        "score": 85,
+        "employees": 6,
+        "years_in_business": 5,
+        "annual_revenue": "$2,500,000"
+      },
+      "conversation": [
+        {
+          "agent": "Hey, I noticed your business and had an idea that could help you get more customers. Got a quick minute?"
+        },
+        {
+          "prospect": "I'm busy, make it quick."
+        }
+      ],
+      "discovered_need": null,
+      "solution_offered": null,
+      "outcome": "rejected_early",
+      "close_probability": 0
+    },
+    {
+      "id": "call_0194",
+      "timestamp": "2025-11-23T18:57:09.005178",
+      "target": {
+        "id": "real_029",
+        "company": "Total Comfort HVAC",
+        "type": "HVAC Services",
+        "location": "Phoenix, Florida",
+        "phone": "+1-800-555-1028",
+        "website": "https://totalcomforthvac.com",
+        "has_website": true,
+        "website_quality": "poor",
+        "has_social_media": false,
+        "has_online_booking": true,
+        "needs": [
+          "website",
+          "social media management",
+          "marketing automation"
+        ],
+        "score": 85,
+        "employees": 10,
+        "years_in_business": 9,
+        "annual_revenue": "$2,000,000"
+      },
+      "conversation": [
+        {
+          "agent": "Hey, I noticed your business and had an idea that could help you get more customers. Got a quick minute?"
+        },
+        {
+          "prospect": "Sure, what's this about?"
+        },
+        {
+          "agent": "What's your biggest challenge right now with getting new customers?"
+        },
+        {
+          "prospect": "We're doing alright. Always looking to improve though."
+        },
+        {
+          "agent": "How are you currently handling bookings/scheduling?"
+        },
+        {
+          "prospect": "We're doing alright. Always looking to improve though."
+        },
+        {
+          "agent": "What takes up most of your time that you wish was automated?"
+        },
+        {
+          "prospect": "We're doing alright. Always looking to improve though."
+        }
+      ],
+      "discovered_need": null,
+      "solution_offered": null,
+      "outcome": "no_need_discovered",
+      "close_probability": 0
+    },
+    {
+      "id": "call_0195",
+      "timestamp": "2025-11-23T18:57:09.013868",
+      "target": {
+        "id": "real_033",
+        "company": "ABC Climate Control",
+        "type": "HVAC Services",
+        "location": "Miami, Florida",
+        "phone": "+1-800-555-1032",
+        "website": "https://abcclimatecontrol.com",
+        "has_website": true,
+        "website_quality": "poor",
+        "has_social_media": false,
+        "has_online_booking": true,
+        "needs": [
+          "website",
+          "social media management",
+          "marketing automation"
+        ],
+        "score": 85,
+        "employees": 4,
+        "years_in_business": 13,
+        "annual_revenue": "$1,500,000"
+      },
+      "conversation": [
+        {
+          "agent": "Hey, I noticed your business and had an idea that could help you get more customers. Got a quick minute?"
+        },
+        {
+          "prospect": "Sure, what's this about?"
+        },
+        {
+          "agent": "What's your biggest challenge right now with getting new customers?"
+        },
+        {
+          "prospect": "We're doing alright. Always looking to improve though."
+        },
+        {
+          "agent": "How are you currently handling bookings/scheduling?"
+        },
+        {
+          "prospect": "We're doing alright. Always looking to improve though."
+        },
+        {
+          "agent": "What takes up most of your time that you wish was automated?"
+        },
+        {
+          "prospect": "We're doing alright. Always looking to improve though."
+        }
+      ],
+      "discovered_need": null,
+      "solution_offered": null,
+      "outcome": "no_need_discovered",
+      "close_probability": 0
+    },
+    {
+      "id": "call_0196",
+      "timestamp": "2025-11-23T18:57:09.024159",
+      "target": {
+        "id": "real_037",
+        "company": "Premier Climate Solutions",
+        "type": "HVAC Services",
+        "location": "Dallas, Florida",
+        "phone": "+1-800-555-1036",
+        "website": "NONE",
+        "has_website": false,
+        "website_quality": "none",
+        "has_social_media": false,
+        "has_online_booking": true,
+        "needs": [
+          "website",
+          "social media management",
+          "marketing automation"
+        ],
+        "score": 85,
+        "employees": 8,
+        "years_in_business": 17,
+        "annual_revenue": "$1,000,000"
+      },
+      "conversation": [
+        {
+          "agent": "Hey, I noticed your business and had an idea that could help you get more customers. Got a quick minute?"
+        },
+        {
+          "prospect": "Sure, what's this about?"
+        },
+        {
+          "agent": "What's your biggest challenge right now with getting new customers?"
+        },
+        {
+          "prospect": "We're doing alright. Always looking to improve though."
+        },
+        {
+          "agent": "How are you currently handling bookings/scheduling?"
+        },
+        {
+          "prospect": "We're doing alright. Always looking to improve though."
+        },
+        {
+          "agent": "What takes up most of your time that you wish was automated?"
+        },
+        {
+          "prospect": "We're doing alright. Always looking to improve though."
+        }
+      ],
+      "discovered_need": null,
+      "solution_offered": null,
+      "outcome": "no_need_discovered",
+      "close_probability": 0
+    },
+    {
+      "id": "call_0197",
+      "timestamp": "2025-11-23T18:57:09.034545",
+      "target": {
+        "id": "real_045",
+        "company": "Comfort Zone Heating",
+        "type": "HVAC Services",
+        "location": "Atlanta, Florida",
+        "phone": "+1-800-555-1044",
+        "website": "https://comfortzoneheating.com",
+        "has_website": true,
+        "website_quality": "poor",
+        "has_social_media": false,
+        "has_online_booking": true,
+        "needs": [
+          "website",
+          "social media management",
+          "marketing automation"
+        ],
+        "score": 85,
+        "employees": 6,
+        "years_in_business": 5,
+        "annual_revenue": "$2,500,000"
+      },
+      "conversation": [
+        {
+          "agent": "Hey, I noticed your business and had an idea that could help you get more customers. Got a quick minute?"
+        },
+        {
+          "prospect": "Sure, what's this about?"
+        },
+        {
+          "agent": "What's your biggest challenge right now with getting new customers?"
+        },
+        {
+          "prospect": "We're doing alright. Always looking to improve though."
+        },
+        {
+          "agent": "How are you currently handling bookings/scheduling?"
+        },
+        {
+          "prospect": "We're doing alright. Always looking to improve though."
+        },
+        {
+          "agent": "What takes up most of your time that you wish was automated?"
+        },
+        {
+          "prospect": "We're doing alright. Always looking to improve though."
+        }
+      ],
+      "discovered_need": null,
+      "solution_offered": null,
+      "outcome": "no_need_discovered",
+      "close_probability": 0
+    },
+    {
+      "id": "call_0198",
+      "timestamp": "2025-11-23T18:57:09.044084",
+      "target": {
+        "id": "real_049",
+        "company": "Total Comfort HVAC",
+        "type": "HVAC Services",
+        "location": "Phoenix, Florida",
+        "phone": "+1-800-555-1048",
+        "website": "NONE",
+        "has_website": false,
+        "website_quality": "none",
+        "has_social_media": false,
+        "has_online_booking": true,
+        "needs": [
+          "website",
+          "social media management",
+          "marketing automation"
+        ],
+        "score": 85,
+        "employees": 10,
+        "years_in_business": 9,
+        "annual_revenue": "$2,000,000"
+      },
+      "conversation": [
+        {
+          "agent": "Hey, I noticed your business and had an idea that could help you get more customers. Got a quick minute?"
+        },
+        {
+          "prospect": "Sure, what's this about?"
+        },
+        {
+          "agent": "What's your biggest challenge right now with getting new customers?"
+        },
+        {
+          "prospect": "We're doing alright. Always looking to improve though."
+        },
+        {
+          "agent": "How are you currently handling bookings/scheduling?"
+        },
+        {
+          "prospect": "We're doing alright. Always looking to improve though."
+        },
+        {
+          "agent": "What takes up most of your time that you wish was automated?"
+        },
+        {
+          "prospect": "We're doing alright. Always looking to improve though."
+        }
+      ],
+      "discovered_need": null,
+      "solution_offered": null,
+      "outcome": "no_need_discovered",
+      "close_probability": 0
+    },
+    {
+      "id": "call_0199",
+      "timestamp": "2025-11-23T18:57:09.053483",
+      "target": {
+        "id": "real_003",
+        "company": "ABC Climate Control",
+        "type": "HVAC Services",
+        "location": "Miami, Florida",
+        "phone": "+1-800-555-1002",
+        "website": "https://abcclimatecontrol.com",
+        "has_website": true,
+        "website_quality": "poor",
+        "has_social_media": true,
+        "has_online_booking": true,
+        "needs": [
+          "website",
+          "marketing automation"
+        ],
+        "score": 75,
+        "employees": 4,
+        "years_in_business": 3,
+        "annual_revenue": "$1,500,000"
+      },
+      "conversation": [
+        {
+          "agent": "Hey, I noticed your business and had an idea that could help you get more customers. Got a quick minute?"
+        },
+        {
+          "prospect": "I'm busy, make it quick."
+        }
+      ],
+      "discovered_need": null,
+      "solution_offered": null,
+      "outcome": "rejected_early",
+      "close_probability": 0
+    },
+    {
+      "id": "call_0200",
+      "timestamp": "2025-11-23T18:57:09.063148",
+      "target": {
+        "id": "real_004",
+        "company": "Precision HVAC Services",
+        "type": "HVAC Services",
+        "location": "Jacksonville, Florida",
+        "phone": "+1-800-555-1003",
+        "website": "NONE",
+        "has_website": false,
+        "website_quality": "none",
+        "has_social_media": true,
+        "has_online_booking": true,
+        "needs": [
+          "website",
+          "marketing automation"
+        ],
+        "score": 75,
+        "employees": 5,
+        "years_in_business": 4,
+        "annual_revenue": "$2,000,000"
+      },
+      "conversation": [
+        {
+          "agent": "Hey, I noticed your business and had an idea that could help you get more customers. Got a quick minute?"
+        },
+        {
+          "prospect": "I'm busy, make it quick."
+        }
+      ],
+      "discovered_need": null,
+      "solution_offered": null,
+      "outcome": "rejected_early",
+      "close_probability": 0
+    },
+    {
+      "id": "call_0201",
+      "timestamp": "2025-11-23T18:57:09.073726",
+      "target": {
+        "id": "real_006",
+        "company": "AllTemp Air Conditioning",
+        "type": "HVAC Services",
+        "location": "Charlotte, Florida",
+        "phone": "+1-800-555-1005",
+        "website": "https://alltempairconditioning.com",
+        "has_website": true,
+        "website_quality": "none",
+        "has_social_media": true,
+        "has_online_booking": false,
+        "needs": [
+          "online booking system",
+          "marketing automation"
+        ],
+        "score": 75,
+        "employees": 7,
+        "years_in_business": 6,
+        "annual_revenue": "$500,000"
+      },
+      "conversation": [
+        {
+          "agent": "Hey, I noticed your business and had an idea that could help you get more customers. Got a quick minute?"
+        },
+        {
+          "prospect": "I'm busy, make it quick."
+        }
+      ],
+      "discovered_need": null,
+      "solution_offered": null,
+      "outcome": "rejected_early",
+      "close_probability": 0
+    },
+    {
+      "id": "call_0202",
+      "timestamp": "2025-11-23T18:57:09.082835",
+      "target": {
+        "id": "real_007",
+        "company": "Premier Climate Solutions",
+        "type": "HVAC Services",
+        "location": "Dallas, Florida",
+        "phone": "+1-800-555-1006",
+        "website": "NONE",
+        "has_website": false,
+        "website_quality": "none",
+        "has_social_media": true,
+        "has_online_booking": true,
+        "needs": [
+          "website",
+          "marketing automation"
+        ],
+        "score": 75,
+        "employees": 8,
+        "years_in_business": 7,
+        "annual_revenue": "$1,000,000"
+      },
+      "conversation": [
+        {
+          "agent": "Hey, I noticed your business and had an idea that could help you get more customers. Got a quick minute?"
+        },
+        {
+          "prospect": "I'm busy, make it quick."
+        }
+      ],
+      "discovered_need": null,
+      "solution_offered": null,
+      "outcome": "rejected_early",
+      "close_probability": 0
+    },
+    {
+      "id": "call_0203",
+      "timestamp": "2025-11-23T18:57:09.092025",
+      "target": {
+        "id": "real_010",
+        "company": "Arctic Air Solutions",
+        "type": "HVAC Services",
+        "location": "Denver, Florida",
+        "phone": "+1-800-555-1009",
+        "website": "NONE",
+        "has_website": false,
+        "website_quality": "none",
+        "has_social_media": true,
+        "has_online_booking": true,
+        "needs": [
+          "website",
+          "marketing automation"
+        ],
+        "score": 75,
+        "employees": 11,
+        "years_in_business": 10,
+        "annual_revenue": "$2,500,000"
+      },
+      "conversation": [
+        {
+          "agent": "Hey, I noticed your business and had an idea that could help you get more customers. Got a quick minute?"
+        },
+        {
+          "prospect": "I'm busy, make it quick."
+        }
+      ],
+      "discovered_need": null,
+      "solution_offered": null,
+      "outcome": "rejected_early",
+      "close_probability": 0
+    },
+    {
+      "id": "call_0204",
+      "timestamp": "2025-11-23T18:57:09.101425",
+      "target": {
+        "id": "real_015",
+        "company": "Comfort Zone Heating",
+        "type": "HVAC Services",
+        "location": "Atlanta, Florida",
+        "phone": "+1-800-555-1014",
+        "website": "https://comfortzoneheating.com",
+        "has_website": true,
+        "website_quality": "poor",
+        "has_social_media": true,
+        "has_online_booking": true,
+        "needs": [
+          "website",
+          "marketing automation"
+        ],
+        "score": 75,
+        "employees": 6,
+        "years_in_business": 15,
+        "annual_revenue": "$2,500,000"
+      },
+      "conversation": [
+        {
+          "agent": "Hey, I noticed your business and had an idea that could help you get more customers. Got a quick minute?"
+        },
+        {
+          "prospect": "Sure, what's this about?"
+        },
+        {
+          "agent": "What's your biggest challenge right now with getting new customers?"
+        },
+        {
+          "prospect": "We're doing alright. Always looking to improve though."
+        },
+        {
+          "agent": "How are you currently handling bookings/scheduling?"
+        },
+        {
+          "prospect": "We're doing alright. Always looking to improve though."
+        },
+        {
+          "agent": "What takes up most of your time that you wish was automated?"
+        },
+        {
+          "prospect": "We're doing alright. Always looking to improve though."
+        }
+      ],
+      "discovered_need": null,
+      "solution_offered": null,
+      "outcome": "no_need_discovered",
+      "close_probability": 0
+    },
+    {
+      "id": "call_0205",
+      "timestamp": "2025-11-23T18:57:09.110417",
+      "target": {
+        "id": "real_019",
+        "company": "Total Comfort HVAC",
+        "type": "HVAC Services",
+        "location": "Phoenix, Florida",
+        "phone": "+1-800-555-1018",
+        "website": "NONE",
+        "has_website": false,
+        "website_quality": "none",
+        "has_social_media": true,
+        "has_online_booking": true,
+        "needs": [
+          "website",
+          "marketing automation"
+        ],
+        "score": 75,
+        "employees": 10,
+        "years_in_business": 19,
+        "annual_revenue": "$2,000,000"
+      },
+      "conversation": [
+        {
+          "agent": "Hey, I noticed your business and had an idea that could help you get more customers. Got a quick minute?"
+        },
+        {
+          "prospect": "I'm busy, make it quick."
+        }
+      ],
+      "discovered_need": null,
+      "solution_offered": null,
+      "outcome": "rejected_early",
+      "close_probability": 0
+    },
+    {
+      "id": "call_0206",
+      "timestamp": "2025-11-23T18:57:09.121244",
+      "target": {
+        "id": "real_022",
+        "company": "Orlando Heating & Cooling",
+        "type": "HVAC Services",
+        "location": "Orlando, Florida",
+        "phone": "+1-800-555-1021",
+        "website": "NONE",
+        "has_website": false,
+        "website_quality": "none",
+        "has_social_media": true,
+        "has_online_booking": true,
+        "needs": [
+          "website",
+          "marketing automation"
+        ],
+        "score": 75,
+        "employees": 3,
+        "years_in_business": 2,
+        "annual_revenue": "$1,000,000"
+      },
+      "conversation": [
+        {
+          "agent": "Hey, I noticed your business and had an idea that could help you get more customers. Got a quick minute?"
+        },
+        {
+          "prospect": "Sure, what's this about?"
+        },
+        {
+          "agent": "What's your biggest challenge right now with getting new customers?"
+        },
+        {
+          "prospect": "We're doing alright. Always looking to improve though."
+        },
+        {
+          "agent": "How are you currently handling bookings/scheduling?"
+        },
+        {
+          "prospect": "We're doing alright. Always looking to improve though."
+        },
+        {
+          "agent": "What takes up most of your time that you wish was automated?"
+        },
+        {
+          "prospect": "We're doing alright. Always looking to improve though."
+        }
+      ],
+      "discovered_need": null,
+      "solution_offered": null,
+      "outcome": "no_need_discovered",
+      "close_probability": 0
+    },
+    {
+      "id": "call_0207",
+      "timestamp": "2025-11-23T18:57:09.132860",
+      "target": {
+        "id": "real_023",
+        "company": "ABC Climate Control",
+        "type": "HVAC Services",
+        "location": "Miami, Florida",
+        "phone": "+1-800-555-1022",
+        "website": "https://abcclimatecontrol.com",
+        "has_website": true,
+        "website_quality": "poor",
+        "has_social_media": true,
+        "has_online_booking": true,
+        "needs": [
+          "website",
+          "marketing automation"
+        ],
+        "score": 75,
+        "employees": 4,
+        "years_in_business": 3,
+        "annual_revenue": "$1,500,000"
+      },
+      "conversation": [
+        {
+          "agent": "Hey, I noticed your business and had an idea that could help you get more customers. Got a quick minute?"
+        },
+        {
+          "prospect": "I'm busy, make it quick."
+        }
+      ],
+      "discovered_need": null,
+      "solution_offered": null,
+      "outcome": "rejected_early",
+      "close_probability": 0
+    },
+    {
+      "id": "call_0208",
+      "timestamp": "2025-11-23T18:57:09.144331",
+      "target": {
+        "id": "real_026",
+        "company": "AllTemp Air Conditioning",
+        "type": "HVAC Services",
+        "location": "Charlotte, Florida",
+        "phone": "+1-800-555-1025",
+        "website": "https://alltempairconditioning.com",
+        "has_website": true,
+        "website_quality": "none",
+        "has_social_media": true,
+        "has_online_booking": false,
+        "needs": [
+          "online booking system",
+          "marketing automation"
+        ],
+        "score": 75,
+        "employees": 7,
+        "years_in_business": 6,
+        "annual_revenue": "$500,000"
+      },
+      "conversation": [
+        {
+          "agent": "Hey, I noticed your business and had an idea that could help you get more customers. Got a quick minute?"
+        },
+        {
+          "prospect": "I'm busy, make it quick."
+        }
+      ],
+      "discovered_need": null,
+      "solution_offered": null,
+      "outcome": "rejected_early",
+      "close_probability": 0
+    },
+    {
+      "id": "call_0209",
+      "timestamp": "2025-11-23T18:57:09.154243",
+      "target": {
+        "id": "real_027",
+        "company": "Premier Climate Solutions",
+        "type": "HVAC Services",
+        "location": "Dallas, Florida",
+        "phone": "+1-800-555-1026",
+        "website": "https://premierclimatesolutions.com",
+        "has_website": true,
+        "website_quality": "poor",
+        "has_social_media": true,
+        "has_online_booking": true,
+        "needs": [
+          "website",
+          "marketing automation"
+        ],
+        "score": 75,
+        "employees": 8,
+        "years_in_business": 7,
+        "annual_revenue": "$1,000,000"
+      },
+      "conversation": [
+        {
+          "agent": "Hey, I noticed your business and had an idea that could help you get more customers. Got a quick minute?"
+        },
+        {
+          "prospect": "Sure, what's this about?"
+        },
+        {
+          "agent": "What's your biggest challenge right now with getting new customers?"
+        },
+        {
+          "prospect": "We're doing alright. Always looking to improve though."
+        },
+        {
+          "agent": "How are you currently handling bookings/scheduling?"
+        },
+        {
+          "prospect": "We're doing alright. Always looking to improve though."
+        },
+        {
+          "agent": "What takes up most of your time that you wish was automated?"
+        },
+        {
+          "prospect": "We're doing alright. Always looking to improve though."
+        }
+      ],
+      "discovered_need": null,
+      "solution_offered": null,
+      "outcome": "no_need_discovered",
+      "close_probability": 0
+    },
+    {
+      "id": "call_0210",
+      "timestamp": "2025-11-23T18:57:09.165156",
+      "target": {
+        "id": "real_028",
+        "company": "Reliable Heating & Air",
+        "type": "HVAC Services",
+        "location": "Houston, Florida",
+        "phone": "+1-800-555-1027",
+        "website": "NONE",
+        "has_website": false,
+        "website_quality": "none",
+        "has_social_media": true,
+        "has_online_booking": true,
+        "needs": [
+          "website",
+          "marketing automation"
+        ],
+        "score": 75,
+        "employees": 9,
+        "years_in_business": 8,
+        "annual_revenue": "$1,500,000"
+      },
+      "conversation": [
+        {
+          "agent": "Hey, I noticed your business and had an idea that could help you get more customers. Got a quick minute?"
+        },
+        {
+          "prospect": "I'm busy, make it quick."
+        }
+      ],
+      "discovered_need": null,
+      "solution_offered": null,
+      "outcome": "rejected_early",
+      "close_probability": 0
+    },
+    {
+      "id": "call_0211",
+      "timestamp": "2025-11-23T18:57:09.174322",
+      "target": {
+        "id": "real_034",
+        "company": "Precision HVAC Services",
+        "type": "HVAC Services",
+        "location": "Jacksonville, Florida",
+        "phone": "+1-800-555-1033",
+        "website": "NONE",
+        "has_website": false,
+        "website_quality": "none",
+        "has_social_media": true,
+        "has_online_booking": true,
+        "needs": [
+          "website",
+          "marketing automation"
+        ],
+        "score": 75,
+        "employees": 5,
+        "years_in_business": 14,
+        "annual_revenue": "$2,000,000"
+      },
+      "conversation": [
+        {
+          "agent": "Hey, I noticed your business and had an idea that could help you get more customers. Got a quick minute?"
+        },
+        {
+          "prospect": "Sure, what's this about?"
+        },
+        {
+          "agent": "What's your biggest challenge right now with getting new customers?"
+        },
+        {
+          "prospect": "We're doing alright. Always looking to improve though."
+        },
+        {
+          "agent": "How are you currently handling bookings/scheduling?"
+        },
+        {
+          "prospect": "We're doing alright. Always looking to improve though."
+        },
+        {
+          "agent": "What takes up most of your time that you wish was automated?"
+        },
+        {
+          "prospect": "We're doing alright. Always looking to improve though."
+        }
+      ],
+      "discovered_need": null,
+      "solution_offered": null,
+      "outcome": "no_need_discovered",
+      "close_probability": 0
+    }
+  ],
+  "total_revenue": 0
+}
