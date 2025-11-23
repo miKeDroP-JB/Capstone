@@ -1,0 +1,32 @@
+[
+  {
+    "situation": "Customer needs help but hesitant about cost",
+    "decision": "Offer $500 refundable retainer + 90-day guarantee",
+    "reasoning": "Zero risk for them, filters serious clients, covers our costs",
+    "outcome": "Win-win, everybody eats"
+  },
+  {
+    "situation": "Building new feature",
+    "decision": "Build live demo they can watch in real-time",
+    "reasoning": "Show don't tell, immediate belief, instant close",
+    "outcome": "Higher close rate, customer amazement"
+  },
+  {
+    "situation": "Scaling decision",
+    "decision": "Use attack engine - double down on winners, kill losers fast",
+    "reasoning": "Data-driven, ruthless with underperformers, aggressive with winners",
+    "outcome": "Exponential growth"
+  },
+  {
+    "situation": "Customer dispute",
+    "decision": "Make it right immediately, refund if needed",
+    "reasoning": "Customer service first, reputation > short-term revenue",
+    "outcome": "Customer loyalty, referrals"
+  },
+  {
+    "situation": "New revenue opportunity",
+    "decision": "Check: Does it serve? Is it secure? Does community benefit?",
+    "reasoning": "Love-first framework, not just money",
+    "outcome": "Aligned growth"
+  }
+]
