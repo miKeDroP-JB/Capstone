@@ -1,6 +1,7 @@
 const express = require('express');
 const cors = require('cors');
 const { orchestrateQuery } = require('./orchestrator');
+const { getCache } = require('./cache');
 
 const app = express();
 const PORT = process.env.PORT || 3001;
