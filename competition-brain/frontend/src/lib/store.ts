@@ -32,7 +32,7 @@ interface CompetitionStore {
 
 export const useCompetitionStore = create<CompetitionStore>((set) => ({
   config: {
-    selectedModels: ['gpt-4-turbo', 'claude-3-opus', 'gemini-ultra'],
+    selectedModels: ['o1', 'claude-sonnet-4.5', 'gemini-exp-1206'],
     freeOnly: false,
     timeLimit: 60,
     powerLevel: 80,
