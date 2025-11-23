@@ -1,0 +1,16 @@
+{
+  "customer_id": null,
+  "company_name": "Climate Control Services",
+  "created_date": "2025-11-23T19:11:50.708373",
+  "dashboard_url": "/climate_control_services/index.html",
+  "stats_url": "/climate_control_services/stats.html",
+  "tracking_enabled": true,
+  "traffic_sources": {
+    "social": 0,
+    "email": 0,
+    "phone": 0,
+    "organic": 0
+  },
+  "leads_captured": 0,
+  "conversions": 0
+}

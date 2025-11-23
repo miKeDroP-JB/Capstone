@@ -1,0 +1,20 @@
+[
+  {
+    "name": "Warm Call Script (Funny Opener)",
+    "scenario": "Calling past customer or referral",
+    "script": "\nHi [NAME], this is [YOUR NAME] from Climate Control Services!\n\nDon't worry, this isn't a robot call! I'm a real human! \ud83d\ude0a\n\nQuick question - how's your AC treating you this summer? Still keeping you cool?\n\n[LISTEN]\n\nAwesome! Here's why I'm calling:\n\nWe're doing FREE AC checkups this week for our favorite customers (that's you!). Takes 20 minutes, totally free, and honestly? Most people find at least ONE thing that could save them money.\n\nWant me to swing by? I've got an opening [DAY] at [TIME].\n\n[CLOSE]\n\nPerfect! See you then! And hey - if you know anyone else melting in the heat, send them to https://climatecontrol.com. We're spreading the cool vibes! \u2744\ufe0f\n\nLove,\n[YOUR NAME]\n",
+    "tone": "Warm, friendly, helpful"
+  },
+  {
+    "name": "Cold Call Script (Humor + Value)",
+    "scenario": "Calling new prospect",
+    "script": "\nHi, this is [YOUR NAME] from Climate Control Services!\n\nI promise this is the least annoying sales call you'll get today! \ud83d\ude02\n\nReal quick - are you happy with your current AC company? Like, REALLY happy?\n\n[LISTEN]\n\nGotcha. Here's the thing:\n\nMost HVAC companies show up late, overcharge, and disappear when you need them.\n\nWe're different. We actually:\n- Show up on time (wild, right?)\n- Charge fair prices (no hidden fees!)\n- Answer the phone (even at 2am!)\n- Treat you like family (everybody eats!)\n\nWant a free AC checkup to see the difference? No obligation, takes 20 minutes.\n\n[CLOSE]\n\nAwesome! And hey - even if you don't book, check out our tips at https://climatecontrol.com. We give away good stuff for free because... well, everybody eats!\n\nTalk soon,\n[YOUR NAME]\n",
+    "tone": "Confident, funny, genuine"
+  },
+  {
+    "name": "Emergency Follow-Up (Warm & Ready)",
+    "scenario": "Customer had emergency service",
+    "script": "\nHey [NAME], it's [YOUR NAME] from Climate Control Services!\n\nJust checking in after we fixed your AC last week. Everything still running smooth?\n\n[LISTEN]\n\nPerfect! That's what we like to hear!\n\nQuick thing - since your AC is getting up there in age, wanna schedule a regular maintenance checkup? Keeps it running longer, prevents expensive breakdowns.\n\nThink of it like oil changes for your car. Boring but necessary! \ud83d\ude05\n\nI can get you on the schedule for [DATE]. Sound good?\n\n[CLOSE]\n\nAwesome! And hey - thanks for trusting us at 2am when your AC died. That's what family does!\n\nSee you soon,\n[YOUR NAME]\n\nPS: If anyone you know needs AC help, send them to https://climatecontrol.com. We got 'em!\n",
+    "tone": "Caring, proactive, helpful"
+  }
+]
