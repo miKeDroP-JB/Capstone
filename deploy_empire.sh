@@ -5,8 +5,14 @@
 # 1. One-Call-Close Demo System (port 8002)
 # 2. Agent Swarm (4 production agents on port 8003)
 # 3. Client Dashboard & Billing (port 8004)
-# 4. Instant Builder (port 8000)
-# 5. HVAC Voice Agent (port 8001)
+# 4. Swarm Coordinator (port 8005) - Deploy 100s of agents simultaneously
+# 5. Instant Builder (port 8000)
+# 6. HVAC Voice Agent (port 8001)
+#
+# Also available (on-demand):
+# - Hive System (powerload.py) - Swarms of swarms for data ingestion
+# - Glyph Agents (glyph_agents.py) - Atomic operations with infinite learning
+# - Voice Arbitrage (voice_arbitrage.py) - 99% cost savings to community
 #
 # Philosophy: Love • Loyalty • Honor • Everybody Eats
 
@@ -251,6 +257,16 @@ echo "      → a16z Speedrun (May 2025) - Up to \$1M funding"
 echo "      → With 50+ paying customers, you're unstoppable"
 echo ""
 echo "======================================================================="
+echo ""
+echo "🐝 POWERLOAD YOUR KNOWLEDGE (HIVE SYSTEM):"
+echo "   python3 powerload.py                    # Powerload current directory"
+echo "   python3 powerload.py ~/Projects         # Powerload specific path"
+echo "   python3 powerload.py ~/Downloads/*.zip  # Powerload all zips"
+echo "   python3 powerload.py --all ~/Projects   # Powerload all subdirectories"
+echo ""
+echo "   → Uses swarms of swarms to ingest EVERYTHING in parallel"
+echo "   → All knowledge goes into grimoire for all agents"
+echo "   → 1000x faster than manual processing"
 echo ""
 echo "📝 LOGS:"
 echo "   tail -f logs/one_call_close.log"
