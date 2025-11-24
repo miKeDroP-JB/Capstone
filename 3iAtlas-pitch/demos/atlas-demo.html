@@ -1,0 +1,644 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3iATLAS v0.1 - Interactive Demo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            background: #0a0a1a;
+            color: #f0f8ff;
+            font-family: 'Segoe UI', system-ui, sans-serif;
+            overflow: hidden;
+        }
+
+        #canvas-container {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+        }
+
+        canvas {
+            display: block;
+        }
+
+        /* HUD Overlay */
+        .hud {
+            position: fixed;
+            pointer-events: none;
+            z-index: 100;
+        }
+
+        .hud-top-left {
+            top: 20px;
+            left: 20px;
+        }
+
+        .hud-bottom {
+            bottom: 20px;
+            left: 50%;
+            transform: translateX(-50%);
+            text-align: center;
+        }
+
+        .hud-bottom-right {
+            bottom: 20px;
+            right: 20px;
+            text-align: right;
+        }
+
+        .logo {
+            font-size: 24px;
+            font-weight: 300;
+            letter-spacing: 4px;
+            color: #f0f8ff;
+        }
+
+        .logo span {
+            color: #4080ff;
+        }
+
+        .status {
+            font-size: 12px;
+            color: rgba(240, 248, 255, 0.6);
+            margin-top: 5px;
+        }
+
+        .tagline {
+            font-size: 14px;
+            color: rgba(240, 248, 255, 0.5);
+            letter-spacing: 2px;
+        }
+
+        .controls-hint {
+            font-size: 11px;
+            color: rgba(240, 248, 255, 0.4);
+        }
+
+        /* Info Panel */
+        .info-panel {
+            position: fixed;
+            top: 50%;
+            right: 40px;
+            transform: translateY(-50%);
+            background: rgba(10, 10, 26, 0.8);
+            border: 1px solid rgba(64, 128, 255, 0.2);
+            border-radius: 8px;
+            padding: 20px;
+            max-width: 280px;
+            pointer-events: auto;
+            z-index: 100;
+        }
+
+        .info-panel h3 {
+            color: #4080ff;
+            font-size: 14px;
+            font-weight: 500;
+            margin-bottom: 10px;
+            letter-spacing: 1px;
+        }
+
+        .info-panel p {
+            font-size: 12px;
+            color: rgba(240, 248, 255, 0.7);
+            line-height: 1.6;
+            margin-bottom: 10px;
+        }
+
+        .color-key {
+            display: flex;
+            gap: 15px;
+            margin-top: 15px;
+        }
+
+        .color-item {
+            display: flex;
+            align-items: center;
+            gap: 6px;
+            font-size: 11px;
+            color: rgba(240, 248, 255, 0.6);
+        }
+
+        .color-dot {
+            width: 8px;
+            height: 8px;
+            border-radius: 50%;
+        }
+
+        .color-dot.insight { background: #ffd700; }
+        .color-dot.intelligence { background: #4080ff; }
+        .color-dot.imagination { background: #ff66aa; }
+
+        /* Loading screen */
+        .loading {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background: #0a0a1a;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            z-index: 1000;
+            transition: opacity 1s ease;
+        }
+
+        .loading.hidden {
+            opacity: 0;
+            pointer-events: none;
+        }
+
+        .loading-orb {
+            width: 60px;
+            height: 60px;
+            border-radius: 50%;
+            background: linear-gradient(135deg, #2a4a6a, #4080ff);
+            box-shadow: 0 0 40px rgba(64, 128, 255, 0.5);
+            animation: pulse 2s ease-in-out infinite;
+        }
+
+        @keyframes pulse {
+            0%, 100% { transform: scale(1); opacity: 0.8; }
+            50% { transform: scale(1.1); opacity: 1; }
+        }
+
+        .loading-text {
+            margin-top: 30px;
+            font-size: 14px;
+            letter-spacing: 3px;
+            color: rgba(240, 248, 255, 0.6);
+        }
+    </style>
+</head>
+<body>
+    <!-- Loading Screen -->
+    <div class="loading" id="loading">
+        <div class="loading-orb"></div>
+        <div class="loading-text">INITIALIZING ATLAS</div>
+    </div>
+
+    <!-- Canvas Container -->
+    <div id="canvas-container"></div>
+
+    <!-- HUD Elements -->
+    <div class="hud hud-top-left">
+        <div class="logo"><span>3i</span>ATLAS</div>
+        <div class="status" id="status">v0.1 DEMO</div>
+    </div>
+
+    <div class="hud hud-bottom">
+        <div class="tagline">WHERE THOUGHT BECOMES SPACE</div>
+    </div>
+
+    <div class="hud hud-bottom-right">
+        <div class="controls-hint">
+            DRAG TO ROTATE | SCROLL TO ZOOM | CLICK NODES TO EXPLORE
+        </div>
+    </div>
+
+    <!-- Info Panel -->
+    <div class="info-panel">
+        <h3>THE AETHER CORE</h3>
+        <p>
+            You're viewing the central intelligence hub. The metallic orb represents
+            the convergence point where Insight, Intelligence, and Imagination merge.
+        </p>
+        <p>
+            Orbiting particles carry fragments of understanding, constantly
+            reorganizing based on new connections.
+        </p>
+        <div class="color-key">
+            <div class="color-item">
+                <div class="color-dot insight"></div>
+                INSIGHT
+            </div>
+            <div class="color-item">
+                <div class="color-dot intelligence"></div>
+                INTELLIGENCE
+            </div>
+            <div class="color-item">
+                <div class="color-dot imagination"></div>
+                IMAGINATION
+            </div>
+        </div>
+    </div>
+
+    <!-- Three.js from CDN -->
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/three.js/r128/three.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/three@0.128.0/examples/js/controls/OrbitControls.js"></script>
+
+    <script>
+        // ============================================
+        // 3iATLAS DEMO - Three.js Implementation
+        // ============================================
+
+        let scene, camera, renderer, controls;
+        let aetherOrb, particleSystem, networkGroup;
+        let clock = new THREE.Clock();
+
+        // Configuration
+        const CONFIG = {
+            particleCount: 800,
+            networkNodes: 50,
+            orbRadius: 0.8,
+            particleFieldRadius: 2.5,
+        };
+
+        // Initialize
+        function init() {
+            // Scene
+            scene = new THREE.Scene();
+            scene.background = new THREE.Color(0x0a0a1a);
+            scene.fog = new THREE.Fog(0x0a0a1a, 10, 50);
+
+            // Camera
+            camera = new THREE.PerspectiveCamera(
+                60,
+                window.innerWidth / window.innerHeight,
+                0.1,
+                1000
+            );
+            camera.position.set(0, 3, 8);
+
+            // Renderer
+            renderer = new THREE.WebGLRenderer({
+                antialias: true,
+                alpha: true
+            });
+            renderer.setSize(window.innerWidth, window.innerHeight);
+            renderer.setPixelRatio(Math.min(window.devicePixelRatio, 2));
+            renderer.toneMapping = THREE.ACESFilmicToneMapping;
+            renderer.toneMappingExposure = 1.2;
+            document.getElementById('canvas-container').appendChild(renderer.domElement);
+
+            // Controls
+            controls = new THREE.OrbitControls(camera, renderer.domElement);
+            controls.enableDamping = true;
+            controls.dampingFactor = 0.05;
+            controls.minDistance = 3;
+            controls.maxDistance = 20;
+            controls.autoRotate = true;
+            controls.autoRotateSpeed = 0.5;
+
+            // Lighting
+            createLighting();
+
+            // Objects
+            createAetherOrb();
+            createParticleField();
+            createNetworkGraph();
+            createStars();
+
+            // Events
+            window.addEventListener('resize', onWindowResize, false);
+
+            // Hide loading screen
+            setTimeout(() => {
+                document.getElementById('loading').classList.add('hidden');
+            }, 2000);
+
+            // Start animation
+            animate();
+        }
+
+        function createLighting() {
+            // Ambient
+            const ambient = new THREE.AmbientLight(0x404060, 0.5);
+            scene.add(ambient);
+
+            // Main directional
+            const directional = new THREE.DirectionalLight(0xffffff, 1);
+            directional.position.set(5, 10, 5);
+            scene.add(directional);
+
+            // Accent point lights
+            const blueLight = new THREE.PointLight(0x4080ff, 1, 10);
+            blueLight.position.set(-3, 3, -3);
+            scene.add(blueLight);
+
+            const goldLight = new THREE.PointLight(0xffd700, 0.5, 10);
+            goldLight.position.set(3, 2, 3);
+            scene.add(goldLight);
+        }
+
+        function createAetherOrb() {
+            // Custom shader material for the orb
+            const orbMaterial = new THREE.ShaderMaterial({
+                uniforms: {
+                    uTime: { value: 0 },
+                    uColor: { value: new THREE.Color(0.7, 0.75, 0.8) }
+                },
+                vertexShader: `
+                    varying vec3 vPosition;
+                    varying vec3 vNormal;
+                    varying vec2 vUv;
+
+                    void main() {
+                        vPosition = position;
+                        vNormal = normalize(normalMatrix * normal);
+                        vUv = uv;
+                        gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+                    }
+                `,
+                fragmentShader: `
+                    uniform float uTime;
+                    uniform vec3 uColor;
+
+                    varying vec3 vPosition;
+                    varying vec3 vNormal;
+                    varying vec2 vUv;
+
+                    // Simple noise function
+                    float noise(vec3 p) {
+                        return fract(sin(dot(p, vec3(12.9898, 78.233, 45.543))) * 43758.5453);
+                    }
+
+                    float fbm(vec3 p) {
+                        float value = 0.0;
+                        float amplitude = 0.5;
+                        for (int i = 0; i < 4; i++) {
+                            value += amplitude * noise(p);
+                            p *= 2.0;
+                            amplitude *= 0.5;
+                        }
+                        return value;
+                    }
+
+                    void main() {
+                        vec3 viewDir = normalize(cameraPosition - vPosition);
+
+                        // Fresnel
+                        float fresnel = pow(1.0 - max(dot(viewDir, vNormal), 0.0), 3.0);
+
+                        // Animated noise
+                        float n = fbm(vPosition * 3.0 + uTime * 0.2);
+
+                        // Base metallic color
+                        vec3 color = uColor;
+                        color += vec3(0.2, 0.5, 0.8) * n * 0.3;
+                        color += vec3(0.4, 0.6, 1.0) * fresnel * 0.5;
+
+                        // Specular highlight
+                        vec3 lightDir = normalize(vec3(1.0, 1.0, 1.0));
+                        vec3 halfDir = normalize(viewDir + lightDir);
+                        float spec = pow(max(dot(vNormal, halfDir), 0.0), 64.0);
+                        color += vec3(1.0) * spec * 0.5;
+
+                        // Tone mapping
+                        color = color / (color + vec3(1.0));
+                        color = pow(color, vec3(1.0/2.2));
+
+                        gl_FragColor = vec4(color, 1.0);
+                    }
+                `
+            });
+
+            const orbGeometry = new THREE.SphereGeometry(CONFIG.orbRadius, 64, 64);
+            aetherOrb = new THREE.Mesh(orbGeometry, orbMaterial);
+            aetherOrb.position.set(0, 1.5, 0);
+            scene.add(aetherOrb);
+
+            // Inner glow
+            const glowGeometry = new THREE.SphereGeometry(CONFIG.orbRadius * 1.15, 32, 32);
+            const glowMaterial = new THREE.ShaderMaterial({
+                uniforms: {
+                    uTime: { value: 0 }
+                },
+                vertexShader: `
+                    varying vec3 vNormal;
+                    void main() {
+                        vNormal = normalize(normalMatrix * normal);
+                        gl_Position = projectionMatrix * modelViewMatrix * vec4(position, 1.0);
+                    }
+                `,
+                fragmentShader: `
+                    uniform float uTime;
+                    varying vec3 vNormal;
+
+                    void main() {
+                        float intensity = pow(0.7 - dot(vNormal, vec3(0.0, 0.0, 1.0)), 2.0);
+                        vec3 color = vec3(0.2, 0.5, 0.9) * intensity;
+                        float pulse = 0.8 + 0.2 * sin(uTime * 2.0);
+                        gl_FragColor = vec4(color * pulse, intensity * 0.3);
+                    }
+                `,
+                transparent: true,
+                blending: THREE.AdditiveBlending,
+                side: THREE.BackSide,
+                depthWrite: false
+            });
+
+            const glow = new THREE.Mesh(glowGeometry, glowMaterial);
+            glow.position.copy(aetherOrb.position);
+            scene.add(glow);
+        }
+
+        function createParticleField() {
+            const geometry = new THREE.BufferGeometry();
+            const positions = new Float32Array(CONFIG.particleCount * 3);
+            const colors = new Float32Array(CONFIG.particleCount * 3);
+            const sizes = new Float32Array(CONFIG.particleCount);
+
+            const colorPalette = [
+                new THREE.Color(0xffd700), // Gold - Insight
+                new THREE.Color(0x4080ff), // Blue - Intelligence
+                new THREE.Color(0xff66aa), // Pink - Imagination
+            ];
+
+            for (let i = 0; i < CONFIG.particleCount; i++) {
+                const i3 = i * 3;
+
+                // Spherical distribution
+                const theta = Math.random() * Math.PI * 2;
+                const phi = Math.acos(2 * Math.random() - 1);
+                const r = CONFIG.particleFieldRadius * (0.7 + Math.random() * 0.6);
+
+                positions[i3] = r * Math.sin(phi) * Math.cos(theta);
+                positions[i3 + 1] = r * Math.sin(phi) * Math.sin(theta) + 1.5; // Center on orb
+                positions[i3 + 2] = r * Math.cos(phi);
+
+                // Random color from palette
+                const color = colorPalette[Math.floor(Math.random() * colorPalette.length)];
+                colors[i3] = color.r;
+                colors[i3 + 1] = color.g;
+                colors[i3 + 2] = color.b;
+
+                sizes[i] = Math.random() * 0.05 + 0.02;
+            }
+
+            geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+            geometry.setAttribute('color', new THREE.BufferAttribute(colors, 3));
+            geometry.setAttribute('size', new THREE.BufferAttribute(sizes, 1));
+
+            const material = new THREE.PointsMaterial({
+                size: 0.05,
+                vertexColors: true,
+                transparent: true,
+                opacity: 0.8,
+                blending: THREE.AdditiveBlending,
+                depthWrite: false,
+                sizeAttenuation: true
+            });
+
+            particleSystem = new THREE.Points(geometry, material);
+            scene.add(particleSystem);
+        }
+
+        function createNetworkGraph() {
+            networkGroup = new THREE.Group();
+
+            // Generate random nodes
+            const nodes = [];
+            for (let i = 0; i < CONFIG.networkNodes; i++) {
+                const theta = Math.random() * Math.PI * 2;
+                const phi = Math.acos(2 * Math.random() - 1);
+                const r = 3 + Math.random() * 2;
+
+                nodes.push({
+                    position: new THREE.Vector3(
+                        r * Math.sin(phi) * Math.cos(theta),
+                        r * Math.sin(phi) * Math.sin(theta) + 1.5,
+                        r * Math.cos(phi)
+                    ),
+                    type: Math.floor(Math.random() * 3) // 0: insight, 1: intelligence, 2: imagination
+                });
+            }
+
+            const colors = [0xffd700, 0x4080ff, 0xff66aa];
+
+            // Create nodes
+            nodes.forEach(node => {
+                const nodeGeo = new THREE.SphereGeometry(0.05, 16, 16);
+                const nodeMat = new THREE.MeshBasicMaterial({
+                    color: colors[node.type],
+                    transparent: true,
+                    opacity: 0.8
+                });
+                const nodeMesh = new THREE.Mesh(nodeGeo, nodeMat);
+                nodeMesh.position.copy(node.position);
+                networkGroup.add(nodeMesh);
+            });
+
+            // Create connections
+            const lineMaterial = new THREE.LineBasicMaterial({
+                color: 0x4080ff,
+                transparent: true,
+                opacity: 0.15
+            });
+
+            for (let i = 0; i < nodes.length; i++) {
+                // Connect to 2-3 random nearby nodes
+                const connections = Math.floor(Math.random() * 2) + 1;
+                for (let c = 0; c < connections; c++) {
+                    const j = Math.floor(Math.random() * nodes.length);
+                    if (i !== j) {
+                        const points = [nodes[i].position, nodes[j].position];
+                        const lineGeo = new THREE.BufferGeometry().setFromPoints(points);
+                        const line = new THREE.Line(lineGeo, lineMaterial);
+                        networkGroup.add(line);
+                    }
+                }
+            }
+
+            scene.add(networkGroup);
+        }
+
+        function createStars() {
+            const geometry = new THREE.BufferGeometry();
+            const positions = new Float32Array(3000 * 3);
+
+            for (let i = 0; i < 3000; i++) {
+                const i3 = i * 3;
+                positions[i3] = (Math.random() - 0.5) * 200;
+                positions[i3 + 1] = (Math.random() - 0.5) * 200;
+                positions[i3 + 2] = (Math.random() - 0.5) * 200;
+            }
+
+            geometry.setAttribute('position', new THREE.BufferAttribute(positions, 3));
+
+            const material = new THREE.PointsMaterial({
+                size: 0.1,
+                color: 0xffffff,
+                transparent: true,
+                opacity: 0.6,
+                sizeAttenuation: true
+            });
+
+            const stars = new THREE.Points(geometry, material);
+            scene.add(stars);
+        }
+
+        function onWindowResize() {
+            camera.aspect = window.innerWidth / window.innerHeight;
+            camera.updateProjectionMatrix();
+            renderer.setSize(window.innerWidth, window.innerHeight);
+        }
+
+        function animate() {
+            requestAnimationFrame(animate);
+
+            const elapsed = clock.getElapsedTime();
+
+            // Update orb shader
+            if (aetherOrb && aetherOrb.material.uniforms) {
+                aetherOrb.material.uniforms.uTime.value = elapsed;
+            }
+
+            // Update glow
+            scene.children.forEach(child => {
+                if (child.material && child.material.uniforms && child.material.uniforms.uTime) {
+                    child.material.uniforms.uTime.value = elapsed;
+                }
+            });
+
+            // Animate particles
+            if (particleSystem) {
+                const positions = particleSystem.geometry.attributes.position.array;
+
+                for (let i = 0; i < CONFIG.particleCount; i++) {
+                    const i3 = i * 3;
+                    const x = positions[i3];
+                    const y = positions[i3 + 1] - 1.5; // Center reference
+                    const z = positions[i3 + 2];
+
+                    // Orbital motion
+                    const angle = Math.atan2(z, x) + 0.002;
+                    const dist = Math.sqrt(x * x + z * z);
+
+                    positions[i3] = Math.cos(angle) * dist + Math.sin(elapsed + i * 0.1) * 0.005;
+                    positions[i3 + 1] = y + 1.5 + Math.cos(elapsed * 2 + i * 0.1) * 0.003;
+                    positions[i3 + 2] = Math.sin(angle) * dist + Math.cos(elapsed + i * 0.1) * 0.005;
+                }
+
+                particleSystem.geometry.attributes.position.needsUpdate = true;
+            }
+
+            // Animate orb
+            if (aetherOrb) {
+                aetherOrb.rotation.y += 0.002;
+            }
+
+            // Animate network
+            if (networkGroup) {
+                networkGroup.rotation.y += 0.0005;
+            }
+
+            controls.update();
+            renderer.render(scene, camera);
+        }
+
+        // Start
+        init();
+    </script>
+</body>
+</html>
