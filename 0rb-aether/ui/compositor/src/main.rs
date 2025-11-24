@@ -1,20 +1,23 @@
 //! 0RB_AETHER Compositor Demo
-//! GPU-accelerated Aether field visualization
+//! GPU-accelerated Aether field visualization with cinematic sequences
 
 mod aether;
 mod particles;
+mod sequences;
 
 use std::sync::Arc;
 use wgpu::util::DeviceExt;
 use winit::{
-    event::{Event, WindowEvent},
+    event::{Event, WindowEvent, KeyEvent},
     event_loop::{ControlFlow, EventLoop},
     window::{Window, WindowBuilder},
+    keyboard::{KeyCode, PhysicalKey},
 };
 use tracing::{info, Level};
 use tracing_subscriber::FmtSubscriber;
 
 use aether::AetherRenderer;
+use sequences::{SequencePlayer, SequenceState, SequenceType};
 
 struct State {
     surface: wgpu::Surface<'static>,
@@ -23,6 +26,8 @@ struct State {
     config: wgpu::SurfaceConfiguration,
     size: winit::dpi::PhysicalSize<u32>,
     aether: AetherRenderer,
+    sequence_player: SequencePlayer,
+    sequence_state: SequenceState,
     start_time: std::time::Instant,
 }
 
@@ -77,6 +82,10 @@ impl State {
         surface.configure(&device, &config);
 
         let aether = AetherRenderer::new(&device, &config)?;
+        let sequence_player = SequencePlayer::new(&device, &config)?;
+        let sequence_state = SequenceState::default();
+
+        info!("0RB_AETHER initialized with cinematic sequences");
 
         Ok(Self {
             surface,
@@ -85,6 +94,8 @@ impl State {
             config,
             size,
             aether,
+            sequence_player,
+            sequence_state,
             start_time: std::time::Instant::now(),
         })
     }
@@ -109,12 +120,72 @@ impl State {
             label: Some("Render Encoder"),
         });
 
-        self.aether.render(&mut encoder, &view, &self.queue, time);
+        // Update sequence state
+        self.sequence_state.update();
+
+        // Render sequence if active, otherwise render ambient aether
+        if self.sequence_state.is_playing() || !self.sequence_state.is_idle() {
+            if let Err(e) = self.sequence_player.render(
+                &self.device,
+                &mut encoder,
+                &view,
+                &self.queue,
+                &self.sequence_state,
+            ) {
+                eprintln!("Sequence render error: {:?}", e);
+                // Fall back to aether on error
+                self.aether.render(&mut encoder, &view, &self.queue, time);
+            }
+        } else {
+            self.aether.render(&mut encoder, &view, &self.queue, time);
+        }
 
         self.queue.submit(std::iter::once(encoder.finish()));
         output.present();
 
         Ok(())
+    }
+
+    fn handle_input(&mut self, event: &WindowEvent) {
+        match event {
+            WindowEvent::KeyboardInput {
+                event: KeyEvent {
+                    physical_key: PhysicalKey::Code(key_code),
+                    state: winit::event::ElementState::Pressed,
+                    ..
+                },
+                ..
+            } => {
+                match key_code {
+                    KeyCode::Digit1 => {
+                        info!("Starting Descent sequence");
+                        self.sequence_state.start(SequenceType::Descent);
+                    }
+                    KeyCode::Digit2 => {
+                        info!("Starting Ignition sequence");
+                        self.sequence_state.start(SequenceType::Ignition);
+                    }
+                    KeyCode::Digit3 => {
+                        info!("Starting Folding World sequence");
+                        self.sequence_state.start(SequenceType::Folding);
+                    }
+                    KeyCode::Digit4 => {
+                        info!("Starting Nerve Network sequence");
+                        self.sequence_state.start(SequenceType::NerveNetwork);
+                    }
+                    KeyCode::Digit5 => {
+                        info!("Starting Ascension sequence");
+                        self.sequence_state.start(SequenceType::Ascension);
+                    }
+                    KeyCode::Escape => {
+                        info!("Stopping sequence");
+                        self.sequence_state.stop();
+                    }
+                    _ => {}
+                }
+            }
+            _ => {}
+        }
     }
 }
 
@@ -134,12 +205,21 @@ fn main() -> anyhow::Result<()> {
 
     let mut state = pollster::block_on(State::new(window.clone()))?;
 
+    info!("Controls:");
+    info!("  1 - The Descent Into the Atlas (Onboarding)");
+    info!("  2 - The Ignition (AGI Birth)");
+    info!("  3 - The Folding World (3iAtlas Navigation)");
+    info!("  4 - The Celestial Nerve Network (Agent Swarm)");
+    info!("  5 - The Ascension Sequence (Limitless OS Reveal)");
+    info!("  ESC - Stop sequence and return to ambient aether");
+
     event_loop.run(move |event, elwt| {
         match event {
-            Event::WindowEvent { event, window_id } if window_id == window.id() => {
-                match event {
+            Event::WindowEvent { event: ref window_event, window_id } if window_id == window.id() => {
+                state.handle_input(window_event);
+                match window_event {
                     WindowEvent::CloseRequested => elwt.exit(),
-                    WindowEvent::Resized(physical_size) => state.resize(physical_size),
+                    WindowEvent::Resized(physical_size) => state.resize(*physical_size),
                     WindowEvent::RedrawRequested => {
                         match state.render() {
                             Ok(_) => {}

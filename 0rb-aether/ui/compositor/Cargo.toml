@@ -5,9 +5,9 @@ edition = "2021"
 description = "0RB_AETHER Wayland Compositor with Aether GPU effects"
 
 [dependencies]
-smithay = { version = "0.3", default-features = false, features = ["wayland_frontend", "backend_drm", "backend_udev", "renderer_glow"] }
+smithay = { version = "0.3", default-features = false, features = ["wayland_frontend", "backend_drm", "backend_udev"] }
 smithay-drm-extras = "0.1"
-wgpu = "0.18"
+wgpu = "0.20"
 winit = { version = "0.29", features = ["wayland"] }
 pollster = "0.3"
 bytemuck = { version = "1.14", features = ["derive"] }
@@ -18,8 +18,7 @@ anyhow = "1.0"
 rand = "0.8"
 
 [features]
-default = ["x11"]
-x11 = ["smithay/backend_x11"]
+default = []
 
 [[bin]]
 name = "orb-compositor"
