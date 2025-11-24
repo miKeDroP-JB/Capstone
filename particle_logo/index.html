@@ -1,0 +1,115 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0RB Empire - Living Particle Logo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'IBM Plex Mono', 'Courier New', monospace;
+            background: #000000;
+            color: #FFFFFF;
+            overflow: hidden;
+        }
+
+        #canvas {
+            display: block;
+            cursor: pointer;
+        }
+
+        .info {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 20px;
+            border: 1px solid #9D4EDD;
+            max-width: 300px;
+            font-size: 12px;
+            line-height: 1.6;
+        }
+
+        .info h1 {
+            font-size: 18px;
+            margin-bottom: 10px;
+            color: #9D4EDD;
+        }
+
+        .info p {
+            margin-bottom: 10px;
+        }
+
+        .state {
+            color: #4CC9F0;
+            font-weight: bold;
+        }
+
+        .controls {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background: rgba(0, 0, 0, 0.8);
+            padding: 15px;
+            border: 1px solid #9D4EDD;
+        }
+
+        .controls button {
+            background: #9D4EDD;
+            color: #000;
+            border: none;
+            padding: 10px 15px;
+            margin: 5px;
+            cursor: pointer;
+            font-family: inherit;
+            font-size: 11px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .controls button:hover {
+            background: #4CC9F0;
+        }
+
+        .signature {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            font-size: 10px;
+            color: #9D4EDD;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+
+    <div class="info">
+        <h1>0RB EMPIRE</h1>
+        <p>Living Particle Logo System</p>
+        <p>Current State: <span class="state" id="currentState">Coalescing</span></p>
+        <p>Particles: <span id="particleCount">1000</span></p>
+        <p>Click to interact. Logo evolves based on context.</p>
+    </div>
+
+    <div class="controls">
+        <button onclick="setStateDormant()">Dormant</button>
+        <button onclick="setStateCoalescing()">Coalescing</button>
+        <button onclick="setStateActive()">Active</button>
+        <button onclick="setStateDispersing()">Dispersing</button>
+        <button onclick="setStateQuantum()">Quantum</button>
+    </div>
+
+    <div class="signature">
+        0RB Empire // The Architecture of Impossibility<br>
+        11:11 Protocol Active
+    </div>
+
+    <script src="particle_logo.js"></script>
+</body>
+</html>
