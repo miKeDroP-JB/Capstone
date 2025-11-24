@@ -1,20 +1,31 @@
 //! 0RB_AETHER Compositor Demo
-//! GPU-accelerated Aether field visualization
+//! GPU-accelerated Aether field visualization with Cinematic Sequences
+//!
+//! Controls:
+//! - 1: The Descent Into the Atlas (onboarding)
+//! - 2: The Ignition (AGI birth)
+//! - 3: The Folding World (3iAtlas navigation)
+//! - 4: Celestial Nerve Network (agent swarm)
+//! - 5: The Ascension Sequence (OS reveal)
+//! - ESC: Stop sequence, return to ambient aether
 
 mod aether;
 mod particles;
+mod sequences;
 
 use std::sync::Arc;
 use wgpu::util::DeviceExt;
 use winit::{
-    event::{Event, WindowEvent},
+    event::{Event, WindowEvent, KeyEvent},
     event_loop::{ControlFlow, EventLoop},
+    keyboard::{KeyCode, PhysicalKey},
     window::{Window, WindowBuilder},
 };
 use tracing::{info, Level};
 use tracing_subscriber::FmtSubscriber;
 
 use aether::AetherRenderer;
+use sequences::{SequencePlayer, SequenceStateMachine, SequenceType};
 
 struct State {
     surface: wgpu::Surface<'static>,
@@ -23,7 +34,10 @@ struct State {
     config: wgpu::SurfaceConfiguration,
     size: winit::dpi::PhysicalSize<u32>,
     aether: AetherRenderer,
+    sequences: SequencePlayer,
+    sequence_state: SequenceStateMachine,
     start_time: std::time::Instant,
+    last_frame_time: std::time::Instant,
 }
 
 impl State {
@@ -77,6 +91,11 @@ impl State {
         surface.configure(&device, &config);
 
         let aether = AetherRenderer::new(&device, &config)?;
+        let sequences = SequencePlayer::new(&device, &config)?;
+        let sequence_state = SequenceStateMachine::new();
+
+        info!("Cinematic sequences initialized");
+        info!("Controls: 1-5 to start sequences, ESC to stop");
 
         Ok(Self {
             surface,
@@ -85,8 +104,51 @@ impl State {
             config,
             size,
             aether,
+            sequences,
+            sequence_state,
             start_time: std::time::Instant::now(),
+            last_frame_time: std::time::Instant::now(),
         })
+    }
+
+    fn handle_key(&mut self, key: KeyCode) {
+        match key {
+            KeyCode::Digit1 => {
+                info!("Starting: The Descent Into the Atlas");
+                self.sequence_state.play(SequenceType::Descent);
+            }
+            KeyCode::Digit2 => {
+                info!("Starting: The Ignition");
+                self.sequence_state.play(SequenceType::Ignition);
+            }
+            KeyCode::Digit3 => {
+                info!("Starting: The Folding World");
+                self.sequence_state.play(SequenceType::FoldingWorld);
+            }
+            KeyCode::Digit4 => {
+                info!("Starting: Celestial Nerve Network");
+                self.sequence_state.play(SequenceType::NerveNetwork);
+            }
+            KeyCode::Digit5 => {
+                info!("Starting: The Ascension Sequence");
+                self.sequence_state.play(SequenceType::Ascension);
+            }
+            KeyCode::Escape => {
+                info!("Stopping sequence, returning to ambient aether");
+                self.sequence_state.stop();
+            }
+            KeyCode::Space => {
+                // Toggle pause for current sequence
+                if self.sequence_state.is_playing() {
+                    self.sequence_state.pause();
+                    info!("Sequence paused");
+                } else {
+                    self.sequence_state.resume();
+                    info!("Sequence resumed");
+                }
+            }
+            _ => {}
+        }
     }
 
     fn resize(&mut self, new_size: winit::dpi::PhysicalSize<u32>) {
@@ -96,6 +158,7 @@ impl State {
             self.config.height = new_size.height;
             self.surface.configure(&self.device, &self.config);
             self.aether.resize(&self.device, &self.config);
+            self.sequences.resize(&self.config);
         }
     }
 
@@ -105,11 +168,30 @@ impl State {
 
         let time = self.start_time.elapsed().as_secs_f32();
 
+        // Calculate delta time for sequence updates
+        let now = std::time::Instant::now();
+        let dt = (now - self.last_frame_time).as_secs_f32();
+        self.last_frame_time = now;
+
+        // Update sequence state
+        let completed = self.sequence_state.update(dt);
+        if completed {
+            if let Some(seq) = self.sequence_state.current_sequence() {
+                info!("Sequence completed: {:?}", seq);
+            }
+            self.sequence_state.stop();
+        }
+
         let mut encoder = self.device.create_command_encoder(&wgpu::CommandEncoderDescriptor {
             label: Some("Render Encoder"),
         });
 
-        self.aether.render(&mut encoder, &view, &self.queue, time);
+        // Render either sequence or ambient aether
+        if self.sequence_state.is_playing() || matches!(self.sequence_state.state(), sequences::SequenceState::Paused { .. }) {
+            self.sequences.render(&mut encoder, &view, &self.queue, &self.sequence_state, time);
+        } else {
+            self.aether.render(&mut encoder, &view, &self.queue, time);
+        }
 
         self.queue.submit(std::iter::once(encoder.finish()));
         output.present();
@@ -140,6 +222,16 @@ fn main() -> anyhow::Result<()> {
                 match event {
                     WindowEvent::CloseRequested => elwt.exit(),
                     WindowEvent::Resized(physical_size) => state.resize(physical_size),
+                    WindowEvent::KeyboardInput {
+                        event: KeyEvent {
+                            physical_key: PhysicalKey::Code(key_code),
+                            state: winit::event::ElementState::Pressed,
+                            ..
+                        },
+                        ..
+                    } => {
+                        state.handle_key(key_code);
+                    }
                     WindowEvent::RedrawRequested => {
                         match state.render() {
                             Ok(_) => {}
