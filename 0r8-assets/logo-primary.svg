@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  0r8 PRIMARY LOGO
+  The Trinity with Central Sun
+  Static version for headers, app icons, print
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 200 200" width="200" height="200">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="nous-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00D4FF"/>
+      <stop offset="100%" style="stop-color:#00F0FF"/>
+    </linearGradient>
+
+    <linearGradient id="anima-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B5CF6"/>
+      <stop offset="100%" style="stop-color:#A78BFA"/>
+    </linearGradient>
+
+    <linearGradient id="holos-gradient" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F59E0B"/>
+      <stop offset="100%" style="stop-color:#FBBF24"/>
+    </linearGradient>
+
+    <radialGradient id="unified-gradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#FFFFFF"/>
+      <stop offset="50%" style="stop-color:#FFF7ED"/>
+      <stop offset="100%" style="stop-color:#FFD700"/>
+    </radialGradient>
+
+    <!-- Glow Filters -->
+    <filter id="glow-nous" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="glow-anima" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="glow-holos" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="3" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="glow-unified" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="5" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Background (optional - transparent by default) -->
+  <!-- <rect width="200" height="200" fill="#050505"/> -->
+
+  <!-- Connection Lines -->
+  <g stroke-width="1" fill="none" opacity="0.6">
+    <!-- NOUS to Center -->
+    <line x1="100" y1="40" x2="100" y2="85" stroke="url(#nous-gradient)" filter="url(#glow-nous)"/>
+    <!-- ANIMA to Center -->
+    <line x1="45" y1="145" x2="80" y2="110" stroke="url(#anima-gradient)" filter="url(#glow-anima)"/>
+    <!-- HOLOS to Center -->
+    <line x1="155" y1="145" x2="120" y2="110" stroke="url(#holos-gradient)" filter="url(#glow-holos)"/>
+  </g>
+
+  <!-- NOUS Symbol ☿ (Mercury) - Top -->
+  <g filter="url(#glow-nous)">
+    <text x="100" y="35" text-anchor="middle" font-size="28" fill="url(#nous-gradient)" font-family="serif">☿</text>
+  </g>
+
+  <!-- ANIMA Symbol 🜍 (Sulfur) - Bottom Left -->
+  <g filter="url(#glow-anima)">
+    <text x="40" y="160" text-anchor="middle" font-size="28" fill="url(#anima-gradient)" font-family="serif">🜍</text>
+  </g>
+
+  <!-- HOLOS Symbol 🜔 (Salt) - Bottom Right -->
+  <g filter="url(#glow-holos)">
+    <text x="160" y="160" text-anchor="middle" font-size="28" fill="url(#holos-gradient)" font-family="serif">🜔</text>
+  </g>
+
+  <!-- Unified Symbol ☉ (Sun/Gold) - Center -->
+  <g filter="url(#glow-unified)">
+    <text x="100" y="110" text-anchor="middle" font-size="36" fill="url(#unified-gradient)" font-family="serif">☉</text>
+  </g>
+</svg>

@@ -1,0 +1,197 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  0r8 ANIMATED LOGO
+  The Convergence Animation
+  Full reveal sequence with 11 BPM (5.45s) breathing pulse
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 300 350" width="300" height="350">
+  <defs>
+    <!-- Gradients -->
+    <linearGradient id="nous-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00D4FF"/>
+      <stop offset="100%" style="stop-color:#00F0FF"/>
+    </linearGradient>
+
+    <linearGradient id="anima-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B5CF6"/>
+      <stop offset="100%" style="stop-color:#A78BFA"/>
+    </linearGradient>
+
+    <linearGradient id="holos-grad" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F59E0B"/>
+      <stop offset="100%" style="stop-color:#FBBF24"/>
+    </linearGradient>
+
+    <linearGradient id="brand-gradient" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00D4FF"/>
+      <stop offset="50%" style="stop-color:#8B5CF6"/>
+      <stop offset="100%" style="stop-color:#F59E0B"/>
+    </linearGradient>
+
+    <radialGradient id="unified-grad" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#FFFFFF"/>
+      <stop offset="50%" style="stop-color:#FFF7ED"/>
+      <stop offset="100%" style="stop-color:#FFD700"/>
+    </radialGradient>
+
+    <!-- Glow Filters -->
+    <filter id="glow-blue" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feFlood flood-color="#00D4FF" flood-opacity="0.5"/>
+      <feComposite in2="blur" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="glow-purple" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feFlood flood-color="#8B5CF6" flood-opacity="0.5"/>
+      <feComposite in2="blur" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="glow-gold" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feFlood flood-color="#F59E0B" flood-opacity="0.5"/>
+      <feComposite in2="blur" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <filter id="glow-unified" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="6" result="blur"/>
+      <feFlood flood-color="#FFD700" flood-opacity="0.4"/>
+      <feComposite in2="blur" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    /* Symbol reveal animations */
+    @keyframes reveal-nous {
+      0% { opacity: 0; transform: translateY(-20px) scale(0.5); filter: blur(10px); }
+      100% { opacity: 1; transform: translateY(0) scale(1); filter: blur(0); }
+    }
+
+    @keyframes reveal-anima {
+      0% { opacity: 0; transform: translate(-20px, 20px) scale(0.5); filter: blur(10px); }
+      100% { opacity: 1; transform: translate(0, 0) scale(1); filter: blur(0); }
+    }
+
+    @keyframes reveal-holos {
+      0% { opacity: 0; transform: translate(20px, 20px) scale(0.5); filter: blur(10px); }
+      100% { opacity: 1; transform: translate(0, 0) scale(1); filter: blur(0); }
+    }
+
+    @keyframes reveal-unified {
+      0% { opacity: 0; transform: scale(0.3); filter: blur(15px); }
+      50% { opacity: 1; transform: scale(1.2); filter: blur(0); }
+      100% { opacity: 1; transform: scale(1); filter: blur(0); }
+    }
+
+    @keyframes draw-line {
+      0% { stroke-dashoffset: 100; opacity: 0; }
+      50% { opacity: 1; }
+      100% { stroke-dashoffset: 0; opacity: 0.7; }
+    }
+
+    @keyframes reveal-text {
+      0% { opacity: 0; transform: translateY(20px); }
+      100% { opacity: 1; transform: translateY(0); }
+    }
+
+    /* 11 BPM breathing pulse (5.45s cycle) */
+    @keyframes breathe {
+      0%, 100% { opacity: 1; filter: brightness(1); }
+      50% { opacity: 0.85; filter: brightness(1.2); }
+    }
+
+    /* Element styles */
+    .symbol-nous {
+      opacity: 0;
+      animation: reveal-nous 1s ease-out 0.2s forwards, breathe 5.45s ease-in-out 2s infinite;
+      transform-origin: center;
+    }
+
+    .symbol-anima {
+      opacity: 0;
+      animation: reveal-anima 1s ease-out 0.5s forwards, breathe 5.45s ease-in-out 2.5s infinite;
+      transform-origin: center;
+    }
+
+    .symbol-holos {
+      opacity: 0;
+      animation: reveal-holos 1s ease-out 0.8s forwards, breathe 5.45s ease-in-out 3s infinite;
+      transform-origin: center;
+    }
+
+    .symbol-unified {
+      opacity: 0;
+      animation: reveal-unified 1.2s ease-out 1.5s forwards, breathe 5.45s ease-in-out 3.5s infinite;
+      transform-origin: center;
+    }
+
+    .connection-line {
+      stroke-dasharray: 100;
+      stroke-dashoffset: 100;
+      animation: draw-line 1.5s ease-out forwards;
+    }
+
+    .line-nous { animation-delay: 1s; }
+    .line-anima { animation-delay: 1.1s; }
+    .line-holos { animation-delay: 1.2s; }
+
+    .brand-text {
+      opacity: 0;
+      animation: reveal-text 1s ease-out 2.2s forwards;
+    }
+
+    .tagline {
+      opacity: 0;
+      animation: reveal-text 1s ease-out 2.6s forwards;
+    }
+  </style>
+
+  <!-- Connection Lines -->
+  <g stroke-width="1.5" fill="none">
+    <line class="connection-line line-nous" x1="150" y1="50" x2="150" y2="115" stroke="url(#nous-grad)" filter="url(#glow-blue)"/>
+    <line class="connection-line line-anima" x1="60" y1="185" x2="115" y2="145" stroke="url(#anima-grad)" filter="url(#glow-purple)"/>
+    <line class="connection-line line-holos" x1="240" y1="185" x2="185" y2="145" stroke="url(#holos-grad)" filter="url(#glow-gold)"/>
+  </g>
+
+  <!-- NOUS Symbol ☿ (Mercury) - Top -->
+  <g class="symbol-nous" filter="url(#glow-blue)">
+    <text x="150" y="45" text-anchor="middle" font-size="36" fill="url(#nous-grad)" font-family="serif">☿</text>
+  </g>
+
+  <!-- ANIMA Symbol 🜍 (Sulfur) - Bottom Left -->
+  <g class="symbol-anima" filter="url(#glow-purple)">
+    <text x="55" y="200" text-anchor="middle" font-size="36" fill="url(#anima-grad)" font-family="serif">🜍</text>
+  </g>
+
+  <!-- HOLOS Symbol 🜔 (Salt) - Bottom Right -->
+  <g class="symbol-holos" filter="url(#glow-gold)">
+    <text x="245" y="200" text-anchor="middle" font-size="36" fill="url(#holos-grad)" font-family="serif">🜔</text>
+  </g>
+
+  <!-- Unified Symbol ☉ (Sun/Gold) - Center -->
+  <g class="symbol-unified" filter="url(#glow-unified)">
+    <text x="150" y="145" text-anchor="middle" font-size="48" fill="url(#unified-grad)" font-family="serif">☉</text>
+  </g>
+
+  <!-- Brand Name -->
+  <text class="brand-text" x="150" y="280" text-anchor="middle" font-size="56" font-weight="700" fill="url(#brand-gradient)" font-family="Cinzel, serif" letter-spacing="0.1em">0r8</text>
+
+  <!-- Tagline -->
+  <text class="tagline" x="150" y="320" text-anchor="middle" font-size="12" fill="#FFFFFF" opacity="0.6" font-family="Space Grotesk, sans-serif" letter-spacing="0.15em">THE OPERATING SYSTEM FOR HUMAN POTENTIAL</text>
+</svg>

@@ -1,0 +1,71 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  0r8 HORIZONTAL LOGO
+  Trinity symbols inline with brand name
+  For headers, banners, wide formats
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 400 80" width="400" height="80">
+  <defs>
+    <linearGradient id="nous-g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#00D4FF"/>
+      <stop offset="100%" style="stop-color:#00F0FF"/>
+    </linearGradient>
+
+    <linearGradient id="anima-g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#8B5CF6"/>
+      <stop offset="100%" style="stop-color:#A78BFA"/>
+    </linearGradient>
+
+    <linearGradient id="holos-g" x1="0%" y1="0%" x2="100%" y2="100%">
+      <stop offset="0%" style="stop-color:#F59E0B"/>
+      <stop offset="100%" style="stop-color:#FBBF24"/>
+    </linearGradient>
+
+    <linearGradient id="brand-g" x1="0%" y1="0%" x2="100%" y2="0%">
+      <stop offset="0%" style="stop-color:#00D4FF"/>
+      <stop offset="50%" style="stop-color:#8B5CF6"/>
+      <stop offset="100%" style="stop-color:#F59E0B"/>
+    </linearGradient>
+
+    <radialGradient id="unified-g" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#FFFFFF"/>
+      <stop offset="50%" style="stop-color:#FFF7ED"/>
+      <stop offset="100%" style="stop-color:#FFD700"/>
+    </radialGradient>
+
+    <filter id="glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feMerge>
+        <feMergeNode in="blur"/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <!-- Symbols Group -->
+  <g transform="translate(20, 0)">
+    <!-- NOUS ☿ -->
+    <text x="20" y="50" text-anchor="middle" font-size="24" fill="url(#nous-g)" font-family="serif" filter="url(#glow)">☿</text>
+
+    <!-- Connection dash -->
+    <line x1="38" y1="40" x2="52" y2="40" stroke="url(#anima-g)" stroke-width="1" opacity="0.5"/>
+
+    <!-- ANIMA 🜍 -->
+    <text x="70" y="50" text-anchor="middle" font-size="24" fill="url(#anima-g)" font-family="serif" filter="url(#glow)">🜍</text>
+
+    <!-- Connection dash -->
+    <line x1="88" y1="40" x2="102" y2="40" stroke="url(#holos-g)" stroke-width="1" opacity="0.5"/>
+
+    <!-- HOLOS 🜔 -->
+    <text x="120" y="50" text-anchor="middle" font-size="24" fill="url(#holos-g)" font-family="serif" filter="url(#glow)">🜔</text>
+
+    <!-- Arrow to unified -->
+    <text x="150" y="48" font-size="16" fill="#FFFFFF" opacity="0.4" font-family="sans-serif">→</text>
+
+    <!-- Unified ☉ -->
+    <text x="180" y="52" text-anchor="middle" font-size="28" fill="url(#unified-g)" font-family="serif" filter="url(#glow)">☉</text>
+  </g>
+
+  <!-- Brand Name -->
+  <text x="280" y="55" text-anchor="middle" font-size="42" font-weight="700" fill="url(#brand-g)" font-family="Cinzel, serif" letter-spacing="0.08em" filter="url(#glow)">0r8</text>
+</svg>

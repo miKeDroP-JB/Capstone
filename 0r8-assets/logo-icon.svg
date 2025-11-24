@@ -1,0 +1,57 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!--
+  0r8 ICON LOGO
+  Sun Symbol Only
+  For favicons, app icons, compact spaces
+-->
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 64 64" width="64" height="64">
+  <defs>
+    <radialGradient id="sun-gradient" cx="50%" cy="50%" r="50%">
+      <stop offset="0%" style="stop-color:#FFFFFF"/>
+      <stop offset="40%" style="stop-color:#FFF7ED"/>
+      <stop offset="100%" style="stop-color:#FFD700"/>
+    </radialGradient>
+
+    <filter id="sun-glow" x="-50%" y="-50%" width="200%" height="200%">
+      <feGaussianBlur stdDeviation="2" result="blur"/>
+      <feFlood flood-color="#FFD700" flood-opacity="0.4"/>
+      <feComposite in2="blur" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+
+    <!-- Outer glow rings -->
+    <filter id="outer-glow" x="-100%" y="-100%" width="300%" height="300%">
+      <feGaussianBlur stdDeviation="4" result="blur"/>
+      <feFlood flood-color="#8B5CF6" flood-opacity="0.2"/>
+      <feComposite in2="blur" operator="in"/>
+      <feMerge>
+        <feMergeNode/>
+        <feMergeNode in="SourceGraphic"/>
+      </feMerge>
+    </filter>
+  </defs>
+
+  <style>
+    @keyframes pulse {
+      0%, 100% { opacity: 1; transform: scale(1); }
+      50% { opacity: 0.9; transform: scale(1.05); }
+    }
+
+    .sun-symbol {
+      animation: pulse 5.45s ease-in-out infinite;
+      transform-origin: center;
+    }
+  </style>
+
+  <!-- Outer glow ring -->
+  <circle cx="32" cy="32" r="28" fill="none" stroke="#8B5CF6" stroke-width="0.5" opacity="0.3" filter="url(#outer-glow)"/>
+  <circle cx="32" cy="32" r="24" fill="none" stroke="#00D4FF" stroke-width="0.5" opacity="0.2"/>
+
+  <!-- Sun Symbol -->
+  <g class="sun-symbol" filter="url(#sun-glow)">
+    <text x="32" y="42" text-anchor="middle" font-size="32" fill="url(#sun-gradient)" font-family="serif">☉</text>
+  </g>
+</svg>

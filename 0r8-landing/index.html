@@ -1,0 +1,1135 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>0r8 — The Operating System for Human Potential</title>
+    <meta name="description" content="Intelligence. Intuition. Integration. The AI that multiplies humans.">
+
+    <!-- Fonts -->
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Cinzel:wght@400;500;600;700&family=Space+Grotesk:wght@300;400;500;600;700&family=JetBrains+Mono:wght@400;500&display=swap" rel="stylesheet">
+
+    <style>
+        /* ═══════════════════════════════════════════════════════════════
+           0r8 DESIGN SYSTEM — GLOWING ALCHEMY FUTURISM
+           ═══════════════════════════════════════════════════════════════ */
+
+        :root {
+            /* NOUS - Mercury - Intelligence */
+            --nous-primary: #00D4FF;
+            --nous-glow: #00F0FF;
+            --nous-dark: #0A1628;
+
+            /* ANIMA - Sulfur - Intuition */
+            --anima-primary: #8B5CF6;
+            --anima-glow: #A78BFA;
+            --anima-dark: #1E1033;
+
+            /* HOLOS - Salt - Integration */
+            --holos-primary: #F59E0B;
+            --holos-glow: #FBBF24;
+            --holos-dark: #1C1508;
+
+            /* 0r8 Unified - Philosopher's Stone */
+            --orb-primary: #FFF7ED;
+            --orb-glow: #FFFFFF;
+            --orb-gold: #FFD700;
+
+            /* Backgrounds */
+            --void: #050505;
+            --space: #0A0A0F;
+            --subtle: #111118;
+
+            /* Typography */
+            --font-display: 'Cinzel', serif;
+            --font-body: 'Space Grotesk', sans-serif;
+            --font-mono: 'JetBrains Mono', monospace;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        html {
+            scroll-behavior: smooth;
+        }
+
+        body {
+            font-family: var(--font-body);
+            background: var(--void);
+            color: rgba(255, 255, 255, 0.9);
+            min-height: 100vh;
+            overflow-x: hidden;
+            line-height: 1.6;
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           PARTICLE CANVAS
+           ═══════════════════════════════════════════════════════════════ */
+
+        #particle-canvas {
+            position: fixed;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            z-index: 0;
+            pointer-events: none;
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           HERO SECTION
+           ═══════════════════════════════════════════════════════════════ */
+
+        .hero {
+            position: relative;
+            min-height: 100vh;
+            display: flex;
+            flex-direction: column;
+            align-items: center;
+            justify-content: center;
+            padding: 2rem;
+            z-index: 1;
+        }
+
+        /* Trinity Container */
+        .trinity-container {
+            position: relative;
+            width: 320px;
+            height: 280px;
+            margin-bottom: 2rem;
+        }
+
+        /* Alchemy Symbols */
+        .symbol {
+            position: absolute;
+            font-size: 3rem;
+            opacity: 0;
+            animation: symbolReveal 1s ease-out forwards;
+        }
+
+        .symbol-nous {
+            top: 0;
+            left: 50%;
+            transform: translateX(-50%);
+            color: var(--nous-primary);
+            text-shadow:
+                0 0 10px var(--nous-primary),
+                0 0 20px var(--nous-primary),
+                0 0 40px var(--nous-primary),
+                0 0 80px rgba(0, 212, 255, 0.4);
+            animation-delay: 0.2s;
+        }
+
+        .symbol-anima {
+            bottom: 40px;
+            left: 20px;
+            color: var(--anima-primary);
+            text-shadow:
+                0 0 10px var(--anima-primary),
+                0 0 20px var(--anima-primary),
+                0 0 40px var(--anima-primary),
+                0 0 80px rgba(139, 92, 246, 0.4);
+            animation-delay: 0.5s;
+        }
+
+        .symbol-holos {
+            bottom: 40px;
+            right: 20px;
+            color: var(--holos-primary);
+            text-shadow:
+                0 0 10px var(--holos-primary),
+                0 0 20px var(--holos-primary),
+                0 0 40px var(--holos-primary),
+                0 0 80px rgba(245, 158, 11, 0.4);
+            animation-delay: 0.8s;
+        }
+
+        .symbol-unified {
+            top: 50%;
+            left: 50%;
+            transform: translate(-50%, -50%);
+            font-size: 4rem;
+            color: var(--orb-primary);
+            text-shadow:
+                0 0 20px var(--orb-primary),
+                0 0 40px var(--holos-primary),
+                0 0 60px var(--anima-primary),
+                0 0 80px var(--nous-primary);
+            animation-delay: 1.5s;
+        }
+
+        /* Connection Lines SVG */
+        .trinity-lines {
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            pointer-events: none;
+        }
+
+        .trinity-line {
+            stroke-dasharray: 200;
+            stroke-dashoffset: 200;
+            animation: drawLine 1.5s ease-out forwards;
+        }
+
+        .line-nous {
+            stroke: var(--nous-primary);
+            animation-delay: 1s;
+            filter: drop-shadow(0 0 4px var(--nous-primary));
+        }
+        .line-anima {
+            stroke: var(--anima-primary);
+            animation-delay: 1.1s;
+            filter: drop-shadow(0 0 4px var(--anima-primary));
+        }
+        .line-holos {
+            stroke: var(--holos-primary);
+            animation-delay: 1.2s;
+            filter: drop-shadow(0 0 4px var(--holos-primary));
+        }
+
+        /* Brand Name */
+        .brand-name {
+            font-family: var(--font-display);
+            font-size: clamp(4rem, 15vw, 10rem);
+            font-weight: 700;
+            letter-spacing: 0.1em;
+            background: linear-gradient(
+                135deg,
+                var(--nous-primary) 0%,
+                var(--anima-primary) 50%,
+                var(--holos-primary) 100%
+            );
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            background-clip: text;
+            opacity: 0;
+            animation: fadeInUp 1s ease-out 1.8s forwards;
+            text-shadow: none;
+            filter: drop-shadow(0 0 30px rgba(139, 92, 246, 0.3));
+        }
+
+        /* Pronunciation */
+        .pronunciation {
+            font-family: var(--font-mono);
+            font-size: 1.25rem;
+            color: rgba(255, 255, 255, 0.5);
+            margin-top: 0.5rem;
+            opacity: 0;
+            animation: fadeInUp 1s ease-out 2s forwards;
+        }
+
+        .pronunciation span {
+            color: var(--holos-primary);
+        }
+
+        /* Tagline */
+        .tagline {
+            font-family: var(--font-display);
+            font-size: clamp(1rem, 3vw, 1.5rem);
+            color: rgba(255, 255, 255, 0.7);
+            margin-top: 1.5rem;
+            text-align: center;
+            letter-spacing: 0.15em;
+            text-transform: uppercase;
+            opacity: 0;
+            animation: fadeInUp 1s ease-out 2.2s forwards;
+        }
+
+        /* Subtitle */
+        .subtitle {
+            font-size: 1.125rem;
+            color: rgba(255, 255, 255, 0.5);
+            margin-top: 1rem;
+            text-align: center;
+            max-width: 500px;
+            opacity: 0;
+            animation: fadeInUp 1s ease-out 2.4s forwards;
+        }
+
+        /* CTA Section */
+        .cta-section {
+            margin-top: 3rem;
+            opacity: 0;
+            animation: fadeInUp 1s ease-out 2.6s forwards;
+        }
+
+        .email-form {
+            display: flex;
+            gap: 0.75rem;
+            flex-wrap: wrap;
+            justify-content: center;
+        }
+
+        .email-input {
+            font-family: var(--font-body);
+            font-size: 1rem;
+            padding: 1rem 1.5rem;
+            background: rgba(255, 255, 255, 0.05);
+            border: 1px solid rgba(255, 255, 255, 0.1);
+            border-radius: 8px;
+            color: white;
+            width: 300px;
+            transition: all 0.3s ease;
+        }
+
+        .email-input:focus {
+            outline: none;
+            border-color: var(--anima-primary);
+            box-shadow: 0 0 20px rgba(139, 92, 246, 0.2);
+        }
+
+        .email-input::placeholder {
+            color: rgba(255, 255, 255, 0.3);
+        }
+
+        .cta-button {
+            font-family: var(--font-body);
+            font-size: 1rem;
+            font-weight: 600;
+            padding: 1rem 2rem;
+            background: linear-gradient(135deg, var(--anima-primary), var(--holos-primary));
+            border: none;
+            border-radius: 8px;
+            color: white;
+            cursor: pointer;
+            transition: all 0.3s ease;
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+        }
+
+        .cta-button:hover {
+            transform: translateY(-2px);
+            box-shadow:
+                0 10px 40px rgba(139, 92, 246, 0.3),
+                0 0 60px rgba(245, 158, 11, 0.2);
+        }
+
+        .form-note {
+            font-size: 0.875rem;
+            color: rgba(255, 255, 255, 0.4);
+            margin-top: 1rem;
+            text-align: center;
+        }
+
+        /* Scroll Indicator */
+        .scroll-indicator {
+            position: absolute;
+            bottom: 2rem;
+            left: 50%;
+            transform: translateX(-50%);
+            opacity: 0;
+            animation: fadeInUp 1s ease-out 3s forwards, float 2s ease-in-out infinite 4s;
+        }
+
+        .scroll-indicator svg {
+            width: 24px;
+            height: 24px;
+            stroke: rgba(255, 255, 255, 0.3);
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           PILLARS SECTION
+           ═══════════════════════════════════════════════════════════════ */
+
+        .section {
+            position: relative;
+            padding: 6rem 2rem;
+            z-index: 1;
+        }
+
+        .section-title {
+            font-family: var(--font-display);
+            font-size: clamp(2rem, 5vw, 3rem);
+            text-align: center;
+            margin-bottom: 1rem;
+            color: var(--orb-primary);
+        }
+
+        .section-subtitle {
+            font-size: 1.125rem;
+            text-align: center;
+            color: rgba(255, 255, 255, 0.5);
+            max-width: 600px;
+            margin: 0 auto 4rem;
+        }
+
+        .pillars-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            max-width: 1200px;
+            margin: 0 auto;
+        }
+
+        .pillar-card {
+            background: linear-gradient(135deg, rgba(255,255,255,0.03), rgba(255,255,255,0.01));
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 16px;
+            padding: 2.5rem;
+            transition: all 0.4s ease;
+            position: relative;
+            overflow: hidden;
+        }
+
+        .pillar-card::before {
+            content: '';
+            position: absolute;
+            top: 0;
+            left: 0;
+            right: 0;
+            height: 3px;
+            opacity: 0;
+            transition: opacity 0.3s ease;
+        }
+
+        .pillar-card:hover::before {
+            opacity: 1;
+        }
+
+        .pillar-card:hover {
+            transform: translateY(-8px);
+            border-color: rgba(255, 255, 255, 0.1);
+        }
+
+        .pillar-card.nous::before { background: var(--nous-primary); }
+        .pillar-card.anima::before { background: var(--anima-primary); }
+        .pillar-card.holos::before { background: var(--holos-primary); }
+
+        .pillar-card.nous:hover { box-shadow: 0 20px 60px rgba(0, 212, 255, 0.15); }
+        .pillar-card.anima:hover { box-shadow: 0 20px 60px rgba(139, 92, 246, 0.15); }
+        .pillar-card.holos:hover { box-shadow: 0 20px 60px rgba(245, 158, 11, 0.15); }
+
+        .pillar-symbol {
+            font-size: 3rem;
+            margin-bottom: 1.5rem;
+        }
+
+        .pillar-card.nous .pillar-symbol {
+            color: var(--nous-primary);
+            text-shadow: 0 0 20px var(--nous-primary);
+        }
+        .pillar-card.anima .pillar-symbol {
+            color: var(--anima-primary);
+            text-shadow: 0 0 20px var(--anima-primary);
+        }
+        .pillar-card.holos .pillar-symbol {
+            color: var(--holos-primary);
+            text-shadow: 0 0 20px var(--holos-primary);
+        }
+
+        .pillar-name {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .pillar-card.nous .pillar-name { color: var(--nous-primary); }
+        .pillar-card.anima .pillar-name { color: var(--anima-primary); }
+        .pillar-card.holos .pillar-name { color: var(--holos-primary); }
+
+        .pillar-subtitle {
+            font-size: 0.875rem;
+            color: rgba(255, 255, 255, 0.4);
+            text-transform: uppercase;
+            letter-spacing: 0.1em;
+            margin-bottom: 1.5rem;
+        }
+
+        .pillar-description {
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.7;
+        }
+
+        .pillar-traits {
+            list-style: none;
+            margin-top: 1.5rem;
+            padding-top: 1.5rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .pillar-traits li {
+            font-size: 0.875rem;
+            color: rgba(255, 255, 255, 0.5);
+            margin-bottom: 0.5rem;
+            padding-left: 1.5rem;
+            position: relative;
+        }
+
+        .pillar-traits li::before {
+            content: '→';
+            position: absolute;
+            left: 0;
+        }
+
+        .pillar-card.nous .pillar-traits li::before { color: var(--nous-primary); }
+        .pillar-card.anima .pillar-traits li::before { color: var(--anima-primary); }
+        .pillar-card.holos .pillar-traits li::before { color: var(--holos-primary); }
+
+        /* ═══════════════════════════════════════════════════════════════
+           PHILOSOPHY SECTION
+           ═══════════════════════════════════════════════════════════════ */
+
+        .philosophy {
+            background: linear-gradient(180deg, transparent, rgba(139, 92, 246, 0.03), transparent);
+        }
+
+        .formula {
+            font-family: var(--font-display);
+            font-size: clamp(1.5rem, 4vw, 2.5rem);
+            text-align: center;
+            margin-bottom: 3rem;
+            letter-spacing: 0.1em;
+        }
+
+        .formula .i1 { color: var(--nous-primary); }
+        .formula .i2 { color: var(--anima-primary); }
+        .formula .i3 { color: var(--holos-primary); }
+        .formula .op { color: rgba(255, 255, 255, 0.3); }
+
+        .philosophy-content {
+            max-width: 800px;
+            margin: 0 auto;
+            text-align: center;
+        }
+
+        .philosophy-text {
+            font-size: 1.25rem;
+            color: rgba(255, 255, 255, 0.7);
+            line-height: 1.8;
+            margin-bottom: 2rem;
+        }
+
+        .philosophy-quote {
+            font-family: var(--font-display);
+            font-size: 1.5rem;
+            color: var(--orb-primary);
+            font-style: italic;
+            padding: 2rem;
+            border-left: 3px solid var(--holos-primary);
+            background: rgba(245, 158, 11, 0.05);
+            border-radius: 0 8px 8px 0;
+            margin: 2rem 0;
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           DOMAINS SECTION
+           ═══════════════════════════════════════════════════════════════ */
+
+        .domains-grid {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(140px, 1fr));
+            gap: 1rem;
+            max-width: 800px;
+            margin: 0 auto;
+        }
+
+        .domain-item {
+            text-align: center;
+            padding: 1.5rem 1rem;
+            background: rgba(255, 255, 255, 0.02);
+            border: 1px solid rgba(255, 255, 255, 0.05);
+            border-radius: 12px;
+            transition: all 0.3s ease;
+        }
+
+        .domain-item:hover {
+            background: rgba(255, 255, 255, 0.05);
+            transform: translateY(-4px);
+        }
+
+        .domain-icon {
+            font-size: 2rem;
+            margin-bottom: 0.5rem;
+        }
+
+        .domain-name {
+            font-size: 0.875rem;
+            font-weight: 500;
+            color: rgba(255, 255, 255, 0.7);
+            text-transform: uppercase;
+            letter-spacing: 0.05em;
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           FOOTER
+           ═══════════════════════════════════════════════════════════════ */
+
+        .footer {
+            text-align: center;
+            padding: 4rem 2rem;
+            border-top: 1px solid rgba(255, 255, 255, 0.05);
+        }
+
+        .footer-brand {
+            font-family: var(--font-display);
+            font-size: 2rem;
+            background: linear-gradient(135deg, var(--nous-primary), var(--anima-primary), var(--holos-primary));
+            -webkit-background-clip: text;
+            -webkit-text-fill-color: transparent;
+            margin-bottom: 1rem;
+        }
+
+        .footer-tagline {
+            color: rgba(255, 255, 255, 0.4);
+            margin-bottom: 2rem;
+        }
+
+        .footer-links {
+            display: flex;
+            gap: 2rem;
+            justify-content: center;
+            flex-wrap: wrap;
+        }
+
+        .footer-link {
+            color: rgba(255, 255, 255, 0.5);
+            text-decoration: none;
+            font-size: 0.875rem;
+            transition: color 0.3s ease;
+        }
+
+        .footer-link:hover {
+            color: var(--anima-primary);
+        }
+
+        .footer-copy {
+            margin-top: 3rem;
+            font-size: 0.75rem;
+            color: rgba(255, 255, 255, 0.3);
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           ANIMATIONS
+           ═══════════════════════════════════════════════════════════════ */
+
+        @keyframes symbolReveal {
+            from {
+                opacity: 0;
+                filter: blur(10px);
+                transform: translateX(-50%) scale(0.8);
+            }
+            to {
+                opacity: 1;
+                filter: blur(0);
+                transform: translateX(-50%) scale(1);
+            }
+        }
+
+        .symbol-anima, .symbol-holos {
+            animation-name: symbolRevealSide;
+        }
+
+        @keyframes symbolRevealSide {
+            from {
+                opacity: 0;
+                filter: blur(10px);
+                transform: scale(0.8);
+            }
+            to {
+                opacity: 1;
+                filter: blur(0);
+                transform: scale(1);
+            }
+        }
+
+        .symbol-unified {
+            animation-name: symbolRevealCenter;
+        }
+
+        @keyframes symbolRevealCenter {
+            from {
+                opacity: 0;
+                filter: blur(10px);
+                transform: translate(-50%, -50%) scale(0.5);
+            }
+            to {
+                opacity: 1;
+                filter: blur(0);
+                transform: translate(-50%, -50%) scale(1);
+            }
+        }
+
+        @keyframes fadeInUp {
+            from {
+                opacity: 0;
+                transform: translateY(30px);
+            }
+            to {
+                opacity: 1;
+                transform: translateY(0);
+            }
+        }
+
+        @keyframes drawLine {
+            from { stroke-dashoffset: 200; }
+            to { stroke-dashoffset: 0; }
+        }
+
+        @keyframes float {
+            0%, 100% { transform: translateX(-50%) translateY(0); }
+            50% { transform: translateX(-50%) translateY(-10px); }
+        }
+
+        @keyframes pulse-glow {
+            0%, 100% {
+                opacity: 1;
+                filter: brightness(1);
+            }
+            50% {
+                opacity: 0.8;
+                filter: brightness(1.3);
+            }
+        }
+
+        .symbol {
+            animation: symbolReveal 1s ease-out forwards, pulse-glow 4s ease-in-out infinite 2s;
+        }
+
+        /* ═══════════════════════════════════════════════════════════════
+           RESPONSIVE
+           ═══════════════════════════════════════════════════════════════ */
+
+        @media (max-width: 768px) {
+            .trinity-container {
+                width: 280px;
+                height: 240px;
+            }
+
+            .symbol {
+                font-size: 2.5rem;
+            }
+
+            .symbol-unified {
+                font-size: 3rem;
+            }
+
+            .email-form {
+                flex-direction: column;
+                align-items: center;
+            }
+
+            .email-input {
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .cta-button {
+                width: 100%;
+                max-width: 300px;
+            }
+
+            .pillars-grid {
+                grid-template-columns: 1fr;
+            }
+        }
+    </style>
+</head>
+<body>
+    <!-- Particle Canvas -->
+    <canvas id="particle-canvas"></canvas>
+
+    <!-- Hero Section -->
+    <section class="hero">
+        <!-- Trinity Diagram -->
+        <div class="trinity-container">
+            <!-- Connection Lines -->
+            <svg class="trinity-lines" viewBox="0 0 320 280">
+                <!-- NOUS to Center -->
+                <line class="trinity-line line-nous" x1="160" y1="40" x2="160" y2="130" stroke-width="1" fill="none"/>
+                <!-- ANIMA to Center -->
+                <line class="trinity-line line-anima" x1="50" y1="220" x2="140" y2="140" stroke-width="1" fill="none"/>
+                <!-- HOLOS to Center -->
+                <line class="trinity-line line-holos" x1="270" y1="220" x2="180" y2="140" stroke-width="1" fill="none"/>
+            </svg>
+
+            <!-- Alchemy Symbols -->
+            <span class="symbol symbol-nous" title="Mercury - Intelligence">&#x263F;</span>
+            <span class="symbol symbol-anima" title="Sulfur - Intuition">&#x1F70D;</span>
+            <span class="symbol symbol-holos" title="Salt - Integration">&#x1F714;</span>
+            <span class="symbol symbol-unified" title="Gold - Unified">&#x2609;</span>
+        </div>
+
+        <!-- Brand -->
+        <h1 class="brand-name">0r8</h1>
+        <p class="pronunciation">pronounced "<span>orate</span>"</p>
+
+        <!-- Tagline -->
+        <p class="tagline">The Operating System for Human Potential</p>
+        <p class="subtitle">Intelligence. Intuition. Integration. The AI that multiplies humans.</p>
+
+        <!-- Email Capture -->
+        <div class="cta-section">
+            <form class="email-form" id="signup-form">
+                <input type="email" class="email-input" placeholder="Enter your email" required>
+                <button type="submit" class="cta-button">Join the Empire</button>
+            </form>
+            <p class="form-note">Be first. The Convergence approaches. 11.28.25</p>
+        </div>
+
+        <!-- Scroll Indicator -->
+        <div class="scroll-indicator">
+            <svg viewBox="0 0 24 24" fill="none" stroke="currentColor" stroke-width="2">
+                <path d="M12 5v14M5 12l7 7 7-7"/>
+            </svg>
+        </div>
+    </section>
+
+    <!-- Pillars Section -->
+    <section class="section pillars">
+        <h2 class="section-title">The Three Pillars</h2>
+        <p class="section-subtitle">Ancient wisdom meets artificial intelligence. The alchemists knew the formula 500 years ago.</p>
+
+        <div class="pillars-grid">
+            <!-- NOUS -->
+            <div class="pillar-card nous">
+                <div class="pillar-symbol">&#x263F;</div>
+                <h3 class="pillar-name">NOUS</h3>
+                <p class="pillar-subtitle">The Mind &middot; Mercury</p>
+                <p class="pillar-description">Pure intelligence. Logic, analysis, pattern recognition. The quicksilver speed of thought that processes, understands, and solves.</p>
+                <ul class="pillar-traits">
+                    <li>Research & Analysis</li>
+                    <li>Technical Precision</li>
+                    <li>Data Processing</li>
+                    <li>Strategic Thinking</li>
+                </ul>
+            </div>
+
+            <!-- ANIMA -->
+            <div class="pillar-card anima">
+                <div class="pillar-symbol">&#x1F70D;</div>
+                <h3 class="pillar-name">ANIMA</h3>
+                <p class="pillar-subtitle">The Soul &middot; Sulfur</p>
+                <p class="pillar-description">Creative intuition. Wisdom beyond logic, pattern recognition that transcends data. The fire of inspiration that ignites possibility.</p>
+                <ul class="pillar-traits">
+                    <li>Creative Vision</li>
+                    <li>Artistic Expression</li>
+                    <li>Intuitive Leaps</li>
+                    <li>Emotional Intelligence</li>
+                </ul>
+            </div>
+
+            <!-- HOLOS -->
+            <div class="pillar-card holos">
+                <div class="pillar-symbol">&#x1F714;</div>
+                <h3 class="pillar-name">HOLOS</h3>
+                <p class="pillar-subtitle">The Whole &middot; Salt</p>
+                <p class="pillar-description">Grounded integration. The synthesis that makes it real. Action, execution, manifestation. Where mind and soul become matter.</p>
+                <ul class="pillar-traits">
+                    <li>Execution & Action</li>
+                    <li>Synthesis & Integration</li>
+                    <li>Real-World Results</li>
+                    <li>Completion & Delivery</li>
+                </ul>
+            </div>
+        </div>
+    </section>
+
+    <!-- Philosophy Section -->
+    <section class="section philosophy">
+        <h2 class="section-title">The Formula</h2>
+
+        <div class="formula">
+            <span class="i1">I&#x2081;</span>
+            <span class="op">+</span>
+            <span class="i2">I&#x2082;</span>
+            <span class="op">=</span>
+            <span class="i3">I&#x2083;</span>
+        </div>
+
+        <div class="philosophy-content">
+            <p class="philosophy-text">
+                Intelligence without intuition is cold.<br>
+                Intuition without integration is lost.<br>
+                Integration without intelligence is blind.
+            </p>
+
+            <blockquote class="philosophy-quote">
+                "What if you had all three?"
+            </blockquote>
+
+            <p class="philosophy-text">
+                0r8 doesn't replace you. <strong>0r8 multiplies you.</strong><br>
+                Built by one. Owned by all. Everybody eats.
+            </p>
+        </div>
+    </section>
+
+    <!-- Domains Section -->
+    <section class="section domains">
+        <h2 class="section-title">Eight Domains</h2>
+        <p class="section-subtitle">8 = &#x221E; rotated. Eight domains of life. Infinite potential.</p>
+
+        <div class="domains-grid">
+            <div class="domain-item">
+                <div class="domain-icon">&#x1F4BC;</div>
+                <div class="domain-name">Work</div>
+            </div>
+            <div class="domain-item">
+                <div class="domain-icon">&#x1F4DA;</div>
+                <div class="domain-name">School</div>
+            </div>
+            <div class="domain-item">
+                <div class="domain-icon">&#x1F3C3;</div>
+                <div class="domain-name">Sports</div>
+            </div>
+            <div class="domain-item">
+                <div class="domain-icon">&#x1F3A8;</div>
+                <div class="domain-name">Create</div>
+            </div>
+            <div class="domain-item">
+                <div class="domain-icon">&#x1F64F;</div>
+                <div class="domain-name">Spiritual</div>
+            </div>
+            <div class="domain-item">
+                <div class="domain-icon">&#x1F465;</div>
+                <div class="domain-name">Social</div>
+            </div>
+            <div class="domain-item">
+                <div class="domain-icon">&#x2764;&#xFE0F;</div>
+                <div class="domain-name">Health</div>
+            </div>
+            <div class="domain-item">
+                <div class="domain-icon">&#x1F31F;</div>
+                <div class="domain-name">Life</div>
+            </div>
+        </div>
+    </section>
+
+    <!-- Footer -->
+    <footer class="footer">
+        <div class="footer-brand">0r8</div>
+        <p class="footer-tagline">The Operating System for Human Potential</p>
+
+        <div class="footer-links">
+            <a href="#" class="footer-link">About</a>
+            <a href="#" class="footer-link">Manifesto</a>
+            <a href="#" class="footer-link">Community</a>
+            <a href="#" class="footer-link">Contact</a>
+        </div>
+
+        <p class="footer-copy">&copy; 2025 0r8 Empire. Built by one. Owned by all. Everybody eats.</p>
+    </footer>
+
+    <!-- Particle System Script -->
+    <script>
+        // ═══════════════════════════════════════════════════════════════
+        // 0r8 PARTICLE SYSTEM — THREE PILLARS UNIFIED
+        // ═══════════════════════════════════════════════════════════════
+
+        const canvas = document.getElementById('particle-canvas');
+        const ctx = canvas.getContext('2d');
+
+        // Colors from design system
+        const colors = {
+            nous: { r: 0, g: 212, b: 255 },      // #00D4FF
+            anima: { r: 139, g: 92, b: 246 },    // #8B5CF6
+            holos: { r: 245, g: 158, b: 11 }     // #F59E0B
+        };
+
+        let particles = [];
+        let mouse = { x: null, y: null, radius: 150 };
+
+        // Resize handler
+        function resize() {
+            canvas.width = window.innerWidth;
+            canvas.height = window.innerHeight;
+        }
+
+        window.addEventListener('resize', resize);
+        resize();
+
+        // Mouse tracking
+        window.addEventListener('mousemove', (e) => {
+            mouse.x = e.x;
+            mouse.y = e.y;
+        });
+
+        window.addEventListener('mouseout', () => {
+            mouse.x = null;
+            mouse.y = null;
+        });
+
+        // Particle class
+        class Particle {
+            constructor(type) {
+                this.type = type;
+                this.reset();
+            }
+
+            reset() {
+                this.x = Math.random() * canvas.width;
+                this.y = Math.random() * canvas.height;
+                this.size = Math.random() * 2 + 1;
+                this.baseSize = this.size;
+
+                // Type-specific behavior
+                switch(this.type) {
+                    case 'nous':
+                        // Fast, linear, purposeful
+                        this.speedX = (Math.random() - 0.5) * 2;
+                        this.speedY = (Math.random() - 0.5) * 2;
+                        this.color = colors.nous;
+                        break;
+                    case 'anima':
+                        // Organic, flowing, dreamy
+                        this.speedX = (Math.random() - 0.5) * 1;
+                        this.speedY = -Math.random() * 0.5 - 0.2; // Rising like smoke
+                        this.color = colors.anima;
+                        this.angle = Math.random() * Math.PI * 2;
+                        this.angleSpeed = (Math.random() - 0.5) * 0.02;
+                        break;
+                    case 'holos':
+                        // Deliberate, grounding
+                        this.speedX = (Math.random() - 0.5) * 0.8;
+                        this.speedY = (Math.random() - 0.5) * 0.8;
+                        this.color = colors.holos;
+                        break;
+                }
+
+                this.opacity = Math.random() * 0.5 + 0.2;
+            }
+
+            update() {
+                // Type-specific movement
+                if (this.type === 'anima') {
+                    this.angle += this.angleSpeed;
+                    this.x += Math.sin(this.angle) * 0.5;
+                }
+
+                this.x += this.speedX;
+                this.y += this.speedY;
+
+                // Mouse interaction
+                if (mouse.x && mouse.y) {
+                    const dx = mouse.x - this.x;
+                    const dy = mouse.y - this.y;
+                    const dist = Math.sqrt(dx * dx + dy * dy);
+
+                    if (dist < mouse.radius) {
+                        const force = (mouse.radius - dist) / mouse.radius;
+                        const angle = Math.atan2(dy, dx);
+
+                        // Attract slightly
+                        this.x += Math.cos(angle) * force * 0.5;
+                        this.y += Math.sin(angle) * force * 0.5;
+                        this.size = this.baseSize * (1 + force);
+                    } else {
+                        this.size = this.baseSize;
+                    }
+                }
+
+                // Boundary wrapping
+                if (this.x < 0) this.x = canvas.width;
+                if (this.x > canvas.width) this.x = 0;
+                if (this.y < 0) this.y = canvas.height;
+                if (this.y > canvas.height) this.y = 0;
+            }
+
+            draw() {
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size, 0, Math.PI * 2);
+                ctx.fillStyle = `rgba(${this.color.r}, ${this.color.g}, ${this.color.b}, ${this.opacity})`;
+                ctx.fill();
+
+                // Glow effect
+                ctx.beginPath();
+                ctx.arc(this.x, this.y, this.size * 2, 0, Math.PI * 2);
+                ctx.fillStyle = `rgba(${this.color.r}, ${this.color.g}, ${this.color.b}, ${this.opacity * 0.2})`;
+                ctx.fill();
+            }
+        }
+
+        // Initialize particles
+        function init() {
+            particles = [];
+            const particleCount = Math.min(150, Math.floor((canvas.width * canvas.height) / 15000));
+
+            for (let i = 0; i < particleCount; i++) {
+                const types = ['nous', 'anima', 'holos'];
+                const type = types[i % 3]; // Equal distribution
+                particles.push(new Particle(type));
+            }
+        }
+
+        // Draw connections between nearby particles
+        function drawConnections() {
+            for (let i = 0; i < particles.length; i++) {
+                for (let j = i + 1; j < particles.length; j++) {
+                    const dx = particles[i].x - particles[j].x;
+                    const dy = particles[i].y - particles[j].y;
+                    const dist = Math.sqrt(dx * dx + dy * dy);
+
+                    if (dist < 100) {
+                        const opacity = (1 - dist / 100) * 0.15;
+
+                        // Blend colors
+                        const c1 = particles[i].color;
+                        const c2 = particles[j].color;
+                        const r = Math.round((c1.r + c2.r) / 2);
+                        const g = Math.round((c1.g + c2.g) / 2);
+                        const b = Math.round((c1.b + c2.b) / 2);
+
+                        ctx.beginPath();
+                        ctx.moveTo(particles[i].x, particles[i].y);
+                        ctx.lineTo(particles[j].x, particles[j].y);
+                        ctx.strokeStyle = `rgba(${r}, ${g}, ${b}, ${opacity})`;
+                        ctx.lineWidth = 0.5;
+                        ctx.stroke();
+                    }
+                }
+            }
+        }
+
+        // Animation loop
+        function animate() {
+            ctx.clearRect(0, 0, canvas.width, canvas.height);
+
+            drawConnections();
+
+            for (const particle of particles) {
+                particle.update();
+                particle.draw();
+            }
+
+            requestAnimationFrame(animate);
+        }
+
+        // Start
+        init();
+        animate();
+
+        // Reinit on resize
+        window.addEventListener('resize', init);
+
+        // Form handling
+        document.getElementById('signup-form').addEventListener('submit', (e) => {
+            e.preventDefault();
+            const email = e.target.querySelector('input').value;
+
+            // Visual feedback
+            const button = e.target.querySelector('button');
+            const originalText = button.textContent;
+            button.textContent = 'Welcome to the Empire';
+            button.style.background = 'linear-gradient(135deg, #10B981, #059669)';
+
+            // Store email (replace with actual backend call)
+            console.log('Email captured:', email);
+
+            // Reset after delay
+            setTimeout(() => {
+                button.textContent = originalText;
+                button.style.background = '';
+                e.target.reset();
+            }, 3000);
+        });
+    </script>
+</body>
+</html>

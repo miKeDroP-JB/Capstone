@@ -1,0 +1,173 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ═══════════════════════════════════════════════════════════════
+   0r8 GLOBAL STYLES
+   The Operating System for Human Potential
+   ═══════════════════════════════════════════════════════════════ */
+
+@layer base {
+  :root {
+    /* NOUS - Mercury - Intelligence */
+    --nous-primary: #00D4FF;
+    --nous-glow: #00F0FF;
+    --nous-dark: #0A1628;
+
+    /* ANIMA - Sulfur - Intuition */
+    --anima-primary: #8B5CF6;
+    --anima-glow: #A78BFA;
+    --anima-dark: #1E1033;
+
+    /* HOLOS - Salt - Integration */
+    --holos-primary: #F59E0B;
+    --holos-glow: #FBBF24;
+    --holos-dark: #1C1508;
+
+    /* 0r8 Unified */
+    --orb-primary: #FFF7ED;
+    --orb-glow: #FFFFFF;
+    --orb-gold: #FFD700;
+
+    /* Backgrounds */
+    --void: #050505;
+    --space: #0A0A0F;
+    --subtle: #111118;
+
+    /* Animation timing (11 BPM) */
+    --breath-cycle: 5.45s;
+  }
+
+  * {
+    @apply border-white/10;
+  }
+
+  body {
+    @apply bg-void text-white;
+    background-image: radial-gradient(
+      ellipse at top,
+      rgba(139, 92, 246, 0.03) 0%,
+      transparent 50%
+    );
+  }
+
+  /* Custom scrollbar */
+  ::-webkit-scrollbar {
+    width: 8px;
+    height: 8px;
+  }
+
+  ::-webkit-scrollbar-track {
+    background: var(--void);
+  }
+
+  ::-webkit-scrollbar-thumb {
+    background: rgba(255, 255, 255, 0.1);
+    border-radius: 4px;
+  }
+
+  ::-webkit-scrollbar-thumb:hover {
+    background: rgba(255, 255, 255, 0.2);
+  }
+
+  /* Selection */
+  ::selection {
+    background: var(--anima-primary);
+    color: white;
+  }
+}
+
+@layer components {
+  /* Glow text effects */
+  .text-glow-nous {
+    color: var(--nous-primary);
+    text-shadow: 0 0 10px var(--nous-primary), 0 0 20px var(--nous-primary),
+      0 0 40px rgba(0, 212, 255, 0.4);
+  }
+
+  .text-glow-anima {
+    color: var(--anima-primary);
+    text-shadow: 0 0 10px var(--anima-primary), 0 0 20px var(--anima-primary),
+      0 0 40px rgba(139, 92, 246, 0.4);
+  }
+
+  .text-glow-holos {
+    color: var(--holos-primary);
+    text-shadow: 0 0 10px var(--holos-primary), 0 0 20px var(--holos-primary),
+      0 0 40px rgba(245, 158, 11, 0.4);
+  }
+
+  .text-glow-unified {
+    color: var(--orb-primary);
+    text-shadow: 0 0 20px var(--orb-primary), 0 0 40px var(--holos-primary),
+      0 0 60px var(--anima-primary), 0 0 80px var(--nous-primary);
+  }
+
+  /* Card styles */
+  .card-glass {
+    @apply bg-white/5 backdrop-blur-sm border border-white/10 rounded-xl;
+  }
+
+  .card-subtle {
+    @apply bg-subtle border border-white/5 rounded-xl;
+  }
+
+  /* Button variants */
+  .btn-primary {
+    @apply px-6 py-3 rounded-lg font-semibold transition-all;
+    @apply bg-gradient-to-r from-anima-primary to-holos-primary;
+    @apply hover:shadow-lg hover:shadow-anima-primary/25;
+    @apply active:scale-95;
+  }
+
+  .btn-secondary {
+    @apply px-6 py-3 rounded-lg font-semibold transition-all;
+    @apply bg-white/10 border border-white/20;
+    @apply hover:bg-white/20;
+    @apply active:scale-95;
+  }
+
+  /* Input styles */
+  .input-dark {
+    @apply w-full px-4 py-3 rounded-lg;
+    @apply bg-white/5 border border-white/10;
+    @apply text-white placeholder-white/30;
+    @apply focus:outline-none focus:border-anima-primary focus:ring-1 focus:ring-anima-primary/50;
+    @apply transition-all;
+  }
+
+  /* Symbol animations */
+  .symbol-breathing {
+    animation: breathe var(--breath-cycle) ease-in-out infinite;
+  }
+
+  @keyframes breathe {
+    0%,
+    100% {
+      opacity: 1;
+      transform: scale(1);
+    }
+    50% {
+      opacity: 0.85;
+      transform: scale(1.02);
+    }
+  }
+}
+
+@layer utilities {
+  /* Gradient text */
+  .gradient-text-3i {
+    @apply bg-gradient-to-r from-nous-primary via-anima-primary to-holos-primary;
+    @apply bg-clip-text text-transparent;
+  }
+
+  /* Hide scrollbar but keep functionality */
+  .scrollbar-hide {
+    -ms-overflow-style: none;
+    scrollbar-width: none;
+  }
+
+  .scrollbar-hide::-webkit-scrollbar {
+    display: none;
+  }
+}
