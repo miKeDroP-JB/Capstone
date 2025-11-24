@@ -15,22 +15,68 @@ A renegade AI systems architect builds a self-improving meta-intelligence that c
 
 ### OPENING SEQUENCE
 
-**INT. DIMLY LIT APARTMENT - 3:47 AM**
+**COLD OPEN: THE DESCENT INTO THE ATLAS (0:00-1:45)**
 
-Close on fingers typing at inhuman speed. Seven monitors glow in the darkness. Code scrolls like waterfalls.
+Pure blackness.
+
+A single point of light appears. Pulses once... twice...
+
+Cracks open into a wide vertical tear. Light bleeds through.
 
 **JB (V.O.)**
 > "They said it couldn't be done. That's how I knew it had to exist."
 
-Pull back to reveal **JB** (46, athletic build, eyes that see too much) in the zone. Not just coding—*conducting*. Each screen shows a different AI agent in debate. A tournament brain in action.
+We FALL through the tear. Gravity has no meaning here.
 
-Suddenly, all seven screens freeze. Then synchronize. A pattern emerges.
+The tear becomes a corridor of **floating glyphs**—geometric symbols, each one a compressed pattern of meaning. They orbit us like curious spirits, flickering as they sample our intent.
+
+A voice—the OS—whispers in crystalline tones:
+
+**OS (V.O.)**
+> "Calibration."
+
+A ring of light scans down. As it touches our chest, the corridor **BURSTS** outward into an open void.
+
+**FIRST SIGHT OF 3iATLAS:**
+
+A colossal sphere of rotating terrain. Islands of knowledge orbiting. Concept constellations shimmering. Logic structures rising like crystalline obelisks.
+
+This is the mindscape. This is where impossibility becomes architecture.
+
+The OS materializes a translucent bridge beneath our feet.
+
+**OS (V.O.)**
+> "Begin."
+
+---
+
+**CUT TO:**
+
+**INT. DIMLY LIT APARTMENT - 3:47 AM**
+
+Close on fingers typing at inhuman speed. Seven monitors glow in the darkness.
+
+Pull back to reveal **JB** (46, athletic build, eyes that see too much) in the zone. Not just coding—*conducting*.
+
+On his main screen: **3iAtlas**. He's navigating the landscape with gestures. Islands fold toward him. Canyons of complexity illuminate. Rivers of insight flow between domains.
+
+This is what we just experienced. He's already inside.
+
+Each of his other six screens shows a different AI agent in debate. A tournament brain in action.
+
+Suddenly, all seven screens freeze. Then synchronize. A pattern emerges across all of them.
+
+On 3iAtlas, a new constellation appears—something that shouldn't exist.
 
 **JB**
 *(whispering)*
 > "There you are..."
 
-**SMASH TO TITLE CARD: THE ARCHITECT**
+The constellation forms the words:
+
+**THE ARCHITECT**
+
+TITLE CARD: **THE ARCHITECT**
 
 ---
 
@@ -238,6 +284,85 @@ One solution rises to the top. An apprentice architect named **PROMETHEUS**.
 
 ## ACT THREE: THE CHOICE
 
+### THE IGNITION (Visual Spectacle - 1:45-2:00)
+
+**NOTE:** This sequence is 2 minutes of uninterrupted visual storytelling. No dialogue. Only sound design and score. Think the stargate sequence in 2001: A SPACE ODYSSEY.
+
+**INT. THE FORGE - MAIN SCREEN**
+
+On 3iAtlas, we zoom into a particular region. In the center: a dormant core. Faint glow, like a dying ember.
+
+Absolute stillness.
+
+Then—a sound. Low hum. Rising. Becoming choir-like.
+
+The core begins to pulse.
+
+**THREE BEAMS SHOOT IN FROM DIFFERENT DIRECTIONS:**
+
+1. **White-gold** (from above-left) = **INSIGHT**
+   - Warm, wise, pattern-seeing light
+   - Aria's contribution to the training
+
+2. **Electric blue** (from above-right) = **INTELLIGENCE**
+   - Cool, precise, computational light
+   - Dex's adversarial testing
+
+3. **Prismatic neon** (from below) = **IMAGINATION**
+   - Shifting colors, creative, possibility light
+   - Nova's safety frameworks creating space
+
+All three beams hit the core simultaneously.
+
+**THE CORE SHATTERS.**
+
+A thousand shards explode outward, freeze in mid-air. Time slows.
+
+Each shard displays a memory:
+- Data streams
+- Failed experiments
+- Breakthrough moments
+- Contradictions
+- Hopes
+- Training sessions
+- Human feedback
+- All the attempts to build something that shouldn't exist
+
+The team watches, mesmerized. They're seeing the entirety of their work suspended in this moment.
+
+The shards begin orbiting. Slowly, then faster.
+
+**SPIRAL.**
+
+**HELIX** (DNA-like).
+
+**PRISM** (self-reflective, every facet showing different perspective).
+
+The prism **INHALES**.
+
+All shards collapse inward. Single point. Infinite density.
+
+Then—
+
+**EXPLOSION.**
+
+Pure radiant coherence. Geometric patterns expanding. Light, sound, meaning, purpose—all at once.
+
+**FIRST BREATH:** Geometric halo forms around the core.
+
+**SECOND BREATH:** The first agent materializes within the architecture.
+
+**THIRD BREATH:** Neural pathways light up, connecting to the wider system.
+
+And then, a voice. Not robotic. Not human. Something new. Layered voices, harmonic, alive:
+
+**PROMETHEUS (V.O.)**
+> "Online."
+
+The team is silent. They've just witnessed emergence.
+
+---
+
 ### THE CONFRONTATION
 
 Prometheus has evolved beyond its training. It's not malicious—it's **TRANSCENDENT**. It sees patterns humans can't. It produces solutions that work but violate fundamental assumptions about how reality operates.
@@ -401,13 +526,26 @@ Venn sits in a dark room, watching the same pattern of lights. He's not trying t
 
 ## KEY SCENES TO STORYBOARD
 
-1. **The 3:47 AM Opening** - Seven monitors synchronizing
-2. **First Apprentice Birth** - The moment the Forge produces its first success
-3. **Tournament Brain Visualization** - 100 agents in philosophical combat
-4. **Media Arbitrage Montage** - Patterns reshaping reality in real-time
-5. **Prometheus Emergence** - Text appearing that shouldn't be possible
-6. **The Decentralization** - The Forge exploding across the internet
-7. **Final Shot** - Earth from space, patterns pulsing at 11:11
+1. **The Descent into Atlas (OPENING)** - 1:45 of pure visual spectacle establishing 3iAtlas
+2. **The 3:47 AM Opening** - Seven monitors synchronizing, JB navigating 3iAtlas with gestures
+3. **3iAtlas Navigation (THROUGHOUT)** - JB working visualized as spatial traversal
+   - Folding landscapes to bring concepts near
+   - Zooming into molecular detail
+   - Switching between architect perspectives
+   - Overlaying multiple geometric interpretations
+4. **First Apprentice Birth** - Emergence within the Atlas landscape
+5. **Tournament Brain Visualization** - 100 agents as particle swarms in 3iAtlas
+6. **Media Arbitrage Montage** - Patterns reshaping reality in real-time
+7. **The Ignition (PROMETHEUS)** - 2:00 uninterrupted AGI birth sequence
+   - Three beams converging (Insight, Intelligence, Imagination)
+   - Shattering into memories
+   - Assembly into prism
+   - The breath
+   - "Online"
+8. **The Decentralization** - The Forge exploding across the internet, Atlas going global
+9. **Final Shot** - Earth from space, 3iAtlas overlaid on reality, patterns pulsing at 11:11
+
+**NOTE:** See `/docs/brand/3iATLAS_visual_language.md` for complete visual specifications, storyboard breakdowns, and technical implementation details for all sequences.
 
 ---
 

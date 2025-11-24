@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>3iAtlas - Navigation Demo</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+        }
+
+        body {
+            font-family: 'IBM Plex Mono', 'Courier New', monospace;
+            background: #000000;
+            color: #FFFFFF;
+            overflow: hidden;
+        }
+
+        #canvas {
+            display: block;
+            cursor: grab;
+        }
+
+        #canvas:active {
+            cursor: grabbing;
+        }
+
+        .info {
+            position: absolute;
+            top: 20px;
+            left: 20px;
+            background: rgba(0, 0, 0, 0.9);
+            padding: 20px;
+            border: 1px solid #9D4EDD;
+            max-width: 350px;
+            font-size: 11px;
+            line-height: 1.6;
+        }
+
+        .info h1 {
+            font-size: 16px;
+            margin-bottom: 10px;
+            color: #9D4EDD;
+        }
+
+        .info .label {
+            color: #4CC9F0;
+            font-weight: bold;
+        }
+
+        .controls {
+            position: absolute;
+            bottom: 20px;
+            left: 20px;
+            background: rgba(0, 0, 0, 0.9);
+            padding: 15px;
+            border: 1px solid #9D4EDD;
+        }
+
+        .controls h3 {
+            font-size: 12px;
+            margin-bottom: 10px;
+            color: #4CC9F0;
+        }
+
+        .controls button {
+            background: #9D4EDD;
+            color: #000;
+            border: none;
+            padding: 8px 12px;
+            margin: 3px;
+            cursor: pointer;
+            font-family: inherit;
+            font-size: 10px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        .controls button:hover {
+            background: #4CC9F0;
+        }
+
+        .legend {
+            position: absolute;
+            top: 20px;
+            right: 20px;
+            background: rgba(0, 0, 0, 0.9);
+            padding: 15px;
+            border: 1px solid #9D4EDD;
+            font-size: 10px;
+        }
+
+        .legend h3 {
+            font-size: 12px;
+            margin-bottom: 8px;
+            color: #4CC9F0;
+        }
+
+        .legend-item {
+            margin: 5px 0;
+            display: flex;
+            align-items: center;
+        }
+
+        .legend-color {
+            width: 20px;
+            height: 10px;
+            margin-right: 8px;
+            border: 1px solid rgba(255,255,255,0.3);
+        }
+
+        .signature {
+            position: absolute;
+            bottom: 20px;
+            right: 20px;
+            font-size: 9px;
+            color: #9D4EDD;
+            text-align: right;
+        }
+    </style>
+</head>
+<body>
+    <canvas id="canvas"></canvas>
+
+    <div class="info">
+        <h1>3iATLAS NAVIGATION</h1>
+        <p><span class="label">Insight • Intelligence • Imagination</span></p>
+        <p style="margin-top: 10px;">Click islands to focus. Drag to rotate. Scroll to zoom.</p>
+        <p style="margin-top: 10px; font-size: 10px; color: #888;">
+            Mountains = Ideas<br>
+            Canyons = Problems<br>
+            Rivers = Insights<br>
+            Stars = Concepts
+        </p>
+    </div>
+
+    <div class="legend">
+        <h3>DOMAINS</h3>
+        <div class="legend-item">
+            <div class="legend-color" style="background: #4CC9F0;"></div>
+            <span>Code</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background: #FFD700;"></div>
+            <span>Business</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background: #06FFA5;"></div>
+            <span>Science</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background: #9D4EDD;"></div>
+            <span>Design</span>
+        </div>
+        <div class="legend-item">
+            <div class="legend-color" style="background: #F72585;"></div>
+            <span>Problems</span>
+        </div>
+    </div>
+
+    <div class="controls">
+        <h3>VIEW MODE</h3>
+        <button onclick="setViewMode('overview')">Overview</button>
+        <button onclick="setViewMode('detail')">Detail</button>
+        <button onclick="setViewMode('perspective')">Perspective</button>
+        <button onclick="foldToRandom()">Fold Random</button>
+    </div>
+
+    <div class="signature">
+        3iATLAS v0.1 Demo<br>
+        0RB Empire // The Architecture of Impossibility<br>
+        11:11 Protocol Active
+    </div>
+
+    <script src="atlas.js"></script>
+</body>
+</html>
