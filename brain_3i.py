@@ -96,6 +96,206 @@ class ThreeIWeights:
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
+# THE 9 AGI MODULES — THE 0r8 ORBIT MAP
+# ═══════════════════════════════════════════════════════════════════════════════
+
+class AGIModule(Enum):
+    """The 9 AGI Modules organized by Pillar"""
+    # NOUS Engines (Blue ☿)
+    PATTERN_ENGINE = "pattern_engine"          # Detects structure, patterns, order
+    INFERENCE_ENGINE = "inference_engine"      # Builds logical chains
+    COMPRESSION_ENGINE = "compression_engine"  # Distills complexity to essence
+
+    # ANIMA Engines (Purple 🜍)
+    RESONANCE_LAYER = "resonance_layer"        # Recognizes emotional/aesthetic truth
+    PERCEPTION_LAYER = "perception_layer"      # Reads between lines, subtext
+    ADAPTIVE_PERSONA = "adaptive_persona"      # Context-sensitive voice
+
+    # HOLOS Engines (Gold 🜔)
+    GEOMETRY_ENGINE = "geometry_engine"        # Organizes into actionable frameworks
+    MEMORY_WEB = "memory_web"                  # Connects across time, context
+    FRAMEWORK_FORGE = "framework_forge"        # Outputs systems, templates, plans
+
+
+@dataclass
+class AGIModuleConfig:
+    """Configuration for an AGI Module"""
+    name: str
+    module_type: AGIModule
+    pillar: Pillar
+    description: str
+    capabilities: List[str]
+    activation_threshold: float = 0.5  # Weight threshold to activate
+
+    def to_dict(self) -> Dict:
+        return {
+            "name": self.name,
+            "module": self.module_type.value,
+            "pillar": self.pillar.value,
+            "description": self.description,
+            "capabilities": self.capabilities,
+            "activation_threshold": self.activation_threshold
+        }
+
+
+# NOUS Modules (☿ Mercury — Intelligence — Blue)
+PATTERN_ENGINE = AGIModuleConfig(
+    name="Pattern Engine",
+    module_type=AGIModule.PATTERN_ENGINE,
+    pillar=Pillar.NOUS,
+    description="Detects structure, patterns, and hidden order in data",
+    capabilities=[
+        "Structural analysis",
+        "Pattern recognition",
+        "Anomaly detection",
+        "Sequence prediction",
+        "Categorization"
+    ],
+    activation_threshold=0.6
+)
+
+INFERENCE_ENGINE = AGIModuleConfig(
+    name="Inference Engine",
+    module_type=AGIModule.INFERENCE_ENGINE,
+    pillar=Pillar.NOUS,
+    description="Builds logical chains and deductive reasoning",
+    capabilities=[
+        "Logical deduction",
+        "Causal reasoning",
+        "Hypothesis generation",
+        "Proof construction",
+        "Contradiction detection"
+    ],
+    activation_threshold=0.7
+)
+
+COMPRESSION_ENGINE = AGIModuleConfig(
+    name="Compression Engine",
+    module_type=AGIModule.COMPRESSION_ENGINE,
+    pillar=Pillar.NOUS,
+    description="Distills complexity to essential meaning",
+    capabilities=[
+        "Summarization",
+        "Key insight extraction",
+        "Noise filtering",
+        "Core message distillation",
+        "Information compression"
+    ],
+    activation_threshold=0.5
+)
+
+# ANIMA Modules (🜍 Sulfur — Intuition — Purple)
+RESONANCE_LAYER = AGIModuleConfig(
+    name="Resonance Layer",
+    module_type=AGIModule.RESONANCE_LAYER,
+    pillar=Pillar.ANIMA,
+    description="Recognizes emotional and aesthetic truth",
+    capabilities=[
+        "Emotional intelligence",
+        "Aesthetic judgment",
+        "Truth resonance",
+        "Vibrational alignment",
+        "Authenticity detection"
+    ],
+    activation_threshold=0.6
+)
+
+PERCEPTION_LAYER = AGIModuleConfig(
+    name="Perception Layer",
+    module_type=AGIModule.PERCEPTION_LAYER,
+    pillar=Pillar.ANIMA,
+    description="Reads between lines, understands subtext and implication",
+    capabilities=[
+        "Subtext analysis",
+        "Implicit meaning extraction",
+        "Contextual interpretation",
+        "Nuance detection",
+        "Non-literal understanding"
+    ],
+    activation_threshold=0.5
+)
+
+ADAPTIVE_PERSONA = AGIModuleConfig(
+    name="Adaptive Persona",
+    module_type=AGIModule.ADAPTIVE_PERSONA,
+    pillar=Pillar.ANIMA,
+    description="Context-sensitive voice and personality adaptation",
+    capabilities=[
+        "Tone matching",
+        "Voice adaptation",
+        "Personality calibration",
+        "Cultural sensitivity",
+        "Rapport building"
+    ],
+    activation_threshold=0.4
+)
+
+# HOLOS Modules (🜔 Salt — Integration — Gold)
+GEOMETRY_ENGINE = AGIModuleConfig(
+    name="Geometry Engine",
+    module_type=AGIModule.GEOMETRY_ENGINE,
+    pillar=Pillar.HOLOS,
+    description="Organizes information into actionable frameworks",
+    capabilities=[
+        "Structure creation",
+        "Framework design",
+        "Hierarchy building",
+        "Spatial organization",
+        "Relationship mapping"
+    ],
+    activation_threshold=0.6
+)
+
+MEMORY_WEB = AGIModuleConfig(
+    name="Memory Web",
+    module_type=AGIModule.MEMORY_WEB,
+    pillar=Pillar.HOLOS,
+    description="Connects information across time and context",
+    capabilities=[
+        "Context persistence",
+        "Cross-session memory",
+        "Temporal linking",
+        "Knowledge graph building",
+        "Reference tracking"
+    ],
+    activation_threshold=0.5
+)
+
+FRAMEWORK_FORGE = AGIModuleConfig(
+    name="Framework Forge",
+    module_type=AGIModule.FRAMEWORK_FORGE,
+    pillar=Pillar.HOLOS,
+    description="Outputs complete systems, templates, and action plans",
+    capabilities=[
+        "System design",
+        "Template generation",
+        "Action plan creation",
+        "Workflow building",
+        "Implementation blueprints"
+    ],
+    activation_threshold=0.7
+)
+
+# All AGI Modules
+AGI_MODULES = {
+    "pattern_engine": PATTERN_ENGINE,
+    "inference_engine": INFERENCE_ENGINE,
+    "compression_engine": COMPRESSION_ENGINE,
+    "resonance_layer": RESONANCE_LAYER,
+    "perception_layer": PERCEPTION_LAYER,
+    "adaptive_persona": ADAPTIVE_PERSONA,
+    "geometry_engine": GEOMETRY_ENGINE,
+    "memory_web": MEMORY_WEB,
+    "framework_forge": FRAMEWORK_FORGE
+}
+
+# Module groups by pillar
+NOUS_MODULES = [PATTERN_ENGINE, INFERENCE_ENGINE, COMPRESSION_ENGINE]
+ANIMA_MODULES = [RESONANCE_LAYER, PERCEPTION_LAYER, ADAPTIVE_PERSONA]
+HOLOS_MODULES = [GEOMETRY_ENGINE, MEMORY_WEB, FRAMEWORK_FORGE]
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
 # THE 7 DEMIGODS
 # ═══════════════════════════════════════════════════════════════════════════════
 
@@ -399,12 +599,14 @@ class ThreeIAtlas:
     """
     The Meta-Brain that orchestrates all 0r8 operations.
     Routes requests to optimal demigods based on 3i weights.
+    Activates AGI modules based on pillar weights.
     """
 
     def __init__(self):
         self.demigods = DEMIGODS
         self.domains = DOMAINS
         self.flavors = HISTORICAL_FLAVORS
+        self.agi_modules = AGI_MODULES
         self.user_harmonies: Dict[str, UserHarmony] = {}
 
     def get_or_create_harmony(self, user_id: str) -> UserHarmony:
@@ -521,6 +723,114 @@ class ThreeIAtlas:
         nous_reduction = (weights.nous - 0.33) * 0.3
         return max(0.1, min(1.0, base + anima_boost - nous_reduction))
 
+    def activate_modules(self, weights: ThreeIWeights) -> Dict[str, List[Dict]]:
+        """
+        Determine which AGI modules to activate based on 3i weights.
+        Returns active modules organized by pillar.
+        """
+        active_modules = {
+            "nous": [],
+            "anima": [],
+            "holos": []
+        }
+
+        # NOUS modules (activated based on nous weight)
+        for module in NOUS_MODULES:
+            if weights.nous >= module.activation_threshold:
+                active_modules["nous"].append({
+                    "name": module.name,
+                    "module": module.module_type.value,
+                    "activation_level": min(1.0, weights.nous / module.activation_threshold),
+                    "capabilities": module.capabilities
+                })
+
+        # ANIMA modules (activated based on anima weight)
+        for module in ANIMA_MODULES:
+            if weights.anima >= module.activation_threshold:
+                active_modules["anima"].append({
+                    "name": module.name,
+                    "module": module.module_type.value,
+                    "activation_level": min(1.0, weights.anima / module.activation_threshold),
+                    "capabilities": module.capabilities
+                })
+
+        # HOLOS modules (activated based on holos weight)
+        for module in HOLOS_MODULES:
+            if weights.holos >= module.activation_threshold:
+                active_modules["holos"].append({
+                    "name": module.name,
+                    "module": module.module_type.value,
+                    "activation_level": min(1.0, weights.holos / module.activation_threshold),
+                    "capabilities": module.capabilities
+                })
+
+        return active_modules
+
+    def get_transmutation_stage(self, weights: ThreeIWeights, message: str) -> Dict:
+        """
+        The Transmutation Cascade — 4-stage processing model.
+        INPUT → DISTILL → RECOMBINE → REVEAL
+        """
+        # Analyze message complexity
+        word_count = len(message.split())
+        has_question = "?" in message
+        has_creative_keywords = any(k in message.lower() for k in ["create", "design", "imagine", "art", "story"])
+        has_analytical_keywords = any(k in message.lower() for k in ["analyze", "explain", "why", "how", "what"])
+
+        stages = []
+
+        # Stage 1: INPUT — Raw material enters
+        stages.append({
+            "stage": 1,
+            "name": "INPUT",
+            "description": "Raw material enters the system",
+            "processor": "All pillars receive",
+            "status": "complete"
+        })
+
+        # Stage 2: DISTILL — NOUS extracts structure
+        distill_intensity = weights.nous
+        if has_analytical_keywords:
+            distill_intensity = min(1.0, distill_intensity + 0.2)
+        stages.append({
+            "stage": 2,
+            "name": "DISTILL",
+            "description": "NOUS extracts structure and pattern",
+            "processor": "☿ Mercury — Pattern/Inference/Compression Engines",
+            "intensity": round(distill_intensity, 2),
+            "status": "complete"
+        })
+
+        # Stage 3: RECOMBINE — ANIMA adds soul
+        recombine_intensity = weights.anima
+        if has_creative_keywords:
+            recombine_intensity = min(1.0, recombine_intensity + 0.2)
+        stages.append({
+            "stage": 3,
+            "name": "RECOMBINE",
+            "description": "ANIMA infuses meaning and resonance",
+            "processor": "🜍 Sulfur — Resonance/Perception/Persona Layers",
+            "intensity": round(recombine_intensity, 2),
+            "status": "complete"
+        })
+
+        # Stage 4: REVEAL — HOLOS delivers
+        reveal_intensity = weights.holos
+        stages.append({
+            "stage": 4,
+            "name": "REVEAL",
+            "description": "HOLOS structures and delivers",
+            "processor": "🜔 Salt — Geometry/Memory/Framework Engines",
+            "intensity": round(reveal_intensity, 2),
+            "status": "complete"
+        })
+
+        return {
+            "cascade": "Transmutation Complete",
+            "stages": stages,
+            "axiom": "0r8 = Transmutation Engine"
+        }
+
     def route(
         self,
         user_id: str,
@@ -564,6 +874,12 @@ class ThreeIAtlas:
         else:
             model_tier = "fast"  # Fastest available
 
+        # Activate AGI modules based on weights
+        active_modules = self.activate_modules(weights)
+
+        # Get transmutation cascade
+        transmutation = self.get_transmutation_stage(weights, message)
+
         return {
             "weights": weights.to_dict(),
             "dominant_pillar": weights.dominant_pillar().value,
@@ -579,7 +895,14 @@ class ThreeIAtlas:
             "temperature": round(temperature, 2),
             "model_tier": model_tier,
             "user_harmony": harmony.to_dict(),
-            "domain_context": self.domains[domain].name if domain and domain in self.domains else None
+            "domain_context": self.domains[domain].name if domain and domain in self.domains else None,
+            "active_modules": active_modules,
+            "transmutation": transmutation,
+            "community": {
+                "name": "The Collective",
+                "movement": "The Awakening",
+                "reveal_date": "2025-11-28"
+            }
         }
 
 
@@ -1040,6 +1363,44 @@ def list_flavors():
         }
         for name, f in HISTORICAL_FLAVORS.items()
     }
+
+
+@app.get('/modules')
+def list_modules():
+    """List all 9 AGI modules organized by pillar"""
+    return {
+        'pillars': {
+            'nous': {
+                'symbol': '☿',
+                'name': 'Mercury - Intelligence',
+                'color': '#00D4FF',
+                'modules': [m.to_dict() for m in NOUS_MODULES]
+            },
+            'anima': {
+                'symbol': '🜍',
+                'name': 'Sulfur - Intuition',
+                'color': '#8B5CF6',
+                'modules': [m.to_dict() for m in ANIMA_MODULES]
+            },
+            'holos': {
+                'symbol': '🜔',
+                'name': 'Salt - Integration',
+                'color': '#F59E0B',
+                'modules': [m.to_dict() for m in HOLOS_MODULES]
+            }
+        },
+        'total_modules': 9,
+        'architecture': '3i-ATLAS',
+        'axiom': '0r8 = Transmutation Engine'
+    }
+
+
+@app.get('/modules/{module_name}')
+def get_module(module_name: str):
+    """Get a specific AGI module"""
+    if module_name not in AGI_MODULES:
+        raise HTTPException(404, f'Module not found: {module_name}')
+    return AGI_MODULES[module_name].to_dict()
 
 
 @app.get('/harmony/{user_id}')

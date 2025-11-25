@@ -23,6 +23,10 @@ export const BRAND = {
   tagline: "The Operating System for Human Potential",
   subtitle: "Intelligence. Intuition. Integration.",
   domain: "0r8.ai",
+  community: "The Collective",
+  movement: "The Awakening",
+  revealDate: "2025-11-28",
+  motto: "Built by one. Owned by all. Everybody eats.",
 } as const;
 
 // ═══════════════════════════════════════════════════════════════
