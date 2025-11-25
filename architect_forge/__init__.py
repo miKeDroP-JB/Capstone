@@ -12,28 +12,57 @@ designs back into the core.
 """
 
 from .forge import Forge
-from .mirror_net import MirrorNet, ArchitectAgent
-from .sandbox import AdversarialSandbox
-from .jury import JuryCouncil
-from .ledger import OuroborosLedger
-from .blueprint import Blueprint, ApprenticeCompiler
-from .curriculum import CurriculumGenerator
-from .constraints import ConstraintMutator
+from .mirror_net import MirrorNet, ArchitectAgent, InductiveBias, Specialization
+from .sandbox import AdversarialSandbox, SandboxResult, SandboxMode
+from .jury import JuryCouncil, Verdict, CertificationLevel
+from .ledger import OuroborosLedger, LedgerEntry
+from .blueprint import Blueprint, ApprenticeCompiler, Apprentice
+from .curriculum import CurriculumGenerator, Task, TaskType, Difficulty
+from .constraints import ConstraintMutator, MutationType
+from .orb_integration import (
+    OrbEmpireForge, AvatarForge, Avatar,
+    create_empire_forge
+)
 
 __version__ = "1.0.0"
 __codename__ = "THE_ARCHITECT"
 
 __all__ = [
+    # Core
     "Forge",
+    # Population
     "MirrorNet",
     "ArchitectAgent",
+    "InductiveBias",
+    "Specialization",
+    # Testing
     "AdversarialSandbox",
+    "SandboxResult",
+    "SandboxMode",
+    # Certification
     "JuryCouncil",
+    "Verdict",
+    "CertificationLevel",
+    # Provenance
     "OuroborosLedger",
+    "LedgerEntry",
+    # Output
     "Blueprint",
     "ApprenticeCompiler",
+    "Apprentice",
+    # Tasks
     "CurriculumGenerator",
+    "Task",
+    "TaskType",
+    "Difficulty",
+    # Anti-Framework
     "ConstraintMutator",
+    "MutationType",
+    # 0RB Integration
+    "OrbEmpireForge",
+    "AvatarForge",
+    "Avatar",
+    "create_empire_forge",
 ]
 
 # The Pattern That Shouldn't Exist
