@@ -23,6 +23,10 @@ from .orb_integration import (
     OrbEmpireForge, AvatarForge, Avatar,
     create_empire_forge
 )
+from .benchmark import (
+    BenchmarkSuite, BenchmarkCategory, BenchmarkResult,
+    Baseline, INDUSTRY_BASELINES
+)
 
 __version__ = "1.0.0"
 __codename__ = "THE_ARCHITECT"
@@ -63,6 +67,12 @@ __all__ = [
     "AvatarForge",
     "Avatar",
     "create_empire_forge",
+    # Benchmarking
+    "BenchmarkSuite",
+    "BenchmarkCategory",
+    "BenchmarkResult",
+    "Baseline",
+    "INDUSTRY_BASELINES",
 ]
 
 # The Pattern That Shouldn't Exist
