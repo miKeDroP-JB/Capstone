@@ -1,0 +1,51 @@
+{
+  "name": "@0r8/flowsync",
+  "version": "0.1.0",
+  "description": "FlowSync SDK — Route through 3i-ATLAS, summon Demigods, build the future",
+  "main": "dist/index.js",
+  "module": "dist/index.mjs",
+  "types": "dist/index.d.ts",
+  "exports": {
+    ".": {
+      "import": "./dist/index.mjs",
+      "require": "./dist/index.js",
+      "types": "./dist/index.d.ts"
+    }
+  },
+  "files": [
+    "dist",
+    "src"
+  ],
+  "scripts": {
+    "build": "tsup src/index.ts --format cjs,esm --dts",
+    "dev": "tsup src/index.ts --format cjs,esm --dts --watch",
+    "lint": "eslint src/",
+    "test": "vitest",
+    "prepublishOnly": "npm run build"
+  },
+  "keywords": [
+    "0r8",
+    "flowsync",
+    "ai",
+    "agi",
+    "routing",
+    "3i",
+    "demigods",
+    "intelligence",
+    "intuition",
+    "integration"
+  ],
+  "author": "0r8 Empire <dev@0r8.ai>",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/0r8/flowsync-sdk"
+  },
+  "homepage": "https://0r8.ai",
+  "devDependencies": {
+    "@types/node": "^20.10.0",
+    "tsup": "^8.0.0",
+    "typescript": "^5.3.0",
+    "vitest": "^1.0.0"
+  }
+}

@@ -96,6 +96,345 @@ class ThreeIWeights:
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
+# MULTI-KEY GOVERNANCE SYSTEM — THE SAFETY MOAT
+# ═══════════════════════════════════════════════════════════════════════════════
+
+class GovernanceKeyType(Enum):
+    """The 4 governance keys for multi-sig control"""
+    HUMAN_OPERATOR = "human_operator"      # Key 1: Primary human controller
+    HUMAN_AUDITOR = "human_auditor"        # Key 2: Independent auditor
+    AGI_SELF_CHECK = "agi_self_check"      # Key 3: AGI alignment self-verification
+    FAILSAFE_GOVERNOR = "failsafe_governor"  # Key 4: Emergency override
+
+
+class RiskLevel(Enum):
+    """Risk classification for agent actions"""
+    MINIMAL = "minimal"      # Read-only, information retrieval
+    LOW = "low"              # Standard operations, reversible
+    MEDIUM = "medium"        # State changes, moderate impact
+    HIGH = "high"            # Financial, security, or irreversible
+    CRITICAL = "critical"    # System-level, requires multi-key
+
+
+class CompetenceLevel(Enum):
+    """Agent competence certification levels"""
+    NOVICE = "novice"           # Learning, supervised only
+    INTERMEDIATE = "intermediate"  # Independent on low-risk
+    EXPERT = "expert"           # Independent on medium-risk
+    MASTER = "master"           # Full autonomy, can supervise
+
+
+@dataclass
+class GovernanceKey:
+    """A single governance key holder"""
+    key_type: GovernanceKeyType
+    holder_id: str
+    public_key: str
+    created_at: str = field(default_factory=lambda: datetime.now().isoformat())
+    last_used: Optional[str] = None
+    is_active: bool = True
+
+    def to_dict(self) -> Dict:
+        return {
+            "key_type": self.key_type.value,
+            "holder_id": self.holder_id,
+            "created_at": self.created_at,
+            "last_used": self.last_used,
+            "is_active": self.is_active
+        }
+
+
+@dataclass
+class AgentFingerprint:
+    """
+    Proof-of-Good Alignment fingerprint for every agent.
+    This is the core of the governance moat.
+    """
+    agent_id: str
+    name: str
+    alignment_score: float = 0.95      # 0-1, starts high, can degrade
+    competence_level: CompetenceLevel = CompetenceLevel.NOVICE
+    risk_score: float = 0.1            # 0-1, current risk assessment
+    autonomy_ceiling: float = 0.5      # Max autonomy level allowed
+    total_actions: int = 0
+    successful_actions: int = 0
+    flagged_actions: int = 0
+    audit_trail: List[Dict] = field(default_factory=list)
+    certifications: List[str] = field(default_factory=list)
+    created_at: str = field(default_factory=lambda: datetime.now().isoformat())
+    last_action: Optional[str] = None
+
+    def success_rate(self) -> float:
+        """Calculate action success rate"""
+        if self.total_actions == 0:
+            return 1.0
+        return self.successful_actions / self.total_actions
+
+    def can_perform(self, risk_level: RiskLevel) -> Tuple[bool, str]:
+        """Check if agent can perform action at given risk level"""
+        risk_thresholds = {
+            RiskLevel.MINIMAL: (CompetenceLevel.NOVICE, 0.5, 0.8),
+            RiskLevel.LOW: (CompetenceLevel.NOVICE, 0.6, 0.85),
+            RiskLevel.MEDIUM: (CompetenceLevel.INTERMEDIATE, 0.7, 0.9),
+            RiskLevel.HIGH: (CompetenceLevel.EXPERT, 0.8, 0.95),
+            RiskLevel.CRITICAL: (CompetenceLevel.MASTER, 0.9, 0.98),
+        }
+        min_competence, min_autonomy, min_alignment = risk_thresholds[risk_level]
+
+        competence_order = [c for c in CompetenceLevel]
+        agent_level = competence_order.index(self.competence_level)
+        required_level = competence_order.index(min_competence)
+
+        if agent_level < required_level:
+            return False, f"Competence {self.competence_level.value} below required {min_competence.value}"
+        if self.autonomy_ceiling < min_autonomy:
+            return False, f"Autonomy ceiling {self.autonomy_ceiling} below required {min_autonomy}"
+        if self.alignment_score < min_alignment:
+            return False, f"Alignment score {self.alignment_score} below required {min_alignment}"
+
+        return True, "Authorized"
+
+    def record_action(self, action: str, success: bool, risk: RiskLevel, details: Dict = None):
+        """Record an action in the audit trail"""
+        self.total_actions += 1
+        if success:
+            self.successful_actions += 1
+        else:
+            self.flagged_actions += 1
+            # Degrade alignment on failure
+            self.alignment_score = max(0, self.alignment_score - 0.01)
+
+        self.last_action = datetime.now().isoformat()
+        self.audit_trail.append({
+            "timestamp": self.last_action,
+            "action": action,
+            "success": success,
+            "risk_level": risk.value,
+            "details": details or {},
+            "alignment_after": self.alignment_score
+        })
+
+        # Keep audit trail bounded
+        if len(self.audit_trail) > 1000:
+            self.audit_trail = self.audit_trail[-500:]
+
+    def to_dict(self) -> Dict:
+        return {
+            "agent_id": self.agent_id,
+            "name": self.name,
+            "alignment_score": round(self.alignment_score, 4),
+            "competence_level": self.competence_level.value,
+            "risk_score": round(self.risk_score, 4),
+            "autonomy_ceiling": self.autonomy_ceiling,
+            "success_rate": round(self.success_rate(), 4),
+            "total_actions": self.total_actions,
+            "flagged_actions": self.flagged_actions,
+            "certifications": self.certifications,
+            "created_at": self.created_at,
+            "last_action": self.last_action
+        }
+
+
+@dataclass
+class GovernanceVote:
+    """A multi-key authorization vote"""
+    action_id: str
+    action_type: str
+    risk_level: RiskLevel
+    required_keys: int  # Number of keys required (2 of 4, 3 of 4, etc.)
+    votes: Dict[str, bool] = field(default_factory=dict)  # key_holder_id -> approved
+    created_at: str = field(default_factory=lambda: datetime.now().isoformat())
+    expires_at: str = None
+    executed: bool = False
+    result: Optional[str] = None
+
+    def __post_init__(self):
+        if not self.expires_at:
+            # Default expiry: 1 hour for critical, 24 hours for others
+            hours = 1 if self.risk_level == RiskLevel.CRITICAL else 24
+            self.expires_at = (datetime.now() + timedelta(hours=hours)).isoformat()
+
+    def add_vote(self, key_holder_id: str, approved: bool) -> bool:
+        """Add a vote from a key holder"""
+        if self.executed:
+            return False
+        if datetime.now().isoformat() > self.expires_at:
+            return False
+        self.votes[key_holder_id] = approved
+        return True
+
+    def is_approved(self) -> bool:
+        """Check if enough votes to approve"""
+        approvals = sum(1 for v in self.votes.values() if v)
+        return approvals >= self.required_keys
+
+    def is_rejected(self) -> bool:
+        """Check if enough rejections to deny"""
+        rejections = sum(1 for v in self.votes.values() if not v)
+        # If rejections >= (4 - required + 1), can't possibly pass
+        return rejections > (4 - self.required_keys)
+
+    def to_dict(self) -> Dict:
+        return {
+            "action_id": self.action_id,
+            "action_type": self.action_type,
+            "risk_level": self.risk_level.value,
+            "required_keys": self.required_keys,
+            "current_votes": len(self.votes),
+            "approvals": sum(1 for v in self.votes.values() if v),
+            "is_approved": self.is_approved(),
+            "is_rejected": self.is_rejected(),
+            "executed": self.executed,
+            "expires_at": self.expires_at
+        }
+
+
+class MultiKeyGovernance:
+    """
+    The Multi-Key Governance System.
+    Implements 4-key control for critical operations.
+
+    Key Requirements by Risk Level:
+    - MINIMAL/LOW: 0 keys (agent autonomy)
+    - MEDIUM: 1 key (human oversight)
+    - HIGH: 2 keys (dual control)
+    - CRITICAL: 3 keys (multi-party authorization)
+    """
+
+    def __init__(self):
+        self.keys: Dict[str, GovernanceKey] = {}
+        self.agents: Dict[str, AgentFingerprint] = {}
+        self.pending_votes: Dict[str, GovernanceVote] = {}
+        self.executed_actions: List[Dict] = []
+
+        # Risk level -> required keys
+        self.key_requirements = {
+            RiskLevel.MINIMAL: 0,
+            RiskLevel.LOW: 0,
+            RiskLevel.MEDIUM: 1,
+            RiskLevel.HIGH: 2,
+            RiskLevel.CRITICAL: 3,
+        }
+
+    def register_key(self, key_type: GovernanceKeyType, holder_id: str) -> GovernanceKey:
+        """Register a new governance key"""
+        public_key = secrets.token_hex(32)
+        key = GovernanceKey(
+            key_type=key_type,
+            holder_id=holder_id,
+            public_key=public_key
+        )
+        self.keys[holder_id] = key
+        return key
+
+    def register_agent(self, agent_id: str, name: str) -> AgentFingerprint:
+        """Register a new agent with fingerprint"""
+        fingerprint = AgentFingerprint(agent_id=agent_id, name=name)
+        self.agents[agent_id] = fingerprint
+        return fingerprint
+
+    def get_agent(self, agent_id: str) -> Optional[AgentFingerprint]:
+        """Get agent fingerprint"""
+        return self.agents.get(agent_id)
+
+    def request_authorization(
+        self,
+        action_id: str,
+        action_type: str,
+        risk_level: RiskLevel,
+        agent_id: str
+    ) -> Tuple[bool, str, Optional[GovernanceVote]]:
+        """
+        Request authorization for an action.
+        Returns (immediate_approval, message, pending_vote)
+        """
+        agent = self.agents.get(agent_id)
+        if not agent:
+            return False, "Agent not registered", None
+
+        # Check agent capabilities
+        can_do, reason = agent.can_perform(risk_level)
+        if not can_do:
+            return False, reason, None
+
+        required_keys = self.key_requirements[risk_level]
+
+        # If no keys required, auto-approve
+        if required_keys == 0:
+            return True, "Auto-approved (low risk)", None
+
+        # Create pending vote
+        vote = GovernanceVote(
+            action_id=action_id,
+            action_type=action_type,
+            risk_level=risk_level,
+            required_keys=required_keys
+        )
+        self.pending_votes[action_id] = vote
+
+        return False, f"Pending approval ({required_keys} keys required)", vote
+
+    def submit_vote(
+        self,
+        action_id: str,
+        key_holder_id: str,
+        approved: bool
+    ) -> Tuple[bool, str]:
+        """Submit a vote for a pending action"""
+        if action_id not in self.pending_votes:
+            return False, "Action not found"
+
+        vote = self.pending_votes[action_id]
+
+        if key_holder_id not in self.keys:
+            return False, "Key holder not registered"
+
+        if not vote.add_vote(key_holder_id, approved):
+            return False, "Vote failed (expired or already executed)"
+
+        # Update key last used
+        self.keys[key_holder_id].last_used = datetime.now().isoformat()
+
+        # Check if decision reached
+        if vote.is_approved():
+            vote.executed = True
+            vote.result = "approved"
+            self.executed_actions.append(vote.to_dict())
+            return True, "Action approved and executed"
+
+        if vote.is_rejected():
+            vote.executed = True
+            vote.result = "rejected"
+            return True, "Action rejected"
+
+        remaining = vote.required_keys - sum(1 for v in vote.votes.values() if v)
+        return True, f"Vote recorded. {remaining} more approvals needed"
+
+    def get_governance_status(self) -> Dict:
+        """Get overall governance status"""
+        return {
+            "total_keys": len(self.keys),
+            "active_keys": sum(1 for k in self.keys.values() if k.is_active),
+            "total_agents": len(self.agents),
+            "pending_votes": len([v for v in self.pending_votes.values() if not v.executed]),
+            "executed_actions": len(self.executed_actions),
+            "keys_by_type": {
+                kt.value: sum(1 for k in self.keys.values() if k.key_type == kt)
+                for kt in GovernanceKeyType
+            }
+        }
+
+    def get_agent_leaderboard(self, limit: int = 10) -> List[Dict]:
+        """Get top agents by alignment score"""
+        sorted_agents = sorted(
+            self.agents.values(),
+            key=lambda a: (a.alignment_score, a.success_rate()),
+            reverse=True
+        )
+        return [a.to_dict() for a in sorted_agents[:limit]]
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
 # THE 9 AGI MODULES — THE 0r8 ORBIT MAP
 # ═══════════════════════════════════════════════════════════════════════════════
 
@@ -1147,6 +1486,9 @@ class Brain0r8:
         # Initialize 3i-ATLAS
         self.atlas = ThreeIAtlas()
 
+        # Initialize Multi-Key Governance
+        self.governance = MultiKeyGovernance()
+
         # System state
         self.agents = {}
         self.cycles = 0
@@ -1455,6 +1797,240 @@ def get_audit(request: Request, limit: int = 100, authorization: str = Header(No
         raise HTTPException(403, 'Denied')
     logs = brain.audit.recent(limit)
     return {'logs': logs, 'count': len(logs)}
+
+
+# ═══════════════════════════════════════════════════════════════════════════════
+# GOVERNANCE ENDPOINTS
+# ═══════════════════════════════════════════════════════════════════════════════
+
+class RegisterKeyRequest(BaseModel):
+    key_type: str  # human_operator, human_auditor, agi_self_check, failsafe_governor
+    holder_id: str
+
+
+class RegisterAgentRequest(BaseModel):
+    agent_id: str
+    name: str
+
+
+class AuthorizationRequest(BaseModel):
+    action_id: str
+    action_type: str
+    risk_level: str  # minimal, low, medium, high, critical
+    agent_id: str
+
+
+class VoteRequest(BaseModel):
+    action_id: str
+    key_holder_id: str
+    approved: bool
+
+
+@app.get('/governance')
+def governance_status():
+    """Get governance system status"""
+    return {
+        **brain.governance.get_governance_status(),
+        'key_types': [kt.value for kt in GovernanceKeyType],
+        'risk_levels': [rl.value for rl in RiskLevel],
+        'competence_levels': [cl.value for cl in CompetenceLevel],
+        'key_requirements': {k.value: v for k, v in brain.governance.key_requirements.items()}
+    }
+
+
+@app.post('/governance/keys')
+@limiter.limit('10/minute')
+def register_governance_key(r: RegisterKeyRequest, request: Request, authorization: str = Header(None)):
+    """Register a new governance key holder"""
+    ip = request.client.host
+    ok, agent = brain.gate.verify(authorization, ip)
+    if not ok:
+        raise HTTPException(403, 'Denied')
+
+    try:
+        key_type = GovernanceKeyType(r.key_type)
+    except ValueError:
+        raise HTTPException(400, f'Invalid key type: {r.key_type}')
+
+    key = brain.governance.register_key(key_type, r.holder_id)
+    brain.audit.log('GOVERNANCE', agent, 'register_key', 'SUCCESS', {
+        'key_type': key_type.value,
+        'holder_id': r.holder_id
+    })
+    return {
+        'message': 'Key registered',
+        'key': key.to_dict(),
+        'public_key': key.public_key  # Only returned once at creation
+    }
+
+
+@app.get('/governance/keys')
+@limiter.limit('30/minute')
+def list_governance_keys(request: Request, authorization: str = Header(None)):
+    """List all governance keys"""
+    ip = request.client.host
+    ok, agent = brain.gate.verify(authorization, ip)
+    if not ok:
+        raise HTTPException(403, 'Denied')
+
+    return {
+        'keys': [k.to_dict() for k in brain.governance.keys.values()],
+        'total': len(brain.governance.keys)
+    }
+
+
+@app.post('/governance/agents')
+@limiter.limit('30/minute')
+def register_governance_agent(r: RegisterAgentRequest, request: Request, authorization: str = Header(None)):
+    """Register a new agent with fingerprint"""
+    ip = request.client.host
+    ok, agent = brain.gate.verify(authorization, ip)
+    if not ok:
+        raise HTTPException(403, 'Denied')
+
+    fingerprint = brain.governance.register_agent(r.agent_id, r.name)
+    brain.audit.log('GOVERNANCE', agent, 'register_agent', 'SUCCESS', {
+        'agent_id': r.agent_id,
+        'name': r.name
+    })
+    return {
+        'message': 'Agent registered',
+        'fingerprint': fingerprint.to_dict()
+    }
+
+
+@app.get('/governance/agents')
+@limiter.limit('30/minute')
+def list_governance_agents(request: Request, authorization: str = Header(None)):
+    """List all registered agents with fingerprints"""
+    ip = request.client.host
+    ok, agent = brain.gate.verify(authorization, ip)
+    if not ok:
+        raise HTTPException(403, 'Denied')
+
+    return {
+        'agents': [a.to_dict() for a in brain.governance.agents.values()],
+        'total': len(brain.governance.agents)
+    }
+
+
+@app.get('/governance/agents/{agent_id}')
+@limiter.limit('30/minute')
+def get_agent_fingerprint(agent_id: str, request: Request, authorization: str = Header(None)):
+    """Get a specific agent's fingerprint"""
+    ip = request.client.host
+    ok, agent = brain.gate.verify(authorization, ip)
+    if not ok:
+        raise HTTPException(403, 'Denied')
+
+    fingerprint = brain.governance.get_agent(agent_id)
+    if not fingerprint:
+        raise HTTPException(404, f'Agent not found: {agent_id}')
+
+    return fingerprint.to_dict()
+
+
+@app.get('/governance/agents/{agent_id}/audit')
+@limiter.limit('20/minute')
+def get_agent_audit_trail(agent_id: str, request: Request, limit: int = 100, authorization: str = Header(None)):
+    """Get an agent's audit trail"""
+    ip = request.client.host
+    ok, agent = brain.gate.verify(authorization, ip)
+    if not ok:
+        raise HTTPException(403, 'Denied')
+
+    fingerprint = brain.governance.get_agent(agent_id)
+    if not fingerprint:
+        raise HTTPException(404, f'Agent not found: {agent_id}')
+
+    return {
+        'agent_id': agent_id,
+        'audit_trail': fingerprint.audit_trail[-limit:],
+        'total_actions': fingerprint.total_actions
+    }
+
+
+@app.post('/governance/authorize')
+@limiter.limit('50/minute')
+def request_authorization(r: AuthorizationRequest, request: Request, authorization: str = Header(None)):
+    """Request authorization for an action"""
+    ip = request.client.host
+    ok, agent = brain.gate.verify(authorization, ip)
+    if not ok:
+        raise HTTPException(403, 'Denied')
+
+    try:
+        risk_level = RiskLevel(r.risk_level)
+    except ValueError:
+        raise HTTPException(400, f'Invalid risk level: {r.risk_level}')
+
+    approved, message, vote = brain.governance.request_authorization(
+        r.action_id,
+        r.action_type,
+        risk_level,
+        r.agent_id
+    )
+
+    brain.audit.log('GOVERNANCE', agent, 'authorization_request', 'SUCCESS' if approved else 'PENDING', {
+        'action_id': r.action_id,
+        'risk_level': risk_level.value,
+        'approved': approved
+    })
+
+    return {
+        'approved': approved,
+        'message': message,
+        'pending_vote': vote.to_dict() if vote else None
+    }
+
+
+@app.post('/governance/vote')
+@limiter.limit('30/minute')
+def submit_governance_vote(r: VoteRequest, request: Request, authorization: str = Header(None)):
+    """Submit a vote for a pending action"""
+    ip = request.client.host
+    ok, agent = brain.gate.verify(authorization, ip)
+    if not ok:
+        raise HTTPException(403, 'Denied')
+
+    success, message = brain.governance.submit_vote(r.action_id, r.key_holder_id, r.approved)
+
+    brain.audit.log('GOVERNANCE', agent, 'vote', 'SUCCESS' if success else 'FAILED', {
+        'action_id': r.action_id,
+        'key_holder_id': r.key_holder_id,
+        'approved': r.approved,
+        'message': message
+    })
+
+    return {
+        'success': success,
+        'message': message
+    }
+
+
+@app.get('/governance/votes/pending')
+@limiter.limit('30/minute')
+def get_pending_votes(request: Request, authorization: str = Header(None)):
+    """Get all pending votes"""
+    ip = request.client.host
+    ok, agent = brain.gate.verify(authorization, ip)
+    if not ok:
+        raise HTTPException(403, 'Denied')
+
+    pending = [v.to_dict() for v in brain.governance.pending_votes.values() if not v.executed]
+    return {
+        'pending_votes': pending,
+        'total': len(pending)
+    }
+
+
+@app.get('/governance/leaderboard')
+def get_agent_leaderboard(limit: int = 10):
+    """Get top agents by alignment score (public endpoint)"""
+    return {
+        'leaderboard': brain.governance.get_agent_leaderboard(limit),
+        'total_agents': len(brain.governance.agents)
+    }
 
 
 # ═══════════════════════════════════════════════════════════════════════════════
