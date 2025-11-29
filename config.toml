@@ -1,0 +1,135 @@
+# 0RB_AETHER Configuration
+# Love - Loyalty - Honor - Everybody Eats
+
+[system]
+name = "0RB_AETHER"
+version = "1.0.0"
+mode = "development"  # development | production | demo
+log_level = "info"    # debug | info | warn | error
+
+[paths]
+socket = "/run/0rb/brain.sock"
+database = "/run/0rb/brain.db"
+audit_logs = "./audit_logs"
+backups = "./backups"
+encryption_key = "./encryption.key"
+costs_file = "./costs.json"
+
+[brain]
+# Rust Brain Orchestrator settings
+confidence_threshold = 0.95
+network_allowed = false
+emergency_pin = "00000000"  # Override PIN for emergency
+socket_permissions = "0600"
+
+[brain_os]
+# Python FastAPI Brain OS settings
+host = "127.0.0.1"
+port = 3000
+daily_budget = 10.0
+backup_interval_cycles = 10
+backup_retention_days = 7
+max_pattern_length = 10000
+
+[ai]
+# AI Provider Configuration
+default_provider = "gemini"  # claude | gemini | gpt
+
+[ai.claude]
+model = "claude-sonnet-4-20250514"
+api_base = "https://api.anthropic.com/v1"
+max_tokens = 4096
+cost_input_per_1k = 0.003
+cost_output_per_1k = 0.015
+
+[ai.gemini]
+model = "gemini-1.5-pro"
+api_base = "https://generativelanguage.googleapis.com/v1beta"
+max_tokens = 8192
+cost_input_per_1k = 0.000125
+cost_output_per_1k = 0.000375
+
+[ai.gpt]
+model = "gpt-3.5-turbo"
+api_base = "https://api.openai.com/v1"
+max_tokens = 4096
+cost_input_per_1k = 0.0005
+cost_output_per_1k = 0.0015
+
+[voice_auth]
+# Voice Authentication Pipeline
+enabled = true
+vad_threshold = 0.02         # RMS threshold for voice detection
+sample_rate = 16000
+min_speech_duration = 0.5    # seconds
+speaker_similarity_threshold = 0.75
+fallback_pin_enabled = true
+emergency_triple_tap = true
+
+[compositor]
+# Wayland Compositor Settings
+backend = "wayland"
+gpu_acceleration = true
+particle_effects = true
+aether_glow = true
+resolution = "auto"
+
+[security]
+# Security Layer Configuration
+luks_version = 2
+encryption_algorithm = "aes-xts-plain64"
+key_size = 512
+kdf = "argon2id"
+argon2_memory = 1048576      # 1GB
+argon2_iterations = 4
+argon2_parallelism = 4
+ram_wipe_passes = 3
+swap_disabled = true
+
+[security.apparmor]
+profile_path = "/etc/apparmor.d"
+enforce_mode = true
+
+[security.seccomp]
+policy_path = "./0rb-aether/core/security/seccomp"
+default_action = "SCMP_ACT_KILL"
+
+[ekosystem]
+# Build Orchestrator Settings
+daily_improvement_rate = 0.01
+max_daily_cost = 100.0
+tournament_agents = 100
+everybody_eats_b2b_split = 0.40
+everybody_eats_b2c_split = 0.25
+everybody_eats_hybrid_split = 0.33
+
+[router]
+# AI Task Router Weights
+weight_quality = 0.7
+weight_speed = 0.5
+weight_cost = 0.3
+
+# Task-to-provider mapping
+[router.task_mapping]
+strategy = "claude"
+code = "claude"
+research = "gemini"
+analysis = "gemini"
+general = "gpt"
+creative = "claude"
+translation = "gemini"
+summarization = "gpt"
+
+[network]
+# Network Policy (default blocked)
+default_policy = "deny"
+allowed_hosts = []  # Empty = all blocked
+require_user_consent = true
+log_all_requests = true
+
+[demo]
+# Demo mode settings
+simulate_voice = true
+auto_approve_intents = true
+skip_luks_prompt = true
+mock_ai_responses = false

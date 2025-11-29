@@ -1,0 +1,48 @@
+{
+  "name": "@flowsync/sdk",
+  "version": "0.1.0",
+  "description": "FlowSync SDK - The Developer Moat for 0RB_AETHER",
+  "main": "flowsync.js",
+  "module": "flowsync.js",
+  "type": "module",
+  "exports": {
+    ".": "./flowsync.js",
+    "./agents": "./agent-api.js",
+    "./workflows": "./workflow-api.js",
+    "./compliance": "./compliance-api.js",
+    "./economy": "./economy-api.js"
+  },
+  "files": [
+    "flowsync.js",
+    "agent-api.js",
+    "workflow-api.js",
+    "compliance-api.js",
+    "economy-api.js",
+    "index.js"
+  ],
+  "scripts": {
+    "test": "node --experimental-vm-modules node_modules/jest/bin/jest.js",
+    "demo": "node demo.js"
+  },
+  "keywords": [
+    "flowsync",
+    "ai",
+    "agents",
+    "workflows",
+    "compliance",
+    "tokenomics",
+    "orb-aether"
+  ],
+  "author": "0RB_AETHER",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/orb-aether/flowsync-sdk.git"
+  },
+  "engines": {
+    "node": ">=16.0.0"
+  },
+  "devDependencies": {
+    "jest": "^29.0.0"
+  }
+}

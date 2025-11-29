@@ -1,0 +1,132 @@
+# 0RB_AETHER - Docker Compose Stack
+# Usage: docker-compose up -d
+
+version: '3.8'
+
+services:
+  # ==========================================================================
+  # Core Brain
+  # ==========================================================================
+  brain:
+    build:
+      context: .
+      target: prod
+    container_name: orb-brain
+    ports:
+      - "8080:8080"
+    environment:
+      - ORB_ENV=production
+      - CLAUDE_API_KEY=${CLAUDE_API_KEY:-}
+      - OPENAI_API_KEY=${OPENAI_API_KEY:-}
+      - GEMINI_API_KEY=${GEMINI_API_KEY:-}
+    volumes:
+      - orb-data:/app/data
+      - orb-logs:/app/logs
+    restart: unless-stopped
+    healthcheck:
+      test: ["CMD", "curl", "-f", "http://localhost:8080/health"]
+      interval: 30s
+      timeout: 10s
+      retries: 3
+    networks:
+      - orb-network
+
+  # ==========================================================================
+  # API Gateway
+  # ==========================================================================
+  api:
+    build:
+      context: .
+      target: prod
+    container_name: orb-api
+    command: python -m uvicorn brain_os:app --host 0.0.0.0 --port 8081
+    ports:
+      - "8081:8081"
+    environment:
+      - ORB_ENV=production
+    depends_on:
+      - brain
+    restart: unless-stopped
+    networks:
+      - orb-network
+
+  # ==========================================================================
+  # Edge Node (Distributed Compute)
+  # ==========================================================================
+  edge:
+    build:
+      context: .
+      target: prod
+    container_name: orb-edge
+    command: python -c "from edge import EdgeNetwork; import asyncio; asyncio.run(EdgeNetwork().start())"
+    ports:
+      - "9000:9000"
+    environment:
+      - NODE_ROLE=worker,storage
+      - COORDINATOR_URL=http://brain:8080
+    depends_on:
+      - brain
+    restart: unless-stopped
+    networks:
+      - orb-network
+
+  # ==========================================================================
+  # Redis (Cache & Message Queue)
+  # ==========================================================================
+  redis:
+    image: redis:7-alpine
+    container_name: orb-redis
+    ports:
+      - "6379:6379"
+    volumes:
+      - redis-data:/data
+    restart: unless-stopped
+    networks:
+      - orb-network
+
+  # ==========================================================================
+  # Monitoring (Optional)
+  # ==========================================================================
+  prometheus:
+    image: prom/prometheus:latest
+    container_name: orb-prometheus
+    ports:
+      - "9090:9090"
+    volumes:
+      - ./monitoring/prometheus.yml:/etc/prometheus/prometheus.yml:ro
+    restart: unless-stopped
+    profiles:
+      - monitoring
+    networks:
+      - orb-network
+
+  grafana:
+    image: grafana/grafana:latest
+    container_name: orb-grafana
+    ports:
+      - "3000:3000"
+    environment:
+      - GF_SECURITY_ADMIN_PASSWORD=admin
+    volumes:
+      - grafana-data:/var/lib/grafana
+    restart: unless-stopped
+    profiles:
+      - monitoring
+    networks:
+      - orb-network
+
+# =============================================================================
+# Networks
+# =============================================================================
+networks:
+  orb-network:
+    driver: bridge
+
+# =============================================================================
+# Volumes
+# =============================================================================
+volumes:
+  orb-data:
+  orb-logs:
+  redis-data:
+  grafana-data:
