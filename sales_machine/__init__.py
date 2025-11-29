@@ -20,6 +20,7 @@ __codename__ = "HVAC Closer"
 from .scraper import LeadScraper, Lead, ScraperConfig
 from .research import ResearchAgent, CompetitorIntel, MarketData
 from .voice import VoiceEngine, VoiceConfig
+from .voice_custom import CustomVoiceEngine, VoiceProfile, Emotion, VoiceCloner
 from .brain import SalesBrain, Objection, Script
 from .dialer import Dialer, Call, DialerConfig
 from .crm import CRM, LeadStatus, Commission
@@ -30,6 +31,8 @@ __all__ = [
     "LeadScraper", "Lead", "ScraperConfig",
     "ResearchAgent", "CompetitorIntel", "MarketData",
     "VoiceEngine", "VoiceConfig",
+    # Custom Voice (100% self-hosted)
+    "CustomVoiceEngine", "VoiceProfile", "Emotion", "VoiceCloner",
     "SalesBrain", "Objection", "Script",
     "Dialer", "Call", "DialerConfig",
     "CRM", "LeadStatus", "Commission",
