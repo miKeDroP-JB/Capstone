@@ -126,7 +126,7 @@ class AntiFramework:
 
         elif mutation == 'invert_objective':
             # Invert success criteria
-            for key in task.success_criteria:
+            for key in list(task.success_criteria.keys()):  # Copy keys to avoid mutation during iteration
                 if key.startswith('min_'):
                     new_key = key.replace('min_', 'max_')
                     task.success_criteria[new_key] = 1.0 - task.success_criteria.pop(key)

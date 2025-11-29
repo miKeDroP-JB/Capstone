@@ -1,0 +1,322 @@
+{
+  "population_size": 16,
+  "generation": 3,
+  "architects": [
+    {
+      "id": "arch_0_012",
+      "archetype": "efficiency_fanatic",
+      "fitness": 0.746,
+      "generation": 0,
+      "parent_ids": [],
+      "metadata": {},
+      "personality": {
+        "creativity": 0.5,
+        "risk_tolerance": 0.3,
+        "optimization_focus": 1.0,
+        "speed_vs_quality": 0.4
+      }
+    },
+    {
+      "id": "arch_0_013",
+      "archetype": "robustness_guardian",
+      "fitness": 0.741,
+      "generation": 0,
+      "parent_ids": [],
+      "metadata": {},
+      "personality": {
+        "creativity": 0.4,
+        "risk_tolerance": 0.15,
+        "optimization_focus": 0.7,
+        "speed_vs_quality": 0.25
+      }
+    },
+    {
+      "id": "arch_0_000",
+      "archetype": "analytical_optimizer",
+      "fitness": 0.736,
+      "generation": 0,
+      "parent_ids": [],
+      "metadata": {},
+      "personality": {
+        "creativity": 0.3,
+        "risk_tolerance": 0.2,
+        "optimization_focus": 0.9,
+        "speed_vs_quality": 0.3
+      }
+    },
+    {
+      "id": "arch_2_016",
+      "archetype": "robustness_guardian",
+      "fitness": 0.7345,
+      "generation": 2,
+      "parent_ids": [
+        "arch_1_016",
+        "arch_1_016"
+      ],
+      "metadata": {},
+      "personality": {
+        "creativity": 0.375,
+        "risk_tolerance": 0.2125,
+        "optimization_focus": 0.8250000000000001,
+        "speed_vs_quality": 0.2875
+      }
+    },
+    {
+      "id": "arch_3_016",
+      "archetype": "robustness_guardian",
+      "fitness": 0.0,
+      "generation": 3,
+      "parent_ids": [
+        "arch_0_013",
+        "arch_0_013"
+      ],
+      "metadata": {},
+      "personality": {
+        "creativity": 0.4,
+        "risk_tolerance": 0.15,
+        "optimization_focus": 0.7,
+        "speed_vs_quality": 0.25
+      }
+    },
+    {
+      "id": "arch_3_016",
+      "archetype": "efficiency_fanatic",
+      "fitness": 0.0,
+      "generation": 3,
+      "parent_ids": [
+        "arch_2_016",
+        "arch_2_016"
+      ],
+      "metadata": {},
+      "personality": {
+        "creativity": 0.475,
+        "risk_tolerance": 0.275,
+        "optimization_focus": 0.8999999999999999,
+        "speed_vs_quality": 0.3375
+      }
+    },
+    {
+      "id": "arch_3_016",
+      "archetype": "efficiency_fanatic",
+      "fitness": 0.0,
+      "generation": 3,
+      "parent_ids": [
+        "arch_0_012",
+        "arch_2_016"
+      ],
+      "metadata": {},
+      "personality": {
+        "creativity": 0.48124999999999996,
+        "risk_tolerance": 0.30625,
+        "optimization_focus": 0.825,
+        "speed_vs_quality": 0.36875
+      }
+    },
+    {
+      "id": "arch_3_016",
+      "archetype": "efficiency_fanatic",
+      "fitness": 0.0,
+      "generation": 3,
+      "parent_ids": [
+        "arch_0_012",
+        "arch_2_016"
+      ],
+      "metadata": {},
+      "personality": {
+        "creativity": 0.48124999999999996,
+        "risk_tolerance": 0.30625,
+        "optimization_focus": 0.825,
+        "speed_vs_quality": 0.36875
+      }
+    },
+    {
+      "id": "arch_3_016",
+      "archetype": "robustness_guardian",
+      "fitness": 0.0,
+      "generation": 3,
+      "parent_ids": [
+        "arch_2_016",
+        "arch_0_012"
+      ],
+      "metadata": {},
+      "personality": {
+        "creativity": 0.4375,
+        "risk_tolerance": 0.25625,
+        "optimization_focus": 0.9125000000000001,
+        "speed_vs_quality": 0.34375
+      }
+    },
+    {
+      "id": "arch_3_016",
+      "archetype": "robustness_guardian",
+      "fitness": 0.0,
+      "generation": 3,
+      "parent_ids": [
+        "arch_2_016",
+        "arch_0_000"
+      ],
+      "metadata": {},
+      "personality": {
+        "creativity": 0.35,
+        "risk_tolerance": 0.2,
+        "optimization_focus": 0.8375,
+        "speed_vs_quality": 0.2875
+      }
+    },
+    {
+      "id": "arch_3_016",
+      "archetype": "robustness_guardian",
+      "fitness": 0.0,
+      "generation": 3,
+      "parent_ids": [
+        "arch_2_016",
+        "arch_2_016"
+      ],
+      "metadata": {},
+      "personality": {
+        "creativity": 0.41874999999999996,
+        "risk_tolerance": 0.21825890109440496,
+        "optimization_focus": 0.7375,
+        "speed_vs_quality": 0.3125
+      }
+    },
+    {
+      "id": "arch_3_016",
+      "archetype": "analytical_optimizer",
+      "fitness": 0.0,
+      "generation": 3,
+      "parent_ids": [
+        "arch_2_016",
+        "arch_2_016"
+      ],
+      "metadata": {},
+      "personality": {
+        "creativity": 0.46249999999999997,
+        "risk_tolerance": 0.3125,
+        "optimization_focus": 0.65,
+        "speed_vs_quality": 0.3375
+      }
+    },
+    {
+      "id": "arch_3_016",
+      "archetype": "analytical_optimizer",
+      "fitness": 0.0,
+      "generation": 3,
+      "parent_ids": [
+        "arch_0_000",
+        "arch_2_016"
+      ],
+      "metadata": {},
+      "personality": {
+        "creativity": 0.375,
+        "risk_tolerance": 0.225,
+        "optimization_focus": 0.875,
+        "speed_vs_quality": 0.30000000000000004
+      }
+    },
+    {
+      "id": "arch_3_016",
+      "archetype": "analytical_optimizer",
+      "fitness": 0.0,
+      "generation": 3,
+      "parent_ids": [
+        "arch_0_000",
+        "arch_2_016"
+      ],
+      "metadata": {},
+      "personality": {
+        "creativity": 0.4,
+        "risk_tolerance": 0.25,
+        "optimization_focus": 0.95,
+        "speed_vs_quality": 0.35
+      }
+    },
+    {
+      "id": "arch_3_016",
+      "archetype": "analytical_optimizer",
+      "fitness": 0.0,
+      "generation": 3,
+      "parent_ids": [
+        "arch_0_013",
+        "arch_2_016"
+      ],
+      "metadata": {},
+      "personality": {
+        "creativity": 0.43125,
+        "risk_tolerance": 0.23125,
+        "optimization_focus": 0.675,
+        "speed_vs_quality": 0.29375
+      }
+    },
+    {
+      "id": "arch_3_016",
+      "archetype": "analytical_optimizer",
+      "fitness": 0.0,
+      "generation": 3,
+      "parent_ids": [
+        "arch_0_000",
+        "arch_0_013"
+      ],
+      "metadata": {},
+      "personality": {
+        "creativity": 0.35,
+        "risk_tolerance": 0.175,
+        "optimization_focus": 0.8,
+        "speed_vs_quality": 0.275
+      }
+    }
+  ],
+  "metrics": {
+    "diversity_score": 0.7291666666666667,
+    "average_fitness": 0.18484375,
+    "best_fitness": 0.746,
+    "worst_fitness": 0.0,
+    "archetype_distribution": {
+      "efficiency_fanatic": 4,
+      "robustness_guardian": 6,
+      "analytical_optimizer": 6
+    },
+    "generation": 3
+  },
+  "history": [
+    {
+      "diversity_score": 0.8958333333333334,
+      "average_fitness": 0.18393749999999998,
+      "best_fitness": 0.746,
+      "worst_fitness": 0.0,
+      "archetype_distribution": {
+        "efficiency_fanatic": 2,
+        "robustness_guardian": 4,
+        "analytical_optimizer": 4,
+        "systematic_debugger": 2,
+        "scale_architect": 3,
+        "conservative_validator": 1
+      },
+      "generation": 1
+    },
+    {
+      "diversity_score": 0.7291666666666667,
+      "average_fitness": 0.18400854817397688,
+      "best_fitness": 0.746,
+      "worst_fitness": 0.0,
+      "archetype_distribution": {
+        "efficiency_fanatic": 5,
+        "robustness_guardian": 7,
+        "analytical_optimizer": 4
+      },
+      "generation": 2
+    },
+    {
+      "diversity_score": 0.7291666666666667,
+      "average_fitness": 0.18484375,
+      "best_fitness": 0.746,
+      "worst_fitness": 0.0,
+      "archetype_distribution": {
+        "efficiency_fanatic": 4,
+        "robustness_guardian": 6,
+        "analytical_optimizer": 6
+      },
+      "generation": 3
+    }
+  ]
+}

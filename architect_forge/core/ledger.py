@@ -270,6 +270,36 @@ class OuroborosLedger:
         chain = self.trace_lineage(architect_id)
         return chain.reputation_score
 
+    def get_top_architects(self, limit: int = 10) -> List[tuple]:
+        """
+        Get top architects by reputation
+
+        Args:
+            limit: Maximum number of architects to return
+
+        Returns:
+            List of (architect_id, reputation) tuples, sorted by reputation descending
+        """
+        # Get all unique architect IDs
+        architect_ids = set()
+        for event in self.chain:
+            if event.architect_id and event.architect_id != 'system':
+                architect_ids.add(event.architect_id)
+
+        # Calculate reputation for each
+        reputations = []
+        for arch_id in architect_ids:
+            try:
+                rep = self.get_reputation(arch_id)
+                reputations.append((arch_id, rep))
+            except Exception:
+                # Skip architects we can't calculate reputation for
+                continue
+
+        # Sort by reputation (descending) and limit
+        reputations.sort(key=lambda x: x[1], reverse=True)
+        return reputations[:limit]
+
     def verify_chain_integrity(self) -> bool:
         """
         Verify integrity of the entire chain
