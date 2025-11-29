@@ -23,12 +23,22 @@ from .voice import VoiceEngine, VoiceConfig
 from .brain import SalesBrain, Objection, Script
 from .dialer import Dialer, Call, DialerConfig
 from .crm import CRM, LeadStatus, Commission
+from .orchestrator import SalesMachineOrchestrator, CampaignConfig, quick_start
 
 __all__ = [
+    # Core Components
     "LeadScraper", "Lead", "ScraperConfig",
     "ResearchAgent", "CompetitorIntel", "MarketData",
     "VoiceEngine", "VoiceConfig",
     "SalesBrain", "Objection", "Script",
     "Dialer", "Call", "DialerConfig",
     "CRM", "LeadStatus", "Commission",
+    # Orchestrator
+    "SalesMachineOrchestrator", "CampaignConfig", "quick_start",
 ]
+
+
+def run():
+    """Entry point for python -m sales_machine"""
+    from .orchestrator import main
+    main()
